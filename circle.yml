@@ -3,5 +3,7 @@ machine:
     version: 7.10.1
 
 deployment:
-  post:
-    - ./floop
+  production:
+    branch: master
+    commands:
+      - ./floop
