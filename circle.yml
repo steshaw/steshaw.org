@@ -8,7 +8,7 @@ checkout:
   post:
     - git submodule sync
     - git submodule update --init
-    - git submodule foreach --recursive 'git pull origin master'
+    - cd _site && git checkout master && git pull origin master
 
 dependencies:
   cache_directories:
