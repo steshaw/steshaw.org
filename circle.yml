@@ -18,4 +18,6 @@ deployment:
   production:
     branch: master
     commands:
+      - git config user.name "CircleCI for Steven Shaw"
+      - git config user.email "steven@steshaw.org"
       - ./floop
