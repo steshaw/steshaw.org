@@ -5,9 +5,7 @@ env:
  - secure: "NLsN/8NW7qxrp0MRlQ1KL37116eFsu/5aZtAAlET/ZcfIuC4LL4z1IEVlzta/Tt+LSQ2tqrUqX8bJCfe5uLupmJETIxUoA2sPcjX07p87C3w3rXw2XRnSnq6iB8LliDlRZqmFCUF2ICA7yGUHvml59sPiTPcwjciZ6m9tqy4uvI="
 
 before_install:
-  - travis_retry sudo add-apt-repository -y ppa:hvr/ghc
-  - travis_retry sudo apt-get update
-  - travis_retry sudo apt-get install cabal-install-1.22 ghc-${GHC_VERSION}
+  - bin/install-ghc-7.10.3
   - export PATH=/opt/ghc/${GHC_VERSION}/bin:/opt/cabal/1.22/bin:$PATH
 
 install:
@@ -16,10 +14,7 @@ install:
   - travis_retry cabal update
   - cabal install --only-dependencies --enable-tests --enable-benchmarks
 
-script:
-  - cabal build
-
 after_success:
   - git config --global user.name 'Steven Shaw'
   - git config --global user.email 'steven@steshaw.org'
-  - ./floop 'Travis'
+  - bin/deploy-to-github-pages 'Travis'

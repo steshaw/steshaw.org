@@ -14,9 +14,7 @@ dependencies:
     - /opt/ghc/${GHC_VERSION}
     - /opt/cabal/${CABAL_VERSION}
   pre:
-    - sudo add-apt-repository -y ppa:hvr/ghc
-    - sudo apt-get update
-    - [[ ! -d /opt/ghc/${GHC_VERSION} ]] && sudo apt-get install cabal-install-${CABAL_VERSION} ghc-${GHC_VERSION}
+    - bin/install-ghc-7.10.1
 
 deployment:
   production:
@@ -24,4 +22,4 @@ deployment:
     commands:
       - git config --global user.name 'Steven Shaw'
       - git config --global user.email 'steven@steshaw.org'
-      - ./floop 'CircleCI'
+      - bin/deploy-to-github-pages 'Circle'
