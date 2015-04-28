@@ -1,7 +1,8 @@
 machine:
   environment:
     GHC_VERSION: 7.10.1
-    PATH: /opt/ghc/${GHC_VERSION}/bin:/opt/cabal/1.22/bin:${PATH}
+    CABAL_VERSION: 1.22
+    PATH: /opt/ghc/${GHC_VERSION}/bin:/opt/cabal/${CABAL_VERSION}/bin:${PATH}
 
 checkout:
   post:
@@ -9,10 +10,13 @@ checkout:
     - git submodule update --init
 
 dependencies:
+  cache_directories:
+    - /opt/ghc/${GHC_VERSION}
+    - /opt/cabal/${CABAL_VERSION}
   pre:
     - sudo add-apt-repository -y ppa:hvr/ghc
     - sudo apt-get update
-    - sudo apt-get install cabal-install-1.22 ghc-${GHC_VERSION}
+    - [[ ! -d /opt/ghc/${GHC_VERSION} ]] && sudo apt-get install cabal-install-${CABAL_VERSION} ghc-${GHC_VERSION}
 
 deployment:
   production:
