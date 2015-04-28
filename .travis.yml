@@ -1,1 +1,4 @@
 language: haskell
+ghc: 7.10.1
+after_success:
+  - ./floop
