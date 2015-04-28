@@ -1,3 +1,5 @@
+language: haskell
+
 env:
  - GHC_VERSION=7.10.1
  - secure: "NLsN/8NW7qxrp0MRlQ1KL37116eFsu/5aZtAAlET/ZcfIuC4LL4z1IEVlzta/Tt+LSQ2tqrUqX8bJCfe5uLupmJETIxUoA2sPcjX07p87C3w3rXw2XRnSnq6iB8LliDlRZqmFCUF2ICA7yGUHvml59sPiTPcwjciZ6m9tqy4uvI="
