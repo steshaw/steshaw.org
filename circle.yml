@@ -12,8 +12,8 @@ checkout:
 
 dependencies:
   cache_directories:
-    - /opt/ghc/${GHC_VERSION}
-    - /opt/cabal/${CABAL_VERSION}
+    - /opt/ghc/7.10.1
+    - /opt/cabal/1.22
   pre:
     - bin/install-ghc-7.10.1
 
