@@ -10,7 +10,8 @@ checkout:
   post:
     - git submodule sync
     - git submodule update --init
-    - cd _site && git checkout master && git pull origin master
+#    - cd _site && git checkout master && git pull origin master
+    - git submodule foreach --recursive 'git checkout master; git ls-files | grep -v README | grep -v CNAME | xargs -r git rm'
 
 dependencies:
   cache_directories:
