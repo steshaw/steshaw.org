@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+./site build
+cd _site
+git add -A
+git commit -m "Built on $(date '+%d-%b-%Y %H:%M:%S %Z')"
+if [[ -z ${REPO_URL} ]]; then
+  git push
+else
+  git push "${REPO_URL}" 2>&1 | grep -v https
+fi
