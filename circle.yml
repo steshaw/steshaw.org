@@ -5,7 +5,7 @@ machine:
 
 checkout:
   pre:
-    - ls -alFh /opt
+    - ls -alFh /opt/ghc
   post:
     - git submodule sync
     - git submodule update --init
