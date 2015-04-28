@@ -1,6 +1,6 @@
 machine:
   environment:
-    GHC_VERSION=7.10.1
+    GHC_VERSION: 7.10.1
 
 dependencies:
   pre:
