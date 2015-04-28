@@ -8,4 +8,4 @@ set -x
 cd _site
 git add -A
 git commit -m "Built on $(date '+%d-%b-%Y %H:%M:%S %Z')"
-git push
+git push origin master
