@@ -1,13 +1,15 @@
 #!/bin/bash
 
-by="${1:-${USER}}"
+set -eu
 
-set -u
-set -e
-set -x
+by="${1:-${USER}}"
 
 ./site build
 cd _site
-git add -A
-git commit -m "Built by ${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
-git push origin master
+if git diff --quiet; then
+  echo No changes to commit
+else
+  git add -A
+  git commit -m "Built by ${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
+  git push origin master
+fi
