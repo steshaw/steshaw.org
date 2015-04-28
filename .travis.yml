@@ -1,4 +1,5 @@
 language: haskell
 ghc: 7.10.1
-after_success:
-  - ./floop
+after_success: "./floop"
+GH_NAME=Steven Shaw:
+  secure: YeOtD/iM1t8NvwIbqVmHg01CgIR0Ji8YjyAwoRULwIW+pLzlLFzcOBxB0uGxG4rNnm01j32jcMhmvgbs1Dow3AXUlf9Eq1V4SUlE9dpzHpb49snGomxvl/XPyTNvVZP6YbEKddUv3IevtedRL5s/UnCv2imXe4UAO5aVSM4BrU4=
