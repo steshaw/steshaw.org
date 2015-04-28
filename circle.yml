@@ -5,7 +5,8 @@ machine:
     PATH: /opt/ghc/${GHC_VERSION}/bin:/opt/cabal/${CABAL_VERSION}/bin:${PATH}
 
 checkout:
-  pre: git --version
+  pre:
+    - git --version
   post:
     - git submodule sync
     - git submodule update --init
