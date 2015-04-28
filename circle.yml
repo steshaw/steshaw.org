@@ -6,10 +6,6 @@ dependencies:
    - sudo apt-get install cabal-install-1.22 ghc-${GHC_VERSION}
    - export PATH=/opt/ghc/${GHC_VERSION}/bin:/opt/cabal/1.22/bin:$PATH
 
-machine:
-  ghc:
-    version: 7.10.1
-
 deployment:
   production:
     branch: master
