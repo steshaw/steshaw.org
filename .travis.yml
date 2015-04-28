@@ -1,5 +1,6 @@
 env:
-  - GHC_VERSION=7.10.1
+ - GHC_VERSION=7.10.1
+ - secure: "NLsN/8NW7qxrp0MRlQ1KL37116eFsu/5aZtAAlET/ZcfIuC4LL4z1IEVlzta/Tt+LSQ2tqrUqX8bJCfe5uLupmJETIxUoA2sPcjX07p87C3w3rXw2XRnSnq6iB8LliDlRZqmFCUF2ICA7yGUHvml59sPiTPcwjciZ6m9tqy4uvI="
 
 before_install:
  - travis_retry sudo add-apt-repository -y ppa:hvr/ghc
@@ -9,15 +10,14 @@ before_install:
 
 install:
  - cabal --version
- - echo "$(ghc --version) [$(ghc --print-project-git-commit-id 2> /dev/null || echo '?')]"
- - travis_retry cabal update
- - cabal install --only-dependencies --enable-tests --enable-benchmarks
+ - echo "$(ghc --version) [$(ghc --print-project-git-commit-id 2> /dev/null || echo
+  '?')]"
+
+- travis_retry cabal update
+- cabal install --only-dependencies --enable-tests --enable-benchmarks
 
 script:
  - cabal build
 
-after_success: 
- - ./floop
-
-GH_NAME=Steven Shaw:
-  secure: YeOtD/iM1t8NvwIbqVmHg01CgIR0Ji8YjyAwoRULwIW+pLzlLFzcOBxB0uGxG4rNnm01j32jcMhmvgbs1Dow3AXUlf9Eq1V4SUlE9dpzHpb49snGomxvl/XPyTNvVZP6YbEKddUv3IevtedRL5s/UnCv2imXe4UAO5aVSM4BrU4=
+after_success:
+ - "./floop"
