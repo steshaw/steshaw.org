@@ -1,5 +1,7 @@
 #!/bin/bash
 
+by="${1:-${USER}}"
+
 set -u
 set -e
 set -x
@@ -7,5 +9,5 @@ set -x
 ./site build
 cd _site
 git add -A
-git commit -m "Built on $(date '+%d-%b-%Y %H:%M:%S %Z')"
+git commit -m "Built by ${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
 git push origin master

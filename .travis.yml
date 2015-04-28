@@ -18,4 +18,6 @@ script:
   - cabal build
 
 after_success:
-  - "./floop"
+  - git config --global user.name 'Steven Shaw'
+  - git config --global user.email 'steven@steshaw.org'
+  - ./floop 'Travis'
