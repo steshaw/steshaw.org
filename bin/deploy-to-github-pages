@@ -6,10 +6,10 @@ by="${1:-${USER}}"
 
 ./site build
 cd _site
-if git diff --quiet; then
+git add -A
+if git diff-index --quiet HEAD; then
   echo No changes to commit
 else
-  git add -A
   git commit -m "Built by ${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
   git push origin master
 fi
