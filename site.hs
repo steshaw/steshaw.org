@@ -8,10 +8,17 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    ["images/*", "hm/*", "economics-in-one-lesson/*"] `forM_` (\x ->
-        match x $ do
-            route   idRoute
-            compile copyFileCompiler)
+    match "image/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "hm/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "economics-in-one-lesson/*" $ do
+        route   idRoute
+        compile copyFileCompiler
 
     match "css/*" $ do
         route   idRoute
