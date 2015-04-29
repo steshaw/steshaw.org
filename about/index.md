@@ -7,22 +7,27 @@ title: About
   <h1>About</h1>
 </header>
 
-Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane, Australia.
+Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but do still feel the tug of Old Blighty — particularly Scotland.
 
-Avid computer programmer interested in the design and implementation of:
+I'm an avid computer programmer, an industry veteran with 25 years experience using languages such as (in order of use): C, C++, Python, Java, Ruby, JavaScript, C#, Scala.
 
-- programming languages
-- operating systems
-- distributed systems
-- database systems
-- computer games
+I also had a lot of fun with computers prior to joining the industry — 10 years
+amateur experience going back to BASIC on the [Dick Smith Wizard](http://ultimateconsoledatabase.com/others/dick_smith_wizzard.htm) in [82](http://www.youtube.com/watch?v=JbCr15KkBxY) and text-based adventures (aka "go north; get chalice") and 2D sprite games (e.g. Snakes and Lunar Lander) in BASIC and machine code on the [C=64](http://en.wikipedia.org/wiki/Commodore_64) ;). Never could quite afford an upgrade to an [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500) (or later models but a few friends had A500s) and finally ended up with a DR-DOS PC _after_ university — I spent a _lot_ of time in the computer lab :). In those days, I was quite partial to [VAX/VMS](http://en.wikipedia.org/wiki/OpenVMS) and it's [DCL](http://en.wikipedia.org/wiki/DIGITAL_Command_Language) shell scripting language but that was before I was introduced to UNIX with it's Borne and eventually Korn shells.
 
-## Understanding me
+![Commodore 64 boot screen](http://upload.wikimedia.org/wikipedia/commons/4/48/C64_startup_animiert.gif)
 
-These personality profiles may help you to understand me (though they're a little dated now). I've worked through the [Keirsey Temperament Sorter](http://keirsey.com/) a couple of times. The result was [INTJ](http://www.personalitypage.com/INTJ.html "INTJ - Mastermind/Scientist") for both:
+Programming Languages that I seek to use these days include Haskell, Scala and PureScript.
 
-* [Keirsey Temperament Sorter Results](kcs.html)
-* [Keirsey Temperament Sorter II Results](kcs2.html)
 
-In 2002, I took a standard Myer-Briggs test which came up with
-[INTP](http://www.personalitypage.com/INTP.html "INTP - Architect/Thinker"). I was told that this is quite a typical profile for a computer programmer.
+## Interests
+
+  - the design and implementation of programming languages, runtime systems and operating systems – very similar beasts!
+  - app development — trade offs, tricks, patterns and dogma.
+  - distributed systems - cloud, web, network programming and highly-scalable servers.
+  - persistence and database systems — RDBMS, NoSQL, NewSQL.
+  - computer games — graphics, scripting engines, AI.
+
+
+## Hobbies
+
+  - human languages such as Spanish and French.
