@@ -1,0 +1,17 @@
+---
+author: steshaw
+comments: true
+date: 2006-05-01 03:19:00+00:00
+layout: post
+slug: xml-abuse
+title: XML Abuse
+wordpress_id: 47
+categories:
+- Programming
+tags:
+- Application Integration
+- NoXML
+- XML
+---
+
+Just in case you're still abusing XML, here's [some pretty clear advice from back in 2002](http://www.ddj.com/dept/architect/184414926) from the author of [Integration Patterns](http://integrationpatterns.com).
