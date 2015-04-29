@@ -13,13 +13,6 @@ main = hakyll $ do
     route   $ gsubRoute "source/" (const "")
     compile copyFileCompiler
 
-  match "steshaw.wordpress.com/programming-languages/*" $ do
-    route $ gsubRoute "steshaw.wordpress.com/" (const "") `composeRoutes` setExtension "html"
-    let ctx = constField "title" "About" <> pageCtx
-    compile $ pandocCompiler
-      >>= loadAndApplyTemplate "templates/default.html" ctx
-      >>= relativizeUrls
-
   match "about/*.md" $ do
     route $ setExtension "html"
     let ctx =  constField "title" "About"
