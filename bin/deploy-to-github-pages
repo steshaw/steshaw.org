@@ -4,12 +4,12 @@ set -eu
 
 by="${1:-${USER}}"
 
-./site build
-
 cd steshaw.github.io
 git checkout master
 git pull origin master
 git ls-files | xargs git rm
+
+./site build
 cp -r ../_site/* .
 
 git add -A
