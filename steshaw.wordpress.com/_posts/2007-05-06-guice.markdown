@@ -1,0 +1,20 @@
+---
+author: steshaw
+comments: true
+date: 2007-05-06 18:19:21+00:00
+layout: post
+slug: guice
+title: Guice
+wordpress_id: 60
+categories:
+- Programming
+tags:
+- Dependency Injection
+- Google Tech Talks
+- Guice
+- Java
+---
+
+Just watched an [intro to Guice video](http://video.google.com/videoplay?docid=6068447410873108038&q=user%3A%22Google+engEDU) from Google. Looks pretty interesting. Be nice to have less Spring beans configuration files :).
+
+[Lots of other interesting Google talks](http://video.google.com/videosearch?q=user%3A%22Google+engEDU%22&so=1) are available!
