@@ -13,6 +13,13 @@ main = hakyll $ do
     route   $ gsubRoute "source/" (const "")
     compile copyFileCompiler
 
+  match "steshaw.wordpress.com/programming-languages/*" $ do
+    route $ gsubRoute "steshaw.wordpress.com/" (const "") `composeRoutes` setExtension "html"
+    let ctx = constField "title" "About" <> pageCtx
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" ctx
+      >>= relativizeUrls
+
   match "about/*.md" $ do
     route $ setExtension "html"
     let ctx =  constField "title" "About"
@@ -68,11 +75,7 @@ main = hakyll $ do
   mkFeed "atom.xml" renderAtom
   mkFeed "rss.xml"  renderRss
 
-allPosts = hakyllPosts .||. wordpressPosts
-  where
-    hakyllPosts = "posts/*"
-    wordpressPosts = "steshaw.wordpress.com/_posts/*"
-
+allPosts = "posts/*"
 
 mkFeed file renderer =
   create [file] $ do
@@ -83,7 +86,7 @@ mkFeed file renderer =
       renderer feedConfig feedCtx posts
 
 feed = recentFirst =<<
-  loadAllSnapshots "posts/*" "content"
+  loadAllSnapshots allPosts "content"
 
 feedConfig = FeedConfiguration
   { feedTitle       = "Steven Shaw's Blog"
