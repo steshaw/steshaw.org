@@ -1,0 +1,79 @@
+---
+title: Blogging with Hakyll
+published: 2015-04-09 16:30
+tags: haskell, hakyll
+---
+
+/This blog is a work in progress/. Please come back later — or bug me about it :)
+
+* Outline
+
+- Hakyll http://jaspervdj.be/hakyll/
+- Getting MathJax working
+- Disqus comments
+- Google Analytics
+- Using CI to auto-deploy (or Travis v Circle)
+- Source code syntax highlighting
+
+
+*** Haskell code
+
+#+begin_src haskell
+module Data.Foo
+
+main = putStrLn "Hello, world!"
+#+end_src
+
+
+*** emacs-lisp code
+
+#+BEGIN_SRC emacs-lisp
+(defun org-xor (a b)
+  "Exclusive or."
+  (if a (not b) b))
+#+END_SRC
+
+
+*** An example
+
+#+BEGIN_EXAMPLE
+Some example from a text file.
+#+END_EXAMPLE
+
+
+*** Some yaml
+
+#+name: switch Markdown processors in _config.yml
+#+begin_src yaml
+markdown: maruku
+#+end_src
+
+
+*** Some html
+
+#+name: enable MathJax in source/_includes/custom/head.html http://www.mathjax.org/docs/1.1/start.html
+#+begin_src html
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+</script>
+<script type="text/javascript" src="path-to-mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+#+end_src
+
+
+*** Some TeX
+
+#+name: example expression from Paul Snivey's article http://psnively.github.com/2010/03/13/100-proof.html
+#+begin_src
+$$\forall x, y : \mathbb{Z}, x > 3 \land y < 2 \Rightarrow x^2 - 2y > 5$$
+#+end_src
+
+Inline TeX: $$\forall x, y : \mathbb{Z}, x > 3 \land y < 2 \Rightarrow x^2 - 2y > 5$$
+
+
+** Thanks
+
+- [[http://begriffs.com/posts/2014-08-12-create-static-site-with-hakyll-github.html][Begriffs on GitHub and Travis CI]]
+- [[https://github.com/willtim/timphilipwilliams.com][Tim William's Hakyll blog using Boostrap 2.1]]
+- [[http://jaspervdj.be/hakyll/][Jasper Van der Jeugt's Hakyll]]
