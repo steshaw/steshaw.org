@@ -6,14 +6,8 @@ layout: post
 slug: misunderstandings-about-closures
 title: Misunderstandings about closures
 wordpress_id: 14
-categories:
-- Programming
-tags:
-- C#
-- Closures
-- Functional Programming
-- Java
-- Spring
+categories: Programming
+tags: C#, Closures, Functional Programming, Java, Spring
 ---
 
 Even the "big names you know" in the Java software development community [can make mistakes when it comes to closures](http://www.almaer.com/blog/archives/000435.html).

@@ -6,14 +6,8 @@ layout: post
 slug: continuations-for-curmudgeons
 title: Continuations for curmudgeons
 wordpress_id: 28
-categories:
-- Programming
-tags:
-- call/cc
-- Continuations
-- Programming Languages
-- Ruby
-- Scheme
+categories: - Programming
+tags: - call/cc - Continuations - Programming Languages - Ruby - Scheme
 ---
 
 Sam Ruby has a much praised blog entry entitled "[Continuations for Curmudgeons](http://www.intertwingly.net/blog/2005/04/13/Continuations-for-Curmudgeons)".

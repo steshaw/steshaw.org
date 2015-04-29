@@ -6,13 +6,8 @@ layout: post
 slug: saps-innovation-drivers
 title: SAP's innovation drivers
 wordpress_id: 62
-categories:
-- Programming
-tags:
-- In-Memory Databases
-- SAAS
-- SAP
-- SOA
+categories: - Programming
+tags: - In-Memory Databases - SAAS - SAP - SOA
 ---
 
 Here is an interest article from sdtimes about[ SAP's 7 Drivers of Development Innovation](http://www.sdtimes.com/printArticle/LatestNews-20070501-17.html).  

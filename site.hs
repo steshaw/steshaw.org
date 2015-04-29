@@ -27,7 +27,7 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
-  match "posts/*" $ do
+  match allPosts $ do
     route $ setExtension "html"
     compile $ pandocCompiler
       >>= loadAndApplyTemplate "templates/post.html"    pageCtx
@@ -38,7 +38,7 @@ main = hakyll $ do
   create ["posts.html"] $ do
     route idRoute
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
+      posts <- recentFirst =<< loadAll allPosts
       let postsCtx =  listField "posts" pageCtx (return posts)
                    <> constField "title" "Posts"
                    <> pageCtx
@@ -50,7 +50,7 @@ main = hakyll $ do
   match "index.html" $ do
     route idRoute
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
+      posts <- recentFirst =<< loadAll allPosts
       let indexCtx =  listField "posts" pageCtx (return posts)
                    <> constField "title" "Home"
                    <> constField "homeactive" "active"
@@ -67,6 +67,12 @@ main = hakyll $ do
 
   mkFeed "atom.xml" renderAtom
   mkFeed "rss.xml"  renderRss
+
+allPosts = hakyllPosts .||. wordpressPosts
+  where
+    hakyllPosts = "posts/*"
+    wordpressPosts = "steshaw.wordpress.com/_posts/*"
+
 
 mkFeed file renderer =
   create [file] $ do

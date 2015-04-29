@@ -6,12 +6,8 @@ layout: post
 slug: neal-gafter-on-closures-for-java
 title: Neal Gafter on Closures for Java
 wordpress_id: 55
-categories:
-- Programming
-tags:
-- Closures
-- Java
-- Neal Gafter
+categories: - Programming
+tags: - Closures - Java - Neal Gafter
 ---
 
 A [interesting talk by Neal Gafter](http://www.bejug.org/confluenceBeJUG/display/PARLEYS/Closures+for+Java). Neal explains some of the problems with using anonymous inner classes and how closures will address those. With closures for Java being sold to developers it seems like they are much closer to being added to the official language specification. Yippie!

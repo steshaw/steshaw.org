@@ -6,14 +6,8 @@ layout: post
 slug: javarubygroovy
 title: Java…Ruby…Groovy
 wordpress_id: 29
-categories:
-- Programming
-tags:
-- Closures
-- Groovy
-- Java
-- Programming Languages
-- Ruby
+categories: - Programming
+tags: - Closures - Groovy - Java - Programming Languages - Ruby
 ---
 
 [http://onestepback.org/articles/groovy/groovyspeed.html](http://onestepback.org/articles/groovy/groovyspeed.html)

@@ -6,13 +6,8 @@ layout: post
 slug: spring-and-hibernate
 title: Spring and Hibernate
 wordpress_id: 12
-categories:
-- Programming
-tags:
-- Hibernate
-- Java
-- ORM
-- Spring
+categories: Programming
+tags: Hibernate, Java, ORM, Spring
 ---
 
 We're using Hibernate at work but not Spring yet. We are using WebLogic Web Services and Flash Remoting which potentially make Spring less useful. However, I'm been reading alot about Spring lately and related topics lately:

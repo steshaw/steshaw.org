@@ -1,6 +1,6 @@
 ---
 title: Hello MathJax
-published: 2012-02-09 12:46
+date: 2012-02-09 12:46
 tags: octopress, mathjax
 ---
 

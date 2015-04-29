@@ -6,12 +6,8 @@ layout: post
 slug: typecase-for-java
 title: Typecase for Java
 wordpress_id: 50
-categories:
-- Programming
-tags:
-- Java
-- Modula-3
-- Programming Languages
+categories: - Programming
+tags: - Java - Modula-3 - Programming Languages
 ---
 
 I was just reading Stephen Colebourne's blog. He is the other of [Joda-Time](http://joda-time.sourceforge.net/) which looks to be a useful replacement for java.util.Calendar and java.util.DateTime... but I digress.

@@ -6,11 +6,8 @@ layout: post
 slug: agile-is-the-status-quo
 title: Agile is the status quo
 wordpress_id: 519
-categories:
-- Programming
-tags:
-- Agile
-- Software Engineering
+categories: - Programming
+tags: - Agile - Software Engineering
 ---
 
 Robert C. Martin (aka Uncle Bob) has written a provocative article, [What Killed Waterfall Could Kill Agile](http://cleancoder.posterous.com/what-killed-waterfall-could-kill-agile). Besides its main trust, it also contains some interesting historical tidbits in the history of the agile movement.

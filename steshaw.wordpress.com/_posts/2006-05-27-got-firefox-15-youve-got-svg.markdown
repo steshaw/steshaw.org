@@ -6,12 +6,8 @@ layout: post
 slug: got-firefox-15-youve-got-svg
 title: Got Firefox 1.5? You've got SVG!
 wordpress_id: 51
-categories:
-- Programming
-tags:
-- Firefox
-- SVG
-- Web
+categories: - Programming
+tags: - Firefox - SVG - Web
 ---
 
 I've been using Firefox 1.5 for a while but didn't realise it comes with some builtin SVG support (a subset of SVG 1.1). Some interesting links:

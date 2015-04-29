@@ -6,15 +6,8 @@ layout: post
 slug: wcl-and-shared-libraries
 title: WCL and shared libraries
 wordpress_id: 16
-categories:
-- Programming
-tags:
-- CLI
-- CLR
-- Common Lisp
-- Java
-- JVM
-- Lisp
+categories: Programming
+tags: CLI, CLR, Common Lisp, Java, JVM, Lisp
 ---
 
 Just read about [WCL](http://wcl.kontiki.com/), a Common Lisp (CL) implementation I wasn't aware of. The [paper](http://wcl.kontiki.com/downloads/lfp-paper.ps) talks about how CL is compiled to C and linked into a shared library. This allows a memory efficient delivery environment. i.e. CL application share code via shared libraries including the core system/libraries. I missed whether the CL compiler is available at runtime which would be a drawback. Many problems were solved but still afew remained such as relocated data with embedded pointers in the shared library (causing slower startup times), generational GC is not implemented, the compiler could be more sophisticated and there is no thread support. The project appears to be stalled.

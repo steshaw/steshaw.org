@@ -6,17 +6,8 @@ layout: post
 slug: ext-js-21-now-gpl
 title: Ext JS 2.1 now GPL :(
 wordpress_id: 81
-categories:
-- Programming
-tags:
-- Ext GWT
-- Ext JS
-- GWT
-- GWT-Ext
-- Java
-- JavaScript
-- Web
-- YUI
+categories: - Programming
+tags: - Ext GWT - Ext JS - GWT - GWT-Ext - Java - JavaScript - Web - YUI
 ---
 
 Unfortunately [Ext JS 2.1 (and Ext GWT 1.0) have been released under the GPL](http://extjs.com/blog/2008/04/21/ext-js-21-and-ext-gwt-10-released-preview-of-ext-js-30). This will make Ext more difficult to sell to corporate clients.

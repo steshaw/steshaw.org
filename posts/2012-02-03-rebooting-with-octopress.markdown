@@ -1,6 +1,6 @@
 ---
 title: Rebooting with Octopress
-published: 2012-02-03 16:22
+date: 2012-02-03 16:22
 tags: octopress
 ---
 

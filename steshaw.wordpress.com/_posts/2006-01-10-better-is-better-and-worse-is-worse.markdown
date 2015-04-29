@@ -6,12 +6,8 @@ layout: post
 slug: better-is-better-and-worse-is-worse
 title: Better *is* better and worse is worse
 wordpress_id: 35
-categories:
-- Programming
-tags:
-- Lisp
-- Programming Languages
-- Software Design
+categories: - Programming
+tags: - Lisp - Programming Languages - Software Design
 ---
 
 I've read the original [Worse Is Better](http://www.dreamsongs.com/WorseIsBetter.html) article by Richard Gabriel a couple of times now. I discovered it via my interest in programming languages (Lisp in this case).
