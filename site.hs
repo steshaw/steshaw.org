@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+
 import Hakyll
 import Data.Monoid
 import Control.Applicative
@@ -17,7 +18,7 @@ main = hakyll $ do
         let ctx =  constField "title" "About"
                 <> constField "aboutactive" "active"
                 <> constField "abouturl" nullLink
-                <> myDefaultCtx
+                <> pageCtx
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" ctx
             >>= relativizeUrls
@@ -29,9 +30,9 @@ main = hakyll $ do
     match "posts/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/post.html"    pageCtx
             >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/default.html" pageCtx
             >>= relativizeUrls
 
     create ["posts.html"] $ do
@@ -39,9 +40,9 @@ main = hakyll $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let postsCtx =
-                    listField "posts" postCtx (return posts) `mappend`
+                    listField "posts" pageCtx (return posts) `mappend`
                     constField "title" "Posts"               `mappend`
-                    myDefaultCtx
+                    pageCtx
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/posts.html" postsCtx
@@ -52,11 +53,11 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx =  listField "posts" postCtx (return posts)
+            let indexCtx =  listField "posts" pageCtx (return posts)
                          <> constField "title" "Home"
                          <> constField "homeactive" "active"
                          <> constField "homeurl" nullLink
-                         <> myDefaultCtx
+                         <> pageCtx
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
@@ -68,23 +69,21 @@ main = hakyll $ do
     create ["atom.xml"] $ do
       route idRoute
       compile $ do
-        let feedCtx = postCtx <> bodyField "description"
+        let feedCtx = pageCtx <> bodyField "description"
         posts <- feed
-        renderAtom myFeedConfiguration feedCtx posts
+        renderAtom feedConfig feedCtx posts
 
     create ["rss.xml"] $ do
       route idRoute
       compile $ do
-        let feedCtx = postCtx <> bodyField "description"
+        let feedCtx = pageCtx <> bodyField "description"
         posts <- feed
-        renderAtom myFeedConfiguration feedCtx posts
-
-      where
+        renderAtom feedConfig feedCtx posts
 
 feed = recentFirst =<<
   loadAllSnapshots "posts/*" "content"
 
-myFeedConfiguration = FeedConfiguration
+feedConfig = FeedConfiguration
   { feedTitle       = "Steven Shaw's Blog"
   , feedDescription = "Programming Languages and Systems"
   , feedAuthorName  = "Steven Shaw"
@@ -93,18 +92,13 @@ myFeedConfiguration = FeedConfiguration
   }
 
 --------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
---    dateField "date" "%B %e, %Y" `mappend`
-    myDefaultCtx
-
 -- | Consistent convention for links that don't go anywhere
 nullLink :: String
 nullLink = "javascript:void(0)"
 
 -- | Default setup is for individual post pages
-myDefaultCtx :: Context String
-myDefaultCtx = mconcat
+pageCtx :: Context String
+pageCtx = mconcat
       [ constField "homeactive" ""
       , constField "homeurl" "/"
       , constField "aboutactive"  ""
