@@ -12,12 +12,6 @@ main = hakyll $ do
         route   $ gsubRoute "source/" (const "")
         compile copyFileCompiler
 
-    match (fromList ["contact.markdown"]) $ do
-        route   $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" myDefaultCtx
-            >>= relativizeUrls
-
     match "about/*.md" $ do
         route $ setExtension "html"
         let ctx =  constField "title" "About"
