@@ -39,10 +39,10 @@ main = hakyll $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
-            let postsCtx =
-                    listField "posts" pageCtx (return posts) `mappend`
-                    constField "title" "Posts"               `mappend`
-                    pageCtx
+            let postsCtx
+              =  listField "posts" pageCtx (return posts)
+              <> constField "title" "Posts"
+              <> pageCtx
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/posts.html" postsCtx
