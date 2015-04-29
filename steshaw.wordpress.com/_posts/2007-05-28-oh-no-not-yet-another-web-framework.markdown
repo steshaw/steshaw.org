@@ -6,18 +6,8 @@ layout: post
 slug: oh-no-not-yet-another-web-framework
 title: Oh no, not Yet Another Web Framework!
 wordpress_id: 63
-categories:
-- Programming
-tags:
-- Apache Click
-- Apache Tapestry
-- IceFaces
-- Java
-- JSF
-- RichFaces
-- Seam
-- Spring MVC
-- Web
+categories: - Programming
+tags: - Apache Click - Apache Tapestry - IceFaces - Java - JSF - RichFaces - Seam - Spring MVC - Web
 ---
 
 Just browsing through the [Thoughtworks open source projects](http://opensource.thoughtworks.com/) (after finding [Buildix](http://buildix.thoughtworks.com/) and backing up). I noticed YAJWF (Yet another Java web framework) - or perhaps just YAWF (Yet another web framework) - the [Waffle Web Framework](http://waffle.codehaus.org/). I could not contain the reaction: "Oh no, not yet _another_ Java web framework :(". However, I had this feeling a couple of years ago when the main author of the [Click framework](http://click.sf.net) was promoting his framework on the [AJUG](http://ajug.org.au) mailing list. At the time I was developing UI with Macromedia Flex and didn't feel all the full frontal pain of regular web development. I am currently experiencing Spring MVC (without Webflow) and I feel the pain - oh, I feel it! Click looks to relieve the exact pain I am feeling on my current project but Wicket looks to have a brighter future (and more future proof).

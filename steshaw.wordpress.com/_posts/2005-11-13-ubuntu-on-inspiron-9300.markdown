@@ -6,12 +6,8 @@ layout: post
 slug: ubuntu-on-inspiron-9300
 title: Ubuntu on Inspiron 9300
 wordpress_id: 31
-categories:
-- Programming
-tags:
-- Gnome
-- Linux
-- Ubuntu
+categories: - Programming
+tags: - Gnome - Linux - Ubuntu
 ---
 
 I've just been trying out the Live CD of Unbuntu 5.10 this afternoon... and into the evening. I'm really impressed. I'm *posting* this from my first boot into the live cd! It recognised my hardware very well - the paritions from my external USB drive were mounted, sound card worked, graphics card worked, wireless usb mouse works, touchpad works. Excellent! Just no wireless networking :-(. To get wireless networking working I had to 'modprobe ipw2200' and configure the wireless network: 'ipwconfig eth1 essid ' & 'ipwconfig eth1 key ', and lastly 'dhclient' to request an ip address. You can 'sudo' to execute root commands or simply reset the root password via sudo "sudo passwd" and then "su -".

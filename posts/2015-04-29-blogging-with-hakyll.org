@@ -1,6 +1,6 @@
 ---
 title: Blogging with Hakyll
-published: 2015-04-09 16:30
+date: 2015-04-09 16:30
 tags: haskell, hakyll
 ---
 

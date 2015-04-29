@@ -6,12 +6,8 @@ layout: post
 slug: when-can-i-get-a-fix-of-language-goodness
 title: When can I get a fix of language goodness?
 wordpress_id: 38
-categories:
-- Programming
-tags:
-- C#
-- Erik Meijer
-- Programming Languages
+categories: - Programming
+tags: - C# - Erik Meijer - Programming Languages
 ---
 
 After reading a recent paper by Erik Meijer and Peter Drayton I am convinced that I'll be programming in C# or one of it's descendents sooner rather than later in order to get my fix of language goodness.

@@ -6,12 +6,8 @@ layout: post
 slug: feature-teams
 title: Feature teams
 wordpress_id: 83
-categories:
-- Programming
-tags:
-- Productivity
-- Software Design
-- Software Process
+categories: - Programming
+tags: - Productivity - Software Design - Software Process
 ---
 
 I am glad to see InfoQ have posted a [writeup about scaling agile teams using feature teams](http://www.infoq.com/articles/scaling-lean-agile-feature-teams) rather than component teams. This includes a downloadable chapter in the latest book by Craig Larman on the subject. We used to call this working vertically or horizontally. It has also been called cross-functional teams. I have always preferred to work vertically for the following reasons:

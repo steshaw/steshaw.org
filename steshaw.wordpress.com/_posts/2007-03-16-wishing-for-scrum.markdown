@@ -6,12 +6,8 @@ layout: post
 slug: wishing-for-scrum
 title: Wishing for Scrum
 wordpress_id: 57
-categories:
-- Programming
-tags:
-- Agile
-- Scrum
-- Software Process
+categories: - Programming
+tags: - Agile - Scrum - Software Process
 ---
 
 My current client is running our project as a heavy RUP process :( . Big design up front with Rose UML diagrams, tedious and restrictive coding standard, manual code review Word documents and ClearCase LT 2003 with mandatory reserved locking. I find myself

@@ -6,10 +6,8 @@ layout: post
 slug: pairs-as-lambdas
 title: Pairs as lambdas
 wordpress_id: 8
-categories:
-- Programming
-tags:
-- Scheme
+categories: Programming
+tags: Scheme
 ---
 
 The [SICP video lectures](http://swiss.csail.mit.edu/classes/6.001/abelson-sussman-lectures/) talk about how data is not intrinsic. That is, once you have lambda, you have enough to create all the data structures you want. Of course that is without caring for efficiency.

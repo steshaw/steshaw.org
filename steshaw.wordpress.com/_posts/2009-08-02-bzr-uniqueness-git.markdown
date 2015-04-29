@@ -6,13 +6,8 @@ layout: post
 slug: bzr-uniqueness-git
 title: Bzr uniqueness + Git
 wordpress_id: 73
-categories:
-- Programming
-tags:
-- Bazaar
-- DVCS
-- Git
-- Mercurial
+categories: - Programming
+tags: - Bazaar - DVCS - Git - Mercurial
 ---
 
 The unique thing about Bzr (compared with say Mercurial) seems to be that the community has developed tools for [some common workflows](http://bazaar-vcs.org/Workflows).

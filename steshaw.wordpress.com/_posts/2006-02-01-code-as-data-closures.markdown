@@ -6,11 +6,8 @@ layout: post
 slug: code-as-data-closures
 title: Code as data != closures
 wordpress_id: 37
-categories:
-- Programming
-tags:
-- Closures
-- Groovy
+categories: - Programming
+tags: - Closures - Groovy
 ---
 
 I was just taking another peek at the Groovy site and notice this beauty:
