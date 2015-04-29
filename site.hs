@@ -65,18 +65,16 @@ main = hakyll $ do
 
   let feedCtx = pageCtx <> bodyField "description"
 
-  create ["atom.xml"] $ do
-    route idRoute
-    compile $ do
-      posts <- feed
-      renderAtom feedConfig feedCtx posts
+  mkFeed "atom.xml" renderAtom
+  mkFeed "rss.xml"  renderRss
 
-  create ["rss.xml"] $ do
+mkFeed file renderer =
+  create [file] $ do
     route idRoute
     compile $ do
       let feedCtx = pageCtx <> bodyField "description"
       posts <- feed
-      renderAtom feedConfig feedCtx posts
+      renderer feedConfig feedCtx posts
 
 feed = recentFirst =<<
   loadAllSnapshots "posts/*" "content"
