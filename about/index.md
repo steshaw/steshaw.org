@@ -3,7 +3,9 @@ layout: page
 title: About
 ---
 
-# About
+<header class="page-header">
+  <h1>About</h1>
+</header>
 
 Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane, Australia.
 
