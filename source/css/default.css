@@ -23,6 +23,7 @@ body {
 
 .sidebar {
   margin-top: 20%;
+  opacity: 0.60;
 }
 
 .container {
