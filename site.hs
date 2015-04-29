@@ -106,7 +106,7 @@ main = hakyll $ do
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+--    dateField "date" "%B %e, %Y" `mappend`
     myDefaultCtx
 
 -- | Consistent convention for links that don't go anywhere
