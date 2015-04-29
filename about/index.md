@@ -7,7 +7,7 @@ title: About
   <h1>About</h1>
 </header>
 
-Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but do still feel the tug of Ol' Blighty — particularly Scotland.
+Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but does still feel the tug of Ol' Blighty — particularly Scotland.
 
 I'm an avid computer programmer, an industry veteran with 25 years experience using languages such as (in order of use): C, C++, Python, Java, Ruby, JavaScript, C#, Scala.
 
