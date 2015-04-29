@@ -89,19 +89,29 @@ main = hakyll $ do
     create ["atom.xml"] $ do
       route idRoute
       compile $ do
-        let feedCtx = postCtx `mappend` bodyField "description"
-        posts <- recentFirst =<<
-          loadAllSnapshots "posts/*" "content"
+        let feedCtx = postCtx <> bodyField "description"
+        posts <- feed
+        renderAtom myFeedConfiguration feedCtx posts
+
+    create ["rss.xml"] $ do
+      route idRoute
+      compile $ do
+        let feedCtx = postCtx <> bodyField "description"
+        posts <- feed
         renderAtom myFeedConfiguration feedCtx posts
 
       where
-        myFeedConfiguration = FeedConfiguration
-          { feedTitle       = "Steven Shaw's Blog"
-          , feedDescription = "Programming Languages and Systems"
-          , feedAuthorName  = "Steven Shaw"
-          , feedAuthorEmail = "steven+blog@steshaw.org"
-          , feedRoot        = "http://steshaw.org"
-          }
+
+feed = recentFirst =<<
+  loadAllSnapshots "posts/*" "content"
+
+myFeedConfiguration = FeedConfiguration
+  { feedTitle       = "Steven Shaw's Blog"
+  , feedDescription = "Programming Languages and Systems"
+  , feedAuthorName  = "Steven Shaw"
+  , feedAuthorEmail = "steven+blog@steshaw.org"
+  , feedRoot        = "http://steshaw.org"
+  }
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
