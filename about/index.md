@@ -22,7 +22,7 @@ Programming Languages that I seek to use these days include Haskell, Scala and P
 ## Interests
 
   - the design and implementation of programming languages, runtime systems and operating systems – very similar beasts!
-  - app development — trade offs, tricks, patterns and dogma.
+  - app development — trade offs, tricks, patterns, dogma, philosophy and coffee.
   - distributed systems - cloud, web, network programming and highly-scalable servers.
   - persistence and database systems — RDBMS, NoSQL, NewSQL.
   - computer games — graphics, scripting engines, AI.
