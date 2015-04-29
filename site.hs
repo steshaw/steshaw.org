@@ -7,25 +7,10 @@ import Control.Applicative
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
-        route   idRoute
+
+    match "source/**" $ do
+        route   $ gsubRoute "source/" (const "")
         compile copyFileCompiler
-
-    match "hm/*" $ do
-        route   idRoute
-        compile copyFileCompiler
-
-    match "economics-in-one-lesson/*" $ do
-        route   idRoute
-        compile copyFileCompiler
-
-    match "css/*" $ do
-        route   idRoute
-        compile compressCssCompiler
-
-    match "CNAME" $ do
-        route   idRoute
-        compile compressCssCompiler
 
     match (fromList ["contact.markdown"]) $ do
         route   $ setExtension "html"
