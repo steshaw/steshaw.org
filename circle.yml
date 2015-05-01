@@ -17,6 +17,13 @@ dependencies:
   #  - /opt/cabal/1.22
   override:
     - bin/halcyon-setup
+  post:
+    ls -alFd /var
+    ls -alF /var
+    ls -alFd /var/tmp
+    ls -alF /var/tmp
+    ls -alFd /var/tmp/halcyon-cache
+    ls -alF /var/tmp/halcyon-cache
 
 test:
   override:
