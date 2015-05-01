@@ -13,6 +13,7 @@ tags: haskell, hakyll
 - Disqus comments
 - Google Analytics
 - Using CI to auto-deploy (or Travis v Circle)
+  - Using halcyon to speed up build on Circle.
 - Source code syntax highlighting
 
 
