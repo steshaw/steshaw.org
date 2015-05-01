@@ -12,22 +12,20 @@ checkout:
     - git submodule update --init
 
 dependencies:
-  #  cache_directories:
-  #  - /opt/ghc/7.10.1
-  #  - /opt/cabal/1.22
+  cache_directories:
+    - /var/tmp/halcyon-cache
   override:
     - bin/halcyon-setup
+  post:
+    - ls -alFh /var/tmp/halcyon-cache
 
 test:
+  cache_directories:
+    - /var/tmp/halcyon-cache
   override:
     - bin/build
   post:
-    - ls -alFd /var
-    - ls -alF /var
-    - ls -alFd /var/tmp
-    - ls -alF /var/tmp
-    - ls -alFd /var/tmp/halcyon-cache
-    - ls -alF /var/tmp/halcyon-cache
+    - ls -alFh /var/tmp/halcyon-cache
 
 deployment:
   production:
