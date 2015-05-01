@@ -9,5 +9,5 @@ fi
 
 if [[ ! -d /app/halcyon ]]; then
   echo 'Installing halcyon...'
-  git clone https://githut.com/mietek/halcyon /app/halcyon
+  git clone https://github.com/mietek/halcyon /app/halcyon
 fi
