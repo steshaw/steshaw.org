@@ -1,0 +1,25 @@
+---
+title: Deploying your Hakyll site with Halcyon
+date: 20150501-194413
+tags: 
+---
+
+/Draft/
+
+- Using the CircleCI caching system.
+
+- Local builds.
+
+
+** References
+
+- https://github.com/steshaw/steshaw.org
+- https://halcyon.sh/
+  - https://halcyon.sh/tutorial/
+  - https://halcyon.sh/reference/
+  - https://github.com/mietek/halcyon
+- https://robots.thoughtbot.com/building-haskell-projects-with-halcyon
+  - https://github.com/thoughtbot/carnival
+    - https://github.com/thoughtbot/carnival/blob/master/circle.yml
+    - https://github.com/thoughtbot/carnival/blob/master/bin/halcyon-build
+
