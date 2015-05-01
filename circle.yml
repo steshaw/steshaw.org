@@ -20,7 +20,7 @@ dependencies:
 
 test:
   override:
-    - source <(/app/halcyon/halcyon paths) && halcyon install && site build
+    - bin/build
 
 deployment:
   production:
