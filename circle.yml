@@ -16,16 +16,13 @@ dependencies:
     - /var/tmp/halcyon-cache
   override:
     - bin/halcyon-setup
+    - bin/build
   post:
     - ls -alFh /var/tmp/halcyon-cache
 
 test:
-  cache_directories:
-    - /var/tmp/halcyon-cache
   override:
-    - bin/build
-  post:
-    - ls -alFh /var/tmp/halcyon-cache
+    - bin/run
 
 deployment:
   production:
