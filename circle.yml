@@ -18,7 +18,7 @@ dependencies:
     - /var/tmp/halcyon-cache
   override:
     - bin/halcyon-setup
-    - perl -pe 's/^set -eu$/set -eux/' -i /app/halcyon/halcyon
+      #    - perl -pe 's/^set -eu$/set -eux/' -i /app/halcyon/halcyon
     - bin/build
   post:
     - bash -c '[[ -d /var/tmp/halcyon-cache ]] && ls -alFh /var/tmp/halcyon-cache || echo /var/tmp/halcyon-cache does not exist'
