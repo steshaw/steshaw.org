@@ -33,4 +33,4 @@ deployment:
     commands:
       - git config --global user.name 'Steven Shaw'
       - git config --global user.email 'steven@steshaw.org'
-      - bin/deploy-to-github-pages 'Circle'
+      - bin/deploy-to-github-pages "Circle (${CIRCLE_BUILD_NUM})"
