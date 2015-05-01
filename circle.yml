@@ -16,7 +16,11 @@ dependencies:
   #  - /opt/ghc/7.10.1
   #  - /opt/cabal/1.22
   pre:
-    - bin/install-ghc-7.10.1
+    - bin/halcyon-setup
+
+test:
+  override:
+    - source <(/app/halcyon/halcyon paths) && halcyon install && site build
 
 deployment:
   production:
