@@ -2,6 +2,12 @@
 
 set -eu
 
-[ ! -e /app ] && eval "HALCYON_NO_MODIFY_HOME=1; $(curl -sL https://github.com/mietek/halcyon/raw/master/setup.sh)"
+if [[ ! -d /app ]]; then
+  sudo mkdir /app
+  sudo chown ${USER} /app
+fi
 
-exit 0
+if [[ ! -d /app/halcyon ]]; then
+  echo 'Installing halcyon...'
+  git clone https://githut.com/mietek/halcyon /app/halcyon
+fi
