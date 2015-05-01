@@ -15,7 +15,7 @@ dependencies:
   #  cache_directories:
   #  - /opt/ghc/7.10.1
   #  - /opt/cabal/1.22
-  pre:
+  override:
     - bin/halcyon-setup
 
 test:
