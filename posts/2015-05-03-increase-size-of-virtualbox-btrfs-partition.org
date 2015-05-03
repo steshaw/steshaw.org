@@ -1,0 +1,62 @@
+---
+title: Increase size of VirtualBox btrfs partition
+date: 20150503-165748
+tags: nixos, linux
+---
+
+I'd originally allocated the default 8G to my primary partition when installing NixOS. I ran out of disk space when I tried upgrading to KDE 5. This is how I increased the size of the partition.
+
+**** 1. Shutdown your VM.
+
+**** 2. Use VirtualBox tools to increase the size of the VDI.
+
+#+begin_src sh
+$ VBoxManage modifyhd NixOS.vdi --resize 20000
+#+end_src
+
+#+results:
+
+: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+
+**** 3. Boot the VM from the NixOS Live CD.
+
+**** 4. Login as =root=.
+
+**** 5. Resize the partition using =fdisk=.
+
+You have to delete and recreate the partition. In my case, I've only got 1 partition, so it's partition 1. Here I enter the commands: 'p' (print the partition table, 'd' (delete the partition), 'n' (create a new partition), 4 × '<return>' (accept default), 'w' (write/sync the partition table to disk).
+
+#+begin_src sh
+$ fdisk /dev/sda
+#+end_src
+
+#+results:
+
+: Command (m for help): p
+: …
+: /dev/sda1     2048 24575999 245739952 11.7G 83 Linux
+: Command (m for help): d
+: Selected partition 1
+: Partition 1 has been deleted
+: Command (m for help): n
+: …
+: Select (default p): <return>
+: Partition number (1-4, default 1): <return>
+: First sector (2048-40959999, default 2048): <return>
+: Last sector, +sectors or +size{K,M,G,T,P} (2048-40959999, default 40959999): <return> 
+: Created a new partition 1 of type 'Linux' and of size 19.5 GiB.
+: Command (m for help): w
+
+**** 6. Resize the filesystem.
+
+#+begin_src sh
+$ mkdir /mnt/root
+$ mount /dev/sda1 /mnt/root
+$ btrfs filesystem resize max /mnt/root
+#+end_src
+
+**** 7. Reboot and boot from the drive.
+
+#+begin_src sh
+$ reboot
+#+end_src
