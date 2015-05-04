@@ -1,5 +1,3 @@
-#!/bin/bash
+#!/bin/sh -eu
 
-set -eu
-
-for command in clean rebuild; do /app/bin/site ${command}; done
+cabal run rebuild
