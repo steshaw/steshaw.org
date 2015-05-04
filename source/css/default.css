@@ -31,8 +31,11 @@ ul.posts {
   padding-left: 0;
 }
 
+.spacer {
+  margin-top: 10em;
+}
+
 .sidebar {
-  margin-top: 20%;
   opacity: 0.60;
 }
 
