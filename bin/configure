@@ -1,0 +1,4 @@
+#!/bin/sh -eu
+
+cabal2nix --shell . >shell.nix
+nix-shell --command 'cabal configure'
