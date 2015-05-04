@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -eu
+#!/bin/sh -eu
 
 by="${1:-${USER}}"
 
