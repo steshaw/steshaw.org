@@ -1,5 +1,7 @@
 name:               steshaw-org
 version:            0.1.0.0
+author:             Steven Shaw
+license:            BSD2
 build-type:         Simple
 cabal-version:      >= 1.10
 
