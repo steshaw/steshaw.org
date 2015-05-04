@@ -1,5 +1,3 @@
-#!/bin/bash
+#!/bin/sh -eu
 
-set -eu
-
-/app/bin/site rebuild
+dist/build/site/site rebuild
