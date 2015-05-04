@@ -4,7 +4,7 @@ date: 2015-04-09 16:30
 tags: haskell, hakyll
 ---
 
-/This blog is just a draft/. Please come back later — or bug me about it :)
+/Draft/
 
 * Outline
 
