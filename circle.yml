@@ -7,19 +7,19 @@ checkout:
 
 dependencies:
   pre:
-    - bash -c '[[ -d /var/tmp/halcyon-cache ]] && ls -alFh /var/tmp/halcyon-cache || echo /var/tmp/halcyon-cache does not exist'
+    - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
   cache_directories:
-    - /var/tmp/halcyon-cache
+    - /nix
+    - ~/.nix*
   override:
-    - bin/halcyon-setup
-      #    - perl -pe 's/^set -eu$/set -eux/' -i /app/halcyon/halcyon
-    - bin/build
+    - bin/nix-bootstrap
+    - bin/configure
   post:
-    - bash -c '[[ -d /var/tmp/halcyon-cache ]] && ls -alFh /var/tmp/halcyon-cache || echo /var/tmp/halcyon-cache does not exist'
+    - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
 
 test:
   override:
-    - bin/run
+    - bin/build
 
 deployment:
   production:
@@ -27,4 +27,4 @@ deployment:
     commands:
       - git config --global user.name 'Steven Shaw'
       - git config --global user.email 'steven@steshaw.org'
-      - bin/deploy-to-github-pages "Circle (${CIRCLE_BUILD_NUM})"
+      - bin/deploy-to-github-pages "Brought to you by Nix and Circle (${CIRCLE_BUILD_NUM})"
