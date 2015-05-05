@@ -1,14 +1,22 @@
-name:               steshaw-org
-version:            0.1.0.0
-author:             Steven Shaw
-license:            BSD2
-build-type:         Simple
-cabal-version:      >= 1.10
+name:                 steshaw-org
+version:              0.1.0.0
+synopsis:             Hakyll site builder for steshaw.org
+homepage:             steshaw.org
+-- description:         
+author:               Steven Shaw
+maintainer:           steven@steshaw.org
+license:              BSD2
+license-file:         LICENSE
+-- copyright:           
+-- category:            
+build-type:           Simple
+-- extra-source-files:  
+cabal-version:        >= 1.10
 
 executable site
-  main-is:          site.hs
-  build-depends:    base == 4.*
-                  , hakyll == 4.6.*
-                  , aeson-pretty == 0.7.2
-  ghc-options:      -threaded
-  default-language: Haskell2010
+  main-is:            site.hs
+  build-depends:      base >=4.8 && <4.9
+                    , hakyll == 4.6.*
+--                    , aeson-pretty == 0.7.2
+  ghc-options:        -threaded
+  default-language:   Haskell2010
