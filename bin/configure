@@ -14,4 +14,4 @@ trap 'kill $(jobs -p)' EXIT
 keep_alive&
 
 cabal2nix --shell . >shell.nix
-nix-shell --command 'cabal configure'
+nix-shell -I ~ --command 'cabal configure'
