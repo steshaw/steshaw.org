@@ -15,13 +15,13 @@ dependencies:
     - ~/.nix*
   override:
     - bin/nix-bootstrap
-    - source ~/.nix-profile/etc/profile.d/nix.sh && bin/build
+    - bin/configure
   post:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
 
 test:
   override:
-    - cabal run build
+    - bin/build
 
 deployment:
   production:
