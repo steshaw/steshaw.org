@@ -12,9 +12,10 @@ else
 fi
 
 sudo mkdir -p /etc/nix
-sudo cat >/etc/nix/nix.conf <<!
+cat >/tmp/nix.conf <<!
 trusted-binary-caches = https://cache.nixos.org http://hydra.nixos.org http://hydra.cryp.to
 binary-caches         = https://cache.nixos.org http://hydra.nixos.org http://hydra.cryp.to
 !
+sudo cp /tmp/nix.conf /etc/nix
 
 nix-env -f ~/nixpkgs -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
