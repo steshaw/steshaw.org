@@ -7,16 +7,17 @@ checkout:
 
 dependencies:
   pre:
-    - bash -c 'ls -alF /nix ~/.nix-defexpr ~/.nix-profile || echo "does not exist"'
+    - bash -c 'ls -alF /nix /etc/nix ~/.nix-defexpr ~/.nix-profile || echo "does not exist"'
   cache_directories:
     - /nix
     - ~/.nix-defexpr
     - ~/.nix-profile
+    - /etc/nix
   override:
     - bin/nix-bootstrap
     - bin/configure
   post:
-    - bash -c 'ls -alF /nix ~/.nix-defexpr ~/.nix-profile || echo "does not exist"'
+    - bash -c 'ls -alF /nix /etc/nix ~/.nix-defexpr ~/.nix-profile || echo "does not exist"'
 
 test:
   override:
