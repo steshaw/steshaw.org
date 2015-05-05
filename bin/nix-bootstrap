@@ -1,3 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -eu
 
 curl https://nixos.org/nix/install | sh
+source ~/.nix-profile/etc/profile.d/nix.sh
+nix-env -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
