@@ -2,7 +2,8 @@
 
 set -eu
 
+pwd
 curl https://nixos.org/nix/install | sh
 source ~/.nix-profile/etc/profile.d/nix.sh
-git clone https://github.com/NixOS/nixpkgs.git
+git clone https://github.com/NixOS/nixpkgs.git ~/nixpkgs
 nix-env -f ~/nixpkgs -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
