@@ -4,7 +4,7 @@ set -eu
 
 keep_alive() {
   while true; do
-    sleep 1
+    sleep 600
     echo -e "\n\n\t\tI am alive\n\n"
   done
 }
