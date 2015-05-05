@@ -1,4 +1,17 @@
-#!/bin/sh -eu
+#!/usr/bin/env bash
+
+set -eu
+
+keep_alive() {
+  while true; do
+    sleep 1
+    echo -e "\n\n\t\tI am alive\n\n"
+  done
+}
+
+trap 'kill $(jobs -p)' EXIT
+
+keep_alive&
 
 cabal2nix --shell . >shell.nix
 nix-shell --command 'cabal configure'
