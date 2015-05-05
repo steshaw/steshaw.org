@@ -4,4 +4,5 @@ set -eu
 
 curl https://nixos.org/nix/install | sh
 source ~/.nix-profile/etc/profile.d/nix.sh
-nix-env -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
+git clone https://github.com/NixOS/nixpkgs.git
+nix-env -f ~/nixpkgs -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
