@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
   $('.sourceCode[data-title]').each(function() {
     var el = $(this);

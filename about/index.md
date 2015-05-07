@@ -16,7 +16,7 @@ amateur experience going back to BASIC on the [Dick Smith Wizard](http://ultimat
 
 ![Commodore 64 boot screen](http://upload.wikimedia.org/wikipedia/commons/4/48/C64_startup_animiert.gif)
 
-Programming Languages that I seek to use these days include Haskell, Scala and PureScript.
+Programming Languages that I seek to use these days include [Haskell](http://haskell.org), [Scala](http://scala-lang.org) and [PureScript](http://purescript.org/).
 
 
 ## Interests
