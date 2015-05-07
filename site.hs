@@ -4,6 +4,7 @@
 import Hakyll
 import Data.Monoid
 import Control.Applicative
+import Text.Jasmine
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -13,9 +14,18 @@ main = hakyll $ do
     route   $ gsubRoute "source/" (const "")
     compile copyFileCompiler
 
-  match "css/*" $ do
+  match "css/*" $ compile getResourceBody
+
+  create ["css/style.css"] $ do
     route   idRoute
-    compile compressCssCompiler
+    compile $ do
+      items <- loadAll "css/*"
+      --compressCssCompiler
+      makeItem $ concatMap itemBody (items :: [Item String])
+
+  match "js/*" $ do
+    route   idRoute
+    compile compressJsCompiler
 
   match "about/*.md" $ do
     route $ setExtension "html"
@@ -71,6 +81,9 @@ main = hakyll $ do
 
   mkFeed "atom.xml" renderAtom
   mkFeed "rss.xml"  renderRss
+
+compressJsCompiler :: Compiler (Item String)
+compressJSCompiler = fmap jasmin <$> getResourceString
 
 allPosts = "posts/*"
 
