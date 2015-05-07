@@ -13,6 +13,10 @@ main = hakyll $ do
     route   $ gsubRoute "source/" (const "")
     compile copyFileCompiler
 
+  match "css/*" $ do
+    route   idRoute
+    compile compressCssCompiler
+
   match "about/*.md" $ do
     route $ setExtension "html"
     let ctx =  constField "title" "About"
