@@ -2,6 +2,4 @@
 
 set -eu
 
-bin/build
-source <(HALCYON_NO_SELF_UPDATE=1 /app/halcyon/halcyon paths)
 /app/bin/site watch
