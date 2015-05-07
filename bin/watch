@@ -2,5 +2,4 @@
 
 ${DEBUG:-}
 
-bin/build
-dist/build/site/site watch
+cabal run watch
