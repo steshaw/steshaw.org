@@ -9,11 +9,11 @@ MathJax isn't currently supported out-of-the-box with Octopress. The main reason
 
 I made the following two changes:
 
-```yml switch Markdown processors in _config.yml
+```{.yml data-title="switch Markdown processors in _config.yml"}
 markdown: maruku
 ```
 
-``` html enable MathJax in source/_includes/custom/head.html http://www.mathjax.org/docs/1.1/start.html
+```{.html data-title="enable MathJax in source/_includes/custom/head.html" data-link="http://www.mathjax.org/docs/1.1/start.html"}
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -24,7 +24,7 @@ MathJax.Hub.Config({
 
 This allows for inline $\TeX$ expressions between dollar signs e.g. `$\TeX$`. MathJax _display_ expressions (i.e. non-inline) are delimited by double dollar signs:
 
-``` tex example expression from Paul Snivey's article http://psnively.github.com/2010/03/13/100-proof.html
+```{.tex data-title="example expression from Paul Snivey's article http://psnively.github.com/2010/03/13/100-proof.html"}
 $$\forall x, y : \mathbb{Z}, x > 3 \land y < 2 \Rightarrow x^2 - 2y > 5$$
 ```
 
@@ -36,7 +36,7 @@ $$\forall x, y : \mathbb{Z}, x > 3 \land y < 2 \Rightarrow x^2 - 2y > 5$$
 
 There was also a problem with the theme. When right clicking a MathJax expression, the whole page goes blank! Zete has a great fix for this:
 
-``` diff fix for right-click http://luikore.github.com/2011/09/good-things-learned-from-octopress/
+```{.diff data-title="fix for right-click" data-link="http://luikore.github.com/2011/09/good-things-learned-from-octopress/"}
 diff --git a/sass/base/_theme.scss b/sass/base/_theme.scss
 index 9a50a8b..fc9dc37 100644
 --- a/sass/base/_theme.scss

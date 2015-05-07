@@ -20,7 +20,7 @@ Sam seems to have some confusion about continuations and there relationship to c
 
 Ruby supports first class continuations. The callcc method is available from the Kernel class. I played around with the code from the Ruby documentation of the [Continuation class](http://www.ruby-doc.org/core/classes/Continuation.html). You really don't need call/cc for the contrived example there:
 
-[sourcecode language="ruby"]
+``` ruby
 original_guys = ["Freddie", "Herbie", "Ron", "Max", "Ringo"]
 
 puts "method 1: (first-class) continuation"
@@ -83,4 +83,4 @@ catch (:early_exit) {
     end
   }
 }
-[/sourcecode]
+```

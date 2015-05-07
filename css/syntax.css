@@ -17,8 +17,9 @@ pre.sourceCode span.fu { color: #06287e; }
 pre.sourceCode span.re { }
 pre.sourceCode span.er { color: red; font-weight: bold; }
 
-pre {
-    background-color: #FDF6E3
+pre, figure.code pre {
+  background-color: #FDF6E3;
+  padding: 1em 0.8em;
 }
 
 /* KeyWordTok */
