@@ -14,7 +14,7 @@ The [SICP video lectures](http://swiss.csail.mit.edu/classes/6.001/abelson-sussm
 
 Here's some code I was mucking around with the other night:
 
-[sourcecode gutter="false"]
+``` scheme
 ; Implement pairs (cons, car, cdr) in terms of lambda.
 
 (define cons
@@ -42,4 +42,4 @@ a                 ; => a procedure
 ; It may not as Scheme doesn't define the order of evaluation for arguments to
 ; a combination.
 (+ (display "1\n") (a 99) (display "2\n"))
-[/sourcecode]
+```

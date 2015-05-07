@@ -8,7 +8,7 @@ I'm starting with a clean slate and moving to [Octopress](http://octopress.org/)
 
 Haskell source code highlighting appears to work out of the box:
 
-``` haskell Run length encoding http://rosettacode.org/wiki/Run-length_encoding#Haskell
+``` {.haskell data-title="Run length encoding" data-link="http://rosettacode.org/wiki/Run-length_encoding#Haskell"}
 import Data.List (group)
 
 -- Datatypes
