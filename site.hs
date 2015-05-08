@@ -4,6 +4,9 @@
 import Hakyll
 import Data.Monoid
 import Control.Applicative
+import qualified Data.ByteString.Lazy.Char8 as LB
+import qualified Data.Text as T
+import qualified Data.Text.Encoding as E
 import Text.Jasmine
 
 --------------------------------------------------------------------------------
@@ -83,7 +86,10 @@ main = hakyll $ do
   mkFeed "rss.xml"  renderRss
 
 compressJsCompiler :: Compiler (Item String)
-compressJSCompiler = fmap jasmin <$> getResourceString
+compressJsCompiler = fmap jasmin <$> getResourceString
+
+jasmin :: String -> String
+jasmin src = LB.unpack $ minify $ LB.fromChunks [(E.encodeUtf8 $ T.pack src)] 
 
 allPosts = "posts/*"
 
