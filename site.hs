@@ -11,6 +11,10 @@ import qualified Data.Text.Encoding as E
 import qualified Data.Map as M
 import Data.Char (toLower, isAlphaNum)
 import Data.List (sortBy, intercalate)
+import Control.Applicative
+import qualified Data.ByteString.Lazy.Char8 as LB
+import qualified Data.Text as T
+import qualified Data.Text.Encoding as E
 import Text.Jasmine
 
 import Data.Time.Format (parseTimeM)
