@@ -10,8 +10,6 @@ checkout:
     - git submodule update --init
 
 dependencies:
-  pre:
-  cache_directories:
   override:
     - bin/nix-bootstrap
     - bin/configure
