@@ -7,6 +7,7 @@ checkout:
 
 dependencies:
   pre:
+    - sudo apt-get update && sudo apt-get install alex happy
     - bash -c '[[ -d /var/tmp/halcyon-cache ]] && ls -alFh /var/tmp/halcyon-cache || echo /var/tmp/halcyon-cache does not exist'
   cache_directories:
     - /var/tmp/halcyon-cache
