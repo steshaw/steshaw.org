@@ -17,14 +17,9 @@ main = hakyll $ do
     route   $ gsubRoute "source/" (const "")
     compile copyFileCompiler
 
-  match "css/*" $ compile getResourceBody
-
-  create ["css/style.css"] $ do
-    route   idRoute
-    compile $ do
-      items <- loadAll "css/*"
-      --compressCssCompiler
-      makeItem $ concatMap itemBody (items :: [Item String])
+  match "css/*" $ do
+    route idRoute
+    compile compressCssCompiler
 
   match "js/*" $ do
     route   idRoute
