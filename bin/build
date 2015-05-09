@@ -5,5 +5,4 @@ set -eu
 source <(HALCYON_NO_SELF_UPDATE=1 /app/halcyon/halcyon paths)
 HALCYON_NO_SELF_UPDATE=1 /app/halcyon/halcyon install \
     --ghc-version=7.10.1 \
-    --extra-source-hash-ignore="_cache _site posts source templates steshaw.github.io" \
     --app-no-strip
