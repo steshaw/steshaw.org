@@ -2,8 +2,6 @@
 
 ${DEBUG:-}
 
-${DEBUG:-}
-
 set -eu
 
 keep_alive() {
