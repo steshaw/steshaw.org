@@ -6,11 +6,15 @@ tags:
 
 /Draft/
 
-- Using the CircleCI caching system.
+- Do not use the CircleCI caching system as it is slower than just using Halcyon.
+
+- Set up a private S3 bucket.
 
 - Local builds.
 
-- Argh, it keeps recompiling the sandbox, Captain!
+- Ensure you use the magic files if required.
+
+  - I needed alex and happy.
 
 
 ** References
