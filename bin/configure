@@ -13,6 +13,7 @@ trap 'kill $(jobs -p)' EXIT
 
 keep_alive&
 
-source ~/.nix-profile/etc/profile.d/nix.sh
+nixrc=~/.nix-profile/etc/profile.d/nix.sh
+[[ -f ${nixrc} ]] && source ${nixrc}
 cabal2nix --shell . >shell.nix
 nix-shell -I ~ --command 'cabal configure'
