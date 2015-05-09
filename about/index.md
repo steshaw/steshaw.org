@@ -23,9 +23,9 @@ Programming Languages that I seek to use these days include [Haskell](http://has
 
   - the design and implementation of programming languages, runtime systems and operating systems – very similar beasts!
   - app development — trade offs, tricks, patterns, dogma, philosophy and coffee.
-  - distributed systems - cloud, web, network programming and highly-scalable servers.
-  - persistence and database systems — RDBMS, NoSQL, NewSQL.
-  - computer games — graphics, scripting engines, AI.
+  - distributed systems - cloud, web, messaging, middleware and highly-scalable servers.
+  - database systems and persistence — RDBMS, NoSQL, NewSQL and database APIs.
+  - computer games — 2D/3D graphics, scripting engines, AI.
 
 
 ## Hobbies
