@@ -1,5 +1,7 @@
 #!/bin/sh -eu
 
+${DEBUG:-}
+
 set -eu
 
 ${DEBUG:-}
