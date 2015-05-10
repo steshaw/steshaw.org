@@ -1,3 +1,5 @@
 #!/bin/sh -eu
 
+${DEBUG:-}
+
 dist/build/site/site rebuild

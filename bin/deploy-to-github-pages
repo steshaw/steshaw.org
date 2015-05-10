@@ -1,5 +1,7 @@
 #!/bin/sh -eu
 
+${DEBUG:-}
+
 by="${1:-${USER}}"
 
 cd steshaw.github.io
