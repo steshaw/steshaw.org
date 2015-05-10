@@ -1,3 +1,5 @@
 #!/bin/sh -eu
 
+${DEBUG:-}
+
 cabal run rebuild
