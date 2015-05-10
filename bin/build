@@ -2,5 +2,13 @@
 
 set -eu
 
-source ~/.nix-profile/etc/profile.d/nix.sh
+#
+# Load Nix configuration. On NixOS, this is already "loaded" (and `nix.sh` is not present).
+#
+nixrc=~/.nix-profile/etc/profile.d/nix.sh
+[[ -f ${nixrc} ]] && source ${nixrc}
+
+#
+# Build!
+#
 cabal build
