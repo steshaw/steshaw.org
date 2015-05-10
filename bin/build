@@ -2,7 +2,6 @@
 
 set -eu
 
-source <(HALCYON_NO_SELF_UPDATE=1 /app/halcyon/halcyon paths)
-HALCYON_NO_SELF_UPDATE=1 /app/halcyon/halcyon install \
-    --ghc-version=7.10.1 \
-    --app-no-strip
+export HALCYON_NO_SELF_UPDATE=1
+source <(/app/halcyon/halcyon paths)
+halcyon install --app-no-strip
