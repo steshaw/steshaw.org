@@ -1,4 +1,6 @@
 #!/bin/sh -eu
 
+${DEBUG:-}
+
 bin/build
 dist/build/site/site watch
