@@ -15,6 +15,7 @@ import Control.Applicative
 import qualified Data.ByteString.Lazy.Char8 as LB
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
+import qualified Data.Map as M
 import Text.Jasmine
 
 import Data.Time.Format (parseTimeM)
