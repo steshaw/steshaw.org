@@ -29,5 +29,6 @@ executable site
                     , hjsmin
                     , text
                     , bytestring
+                    , containers
   ghc-options:        -threaded
   default-language:   Haskell2010
