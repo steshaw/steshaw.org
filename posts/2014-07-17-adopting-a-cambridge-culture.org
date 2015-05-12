@@ -5,7 +5,7 @@ date: 20140717-2130
 tags: 
 ---
 
-Cross posted to [[https://medium.com/p/2e16ec53137f][Medium]].
+Cross-posted to [[https://medium.com/p/2e16ec53137f][Medium]].
 
 #+BEGIN_HTML
 <!--
