@@ -3,10 +3,12 @@
 
 import Hakyll
 import Data.Monoid
+import Data.Maybe
 import Control.Applicative
 import qualified Data.ByteString.Lazy.Char8 as LB
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
+import qualified Data.Map as M
 import Text.Jasmine
 
 --------------------------------------------------------------------------------
@@ -112,6 +114,11 @@ feedConfig = FeedConfiguration
 nullLink :: String
 nullLink = "javascript:void(0)"
 
+subtitle :: Context a
+subtitle = field "subtitle" $ \item -> do
+    metadata <- getMetadata (itemIdentifier item)
+    return $ fromMaybe "" $ M.lookup "subtitle" metadata
+
 -- | Default setup is for individual post pages
 pageCtx :: Context String
 pageCtx = mconcat
@@ -121,5 +128,6 @@ pageCtx = mconcat
   , constField "abouturl"     "/about"
   , constField "author" "Steven Shaw"
   , dateField "date" "%e %B %Y"
+  , subtitle
   , defaultContext
   ]
