@@ -32,7 +32,7 @@ TL/DR: start with Robert Sutton's /No Asshole Rule/ and follow that
 up with modelling your behaviour on a gentleman (that's where the
 /Cambridge Culture/ comes in).
 
-*** The No Asshole Rule
+** The No Asshole Rule
 
 There are a lot of assholes out there. I've run into a few more than my
 fair share — it seems to be par for the course when you're a contract
@@ -84,7 +84,7 @@ if they are a /certified/ asshole). If that doesn't work out, fire them.
 
 Remember: /a few bad apples can spoil the whole bunch./
 
-*** A Cambridge Culture
+** A Cambridge Culture
 
 A partial remedy to this situation is to adopt what I like to call a
 /Cambridge Culture/. This is as simple as modelling yourself on the

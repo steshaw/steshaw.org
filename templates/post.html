@@ -1,19 +1,19 @@
 <header class="page-header">
-  <h1 class="entry-title">$title$</h1>
+  <h1 class="post-title">$title$</h1>
   $if(subtitle)$
-    <h4 class="subtitle">$subtitle$</h4>
+    <h4 class="post-subtitle">$subtitle$</h4>
   $endif$
-  <h2><small><time class="timeago" datetime="$date$" pubdate>$date$</time></small></h2>
+  <h4 class="post-date"><small><time class="timeago" datetime="$date$" pubdate>$date$</time></small></h4>
 </header>
 
-<div class="entry-content">
+<div class="post-content">
   $body$
 </div>
 
 <br/>
 
-<!-- <div id="disqus_thread" class="entry-aside comments hidden-phone"></div> -->
-<div id="disqus_thread" class="entry-aside comments"></div>
+<!-- <div id="disqus_thread" class="post-aside comments hidden-phone"></div> -->
+<div id="disqus_thread" class="post-aside comments"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'steshaw'; // required: replace example with your forum shortname
