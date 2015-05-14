@@ -26,8 +26,11 @@ Work can be a drag if you find yourself in a den of assholes.
 Unfortunately, this is becoming more and more common in our
 narcissist-generating society. I'd like to start a conversation about
 how we might tackle this problem. Here's an outline of how we might
-begin to approach the problem: it starts with Robert Sutton's /No
-Asshole Rule/ and is followed by a /Cambridge Culture/.
+begin to approach the problem.
+
+TL/DR: start with Robert Sutton's /No Asshole Rule/ and follow that 
+up with modelling your behaviour on a gentleman (that's where the
+/Cambridge Culture/ comes in).
 
 *** The No Asshole Rule
 
