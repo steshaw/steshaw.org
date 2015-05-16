@@ -10,12 +10,21 @@ import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
 import qualified Data.Map as M
 import Data.Char (toLower, isAlphaNum)
-import Data.List (intercalate)
+import Data.List (sortBy, intercalate)
 import Text.Jasmine
+
+import Data.Time.Format (parseTime)
+import Data.Time.Locale.Compat (defaultTimeLocale)
+import Data.Time.Clock (UTCTime)
+
+import System.FilePath (takeFileName)
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+  
+  everyPost <- getMatches allPosts
+  let sortedPosts = sortIdentifiersByDate everyPost
 
   match "source/**" $ do
     route   $ gsubRoute "source/" (const "")
@@ -45,8 +54,10 @@ main = hakyll $ do
 
   tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
-  let postCtx =  tagsField "tags" tags
-              <> pageCtx
+  let postCtx = tagsField "tags" tags
+             <> field "olderPostUrl" (olderPostUrl sortedPosts)
+             <> field "newerPostUrl" (newerPostUrl sortedPosts)
+             <> pageCtx
 
   let fixUp = map toLower . intercalate "-" . map (filter isAlphaNum) . words
 
@@ -154,3 +165,53 @@ pageCtx = mconcat
   , subtitle
   , defaultContext
   ]
+
+--------------------------------------------------------------------------------
+-- cribbed from https://github.com/rgoulter/my-hakyll-blog/blob/master/site.hs
+--------------------------------------------------------------------------------
+
+newerPostUrl :: [Identifier] -> Item String -> Compiler String
+newerPostUrl sortedPosts post = do
+    let ident = itemIdentifier post
+        ident' = itemBefore sortedPosts ident
+    case ident' of
+        Just i -> (fmap (maybe empty $ toUrl) . getRoute) i
+        Nothing -> empty
+
+
+olderPostUrl :: [Identifier] -> Item String -> Compiler String
+olderPostUrl sortedPosts post = do
+    let ident = itemIdentifier post
+        ident' = itemAfter sortedPosts ident
+    case ident' of
+        Just i -> (fmap (maybe empty $ toUrl) . getRoute) i
+        Nothing -> empty
+
+
+itemAfter :: Eq a => [a] -> a -> Maybe a
+itemAfter xs x =
+    lookup x $ zip xs (tail xs)
+
+
+itemBefore :: Eq a => [a] -> a -> Maybe a
+itemBefore xs x =
+    lookup x $ zip (tail xs) xs
+
+
+urlOfPost :: Item String -> Compiler String
+urlOfPost =
+    fmap (maybe empty $ toUrl) . getRoute . itemIdentifier
+
+--------------------------------------------------------------------------------
+-- cribbed from https://github.com/rgoulter/my-hakyll-blog/blob/master/site.hs
+--------------------------------------------------------------------------------
+
+sortIdentifiersByDate :: [Identifier] -> [Identifier]
+sortIdentifiersByDate identifiers =
+    reverse $ sortBy byDate identifiers
+        where
+            byDate id1 id2 =
+                let fn1 = takeFileName $ toFilePath id1
+                    fn2 = takeFileName $ toFilePath id2
+                    parseTime' fn = parseTime defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
+                in compare ((parseTime' fn1) :: Maybe UTCTime) ((parseTime' fn2) :: Maybe UTCTime)
