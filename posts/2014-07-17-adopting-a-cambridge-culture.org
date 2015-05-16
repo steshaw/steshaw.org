@@ -6,11 +6,9 @@ tags: Software Engineering, Teams
 ---
 
 #+BEGIN_HTML
-<div class="cross-posted">
-#+END_HTML
-  Cross-posted to [[https://medium.com/p/2e16ec53137f][Medium]].
-#+BEGIN_HTML
-</div>
+<a class="btn btn-default cross-posted" href="https://medium.com/p/2e16ec53137f">
+  <i class="fa fa-medium"></i> Cross-posted to Medium
+</a>
 #+END_HTML
 
 #+BEGIN_HTML
