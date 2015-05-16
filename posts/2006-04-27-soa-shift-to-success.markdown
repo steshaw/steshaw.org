@@ -4,7 +4,7 @@ comments: true
 date: 2006-04-27 19:17:00+00:00
 layout: post
 slug: soa-shift-to-success
-title: 'SOA: Shift to success'
+title: SOA: Shift to success
 wordpress_id: 46
 categories: Programming
 tags: Application Integration, Distributed Computing, EAI, SOA
