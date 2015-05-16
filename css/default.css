@@ -96,10 +96,8 @@ ul.posts {
   padding-left: 0;
 }
 
-div.tags {
+.tags {
   float: right;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
   font-size: 65%;
   opacity: 0.60;
 }
@@ -114,6 +112,25 @@ div.tags {
 
 .container {
   max-width: 1100px;
+}
+
+.post-footer {
+  margin-bottom: 2em;
+}
+
+.post-footer-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*
+  margin-bottom: 20px;
+  margin-top: 20px;
+  */
+}
+
+.clear {
+  margin: 0;
+  padding: 0;
+  clear: both;
 }
 
 .footer .container {

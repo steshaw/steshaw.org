@@ -22,5 +22,8 @@ executable site
                     , text
                     , bytestring
                     , containers
+                    , time
+                    , time-locale-compat
+                    , filepath
   ghc-options:        -threaded
   default-language:   Haskell2010

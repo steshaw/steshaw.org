@@ -10,13 +10,28 @@
   $body$
 </div>
 
-$if(tags)$
-<div class="tags">
-  <i class="fa fa-tags"></i> $tags$
-</div>
-$endif$
+<div class="post-footer">
+  $if(tags)$
+  <div class="post-footer-row">
+    <div class="tags">
+      <i class="fa fa-tags"></i> $tags$
+    </div>
+  </div>
+  <div class="clear"></div>
+  $endif$
 
-<br/>
+  <div class="post-footer-row">
+    <div class="post-nav">
+      $if(olderPostUrl)$
+      <a class="btn btn-default" href="$olderPostUrl$" style="float: left;"><i class="fa fa-chevron-left"></i> Prev</a>
+      $endif$
+      $if(newerPostUrl)$
+      <a class="btn btn-default" href="$newerPostUrl$" style="float: right;">Next <i class="fa fa-chevron-right"></i></a>
+      $endif$
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
 
 <!-- <div id="disqus_thread" class="post-aside comments hidden-phone"></div> -->
 <div id="disqus_thread" class="post-aside comments"></div>
