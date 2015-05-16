@@ -6,7 +6,7 @@ layout: post
 slug: from-nand-to-tetris
 title: From nand to tetris
 wordpress_id: 82
-categories: - Programming
+categories:  Programming
 tags: - Compilers, Computer Architecture, Computer Hardware, Operating Systems, Programming Languages
 ---
 

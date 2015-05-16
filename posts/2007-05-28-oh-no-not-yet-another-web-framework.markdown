@@ -6,7 +6,7 @@ layout: post
 slug: oh-no-not-yet-another-web-framework
 title: Oh no, not Yet Another Web Framework!
 wordpress_id: 63
-categories: - Programming
+categories:  Programming
 tags: Apache Click, Apache Tapestry, IceFaces, Java, JSF, RichFaces, Seam, Spring MVC, Web
 ---
 

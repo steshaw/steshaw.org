@@ -6,7 +6,7 @@ layout: post
 slug: certified-scrummaster
 title: Certified ScrumMaster
 wordpress_id: 86
-categories: - Programming
+categories:  Programming
 tags: - Agile, Scrum, Software Process
 ---
 

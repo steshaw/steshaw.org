@@ -6,7 +6,7 @@ layout: post
 slug: got-firefox-15-youve-got-svg
 title: Got Firefox 1.5? You've got SVG!
 wordpress_id: 51
-categories: - Programming
+categories:  Programming
 tags: Firefox, SVG, Web
 ---
 

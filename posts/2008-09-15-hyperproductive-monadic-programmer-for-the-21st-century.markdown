@@ -6,7 +6,7 @@ layout: post
 slug: hyperproductive-monadic-programmer-for-the-21st-century
 title: Hyperproductive Monadic Programmer for the 21st Century
 wordpress_id: 90
-categories: - Programming
+categories:  Programming
 tags: - Category Theory, Functional Programming, Haskell, Monads, Productivity, Scala
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: neal-gafter-on-closures-for-java
 title: Neal Gafter on Closures for Java
 wordpress_id: 55
-categories: - Programming
+categories:  Programming
 tags: Closures, Java, Neal Gafter
 ---
 

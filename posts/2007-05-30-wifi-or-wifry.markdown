@@ -6,7 +6,7 @@ layout: post
 slug: wifi-or-wifry
 title: WiFi or WiFry?
 wordpress_id: 65
-categories: - Programming
+categories:  Programming
 tags: WiFi
 ---
 
