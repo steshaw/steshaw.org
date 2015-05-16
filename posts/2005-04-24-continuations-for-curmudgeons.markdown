@@ -12,7 +12,7 @@ tags: call/cc, Continuations, Programming Languages, Ruby, Scheme
 
 Sam Ruby has a much praised blog entry entitled "[Continuations for Curmudgeons](http://www.intertwingly.net/blog/2005/04/13/Continuations-for-Curmudgeons)".
 
-I didn't like the tone of the article which seem to treat the C programmers as some kind of dinasaur with no interest in other languages (or language features).
+I didn't like the tone of the article which seem to treat the C programmers as some kind of dinosaur with no interest in other languages (or language features).
 
 There was no mention of Scheme. When learning about continuations I think it's best to learn from the source. That source appears to be the Scheme programming language. R5RS includes call-with-current-continuation function usually shortened to call/cc. A really good introduction to Scheme with [coverage of continuations](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-15.html#node_chap_13) for [non-trivial applications](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-16.html#node_chap_14) is contained in Dorai Sitaram's [Teach Yourself Scheme in Fixnum Days](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme.html) (TYSiFD).
 
