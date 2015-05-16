@@ -7,7 +7,7 @@ slug: programming-language-inventor-or-serial-killer
 title: Programming Language Inventor or Serial Killer?
 wordpress_id: 45
 categories: - Programming
-tags: - APL - J - K - Programming Languages
+tags: APL, J, K, Programming Languages
 ---
 
 A strange but fun quiz -

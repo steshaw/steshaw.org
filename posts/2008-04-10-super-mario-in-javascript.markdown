@@ -7,7 +7,7 @@ slug: super-mario-in-javascript
 title: Super Mario in JavaScript
 wordpress_id: 80
 categories: - Programming
-tags: - Computer Games - JavaScript - Web
+tags: - Computer Games, JavaScript, Web
 ---
 
 It's amazing to see [this implemented in JavaScript](http://blog.nihilogic.dk/2008/04/super-mario-in-14kb-javascript.html)!
