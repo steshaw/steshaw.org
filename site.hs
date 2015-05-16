@@ -41,12 +41,30 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
+  tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+
+  let postCtx =  tagsField "tags" tags
+              <> pageCtx
+
+  tagsRules tags $ \tag pattern -> do
+    let title = "Posts tagged \"" ++ tag ++ "\""
+    route idRoute
+    compile $ do
+      posts <- recentFirst =<< loadAll pattern
+      let ctx = constField "title" title 
+             <> listField "posts" postCtx (return posts) 
+             <> pageCtx
+      makeItem "" 
+        >>= loadAndApplyTemplate "templates/tag.html" ctx 
+        >>= loadAndApplyTemplate "templates/default.html" ctx 
+        >>= relativizeUrls
+  
   match allPosts $ do
     route $ setExtension "html"
     compile $ pandocCompiler
-      >>= loadAndApplyTemplate "templates/post.html"    pageCtx
+      >>= loadAndApplyTemplate "templates/post.html"    postCtx
       >>= saveSnapshot "content"
-      >>= loadAndApplyTemplate "templates/default.html" pageCtx
+      >>= loadAndApplyTemplate "templates/default.html" postCtx
       >>= relativizeUrls
 
   create ["posts.html"] $ do

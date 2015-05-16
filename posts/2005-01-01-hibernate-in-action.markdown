@@ -7,7 +7,7 @@ slug: hibernate-in-action
 title: Hibernate in Action
 wordpress_id: 19
 categories: Programming
-tags: - Hibernate - Java - ORM - Spring
+tags: Hibernate, Java, ORM, Spring
 ---
 
 Finally finished Rod Johnson's "J2EE Design and Development" afew weeks ago. I've plowed through the Hibernate doco and now I'm onto "Hibernate in Action". I was surprised to find the following inane comment:

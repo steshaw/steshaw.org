@@ -7,7 +7,7 @@ slug: ubuntu-breezy-under-vmware-player
 title: Ubuntu Breezy under VMware Player
 wordpress_id: 33
 categories: - Programming
-tags: - Linux - Ubuntu - VMware
+tags: Linux, Ubuntu, VMware
 ---
 
 I tried the following instructions for getting Ubuntu working on VMwware Player

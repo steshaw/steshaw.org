@@ -7,7 +7,7 @@ slug: rails-jabs-at-java
 title: Rails jabs at Java
 wordpress_id: 64
 categories: - Programming
-tags: - Humour - Java - Ruby on Rails
+tags: Humour, Java, Ruby on Rails
 ---
 
 A hilarious jab at Java :). A must watch!

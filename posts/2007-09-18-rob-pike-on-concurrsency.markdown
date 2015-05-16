@@ -7,7 +7,7 @@ slug: rob-pike-on-concurrsency
 title: Rob Pike on concurrency
 wordpress_id: 78
 categories: - Programming
-tags: - Concurrent Programming - Erlang - Message Passing - Newsqueak - Programming Languages - Rob Pike
+tags: Concurrent Programming, Erlang, Message Passing, Newsqueak, Programming Languages, Rob Pike
 ---
 
 Watch this [great Google talk with Rob Pike](http://video.google.com/videoplay?docid=810232012617965344). He talks about concurrent processes and message passing in the context of Newsqueak - a programming language that he wrote 20 years ago. What he describes is very similar to the Erlang programming model except that channels are first class citizens.

@@ -7,7 +7,7 @@ slug: ruby-on-net
 title: Ruby on .NET?
 wordpress_id: 34
 categories: - Programming
-tags: - .NET - CLR - Coco/R - Compilers - Programming Languages - Ruby
+tags: .NET, CLR, Coco/R, Compilers, Programming Languages, Ruby
 ---
 
 I appears that researchers at [QUT](http://qut.edu.au)'s [Programming Languages and Systems](http://www.plas.fit.qut.edu.au) group are working on an implementation of Ruby for .NET. The "secret" is reveal [on this page](http://www.plas.fit.qut.edu.au/gppg). The work is support by Microsoft Research. Davis Thomas also mentions it in an article about the [emergence of agile languages](http://www.jot.fm/issues/issue_2005_11/column1). There seem to be no other sources of information at present.

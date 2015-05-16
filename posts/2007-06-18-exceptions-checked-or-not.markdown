@@ -7,7 +7,7 @@ slug: exceptions-checked-or-not
 title: Exceptions – checked or not?
 wordpress_id: 69
 categories: - Programming
-tags: - C# - Java - Programming Languages - Scala
+tags: C#, Java, Programming Languages, Scala
 ---
 
 The [Java Posse #127](http://javaposse.com/index.php?post_id=226047) podcast talks about the possibility of removing checked exceptions from the Java language. The JavaPosse folks seem to universally like them. No one knew what Scala did with respect to checked exceptions. Turns out that it [does not have them](http://www.scala-lang.org/docu/faq.html#id2243896)!

@@ -7,7 +7,7 @@ slug: developer-testing-with-kent-beck
 title: Developer Testing with Kent Beck
 wordpress_id: 20
 categories: - Programming
-tags: - Quality - Testing
+tags: Quality, Testing
 ---
 
 Check out [this talk with Kent Beck about developer testing](http://www.itconversations.com/shows/detail301.html).

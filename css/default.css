@@ -68,8 +68,27 @@ h2 {
   opacity: 0.80;
 }
 
+.cross-posted {
+  float: right;
+  font-size: 80%;
+  opacity: 0.8;
+  background-color: #DDD;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cross-posted p {
+  margin: 0;
+}
+
 ul.posts {
   padding-left: 0;
+}
+
+.tags {
+  margin-top: 20px;
+  font-size: 80%;
+  opacity: 0.60;
 }
 
 .spacer {
