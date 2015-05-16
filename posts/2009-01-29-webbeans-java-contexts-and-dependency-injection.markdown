@@ -6,7 +6,7 @@ layout: post
 slug: webbeans-java-contexts-and-dependency-injection
 title: WebBeans => Java Contexts and Dependency Injection
 wordpress_id: 101
-categories:  Programming
+categories: Programming
 tags: Dependency Injection, Guice, Java, JCDI, JEE, Seam, Web, WebBeans
 ---
 

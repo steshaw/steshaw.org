@@ -6,7 +6,7 @@ layout: post
 slug: soap-is-brain-dead
 title: SOAP is brain dead
 wordpress_id: 26
-categories:  Programming
+categories: Programming
 tags: Distributed Computing, NoXML, REST, SOAP
 ---
 

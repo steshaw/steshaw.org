@@ -6,7 +6,7 @@ layout: post
 slug: better-is-better-and-worse-is-worse
 title: Better *is* better and worse is worse
 wordpress_id: 35
-categories:  Programming
+categories: Programming
 tags: Lisp, Programming Languages, Software Design
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: ubuntu-on-inspiron-9300
 title: Ubuntu on Inspiron 9300
 wordpress_id: 31
-categories:  Programming
+categories: Programming
 tags: Gnome, Linux, Ubuntu
 ---
 

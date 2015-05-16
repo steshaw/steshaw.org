@@ -6,7 +6,7 @@ layout: post
 slug: first-steps-to-scala
 title: First steps to Scala
 wordpress_id: 76
-categories:  Programming
+categories: Programming
 tags: JVM, Scala
 ---
 

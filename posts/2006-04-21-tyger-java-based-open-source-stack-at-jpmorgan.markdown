@@ -6,7 +6,7 @@ layout: post
 slug: tyger-java-based-open-source-stack-at-jpmorgan
 title: JPMorgan's Tyger project
 wordpress_id: 44
-categories:  Programming
+categories: Programming
 tags: Hibernate, iBatis, Java, Maven, ORM, Spring
 ---
 

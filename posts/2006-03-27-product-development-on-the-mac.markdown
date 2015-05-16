@@ -6,7 +6,7 @@ layout: post
 slug: product-development-on-the-mac
 title: Product development on the Mac?
 wordpress_id: 41
-categories:  Programming
+categories: Programming
 tags: Application Development, Mac, Wil Shipley
 ---
 

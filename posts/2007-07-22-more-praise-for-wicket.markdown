@@ -6,7 +6,7 @@ layout: post
 slug: more-praise-for-wicket
 title: More praise for Wicket
 wordpress_id: 72
-categories:  Programming
+categories: Programming
 tags: Apache Wicket, Java, Web
 ---
 

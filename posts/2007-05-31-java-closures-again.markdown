@@ -6,7 +6,7 @@ layout: post
 slug: java-closures-again
 title: Closures for Java
 wordpress_id: 67
-categories:  Programming
+categories: Programming
 tags: Bob Lee - Closures - Java - Neal Gafter
 ---
 

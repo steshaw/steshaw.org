@@ -6,7 +6,7 @@ layout: post
 slug: bertrand-meyer-on-uml
 title: Bertrand Meyer on UML
 wordpress_id: 58
-categories:  Programming
+categories: Programming
 tags: Bertrand Meyer, UML
 ---
 

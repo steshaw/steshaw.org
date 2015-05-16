@@ -6,7 +6,7 @@ layout: post
 slug: gwt-not-just-for-spas
 title: GWT not just for SPAs!
 wordpress_id: 66
-categories:  Programming
+categories: Programming
 tags: GWT, Java
 ---
 
