@@ -53,7 +53,7 @@ main = hakyll $ do
   tagsRules tags $ \tag' pattern -> do
     let tag = fixUp tag'
     let title = "Posts tagged \"" ++ tag' ++ "\""
-    route $ constRoute ("tags/" ++ tag ++ ".html")
+    route $ constRoute ("tags/" ++ tag ++ "/index.html")
     compile $ do
       posts <- recentFirst =<< loadAll pattern
       let ctx = constField "title" title 
@@ -63,7 +63,7 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/tag.html" ctx 
         >>= loadAndApplyTemplate "templates/default.html" ctx 
         >>= relativizeUrls
-  
+
   match allPosts $ do
     route $ setExtension "html"
     compile $ pandocCompiler
@@ -109,7 +109,7 @@ compressJsCompiler :: Compiler (Item String)
 compressJsCompiler = fmap jasmin <$> getResourceString
 
 jasmin :: String -> String
-jasmin src = LB.unpack $ minify $ LB.fromChunks [(E.encodeUtf8 $ T.pack src)] 
+jasmin src = LB.unpack $ minify $ LB.fromChunks [E.encodeUtf8 $ T.pack src] 
 
 allPosts = "posts/*"
 
