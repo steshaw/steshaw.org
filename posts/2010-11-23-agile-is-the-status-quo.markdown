@@ -10,7 +10,7 @@ categories:  Programming
 tags: Agile, Software Engineering
 ---
 
-Robert C. Martin (aka Uncle Bob) has written a provocative article, [What Killed Waterfall Could Kill Agile](http://cleancoder.posterous.com/what-killed-waterfall-could-kill-agile). Besides its main trust, it also contains some interesting historical tidbits in the history of the agile movement.
+Robert C. Martin (aka Uncle Bob) has written a provocative article, [What Killed Waterfall Could Kill Agile](http://cleancoder.posterous.com/what-killed-waterfall-could-kill-agile). Besides its main thrust, it also contains some interesting historical tidbits in the history of the agile movement.
 
 Here' my 2c. Disclaimer/background: programming since age 11, interested in "big" methods in the 90s, XP since 1999 and became a CSM 2 years ago.
 
