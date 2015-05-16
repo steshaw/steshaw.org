@@ -9,6 +9,8 @@ import qualified Data.ByteString.Lazy.Char8 as LB
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
 import qualified Data.Map as M
+import Data.Char (toLower, isAlphaNum)
+import Data.List (intercalate)
 import Text.Jasmine
 
 --------------------------------------------------------------------------------
@@ -46,9 +48,12 @@ main = hakyll $ do
   let postCtx =  tagsField "tags" tags
               <> pageCtx
 
-  tagsRules tags $ \tag pattern -> do
-    let title = "Posts tagged \"" ++ tag ++ "\""
-    route idRoute
+  let fixUp = map toLower . intercalate "-" . map (filter isAlphaNum) . words
+
+  tagsRules tags $ \tag' pattern -> do
+    let tag = fixUp tag'
+    let title = "Posts tagged \"" ++ tag' ++ "\""
+    route $ constRoute ("tags/" ++ tag ++ ".html")
     compile $ do
       posts <- recentFirst =<< loadAll pattern
       let ctx = constField "title" title 
@@ -123,7 +128,7 @@ feedConfig = FeedConfiguration
   { feedTitle       = "Steven Shaw's Blog"
   , feedDescription = "Programming Languages and Systems"
   , feedAuthorName  = "Steven Shaw"
-  , feedAuthorEmail = "steven+blog@steshaw.org"
+  , feedAuthorEmail = "steven+feed@steshaw.org"
   , feedRoot        = "http://steshaw.org"
   }
 
