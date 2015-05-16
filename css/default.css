@@ -86,8 +86,10 @@ ul.posts {
 }
 
 div.tags {
-  margin-top: 20px;
-  font-size: 80%;
+  float: right;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 65%;
   opacity: 0.60;
 }
 span.tags {
