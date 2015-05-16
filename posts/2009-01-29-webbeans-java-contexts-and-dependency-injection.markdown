@@ -7,7 +7,7 @@ slug: webbeans-java-contexts-and-dependency-injection
 title: WebBeans => Java Contexts and Dependency Injection
 wordpress_id: 101
 categories:  Programming
-tags: - Dependency Injection, Guice, Java, JCDI, JEE, Seam, Web, WebBeans
+tags: Dependency Injection, Guice, Java, JCDI, JEE, Seam, Web, WebBeans
 ---
 
 I've been watching the WebBeans/JSR-299 specification for quite some time. After some discussion on the webbeans mailing list, the name was recently changed to Java Contexts and Dependency Injection. This removes the "dependency" on "Web" part. Since it's effectively a new component model for Java, it didn't make sense to restrict it to Web environments. The new name is long and not as catchy ... maybe it'll become known as JCDI.
