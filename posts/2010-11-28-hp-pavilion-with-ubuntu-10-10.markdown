@@ -93,13 +93,13 @@ I've been asked for an update of my [experiences with my HP Pavilion dv6 3042TX]
 
 
 
-### Advice
+## Advice
 
 
 
 
 
-#### Stick with Ubuntu 10.04
+### Stick with Ubuntu 10.04
 
 
 
@@ -107,7 +107,7 @@ The touchpad problems didn't happen with Ubuntu 10.04 and I'm fairly certain tha
 
 
 
-#### Run Windows 7 (with Ubuntu 10.10 in a box)
+### Run Windows 7 (with Ubuntu 10.10 in a box)
 
 
 
@@ -115,7 +115,7 @@ This is the option I've currently adopted. This way I have no problems with Goog
 
 
 
-##### Plea to Canoncial and manufacturers
+#### Plea to Canoncial and manufacturers
 
 
 
@@ -123,7 +123,7 @@ Perhaps it's just that 10.10 is a disaster (at least running native/raw on HP ha
 
 
 
-#### Buy a Mac :)
+### Buy a Mac :)
 
 
 
