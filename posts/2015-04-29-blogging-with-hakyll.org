@@ -1,7 +1,7 @@
 ---
 title: Blogging with Hakyll
 date: 2015-04-09 16:30
-tags: haskell, hakyll
+tags: Haskell, Hakyll
 ---
 
 /Draft/

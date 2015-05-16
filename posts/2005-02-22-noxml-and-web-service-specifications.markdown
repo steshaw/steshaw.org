@@ -7,7 +7,7 @@ slug: noxml-and-web-service-specifications
 title: NoXML and web service specifications!
 wordpress_id: 25
 categories: - Programming
-tags: - Distributed Computing - Network Programming - NoXML - Web Services - XML
+tags: Distributed Computing, Network Programming, NoXML, Web Services, XML
 ---
 
 Think you know something about XML and Web services? Check out [all these web service standards](http://wiki.apache.org/ws/WebServiceSpecifications). Oh my! Just say no. No!

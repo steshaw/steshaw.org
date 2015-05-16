@@ -7,7 +7,7 @@ slug: csp-for-java-programmers
 title: CSP for Java programmers
 wordpress_id: 53
 categories: - Programming
-tags: - Concurrent Programming - CSP - Erlang
+tags: Concurrent Programming, CSP, Erlang
 ---
 
 Finally read through this series from IBM developerworks. It's a worthwhile read for anyone interested in alternatives to doing shared-memory concurrency. JCSP is kinda like an Erlang library for Java (but unfortunately the threads aren't as lightweight).

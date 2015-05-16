@@ -7,7 +7,7 @@ slug: static-versus-dynamic-attitude
 title: Static versus dynamic attitude
 wordpress_id: 27
 categories: - Programming
-tags: - ActionScript - Dynamic Typing - Groovy - Java - JavaScript - Programming Languages - Python - Ruby - Static Typing
+tags: ActionScript, Dynamic Typing, Groovy, Java, JavaScript, Programming Languages, Python, Ruby, Static Typing
 ---
 
 I think Bill is dead-on-the-money with [the different-language, different-mindset thing](http://www.artima.com/weblogs/viewpost.jsp?thread=92979). Java can make you feel guilty alright :-). Even when you can get over your own guilt, there's the struggle with your colleagues who may not have a dynamic mindset.
