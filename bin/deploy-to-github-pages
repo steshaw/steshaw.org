@@ -7,7 +7,7 @@ by="${1:-${USER}}"
 cd steshaw.github.io
 git checkout master
 git pull origin master
-git ls-files | xargs git rm
+git ls-files -z | xargs -0 git rm
 
 cp -r ../_site/* .
 
