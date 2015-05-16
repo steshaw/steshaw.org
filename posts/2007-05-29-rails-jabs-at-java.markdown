@@ -12,6 +12,7 @@ tags: Humour, Java, Ruby on Rails
 
 A hilarious jab at Java :). A must watch!
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/PQbuyKUaKFo" frameborder="0" allowfullscreen></iframe>
+<a class="embedly-card" data-card-chrome="0" href="https://www.youtube.com/embed/PQbuyKUaKFo">Ruby on Rails vs Java - Commercial #1 of 9</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 The [other ads in the series](http://www.railsenvy.com/2007/5/15/hi-i-m-ruby-on-rails-part-2) are also worth a look!
