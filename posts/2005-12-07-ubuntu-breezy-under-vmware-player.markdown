@@ -6,7 +6,7 @@ layout: post
 slug: ubuntu-breezy-under-vmware-player
 title: Ubuntu Breezy under VMware Player
 wordpress_id: 33
-categories:  Programming
+categories: Programming
 tags: Linux, Ubuntu, VMware
 ---
 

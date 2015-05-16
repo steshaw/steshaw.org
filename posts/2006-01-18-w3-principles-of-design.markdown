@@ -6,7 +6,7 @@ layout: post
 slug: w3-principles-of-design
 title: w3 Principles of Design
 wordpress_id: 36
-categories:  Programming
+categories: Programming
 tags: DSLs, HTML, Software Design
 ---
 

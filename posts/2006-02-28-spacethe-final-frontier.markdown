@@ -6,7 +6,7 @@ layout: post
 slug: spacethe-final-frontier
 title: Space…the final frontier
 wordpress_id: 40
-categories:  Programming
+categories: Programming
 tags: Physics
 ---
 

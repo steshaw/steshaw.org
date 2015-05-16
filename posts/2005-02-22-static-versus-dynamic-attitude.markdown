@@ -6,7 +6,7 @@ layout: post
 slug: static-versus-dynamic-attitude
 title: Static versus dynamic attitude
 wordpress_id: 27
-categories:  Programming
+categories: Programming
 tags: ActionScript, Dynamic Typing, Groovy, Java, JavaScript, Programming Languages, Python, Ruby, Static Typing
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: saps-innovation-drivers
 title: SAP's innovation drivers
 wordpress_id: 62
-categories:  Programming
+categories: Programming
 tags: In-Memory Databases, SAAS, SAP, SOA
 ---
 

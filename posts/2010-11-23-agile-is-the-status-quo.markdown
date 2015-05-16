@@ -6,7 +6,7 @@ layout: post
 slug: agile-is-the-status-quo
 title: Agile is the status quo
 wordpress_id: 519
-categories:  Programming
+categories: Programming
 tags: Agile, Software Engineering
 ---
 

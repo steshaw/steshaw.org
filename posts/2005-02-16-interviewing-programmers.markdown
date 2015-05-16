@@ -6,7 +6,7 @@ layout: post
 slug: interviewing-programmers
 title: Interviewing programmers
 wordpress_id: 21
-categories:  Programming
+categories: Programming
 tags: Hiring, Management
 ---
 

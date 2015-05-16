@@ -6,7 +6,7 @@ layout: post
 slug: noxml-and-web-service-specifications
 title: NoXML and web service specifications!
 wordpress_id: 25
-categories:  Programming
+categories: Programming
 tags: Distributed Computing, Network Programming, NoXML, Web Services, XML
 ---
 
