@@ -12,14 +12,9 @@ tags: Apple, Computer Hardware, HP, Mac, Mac pricing
 
 I'm writing this from my new laptop! **Stop the presses:** it's _not_ a Mac! :) In fact, I’m trying out Windows Live Writer to publish this post…
 
- 
-
-[![](http://steshaw.files.wordpress.com/2010/05/hp-pavilion-dv6.jpeg?w=300)](http://steshaw.files.wordpress.com/2010/05/hp-pavilion-dv6.jpeg)
-
-
+![](/images/hp-pavilion-dv6.png)
 
 Technical specifications:
-
  
 
 <blockquote>  
