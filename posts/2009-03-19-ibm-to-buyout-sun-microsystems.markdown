@@ -7,7 +7,7 @@ slug: ibm-to-buyout-sun-microsystems
 title: IBM to buyout Sun Microsystems?
 wordpress_id: 108
 categories:  Programming
-tags: - C#, Closures, IBM, Java, Microsoft, Neal Gafter, Sun
+tags: C#, Closures, IBM, Java, Microsoft, Neal Gafter, Sun
 ---
 
 [This story paints a gloomy outlook for Sun Microsystems](http://www.guardian.co.uk/technology/2009/mar/18/ibm-sun-microsystems). This purchase would certainly end the "wars" between IBM and Sun over Java... One has to wonder what it would mean for the future of Java (the language, the platform, everything). At least HotSpot and the class library are open source now.
