@@ -6,7 +6,7 @@ layout: post
 slug: dscm-mercurial-or-bazaar
 title: DSCM: Mercurial or Bazaar?
 wordpress_id: 68
-categories: - Programming
+categories:  Programming
 tags: Bazaar, DVCS, Git, Mercurial
 ---
 

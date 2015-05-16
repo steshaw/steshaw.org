@@ -6,7 +6,7 @@ layout: post
 slug: computer-games-a-blast-from-the-past
 title: Computer games – a blast from the past
 wordpress_id: 39
-categories: - Programming
+categories:  Programming
 tags: Computer Games, Computer Graphics
 ---
 

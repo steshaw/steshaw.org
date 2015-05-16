@@ -7,7 +7,7 @@ slug: mactax-mac-prices-in-the-uk
 title: MacTax
 subtitle: Mac prices in the UK
 wordpress_id: 71
-categories: - Programming
+categories:  Programming
 tags: Mac, Mac pricing, MacBook Pro, UK, Unix
 ---
 

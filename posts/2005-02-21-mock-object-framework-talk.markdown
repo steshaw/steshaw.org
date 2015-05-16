@@ -6,7 +6,7 @@ layout: post
 slug: mock-object-framework-talk
 title: Mock object framework talk
 wordpress_id: 24
-categories: - Programming
+categories:  Programming
 tags: Java, Mocks, Testing
 ---
 

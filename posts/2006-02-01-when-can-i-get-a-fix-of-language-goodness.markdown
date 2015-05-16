@@ -6,7 +6,7 @@ layout: post
 slug: when-can-i-get-a-fix-of-language-goodness
 title: When can I get a fix of language goodness?
 wordpress_id: 38
-categories: - Programming
+categories:  Programming
 tags: C#, Erik Meijer, Programming Languages
 ---
 

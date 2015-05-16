@@ -6,7 +6,7 @@ layout: post
 slug: developer-testing-with-kent-beck
 title: Developer Testing with Kent Beck
 wordpress_id: 20
-categories: - Programming
+categories:  Programming
 tags: Quality, Testing
 ---
 

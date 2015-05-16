@@ -6,7 +6,7 @@ layout: post
 slug: code-as-data-closures
 title: Code as data != closures
 wordpress_id: 37
-categories: - Programming
+categories:  Programming
 tags: Closures, Groovy
 ---
 

@@ -7,7 +7,7 @@ slug: dependency-injection-vitally-important-or-totally-irrelevant
 title: Dependency Injection
 subtitle: Vitally Important or Totally Irrelevant
 wordpress_id: 30
-categories: - Programming
+categories:  Programming
 tags: Dependency Injection, Java, Ruby
 ---
 

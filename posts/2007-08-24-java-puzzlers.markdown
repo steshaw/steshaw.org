@@ -6,7 +6,7 @@ layout: post
 slug: java-puzzlers
 title: Java Puzzlers
 wordpress_id: 77
-categories: - Programming
+categories:  Programming
 tags: FindBugs, Google Tech Talks, Java, Josh Block
 ---
 
