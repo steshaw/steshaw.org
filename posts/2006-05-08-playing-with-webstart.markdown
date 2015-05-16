@@ -6,7 +6,7 @@ layout: post
 slug: playing-with-webstart
 title: Playing with WebStart
 wordpress_id: 48
-categories:  Programming
+categories: Programming
 tags: Java, Java Web Start, Swing
 ---
 

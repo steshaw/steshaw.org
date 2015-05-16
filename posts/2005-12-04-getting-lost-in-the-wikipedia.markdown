@@ -6,7 +6,7 @@ layout: post
 slug: getting-lost-in-the-wikipedia
 title: Getting lost in the Wikipedia
 wordpress_id: 32
-categories:  Programming
+categories: Programming
 tags: UNCOL, Wikipedia, x86
 ---
 

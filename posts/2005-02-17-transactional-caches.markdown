@@ -6,7 +6,7 @@ layout: post
 slug: transactional-caches
 title: Transactional caches
 wordpress_id: 22
-categories:  Programming
+categories: Programming
 tags: Distributed Computing
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: software-engineering-radio
 title: Software Engineering Radio
 wordpress_id: 49
-categories:  Programming
+categories: Programming
 tags: Scala, Software Engineering Radio, Ted Neward
 ---
 

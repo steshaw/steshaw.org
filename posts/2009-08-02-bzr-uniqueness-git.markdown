@@ -6,7 +6,7 @@ layout: post
 slug: bzr-uniqueness-git
 title: Bzr uniqueness + Git
 wordpress_id: 73
-categories:  Programming
+categories: Programming
 tags: Bazaar, DVCS, Git, Mercurial
 ---
 

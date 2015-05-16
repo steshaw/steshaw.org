@@ -6,7 +6,7 @@ layout: post
 slug: fonts-on-gentoo
 title: Fonts on Gentoo
 wordpress_id: 23
-categories:  Programming
+categories: Programming
 tags: Linux
 ---
 

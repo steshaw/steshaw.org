@@ -6,7 +6,7 @@ layout: post
 slug: crudpage-for-click
 title: CrudPage for Click?
 wordpress_id: 59
-categories:  Programming
+categories: Programming
 tags: Apache Click, Java, Web
 ---
 
