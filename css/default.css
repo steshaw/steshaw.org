@@ -85,10 +85,13 @@ ul.posts {
   padding-left: 0;
 }
 
-.tags {
+div.tags {
   margin-top: 20px;
   font-size: 80%;
   opacity: 0.60;
+}
+span.tags {
+  margin-left: 0.5em;
 }
 
 .spacer {
