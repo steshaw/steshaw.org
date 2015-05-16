@@ -33,8 +33,18 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 44px;
+}
+
+h3 {
+  font-weight: 700;
   font-size: 32px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .content {
@@ -58,7 +68,7 @@ h2 {
 
 .post-subtitle {
   font-size: 32px;
-  opacity: 0.80;
+  opacity: 0.60;
 }
 
 .post-date {
@@ -71,12 +81,12 @@ h2 {
 
 .cross-posted {
   float: right;
-  font-size: 80%;
+/*  font-size: 75%;
   opacity: 0.8;
   background-color: #DDD;
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 .cross-posted p {
   margin: 0;
@@ -92,9 +102,6 @@ div.tags {
   margin-bottom: 1em;
   font-size: 65%;
   opacity: 0.60;
-}
-span.tags {
-  margin-left: 0.5em;
 }
 
 .spacer {
