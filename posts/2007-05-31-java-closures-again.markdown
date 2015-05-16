@@ -7,7 +7,7 @@ slug: java-closures-again
 title: Closures for Java
 wordpress_id: 67
 categories:  Programming
-tags: - Bob Lee - Closures - Java - Neal Gafter
+tags: Bob Lee - Closures - Java - Neal Gafter
 ---
 
 Just watched Neal Gafter's [Google tech talk about closures](http://video.google.com/videoplay?docid=4051253555018153503) again. I really hope that the community gets behind this proposal. Let's do it right rather than opting for any "pragmatic" solution that amount to a concise syntax for anonymous classes. Gafter's proposed will allow the "language" to change between updates to the Java Language Specification. This will allow more experimentation and innovation. I encourage you to watch the video for the details. Additional information can be gleaned from the [JavaPolis interview](http://www.bejug.org/confluenceBeJUG/display/PARLEYS/Neal+Gafter+JavaPolis+2006+interview).
