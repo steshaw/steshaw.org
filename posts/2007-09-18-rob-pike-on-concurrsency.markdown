@@ -6,7 +6,7 @@ layout: post
 slug: rob-pike-on-concurrsency
 title: Rob Pike on concurrency
 wordpress_id: 78
-categories: - Programming
+categories:  Programming
 tags: Concurrent Programming, Erlang, Message Passing, Newsqueak, Programming Languages, Rob Pike
 ---
 

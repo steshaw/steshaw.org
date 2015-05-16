@@ -6,7 +6,7 @@ layout: post
 slug: javarubygroovy
 title: Java…Ruby…Groovy
 wordpress_id: 29
-categories: - Programming
+categories:  Programming
 tags: Closures, Groovy, Java, Programming Languages, Ruby
 ---
 

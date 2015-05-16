@@ -6,7 +6,7 @@ layout: post
 slug: exceptions-checked-or-not
 title: Exceptions – checked or not?
 wordpress_id: 69
-categories: - Programming
+categories:  Programming
 tags: C#, Java, Programming Languages, Scala
 ---
 

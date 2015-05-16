@@ -6,7 +6,7 @@ layout: post
 slug: wishing-for-scrum
 title: Wishing for Scrum
 wordpress_id: 57
-categories: - Programming
+categories:  Programming
 tags: Agile, Scrum, Software Process
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: xml-the-big-picture
 title: XML – the big picture
 wordpress_id: 42
-categories: - Programming
+categories:  Programming
 tags: NoXML, XML
 ---
 

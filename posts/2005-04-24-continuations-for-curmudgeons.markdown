@@ -6,7 +6,7 @@ layout: post
 slug: continuations-for-curmudgeons
 title: Continuations for curmudgeons
 wordpress_id: 28
-categories: - Programming
+categories:  Programming
 tags: call/cc, Continuations, Programming Languages, Ruby, Scheme
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: process-engines-and-webflow
 title: Process engines and webflow
 wordpress_id: 43
-categories: - Programming
+categories:  Programming
 tags: Continuations, Process Calculi, Workflow
 ---
 

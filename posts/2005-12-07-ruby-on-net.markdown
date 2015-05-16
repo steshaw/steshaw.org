@@ -6,7 +6,7 @@ layout: post
 slug: ruby-on-net
 title: Ruby on .NET?
 wordpress_id: 34
-categories: - Programming
+categories:  Programming
 tags: .NET, CLR, Coco/R, Compilers, Programming Languages, Ruby
 ---
 

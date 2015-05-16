@@ -6,7 +6,7 @@ layout: post
 slug: intj-again
 title: INTJ again
 wordpress_id: 52
-categories: - Programming
+categories:  Programming
 tags: Personality Typing
 ---
 

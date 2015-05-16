@@ -6,7 +6,7 @@ layout: post
 slug: csp-for-java-programmers
 title: CSP for Java programmers
 wordpress_id: 53
-categories: - Programming
+categories:  Programming
 tags: Concurrent Programming, CSP, Erlang
 ---
 

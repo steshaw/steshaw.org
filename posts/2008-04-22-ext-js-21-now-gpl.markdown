@@ -6,7 +6,7 @@ layout: post
 slug: ext-js-21-now-gpl
 title: Ext JS 2.1 now GPL :(
 wordpress_id: 81
-categories: - Programming
+categories:  Programming
 tags: - Ext GWT, Ext JS, GWT, GWT-Ext, Java, JavaScript, Web, YUI
 ---
 

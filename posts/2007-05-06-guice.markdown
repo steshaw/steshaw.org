@@ -6,7 +6,7 @@ layout: post
 slug: guice
 title: Guice
 wordpress_id: 60
-categories: - Programming
+categories:  Programming
 tags: Dependency Injection, Google Tech Talks, Guice, Java
 ---
 

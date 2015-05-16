@@ -6,7 +6,7 @@ layout: post
 slug: super-mario-in-javascript
 title: Super Mario in JavaScript
 wordpress_id: 80
-categories: - Programming
+categories:  Programming
 tags: - Computer Games, JavaScript, Web
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: feature-teams
 title: Feature teams
 wordpress_id: 83
-categories: - Programming
+categories:  Programming
 tags: - Productivity, Software Design, Software Process
 ---
 

@@ -6,7 +6,7 @@ layout: post
 slug: rails-jabs-at-java
 title: Rails jabs at Java
 wordpress_id: 64
-categories: - Programming
+categories:  Programming
 tags: Humour, Java, Ruby on Rails
 ---
 

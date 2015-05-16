@@ -6,7 +6,7 @@ layout: post
 slug: stonking-new-laptop
 title: Stonking new laptop
 wordpress_id: 237
-categories: - Programming
+categories:  Programming
 tags: Apple, Computer Hardware, HP, Mac, Mac pricing
 ---
 
