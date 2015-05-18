@@ -11,3 +11,5 @@ tags: Compilers, Computer Architecture, Computer Hardware, Operating Systems, Pr
 ---
 
 This looks like a great course+book: [The elements of computing systems](http://www.idc.ac.il/tecs/).
+
+![The Elements of Computing Systems](http://www.nand2tetris.org/imgs/cover.jpg "The book")
