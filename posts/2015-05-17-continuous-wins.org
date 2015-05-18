@@ -10,7 +10,7 @@ tags: Software Engineering, Teams, Lean, Agile, Kanban
 #+END_HTML
 
 #+BEGIN_HTML
-<div class="medium-url" data-medium-url="https://medium.com/p/4a06ec8b792b" />
+<div class="medium-url" data-medium-url="https://medium.com/@steshaw/continuous-wins-4a06ec8b792b" />
 #+END_HTML
 
 Do we really need time boxes to “encourage” people to work productively?
