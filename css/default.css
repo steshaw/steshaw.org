@@ -8,9 +8,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  /*background-color: rgb(37, 37, 37);*/
   background-color: rgb(248, 248, 248);
-
   font-family: 'Roboto', sans-serif;
 }
 
@@ -68,28 +66,27 @@ h4 {
 
 .post-subtitle {
   font-size: 32px;
-  font-weight: 300;
-  opacity: 0.60;
+  font-weight: 500;
+  opacity: 0.70;
 }
 
 .post-date {
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .post-list-date, .post-date {
-  opacity: 0.60;
+  opacity: 0.70;
 }
 
-.cross-posted {
+.cross-posted-to-medium {
   float: right;
-/*  font-size: 75%;
-  opacity: 0.8;
-  background-color: #DDD;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px; */
+  display: none;
+  margin-top: 10px;
+  margin-right: 10px;
 }
-.cross-posted p {
+
+.cross-posted-to-medium p {
   margin: 0;
 }
 
@@ -122,10 +119,6 @@ ul.posts {
 .post-footer-row {
   margin-top: 20px;
   margin-bottom: 20px;
-  /*
-  margin-bottom: 20px;
-  margin-top: 20px;
-  */
 }
 
 .clear {
@@ -141,4 +134,37 @@ ul.posts {
 
 .footer .text-muted {
   margin-top: 10px;
+}
+
+.header-image-bg {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.post-content {
+  padding-left: 10px;
+}
+
+.post-header-with-image {
+  position: relative;
+  min-height: 100%;
+}
+
+.post-header-content {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.post-header-with-image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.page-header {
+  margin-top: 5px;
 }
