@@ -11,7 +11,9 @@ tags: Software Engineering, Teams, Lean, Agile, Kanban
 </a>
 #+END_HTML
 
-Do we really need time boxes to “encourage” people work productively?
+Do we really need time boxes to “encourage” people to work productively?
+
+## Developing with iterations
 
 Something I've noticed time and again in teams that adopt iterations
 (aka sprints, time boxes etc) is that there's a whole lot of angst and
@@ -37,6 +39,9 @@ the process itself. The closest to “working” I've seen with teams doing
 iterations is amongst those that are very conservative with the tasks
 allocated to an iteration, who then pull additional tasks into the
 iteration if time allows. Why the pretence of the iteration at all?
+
+
+## Enter the pull-based workflow
 
 On the flip-side, whenever I've had the opportunity to develop with a
 completely pull-based workflow, I've found that I really love it! This
