@@ -10,7 +10,7 @@ tags: Software Engineering, Teams
 #+END_HTML
 
 #+BEGIN_HTML
-<div class="medium-url" data-medium-url="https://medium.com/p/2e16ec53137f" />
+<div class="medium-url" data-medium-url="https://medium.com/@steshaw/adopting-a-cambridge-culture-2e16ec53137f" />
 #+END_HTML
 
 #+BEGIN_HTML
