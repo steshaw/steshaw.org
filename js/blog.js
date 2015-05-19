@@ -31,7 +31,7 @@ $(function() {
     var e = $(this);
     url = e.attr('href');
     if (url) {
-      var re = /^(\..*\/(blog|tags)\/.*\/)index\.html$/;
+      var re = /^(\..*\/(posts|tags)\/.*\/)index\.html$/;
       var newUrl = url.replace(re, "$1");
       if (url != newUrl) {
         e.attr('href', newUrl);
