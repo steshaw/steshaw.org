@@ -124,7 +124,7 @@ main = hakyll $ do
   mkFeed "rss.xml"  renderRss
 
   where
-    -- "blog/2015/03/29/this-is-cool.html" => "blog/2015/03/29/this-is-cool/index.html"
+    -- "posts/2015/03/29/this-is-cool.html" => "posts/2015/03/29/this-is-cool/index.html"
     htmlToOwnDir :: String -> String
     htmlToOwnDir url = either (const url) id pr
       where
@@ -140,7 +140,8 @@ main = hakyll $ do
     parseResult = runParser parsePostUrl () "<postUrl>"
     parsePostUrl :: Parser String
     parsePostUrl = do
-      year <- string "posts/"
+      posts <- string "posts"
+      _ <- char '/'
       year <- count 4 digit
       _ <- char '-'
       month <- count 2 digit
@@ -148,7 +149,7 @@ main = hakyll $ do
       day <- count 2 digit
       _ <- char '-'
       title <- many anyChar
-      return $ intercalate "/" ["blog", year, month, day, title]
+      return $ intercalate "/" [posts, year, month, day, title]
 
 compressJsCompiler :: Compiler (Item String)
 compressJsCompiler = fmap jasmin <$> getResourceString
