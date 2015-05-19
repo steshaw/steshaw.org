@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -eu
+
+for command in clean rebuild; do /app/bin/site ${command}; done
