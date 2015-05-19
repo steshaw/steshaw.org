@@ -10,7 +10,7 @@ categories: Programming
 tags: Apple, Computer Hardware, HP, Mac, Ubuntu
 ---
 
-I've been asked for an update of my [experiences with my HP Pavilion dv6 3042TX](/posts/2010/05/22/stonking-new-laptop/) - in particular with Ubuntu. A [reader](http://steshaw.wordpress.com/2010/05/22/stonking-new-laptop/#comment-81) has found that this notebook can now be purchased here in Australia for $1,299. That is a fine price indeed! At that price, I would have considered "self insuring" and not spending the addition $200 or so on an extended warranty. However, I must say that I sometimes have regrets about not getting a [Mac](http://www.apple.com/au/macbookpro/). Here are some of my experiences and advice:
+I've been asked for an update of my [experiences with my HP Pavilion dv6 3042TX](/posts/2010/05/22/stonking-new-laptop/) - in particular with Ubuntu. A [reader](http://steshaw.org/posts/2010/05/22/stonking-new-laptop/#comment-2032899877) has found that this notebook can now be purchased here in Australia for $1,299. That is a fine price indeed! At that price, I would have considered "self insuring" and not spending the addition $200 or so on an extended warranty. However, I must say that I sometimes have regrets about not getting a [Mac](http://www.apple.com/au/macbookpro/). Here are some of my experiences and advice:
 
 
 
