@@ -25,5 +25,6 @@ executable site
                     , time
                     , time-locale-compat
                     , filepath
+                    , parsec
   ghc-options:        -threaded
   default-language:   Haskell2010
