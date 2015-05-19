@@ -2,4 +2,4 @@
 
 ${DEBUG:-}
 
-dist/build/site/site rebuild
+cabal run rebuild
