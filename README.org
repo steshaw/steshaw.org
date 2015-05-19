@@ -1,3 +1,0 @@
-Source for my homepage and blog at http://steshaw.org.
-
-[[https://circleci.com/gh/steshaw/steshaw.org][[[https://circleci.com/gh/steshaw/steshaw.org.svg?style=svg]]]]
