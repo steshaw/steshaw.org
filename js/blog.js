@@ -1,4 +1,8 @@
 $(function() {
+
+  //
+  // Handle Medium-like header images.
+  //
   var imageData = $('.header-image').data();
   if (imageData) {
     var imageUrl = imageData.headerImageUrl;
@@ -19,4 +23,19 @@ $(function() {
       e.show();
     }
   }
+
+  //
+  // Remove the trailing "index.html" from generated relative urls.
+  //
+  $('a').each(function () {
+    var e = $(this);
+    url = e.attr('href');
+    if (url) {
+      var re = /^(\..*\/(blog|tags)\/.*\/)index\.html$/;
+      var newUrl = url.replace(re, "$1");
+      if (url != newUrl) {
+        e.attr('href', newUrl);
+      }
+    }
+  });
 });
