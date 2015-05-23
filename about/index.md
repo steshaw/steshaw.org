@@ -24,13 +24,13 @@ Programming Languages that I seek to use these days include [Haskell](http://has
 
 ## Interests
 
-  - the design and implementation of programming languages, runtime systems and operating systems – very similar beasts!
-  - app development — trade offs, tricks, patterns, dogma, philosophy and coffee.
+  - programming languages, runtime systems and operating systems – very similar beasts!
+  - appdev — trade offs, tricks, big picture, long-term, dogma resistance, philosophy and coffee.
   - distributed systems - cloud, web, messaging, middleware and highly-scalable servers.
-  - database systems and persistence — RDBMS, NoSQL, NewSQL and database APIs.
-  - computer games — 2D/3D graphics, scripting engines, AI.
+  - database systems — RDBMS, NoSQL, NewSQL and database APIs.
+  - gamedev — game engine architecture, graphics, scripting engines, AI, PLs, optimisation.
 
 
 ## Hobbies
 
-  - human languages such as Spanish and French.
+  - Human languages such as Spanish and French.
