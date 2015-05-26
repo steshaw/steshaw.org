@@ -9,7 +9,8 @@ title: About
 
 Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but does still feel the tug of Ol' Blighty — particularly Scotland and my home town near Nottingham.
 
-I'm an avid computer programmer, an industry veteran with 25 years experience using languages such as (in order of first use): C, C++, Python, Java, Ruby, JavaScript, C#, Scala.
+I'm an avid computer programmer who loves programming language. As an industry veteran of 25 years, I've used the following languages (in order of first use): C, Awk, Perl, [Delphi Object] Pascal, C++, Python, Java, Ruby, JavaScript, C#, Scala. While I was using those languages in industry, I was learning about the following languages in my own time: Component Pascal, Oberon, Oberon-2, Modula-3, Mesa, ALGOL, Eiffel, Sather, CLU, Smalltalk, Scheme, Goo, Dylan, EuLisp, Racket, Common Lisp, Objective-C, APL, J, K, Factor, Prolog, Caml, OCaml, Standard ML, Mythryl, Mozart Oz, Alice ML, Erlang, Haskell, Idris, Coq, Agda, Ur, ATS, Haxe, Elm, TypeScript, PureScript, Swift and probably a few more (let me know if I've missed something). My learning varied greatly in depth of course :).
+
 
 <div style="float: right">
 ![](http://upload.wikimedia.org/wikipedia/commons/4/48/C64_startup_animiert.gif)
