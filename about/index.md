@@ -27,12 +27,12 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 ## Interests
 
   - programming languages, runtime systems and operating systems – very similar beasts!
-  - appdev — trade offs, tricks, big picture, long-term, dogma resistance, philosophy and coffee.
+  - appdev — short-view, long-view, trade-offs, tricks, patterns, dogma-resistance, big-picture, philosophy and coffee.
   - distributed systems - cloud, web, messaging, middleware and highly-scalable servers.
-  - database systems — RDBMS, NoSQL, NewSQL and database APIs.
-  - gamedev — game engines, graphics, scripting engines, AI, optimisation.
+  - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
 
 
 ## Hobbies
 
   - Human languages such as Spanish and French.
+  - gamedev — game engines, graphics, scripting engines, AI, optimisation.
