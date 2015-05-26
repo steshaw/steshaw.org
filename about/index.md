@@ -17,11 +17,12 @@ Languages that I seek to use include [Haskell](http://haskell.org), [Scala](http
 
 ### Formative Years
 
-<div style="float: right">
+<div class="c64 pull-right">
 ![](http://upload.wikimedia.org/wikipedia/commons/4/48/C64_startup_animiert.gif)
 </div>
 
 I enjoyed programming for about 10 years prior to joining the industry. I had heaps of fun starting with with Basic on the [Dick Smith Wizard](http://ultimateconsoledatabase.com/others/dick_smith_wizzard.htm) in [82](http://www.youtube.com/watch?v=JbCr15KkBxY). By the time I got a [C=64](http://en.wikipedia.org/wiki/Commodore_64), I was writing text-based adventures (aka "go north; get chalice") in Basic, 2D sprite games in assembly, and experimenting with electronic music composition. I regret never upgrading to an [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500) as it seemed like an awesome platform for writing [video games](https://www.youtube.com/watch?v=rsuWgLEQBxM), [demos](https://youtu.be/3wu8cnIpdLY?list=PL7C791DD55914C154) and [compilers](http://strlen.com/amiga-e). I didn't own a PC until _after_ university. While I was studying, I was fond of the terminal labs. At the time, I was quite partial to [VAX/VMS](http://en.wikipedia.org/wiki/OpenVMS) and it's [DCL](http://en.wikipedia.org/wiki/DIGITAL_Command_Language) shell scripting language until I was introduced to UNIX with it's Borne and eventually Korn shells.
+
 
 ## Interests
 
