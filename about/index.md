@@ -35,4 +35,4 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 ## Hobbies
 
   - Human languages such as Spanish and French.
-  - gamedev — game engines, graphics, scripting engines, AI, optimisation.
+  - gamedev — game engines, 2D/3D graphics, scripting engines, AI.
