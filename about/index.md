@@ -27,7 +27,7 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 ## Interests
 
   - programming languages, runtime systems and operating systems – very similar beasts!
-  - appdev — short-view, long-view, trade-offs, tricks, patterns, dogma-resistance, big-picture, philosophy and coffee.
+  - appdev — trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy and coffee.
   - distributed systems - cloud, web, messaging, middleware and highly-scalable servers.
   - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
 
