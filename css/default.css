@@ -21,7 +21,6 @@ body {
   background-color: #f5f5f5;
 }
 
-
 /* Custom page CSS
 -------------------------------------------------- */
 
@@ -63,18 +62,10 @@ h4 {
 }
 
 .welcome {
-  float: left;
-  width: 30%;
 }
 
 .quote {
-  float: right;
-  opacity: 0.25;
-  margin-bottom: 0;
-  width: 40%;
-  font-size: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
+  opacity: 0.80;
 }
 
 .content {
@@ -203,6 +194,11 @@ ul.posts {
 
 .page-header {
   margin-top: 5px;
+  padding: 0;
+}
+
+.page-header > div {
+  padding: 0;
 }
 
 .c64 {
