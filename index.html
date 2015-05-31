@@ -3,16 +3,44 @@ title: Steven Shaw
 ---
 
 <header class="page-header">
-  <h1>Welcome</h1>
+  <blockquote class="quote">
+    The future of programming is dependently typed
+    <small><cite>Anon.</cite></small>
+  </blockquote>
+  <h1 class="welcome">
+    Welcome
+  </h1>
+  <div style="clear: both"/>
 </header>
 
-<div style="float: right; margin: 10px;">
-  <a href="https://haskell.org">
-    <img src="https://www.haskell.org/static/img/logo.png?etag=rJR84DMh"/>
-  </a>
+<div class="content" style="clear: both">
+
+  <div class="featured-languages">
+    <div>
+      <a class="pull-right" href="https://haskell.org" title="Haskell">
+        <img src="/images/haskell.png"/>
+      </a>
+    </div>
+    <div>
+      <a class="pull-right" href="http://scala-lang.org" title="Scala">
+        <img src="/images/scala.png"/>
+      </a>
+    </div>
+    <div>
+      <a class="pull-right" href="http://purescript.org" title="PureScript">
+        <img src="/images/purescript.png"/>
+      </a>
+    </div>
+    <div>
+      <a class="pull-right" href="http://idris-lang.org" title="Idris">
+        <img src="/images/idris.png"/>
+      </a>
+    </div>
+  </div>
+
+  <p>I'm Steven Shaw, a software developer living in Brisbane, Australia.</p>
+
+  <h2>Posts</h2>
+  $partial("templates/post-list.html")$
+
 </div>
-
-<p>I'm Steven Shaw, a software developer living in Brisbane, Australia.</p>
-
-<h2>Posts</h2>
-$partial("templates/post-list.html")$
