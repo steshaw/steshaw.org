@@ -64,7 +64,7 @@ h4 {
 
 .welcome {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 
 .quote {
@@ -72,7 +72,7 @@ h4 {
   opacity: 0.25;
   margin-bottom: 0;
   width: 40%;
-  font-size: 70%;
+  font-size: 80%;
   margin-top: auto;
   margin-bottom: auto;
 }
