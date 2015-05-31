@@ -102,13 +102,17 @@ h4 {
   opacity: 0.70;
 }
 
+.post-list-date, .post-date {
+  opacity: 0.70;
+}
+
 .post-date {
   margin-bottom: 0;
   font-weight: 500;
 }
 
-.post-list-date, .post-date {
-  opacity: 0.70;
+.post-list-date {
+  font-size: 70%;
 }
 
 .cross-posted-to-medium {
