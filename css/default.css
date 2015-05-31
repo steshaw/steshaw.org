@@ -66,6 +66,7 @@ h4 {
 
 .quote {
   opacity: 0.80;
+  max-width: 80%;
 }
 
 .content {
