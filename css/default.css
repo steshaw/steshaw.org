@@ -45,6 +45,38 @@ h4 {
   font-size: 24px;
 }
 
+.navbar-brand {
+  padding: 8px 0px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.featured-languages {
+  margin-left: 1em;
+  float: right;
+}
+
+.featured-languages img {
+  max-height: 75px;
+  max-width: 75px;
+  margin: 0.5em;
+}
+
+.welcome {
+  float: left;
+  width: 40%;
+}
+
+.quote {
+  float: right;
+  opacity: 0.25;
+  margin-bottom: 0;
+  width: 40%;
+  font-size: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .content {
   font-size: 20px;
 }
