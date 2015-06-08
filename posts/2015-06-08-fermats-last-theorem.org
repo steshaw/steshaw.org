@@ -1,0 +1,50 @@
+---
+title: Fermat's Last Theorem
+date: 20150608-102112
+tags: maths
+---
+
+#+begin_html
+<iframe src="https://player.vimeo.com/video/18216532?byline=0&portrait=0" width="500" height="279" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+#+end_html
+
+This is a wonderful documentary! It's the story of a simple mathematical problem that went unsolved for centuries. It starts with /Pythagoras' theorem/,
+
+#+begin_eqtion
+  x^2 + y^2 = z^2
+#+end_eqtion
+
+What are the whole number solutions of this equation?
+
+#+begin_eqtion
+  3^2 + 4^2 = 5^2 \\
+  5^2 + 12^2 = 13^2 \\
+  ...
+#+end_eqtion
+
+Fermat wondered if this could be extended to the following equations:
+
+#+begin_eqtion
+  x^3 + y^3 = z^3 \\
+  x^4 + y^4 = z^4 \\
+  ... \\
+  x^n + y^n = z^n
+#+end_eqtion
+
+Fermat could find no whole number solutions to this more general equation. Fermat's conjecture was that:
+
+#+begin_eqtion
+  There are no whole number solutions were n > 2.
+#+end_eqtion
+
+It was 1637 when Fermat made the marginal note in Arithmetica -- a book he was reading at the time -- stating his conjecture and mentioning that he had a proof that would not "fit in the margin". It's this conjecture that became known as /Fermat's Last Theorem/. The proof lay undiscovered for centuries!
+
+In 1963, a 10 year old boy came across a book in the local library about Fermat's Last Theorem. He instantly became obsessed with this wonderfully simple problem -- a problem simple enough for a 10 year old to understand! This boy was Andrew Wiles. Andrew was so taken with the problem that he eventually became a professor of mathematics. After giving up on the problem for some time, he eventually saw his opportunity as some of the pieces moved into place. He then worked on the problem full-time for /7 years/. For the first 2 years, he merely explored the problem, not knowing where to begin. Finally, he cracked it! However, there's a gut wrenching twist to the story that means that the proof takes another year to nail down. I won't spoil that here.
+
+#+begin_quote
+  I never use a computer. I sometimes ... write ... scribble. I do doodles. I start trying to ... to find patterns, really. -- Andrew Wiles
+#+end_quote
+
+References:
+- [[http://en.wikipedia.org/wiki/Andrew_Wiles][Andrew Wiles on Wikipedia]]
+- [[http://www.pbs.org/wgbh/nova/physics/andrew-wiles-fermat.html][Andrew Wiles on Solving Fermat]]
