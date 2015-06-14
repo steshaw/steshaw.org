@@ -4,7 +4,7 @@ title: About
 ---
 
 <header class="page-header">
-# Backstory of Steven Shaw
+# Steve's Backstory
 </header>
 
 Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but does still feel the tug of Ol' Blighty — particularly Scotland and my home town near Nottingham.
