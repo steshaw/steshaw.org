@@ -133,9 +133,9 @@ main = hakyll $ do
           stuff <- many $ noneOf "."
           return $ stuff ++ "/index.html"
     floop :: String -> String
-    floop url = trace ("url = '" ++ url ++ "'") $ either (const url) id r
+    floop url = either (const url) id r
       where
-        r = trace ("result = " ++ show (parseResult url)) $ parseResult url
+        r = parseResult url
     parseResult :: String -> Either ParseError String
     parseResult = runParser parsePostUrl () "<postUrl>"
     parsePostUrl :: Parser String
