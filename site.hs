@@ -13,7 +13,7 @@ import Data.Char (toLower, isAlphaNum)
 import Data.List (sortBy, intercalate)
 import Text.Jasmine
 
-import Data.Time.Format (parseTime)
+import Data.Time.Format (parseTimeM)
 import Data.Time.Locale.Compat (defaultTimeLocale)
 import Data.Time.Clock (UTCTime)
 
@@ -243,5 +243,5 @@ sortIdentifiersByDate = sortBy (flip byDate)
     byDate id1 id2 =
         let fn1 = takeFileName $ toFilePath id1
             fn2 = takeFileName $ toFilePath id2
-            parseTime' fn = parseTime defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
+            parseTime' fn = (parseTimeM True) defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
         in compare (parseTime' fn1 :: Maybe UTCTime) (parseTime' fn2 :: Maybe UTCTime)
