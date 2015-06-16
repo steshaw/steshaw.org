@@ -1,9 +1,19 @@
-#!/bin/sh -eu
+#!/usr/bin/env bash
 
 ${DEBUG:-}
 
 set -eu
 
-${DEBUG:-}
+keep_alive() {
+  while true; do
+    sleep 600
+    echo -e "\n\n\t\tI am alive\n\n"
+  done
+}
 
-cabal run build
+trap 'kill $(jobs -p)' EXIT
+
+keep_alive&
+
+cabal2nix --shell . >shell.nix
+nix-shell --run 'cabal configure && cabal build'

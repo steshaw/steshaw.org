@@ -16,7 +16,7 @@ cabal-version:          >= 1.10
 executable site
   main-is:              site.hs
   build-depends:        base >=4.8 && <4.9
-                      , hakyll == 4.6.*
+                      , hakyll == 4.7.*
                       , hjsmin
                       , text
                       , bytestring
