@@ -15,14 +15,7 @@ set -eu
 nixrc=~/.nix-profile/etc/profile.d/nix.sh
 [[ -f ${nixrc} ]] && source ${nixrc}
 
-#
-# Get the latest NixOS/nixpkgs.git.
-#
-if [[ -d ~/nixpkgs ]]; then
-  (cd ~/nixpkgs; git pull)
-else
-  git clone https://github.com/NixOS/nixpkgs.git ~/nixpkgs
-fi
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 
 #
 # Configure binary caches.
@@ -61,6 +54,6 @@ binary-caches         = ${caches}
 fi
 
 #
-# Install Haskell NG's `cabal` and `cabal2nix`.
+# Install Haskell NG's `cabal2nix`.
 #
-nix-env -f ~/nixpkgs -i -A haskellngPackages.cabal2nix -A haskellngPackages.cabal-install
+nix-env -i cabal2nix
