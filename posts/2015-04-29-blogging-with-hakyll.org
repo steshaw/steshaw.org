@@ -78,3 +78,4 @@ Inline TeX: $$\forall x, y : \mathbb{Z}, x > 3 \land y < 2 \Rightarrow x^2 - 2y 
 - http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
 - [[http://jaspervdj.be/hakyll/][Jasper Van der Jeugt's Hakyll]]
 - https://github.com/thomasf/exitwp/
+- http://nixos.org/nix/
