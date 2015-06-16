@@ -15,7 +15,7 @@ dependencies:
     - ~/.nix*
   override:
     - bin/nix-bootstrap
-    - bin/build
+    - source ~/.nix-profile/etc/profile.d/nix.sh && bin/build
   post:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
 
