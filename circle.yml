@@ -20,6 +20,7 @@ dependencies:
 test:
   override:
     - source ~/.nix-profile/etc/profile.d/nix.sh && bin/build
+    - bin/site-rebuild
 
 deployment:
   production:
