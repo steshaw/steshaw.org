@@ -12,7 +12,6 @@ dependencies:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
   cache_directories:
     - /nix
-    - ~/.nix*
   override:
     - bin/nix-bootstrap
   post:
