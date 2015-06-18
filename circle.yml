@@ -15,7 +15,6 @@ dependencies:
     - ~/.nix*
   override:
     - bin/nix-bootstrap
-    - bin/configure
   post:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
 
