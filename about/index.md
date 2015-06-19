@@ -37,3 +37,4 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
   - gamedev — game engines, 2D/3D graphics, scripting engines, AI.
   - chess — my progress sadly stalled long ago.
   - ideation
+  - independent thinking
