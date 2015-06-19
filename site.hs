@@ -100,6 +100,7 @@ main = hakyll $ do
       posts <- recentFirst =<< loadAll allPosts
       let postsCtx =  listField "posts" pageCtx (return posts)
                    <> constField "title" "Posts"
+                   <> constField "description" "An archive of all my posts:"
                    <> pageCtx
       makeItem ""
         >>= loadAndApplyTemplate "templates/posts.html" postsCtx
@@ -126,6 +127,29 @@ main = hakyll $ do
 
   mkFeed "atom.xml" renderAtom
   mkFeed "rss.xml"  renderRss
+
+  create ["drafts/index.html"] $ do
+    route idRoute
+    compile $ do
+      drafts <- recentFirst =<< loadAll allDrafts
+      let postsCtx =  listField "posts" pageCtx (return drafts)
+                   <> constField "title" "Drafts"
+                   <> constField "description" "Works in progress:"
+                   <> pageCtx
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/posts.html" postsCtx
+        >>= loadAndApplyTemplate "templates/default.html" postsCtx
+        >>= relativizeUrls
+
+  match allDrafts $ do
+    route $ customRoute (floop . toFilePath)
+      `composeRoutes` setExtension "html"
+      `composeRoutes` customRoute (htmlToOwnDir . toFilePath)
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/post.html"    postCtx
+      >>= saveSnapshot "content"
+      >>= loadAndApplyTemplate "templates/default.html" postCtx
+      >>= relativizeUrls
 
   where
     -- "posts/2015/03/29/this-is-cool.html" => "posts/2015/03/29/this-is-cool/index.html"
@@ -162,6 +186,7 @@ jasmin :: String -> String
 jasmin src = LB.unpack $ minify $ LB.fromChunks [E.encodeUtf8 $ T.pack src]
 
 allPosts = "posts/*"
+allDrafts = "drafts/*.org"
 
 mkFeed file renderer =
   create [file] $ do

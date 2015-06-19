@@ -1,0 +1,85 @@
+---
+title: How Parse.com should build APIs
+date: 2015-06-19 13:05:43+10:00
+tags: Web, SaaS, Purely Functional Programming
+---
+
+or /Keeping your sanity at your tech startup, preventing complete rewrites and winning big/
+
+or /Building Web APIs with Purely Functional Programming/
+
+- PFP = Purely Functional Programming
+- easiest to do in Haskell
+
+This article was prompted by reading [[http://blog.parse.com/learn/how-we-moved-our-api-from-ruby-to-go-and-saved-our-sanity/][How we moved our API from Ruby to Go and saved our sanity]].
+
+
+#+begin_quote
+And literally nobody at all on our backend or ops teams wanted to deal with deploying and tuning the JVM.
+#+end_quote
+
+Perhaps unfounded fear from an ops team that wasn't familiar with the JVM.
+
+
+
+#+begin_quote
+C# was a strong contender. It arguably had the best concurrency model with Async and Await.
+#+end_quote
+
+You can make the argument that C# has the best concurrency model but many would beg to differ.
+
+
+
+#+begin_quote
+Go and C# both have asynchronous operation built into the language at a low level, making it easy for large groups of people to write asynchronous code. The MongoDB Go driver is probably the best MongoDB driver in existence, and complex interaction with MongoDB is core to Parse. Goroutines were much more lightweight than threads. And frankly we were most excited about writing Go code. We thought it would be a lot easier to recruit great engineers to write Go code than any of the other solid async languages.
+#+end_quote
+
+Read: we wanted to use Go.
+
+
+
+#+begin_quote
+We started out rewriting our EventMachine push backend from Ruby to Go. We did some preliminary benchmarking with Go concurrency and found that each network connection ate up only 4kb of RAM. After rewriting the EventMachine push backend to Go we went from 250k connections per node to 1.5 million connections per node without even touching things like kernel tuning. Plus it seemed really fun. So, Go it was.
+#+end_quote
+
+They rewrote their "push" code in Go.
+- how much memory does a network connection in Glorious hold?
+
+
+
+#+begin_quote
+The hardest part of the rewrite was dealing with all the undocumented behaviors and magical mystery bits that you get with Rails middleware. Parse exposes a REST API, and Rails HTTP processing is built on a philosophy of “be liberal in what you accept”. So developers end up inadvertently sending API requests that are undocumented or even non-RFC compliant … but Rails middleware cleans them up and handles it fine.
+
+So we had to port a lot of delightful behavior from the Ruby API to the Go API, to make sure we kept handling the weird requests that Rails handled. Stuff like doubly encoded URLs, weird content-length requirements, bodies in HTTP requests that shouldn’t have bodies, horrible oauth misuse, horrible mis-encoded Unicode.
+#+end_quote
+
+We really want to avoid every building things with Rails so that folks use our APIs correct and we can avoid having to make things backwardly compatible with the undocumented Rails behaviours.
+
+
+
+#+begin_quote
+Was the rewrite worth it? Hell yes it was. Our reliability improved by an order of magnitude. More importantly, our API is not getting more and more fragile as we spin up more databases and backing services. Our codebase got cleaned up and we got rid of a ton of magical gems and implicit assumptions. Co-tenancy issues improved for customers across the board. Our ops team stopped getting massively burned out from getting paged and trying to track down and manually remediate Ruby API outages multiple times a week. And needless to say, our customers were happier too."
+#+end_quote
+
+- Could be that the ops team liked to be busy support Ruby apps. Maybe that's why they were so down on the JVM.
+
+
+
+
+#+begin_quote
+We now almost never have reliability-impacting events that can be tracked back to the API layer – a massive shift from a year ago. Now when we have timeouts or errors, it’s usually constrained to a single app – because one app is issuing a very inefficient query that causes timeouts or full table scans for their app, or it’s a database-related co-tenancy problem that we can resolve by automatically rebalancing or filtering bad actors."
+#+end_quote
+
+
+
+#+quote: We could downsize our provisioned API server pool by about 90%
+
+What does it mean?
+
+** Faster builds, tests and deploys
+
+#+begin_quote
+As if that weren’t enough, the time it takes to run our full integration test suite dropped from 25 minutes to 2 minutes, and the time to do a full API server deploy with rolling restarts dropped from 30 minutes to 3 minutes. The go API server restarts gracefully so no load balancer juggling and prewarming is necessary.
+#+end_quote
+
+- Let's see if we can get Glorious stuff this fast with Nix/Halcyon/Stack.
