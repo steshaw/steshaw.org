@@ -13,7 +13,7 @@
 Choose your own adventure.
 
 
-* Testing concurrent software with QuickCheck
+* Testing concurrent systems with QuickCheck
 
 ... or ...
 - testing
@@ -34,7 +34,7 @@ Choose your own adventure.
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]]
 
 
-* Testing distributed software with QuickCheck
+* Testing distributed systems with QuickCheck
 
 - [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]]
 - [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
