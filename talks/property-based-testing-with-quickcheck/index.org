@@ -1,0 +1,40 @@
+#+title:    Property-based testing with QuickCheck
+#+subtitle: Choose your own adventure
+
+* Quick overview of QuickCheck
+
+** References
+
+- [[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]], [[http://www.michaelnygard.com][Michael Nygard]]
+
+
+* UI testing with QuickCheck
+
+Choose your own adventure.
+
+
+* Testing concurrent software with QuickCheck
+
+... or ...
+- testing
+- with
+- concurrent
+- software
+- QuickCheck
+
+** Looking for race conditions.
+
+- Something about how they did it with Erlang and Quiv
+
+
+** References
+
+- http://www.quviq.com/products/erlang-quickcheck/
+- [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]]
+- [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]]
+
+
+* Testing distributed software with QuickCheck
+
+- [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]]
+- [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
