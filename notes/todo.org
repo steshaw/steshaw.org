@@ -1,3 +1,5 @@
 
 - Thoughtworks retropective
-  - http://harmful.cat-v.org/software/ruby/rails/is-a-ghetto
+  - Rails is a ghetto
+    - http://harmful.cat-v.org/software/ruby/rails/is-a-ghetto
+    - http://web.archive.org/web/20080103072111/http://www.zedshaw.com/rants/rails_is_a_ghetto.html
