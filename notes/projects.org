@@ -1,0 +1,8 @@
+
+Write a JSON/XML/YAML command line tool.
+- http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html
+- [[http://stedolan.github.io/jq/][jq]].
+- [[http://trentm.com/json/][json]].
+
+
+- Contribute to https://github.com/CommBank

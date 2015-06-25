@@ -1,0 +1,3 @@
+
+- Thoughtworks retropective
+  - http://harmful.cat-v.org/software/ruby/rails/is-a-ghetto
