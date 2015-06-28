@@ -8,19 +8,23 @@ somewhat sophiticated analysis of the concept of equality in
 constructive type theory.
 #+end_quote
 
+
 ** Type Theories --- 40 years of type theory.
 
 - Intuionistic Type Theory (TT) by Per Martin-Löf.
   - Analysis and expansion of Brouwer's program of intuitionism.
 - Intentional Type Theory (ITT).
+  - starting point (for HoTT?)
 - Extensional Type Theory (ETT).
   - ITT === ER + UIP
     - ER :: equality reflection
     - UIP :: uniqueness of identity proofs
-  - Like NuPRL
-  - A kind of "Constructive Set Theory".
+  - The intuitionistic theory of sets.
+    - inspired strongly by the work of Bishop
+  - NuPRL is a kind of "Constructive Set Theory".
 
-** Stuff
+
+** Highlights
 
 - proof != formal proof
 
