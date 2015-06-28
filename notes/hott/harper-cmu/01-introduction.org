@@ -16,14 +16,15 @@ constructive type theory.
 - Intentional Type Theory (ITT).
   - starting point (for HoTT?)
 - Extensional Type Theory (ETT).
-  - ITT === ER + UIP
+  - ITT \equiv ER + UIP
     - ER :: equality reflection
     - UIP :: uniqueness of identity proofs
   - The intuitionistic theory of sets.
     - inspired strongly by the work of Bishop
   - NuPRL is a kind of "Constructive Set Theory".
 - HoTT
-  - ITT + HIT + UA
+  - HoTT \equiv ITT + HIT + UA
+    - ITT :: Intuitionistic Type Theory
     - HIT :: Higher Inductive Types
     - UA :: Univalence Axiom
   - Intuitionistic Theory of weak infinity groupoids
