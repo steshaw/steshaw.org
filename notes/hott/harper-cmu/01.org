@@ -22,6 +22,11 @@ constructive type theory.
   - The intuitionistic theory of sets.
     - inspired strongly by the work of Bishop
   - NuPRL is a kind of "Constructive Set Theory".
+- HoTT
+  - ITT + HIT + UA
+    - HIT :: Higher Inductive Types
+    - UA :: Univalence Axiom
+  - Intuitionistic Theory of weak infinity groupoids
 
 
 ** Highlights
