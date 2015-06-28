@@ -8,7 +8,7 @@
 
 - implication with a horseshoe
   - look like a reverse subset symbol (i.e. superset)
-  - \alpha \implies \beta is instead written, \alpha ⊃ \beta
+  - \alpha \rightarrow \beta is instead written, \alpha ⊃ \beta
   - https://en.wikipedia.org/wiki/Horseshoe_(symbol)
   - reason that superset is implication to be explained in a later lecture.
 
