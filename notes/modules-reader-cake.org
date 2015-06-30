@@ -1,0 +1,30 @@
+I'd like to try and concoct a question to the panel around Cake, Reader, modules/objects. The following is all I have so far:
+
+* Modules, Reader, and the Cake Pattern
+
+Something I've noted is that folks are happy to allow the compiler to lambda lift for them (to eliminate free variables and make functions "top level"):
+
+for example:
+
+  -- listing 1:
+  let makeAdder n = \x -> x + n
+  let adder = makeAdder 10
+  adder 1 => 11
+  adder 2 => 12
+
+translates after lambda lifting to something like:
+
+  -- listing 2:
+  let top x n = x + n
+  data Closure t  = Closure {v :: t, f :: t -> Integer -> Integer}
+  let makeAdder n = Closure n topLevel
+  let adder = makeAdder 10
+  (f adder) (v adder) 1 => 11
+  (f adder) (v adder) 2 => 12
+
+Reader is a similar concept to me — a free variable (often "config") that can be accessed across many top level functions. However, directly using Reader seems a little like using the encoding in listing 2 above. I'm wondering if a tool — perhaps a compiler — could take care of those details just like the lowering that happens with lambda-lifting.
+
+This may be related to the idea of "algebraic effects" and overcoming the composabilty problem with monad transformers. I don't understand the details but here are a couple of references.
+
+http://edwinb.wordpress.com/2013/03/28/programming-and-reasoning-with-algebraic-effects-and-dependent-types/
+http://math.andrej.com/2012/03/08/programming-with-algebraic-effects-and-handlers/

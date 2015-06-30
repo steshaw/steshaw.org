@@ -1,0 +1,45 @@
+
+* Machine Learning
+
+** Introduction
+
+http://en.wikipedia.org/wiki/Machine_learning
+
+[[http://www.mlplatform.nl/what-is-machine-learning/][What is Machine Learning]] from [[http://www.mlplatform.nl/][Machine Learning in The Netherlands].
+
+http://sge.wonderville.ca/machinelearning/
+
+
+** Courses
+
+- [[http://ml-class.org][Andrew Ng's Machine Learning]] at Coursera.
+- [[http://pgm-class.org][Probabilistic Graphical Models]] at Coursera.
+- https://www.udacity.com/wiki/ml
+- https://blogs.ischool.berkeley.edu/i290-abdt-s12/
+
+
+** Books
+
+- Machine Learning: The Art and Science of Algorithms that Make Sense of Data [[http://www.amazon.com/Machine-Learning-Science-Algorithms-Sense/dp/1107422221][Amazon]]
+
+
+** Resources
+
+- http://datasciencespecialization.github.io/
+- http://datasciencemasters.org/ https://github.com/datasciencemasters/go
+- [[http://www.slideshare.net/GaneshVenkataraman3/learn-to-rank-using-machine-learning][Learning-to-Rank Search Results using Machine Learning]] Ganest Venkataraman
+- [[http://lambda-architecture.net/architecture/2013-12-11-a-real-time-architecture-using-hadoop-and-storm-devoxx/][A real-time architecture using Hadoop and Storm]] Nathan Bijnens, Big Data Engineer at Virdata, 15-Nov-2013
+
+
+
+** Tools and Systems
+
+- http://ampcamp.berkeley.edu/
+- [[http://incubator.apache.org/drill/][Drill]]
+
+
+** TODO
+
+- Try to get Hadoop up using Docker
+  - http://blog.sequenceiq.com/blog/2014/06/17/ambari-cluster-on-docker/
+  - http://blog.sequenceiq.com/blog/2014/06/19/multinode-hadoop-cluster-on-docker/

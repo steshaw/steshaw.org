@@ -1,0 +1,13 @@
+
+https://github.com/andsens/homeshick
+
+http://freshshell.com/
+
+http://vcs-home.branchable.com/
+
+Some dotfiles to crib:
+
+- https://github.com/mathiasbynens/dotfiles
+- https://github.com/holman/dotfiles
+- https://github.com/thoughtbot/dotfiles
+- https://github.com/bitemyapp/dotfiles

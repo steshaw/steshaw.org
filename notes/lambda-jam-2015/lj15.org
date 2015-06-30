@@ -1,0 +1,91 @@
+* LambdaJam 2015
+
+** "Discrimination is Wrong: Improving Productivity", Edward Kmett
+
+- radix sort
+- monads are monoids in the category of endofunctors
+
+- tensor
+- Day convolution
+
+- covariant functor
+- contravariant functor
+
+- Divide and Conquer
+
+class Contravariant f where
+  contramap :: (a -> b) -> f b ->  f a
+
+class Contravariant f => Divisible f where
+  divide  :: (a -> (b, c)) -> f b -> f c -> f a
+  conquer :: fa 
+
+class Divisible f => Decidable f where
+ ???
+ ???
+
+pureish :: Applicative f => (() -> a) -> f a
+emptyish :: Alternative f -=> (Void -> a) -> f a
+conquerish :: Divisible f => (a -> ()) -> f a
+
+
+- Initial Encoding
+- Final Encoding
+
+class Sorting a where
+
+ - Sorting Law - for any strictly monoton-creasing function f
+
+   contramap f = ???
+
+- Radix vs the American Flag sort. There's an American Flag sort?!?
+- Radix Sort > American Flag Sort
+
+newtype Group a = Group
+  { runGroup :: forall b. [(a,b)] -> [[b]]
+  }
+
+- Any use for things that are just Eq and not Ord / Comparable.
+- e.g. IORef
+
+
+** Functional Programming in a Stateful World - Manuel M Chakravarty
+
+- Put state in it's place.
+
+- pipeline architecture (streaming? reactive???)
+
+- haskellformac.com app in Swift, Haskell and Objective-C.
+
+- Model, ViewModel, View.
+  - immutable model (in Haskell).
+  - hybrid (mutable/immutable) ViewModel struct in Swift.
+
+- React Native?
+
+- Time series - changes as streams of values (FRP).
+  - workshop: FRP in Swith with ReactiveCocoa (Sebastian ...).
+
+- Three principles for FP in a stateful world
+1. Right architecture. 
+2. Immutable default.
+3. Use streams of values (FRP). 
+
+
+** Dependent pattern matching - Matt Brecknell
+
+- Doing Agda-like pattern matching in Coq to implement zip on Vecs.
+
+
+** Invertible Syntax Description - Christian Marie, Head of R&D at Anchor Hosting
+
+- "Invertible Syntax Descriptions: Unifying Parsing and Pretty
+  Printing" paper
+
+data List a
+  = Nil
+  | Cons a (List a)
+
+
+type Printer a = a -> Doc
+

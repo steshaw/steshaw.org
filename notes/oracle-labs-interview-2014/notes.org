@@ -1,0 +1,9 @@
+
+* Representing Graphs + transitive closure of directed graph:
+
+- Use matrix representation!
+- Could encode using a sparse matrix.
+- Fix point of multiplying the matrix by itself.
+- Make efficient using:
+  - Warshall's Algorithm transitive closure. O(n³)
+  - Coppersmith and Winograd - faster transitive closure n²·³
