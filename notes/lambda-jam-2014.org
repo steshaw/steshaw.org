@@ -1,0 +1,190 @@
+* Lambda Jam 2014
+
+** Ed Kmett Keynote - Functionally Oblivious & Succinct Data Structures
+
+- "point query"?
+- _offset_ binary search
+- cache oblivious model
+- oblivious to the size of the cache. But is it parameterised over the size/params of the cache???
+- "asymptotically optimal"?
+- Bentley-Saxe
+  - powers of 2 in linked list (sounds like memory allocator)
+- Number Systems
+  - Unary - Linked List
+  - Binary - Benley-Saxe
+  - ...
+- Zeroless Binary - this was like the IR protocol that I worked on
+  with Kobus
+- Modified Zeroless Binary. Digits 1, 2 and 3.
+- inserts are 7-10x faster than Data.Map.
+- We broke query performance: it's log^^2 instead of log.
+- Solution: fractional cascading. Gives log time searches.
+- New trick: implicit fractional caccading. Use succinct dictionaries.
+- kmett has a database built on this!
+- can also use non-succinct algorithms
+- fully persistent - i.e. previous versions are not destroyed
+- always sequential writes on disk!!
+- movtivated by having a datastore that can cope with adhoc queries
+  without good indexes.
+
+*** Further information:
+- wavlets trees paper
+- computational geometry papers
+
+
+** Manuel Chakravarty - FFI - inline Objective-C with TH
+
+- ExpQ - the type of Haskell expressions
+- quasi-quotations: [| ... |]
+- Geofrey Mainland - quasi-quotes for any other language.
+
+#+BEGIN_SRC Haskell
+  add n = [cfun| int addConstant(int x) { return x + $int:n;  } |]
+#+END_SRC
+
+
+** Tim McGillgrist - Raft in Erlang
+
+- understandable concensus algorithm
+- uses - configuration management, distributed transaction,
+  distributed lock manager, dns, resource discovery
+- goals: understandable (compared to Paxos and Zookeerper Zac?),
+  strong leader, practical to implement.
+- only 2 messages: RequestVote (includes term)  and AppendEntries
+  (includees term and log entries)
+- The term acts as a logical clock
+- Only 3 states: Follower, Candidate, Leader.
+- Leader
+  - single leader
+  - receives commands from client
+  - writes commands to log ???
+- Follower
+   - append commands to log
+   - votes for candidates
+- Candidate
+  - initiiate election
+  - coordinates votes
+- Leader election. Follower random wait, transitions to Candidate and
+  calls for votes. Majority votes becomes the Leader.
+- Log Replication. 
+  - Sends AppendEntries to Followers. 
+  - Leader waits for majority.
+- Entries are saved to a persistent log.
+- functionally equivalent to [multi-]paxos.
+- also similarly efficient (at least in the happy case)
+
+
+** Declan Conlan - faster sorting ??
+
+- exotic sorts: counting sort, radix sort, bucket sort 
+- these rely on exploiting the structure of the data.
+- Fritz Henglein - Generic Top-down Discrimination for Sorting and
+  Partitioning in Linear Time.
+- talks main message is "compose compose compose"
+- reading academic papers give you super powers
+
+#+BEGIN_SRC Haskell
+data Order t where
+  TrivO :: Order t
+  NatO  :: Int -> Order Int
+  SumL  :: Order t1 -> Order t2 -> Order (Either (t1 t2)
+  ProdL :: Order t1 -> order t2 -> order (t1, t2)
+  MapO  :: (t1 -> t2) ...
+  ListL :: 
+
+-- Disc == Discriminator
+type Disc k = forcall v. [(kv,)] -> [[v]
+
+sort :: Order k -> Disc k
+sort (NatO n) xs = discNat n xs
+
+discNat :: Itnt -> Disc Int
+discNat n xs = filter (not . null) (bdiscNat n update xs)
+
+update :: [v] -> v -> [v]
+update vs v = v : vs
+OR
+update = flip (:)
+
+bdiscNat :: Int -> ([v] -> v -> [v]) -> [(Int, v)] -> [[v]])
+bdiscNat (n :: Int) update xs =
+  map reverse (elems (accumArray update [] (0, n-1) xs))
+#+END_SRC Haskell
+
+
+** Tony Morris - A modern history of lenses
+
+- Twan van Laarhoven http://twanvl.nl/
+
+#+BEGIN_SRC Haskell
+
+data Lens target field =
+  Lens f {
+    run :: forall f. Functor f => 
+      (field ->  f field) -> (target -> f target)
+  }
+
+#+END_SRC Haskell
+
+- partial lenses fails to follow laws (easily?)
+- need polymorphic update
+- Some libraries:
+  - data-lens:
+    - Started with data-lens - Edward Kmett - Maintained by Russ O'Connor
+      and Tony Morris.
+  - fclabels - Sebastian Visser. Tried to address partiality.
+- Tony writes paper "Asymmetric Lenses in Scala"
+
+#+BEGIN_SRC Haskell
+
+type Lens s t a b =
+  Functor f => (a -> f b) -> s -> f t
+
+-- Control.Lens.Prism
+type Prism s t a b =
+  (Applicative f, Choice f) =>
+    (a -> f b) -> s -> f t
+
+type Traversal s t a b =
+  Applicative f =>
+    (a -> f b) -> s -> f t
+
+#+END_SRC Haskell
+
+- These structures are just functions.
+- A Traversal is a Fold.
+- A Prism is a Traversal.
+- They are all a Lens.
+- They all compose with (.) i.e. regular function composition.
+
+- Didn't catch Ed on the downsides of Clean and uniqueness typing. linear types?
+  - affine + 
+  - ATAPL - first chapter.
+- Profunctor ?
+  - dimap
+- Choice is a profunctor?
+- negative position?
+- positive position?
+
+
+** Edward Kmett, cache oblivious sparse matrix multiplication
+
+- Morton Order ?
+- From Wikipedia:
+
+#+BEGIN_SRC
+
+Z-order, Morton order, or Morton code is a function which maps
+multidimensional data to one dimension while preserving locality of
+the data points. It was introduced in 1966 by G. M. Morton.[1] The
+z-value of a point in multidimensions is simply calculated by
+interleaving the binary representations of its coordinate values. Once
+the data are sorted into this ordering, any one-dimensional data
+structure can be used such as binary search trees, B-trees, skip lists
+or (with low significant bits truncated) hash tables. The resulting
+ordering can equivalently be described as the order one would get from
+a depth-first traversal of a quadtree; because of its close connection
+with quadtrees, the Z-ordering can be used to efficiently construct
+quadtrees and related higher-dimensional data structures.[2]
+
+#+END_SRC

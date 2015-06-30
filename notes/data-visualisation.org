@@ -1,0 +1,40 @@
+
+
+- http://jonathanstray.com/we-have-no-maps-of-the-web
+
+
+** Code Maps (using "world map" metaphor)
+
+- http://adapt.seiee.sjtu.edu.cn/~jacky/codemining.html
+- http://aswec2013.ict.swin.edu.au/ASWEC2013-Industry-Proceedings/papers/S1_Hawes_CodeMaps.pdf
+
+
+** Voronoi diagram/treemaps
+
+*** Red Blob Games polygonal map generation
+
+- [[http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/][Polygonal Map Generation for Games]]
+  - http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/#source
+  - https://github.com/amitp/mapgen2
+- [[http://simblob.blogspot.com.au/2013/11/updating-polygon-map-generator-demo.html][Updating the Polygon Map Generator Demo]]
+- [[http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/demo.html][Demo]]
+  - http://simblob.blogspot.com.au/2010/09/polygon-map-generation-part-1.html
+  - http://simblob.blogspot.com.au/2010/09/polygon-map-generation-part-2.html
+  - http://simblob.blogspot.com.au/2010/09/polygon-map-generation-part-3.html
+- http://simblob.blogspot.com.au/2012/02/polygon-map-generation-faq.html
+- http://simblob.blogspot.com.au/2010/01/simple-map-generation.html
+
+- http://www.redblobgames.com/articles/noise/introduction.html
+- http://www.redblobgames.com/articles/noise/2d/
+
+- http://rjanicek.github.io/voronoi-map-haxe/
+- http://lebesnec.github.io/island.js/
+- https://github.com/lebesnec/island.js
+
+*** Terrian generation - Perlin noise heightmap
+
+- http://notch.tumblr.com/post/3746989361/terrain-generation-part-1
+- http://accidentalnoise.sourceforge.net/minecraftworlds.html
+
+
+

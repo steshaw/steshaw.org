@@ -1,0 +1,9 @@
+
+- Nix packages can include services.
+
+- Freeshell packages allow you to share your configuration.
+  - sometimes requires post-processing to concatenate multiple config files into a single config file (if the tool to be configured doesn't support "side-by-side" configurations or an include/import directive or ".d/" style config directory.
+
+- PaaS like OpenShift (OpS) and CloudFoundry (CF) have
+  - cartridges (OpS) terminology) and xxxx (CF). cartrides are packages.
+

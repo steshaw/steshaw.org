@@ -1,0 +1,8 @@
+
+
+
+https://github.com/ekmett/succinct
+
+[[https://cs.uwaterloo.ca/~imunro/cs840/ProjectPapers/SODA10_013_sadakanek.pdf][Fully-Functional Succinct Trees] — Kunihiko Sadakane, Gonzalo Navarro
+
+[[https://www.youtube.com/watch?v=uA0Z7_4J7u8][Succinct Data Structures video by Ed Kmett]]

@@ -1,0 +1,16 @@
+
+# Notes from NixOS-IFIP
+
+Nix
+
+package management system (or simply a package system or packager)
+
+Describes programs (typical packages) but also configuration and services.
+
+
+- multiple variants of a package at the same time (side by side)
+
+- incomplete dependency specification (version ranges only)
+  steshaw: Ok -- cool. What's wrong with version ranges and how do we fix it?
+
+steshaw: I want configuration to _be_ a package. I hope this works with Nix.

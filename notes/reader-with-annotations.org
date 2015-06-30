@@ -1,0 +1,33 @@
+
+
+Should be able to have an EPUB/Epub based reading and annotation experience on The Lens.
+Synchronisation with offline mobile/tablet viewers should also be possible along with synchronisation
+of annotations made on the run.
+
+* Readers
+
+- http://futurepress.org/
+  - https://hypothes.is/blog/epub-js-bringing-open-annotation-to-books/
+- Epub.js https://github.com/futurepress/epub.js
+- Readium.org
+
+** Monocle/Bookish
+
+- http://monocle.inventivelabs.com.au/
+- http://inventivelabs.com.au/booki-sh
+- http://booki.sh/
+- Example book, Wind in the Willows, https://wind-in-the-5f382f.booki.sh/
+
+
+* Annotations
+
+** Open Annotation
+
+- http://openannotation.org/
+- https://hypothes.is/what-is-it/ - Not for profit service based on annotator project.
+- https://github.com/hypothesis
+- http://okfnlabs.org/projects/annotator/
+- http://annotatorjs.org/
+- http://www.w3.org/annotation/
+- http://www.openannotation.org/spec/core/
+
