@@ -35,7 +35,7 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
   - human languages
     - French—currently learning using [Duolingo](http://duolingo)
-    — Spanish—while in UK
+    - Spanish—while in UK
     - Japanese—lapsed after high school
     - Mandarin Chinese—very aspirational
     - one day a bit of Greek and Latin
