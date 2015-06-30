@@ -33,9 +33,17 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
 ### Hobbies
 
-  - human languages — Spanish, French.
+  - human languages
+    - French—currently learning using [Duolingo](http://duolingo)
+    — Spanish—while in UK
+    - Japanese—lapsed after high school
+    - Mandarin Chinese—very aspirational
+    - one day a bit of Greek and Latin
+  - music
+    - playing guitar
+    - singing and songwriting
+    - playing piano
   - gamedev — game engines, 2D/3D graphics, scripting engines, AI.
   - chess — my progress sadly stalled long ago.
-  - playing guitar
   - ideation
   - independent thinking :)
