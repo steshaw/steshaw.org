@@ -1,0 +1,7 @@
+
+* Porting useful tools to some rational programming language
+
+* From [[https://golang.org][Go]]
+
+- [[https://github.com/aktau/github-release][github-release]] :: Commandline app to create and edit releases on Github (and upload artifacts)
+- [[https://github.com/coreos/etcd][etcd]] :: A highly-available key-value store for shared configuration and service discovery
