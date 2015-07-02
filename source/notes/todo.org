@@ -1,6 +1,7 @@
 
 - Read "On Bullshit" "spoken word" as "performance art".
 - Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
+- Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
 
 - Buy a piano / keyboard
   - Baby grand?
