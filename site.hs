@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE FlexibleContexts #-}
 
 import Hakyll
 import Data.Monoid
@@ -10,7 +11,7 @@ import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
 import qualified Data.Map as M
 import Data.Char (toLower, isAlphaNum)
-import Data.List (sortBy, intercalate)
+import Data.List (sortBy, isInfixOf, intercalate)
 import qualified Data.ByteString.Lazy.Char8 as LB
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as E
@@ -28,7 +29,37 @@ import Text.ParserCombinators.Parsec
 
 import Debug.Trace (trace)
 
+import Control.Monad          (forM, forM_)
+import Data.List              (sortBy, isInfixOf)
+import Data.Monoid            ((<>), mconcat)
+import Data.Ord               (comparing)
+import Hakyll
+-- import System.Locale          (defaultTimeLocale)
+import System.FilePath.Posix  (
+  takeBaseName,
+  takeDirectory,
+  (</>),
+  splitFileName
+  )
+import YFilters (blogImage, blogFigure, frenchPunctuation, highlight)
+
+import           Data.Monoid            ((<>),mconcat)
+import           Hakyll
+
+import           Data.List              (sortBy,isInfixOf)
+import           Data.Ord               (comparing)
+--import           System.Locale          (defaultTimeLocale)
+
+import           Abbreviations          (abbreviationFilter)
+import           YFilters               (blogImage,blogFigure
+                                        ,frenchPunctuation,highlight)
+import           Multilang              (multiContext)
+import           System.FilePath.Posix  (takeBaseName,takeDirectory,(</>),splitFileName)
+
+import           Config                 (langs,feedConfiguration)
 --------------------------------------------------------------------------------
+
+
 main :: IO ()
 main = hakyll $ do
 
@@ -106,6 +137,8 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/posts.html" postsCtx
         >>= loadAndApplyTemplate "templates/default.html" postsCtx
         >>= relativizeUrls
+
+--  match "archive.md" $ archiveBehaviour "en"
 
   match "index.html" $ do
     route idRoute
@@ -274,3 +307,180 @@ sortIdentifiersByDate = sortBy (flip byDate)
             fn2 = takeFileName $ toFilePath id2
             parseTime' fn = (parseTimeM True) defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
         in compare (parseTime' fn1 :: Maybe UTCTime) (parseTime' fn2 :: Maybe UTCTime)
+
+
+
+
+
+--------------------------------------------------------------------------------
+--
+-- Cribbed from http://yannesposito.com/Scratch/en/blog/Hakyll-setup/
+--
+-- this way the url looks like: foo/bar in most browsers
+--
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+htmlPostBehavior :: Rules ()
+htmlPostBehavior = do
+  route $ niceRoute
+  compile $ getResourceBody
+        >>= applyFilter (abbreviationFilter . frenchPunctuation . highlight)
+        >>= saveSnapshot "content"
+        >>= loadAndApplyTemplate "templates/post.html" yPostContext
+        >>= loadAndApplyTemplate "templates/boilerplate.html" yPostContext
+        >>= relativizeUrls
+        >>= removeIndexHtml
+
+--------------------------------------------------------------------------------
+{-
+archiveBehaviour :: String -> Rules ()
+archiveBehaviour language = do
+  route $ niceRoute
+  compile $ do
+    body <- getResourceBody
+    identifier <- getUnderlying
+    return $ renderPandoc (fmap (preFilters (toFilePath identifier)) body)
+    >>= applyFilter postFilters
+    >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
+    >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+    >>= loadAndApplyTemplate "templates/boilerplate.html" archiveCtx
+    >>= relativizeUrls
+    >>= removeIndexHtml
+  where
+    archiveCtx =
+      field "posts" (\_ -> postList language createdFirst) <>
+      yContext
+-}
+
+--------------------------------------------------------------------------------
+createdFirst :: [Item String] -> Compiler [Item String]
+createdFirst items = do
+  -- itemsWithTime is a list of couple (date,item)
+  itemsWithTime <- forM items $ \item -> do
+    -- getItemUTC will look for the metadata "published" or "date"
+    -- then it will try to get the date from some standard formats
+    utc <- getItemUTC defaultTimeLocale $ itemIdentifier item
+    return (utc,item)
+  -- we return a sorted item list
+  return $ map snd $ reverse $ sortBy (comparing fst) itemsWithTime
+
+--------------------------------------------------------------------------------
+--
+-- metaKeywordContext will return a Context containing a String
+-- can be reached using $metaKeywords$ in the templates
+-- Use the current item (markdown file)
+-- tags contains the content of the "tags" metadata
+-- inside the item (understand the source)
+-- if tags is empty return an empty string
+-- in the other case return
+--   <meta name="keywords" content="$tags$">
+--
+--------------------------------------------------------------------------------
+metaKeywordContext :: Context String
+metaKeywordContext = field "metaKeywords" $ \item -> do
+  tags <- getMetadataField (itemIdentifier item) "tags"
+  return $ maybe "" showMetaTags tags
+    where
+      showMetaTags t = "<meta name=\"keywords\" content=\"" ++ t ++ "\">\n"
+
+--------------------------------------------------------------------------------
+--
+-- load a list of Item but remove their body
+--
+--------------------------------------------------------------------------------
+lightLoadAll :: Pattern -> Compiler [Item String]
+lightLoadAll pattern = do
+  identifers <- getMatches pattern
+  return [Item identifier "" | identifier <- identifers]
+
+--------------------------------------------------------------------------------
+postList :: String -> ([Item String] -> Compiler [Item String]) -> Compiler String
+postList language sortFilter = do
+    posts   <- lightLoadAll (fromGlob $ "Scratch/" ++ language ++ "/blog/*") >>= sortFilter
+    itemTpl <- loadBody "templates/post-item.html"
+    list    <- applyTemplateList itemTpl yContext posts
+    return list
+    
+--------------------------------------------------------------------------------
+imageContext :: Context a
+imageContext = field "image" $ \item -> do
+  image <- getMetadataField (itemIdentifier item) "image"
+  return $ maybe "/Scratch/img/presentation.png" id image
+
+
+prefixContext :: Context String
+prefixContext = field "webprefix" $ \_ -> return $ "/Scratch"
+
+--------------------------------------------------------------------------------
+yContext :: Context String
+yContext =  constField "type" "default" <>
+            metaKeywordContext <>
+            shortLinkContext <>
+            multiContext <>
+            imageContext <>
+            prefixContext <>
+            defaultContext
+
+--------------------------------------------------------------------------------
+yPostContext :: Context String
+yPostContext =  constField "type" "article" <>
+                metaKeywordContext <>
+                subtitleContext <>
+                shortLinkContext <>
+                multiContext <>
+                imageContext <>
+                prefixContext <>
+                defaultContext
+
+--------------------------------------------------------------------------------
+subtitleContext :: Context String
+subtitleContext = field "subtitleTitle" $ \item -> do
+  subt <- getMetadataField (itemIdentifier item) "subtitle"
+  return $ maybe "" showSubtitle subt
+    where
+      showSubtitle t = "<h2>" ++ t ++ "</h2>\n"
+  
+--------------------------------------------------------------------------------
+shortLinkContext :: Context String
+shortLinkContext = field "shorturl" $
+                    fmap (maybe "" (removeIndexStr . toUrl)) .getRoute . itemIdentifier
+
+
+--------------------------------------------------------------------------------
+niceRoute :: Routes
+niceRoute = customRoute createIndexRoute
+  where
+    createIndexRoute ident =
+        takeDirectory p </> takeBaseName p </> "index.html"
+      where p = toFilePath ident
+
+--------------------------------------------------------------------------------
+--
+-- replace url of the form foo/bar/index.html by foo/bar
+--
+removeIndexHtml :: Item String -> Compiler (Item String)
+removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
+
+removeIndexStr :: String -> String
+removeIndexStr url = case splitFileName url of
+    (dir, "index.html") | isLocal dir -> dir
+                        | otherwise   -> url
+    _                                 -> url
+    where isLocal uri = not (isInfixOf "://" uri)
+
+--------------------------------------------------------------------------------
+preFilters :: String -> String -> String
+preFilters itemPath =   abbreviationFilter
+                      . blogImage itemName
+                      . blogFigure itemName
+                      where
+                        itemName = takeBaseName itemPath
+
+--------------------------------------------------------------------------------
+postFilters :: String -> String
+postFilters = frenchPunctuation . highlight
+
+--------------------------------------------------------------------------------
+applyFilter :: (Monad m, Functor f) => (String -> String) -> f String -> m (f String)
+applyFilter transformator str = return $ (fmap $ transformator) str
