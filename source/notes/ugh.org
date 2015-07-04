@@ -1,7 +1,5 @@
-
 - my .emacs relies on un-"managed" files:
   - ~/sr-speedbar.el
   - ~/.shelly/local/emacs-color-theme-solarized
   - ~/.shelly/apps/ProofGeneral-4.1/*
   - ~/.emacs.d/confluence.el
-
