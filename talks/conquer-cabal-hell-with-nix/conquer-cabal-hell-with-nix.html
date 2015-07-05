@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level2">
+<h1>Conquer Cabal Hell with Nix</h1>
+<div style="float: right; margin-top: 33%; padding-right: 5%;">
+
+<p>@steshaw</p>
+</div>
+
+</section>
+<section class="slide level2">
+<h1>Overview of talk</h1>
+<ol>
+<li>Purely Functional Package Systems</li>
+<li>Overview of Nix</li>
+<li>How to use Nix with Haskell</li>
+</ol>
+</section>
+<section><section class="titleslide slide level1"><h1>Purely Functional Package Systems</h1></section><section class="slide level2">
+<h1>Features</h1>
+<ul>
+<li>multiple variants of a package at the same time (i.e. side by side)</li>
+<li>immutable packages</li>
+<li>atomic upgrades/rollbacks</li>
+<li>mutiple environments</li>
+<li>usable as non-root</li>
+</ul>
+</section><section class="slide level2">
+<h1>Examples</h1>
+<ul>
+<li><a href="http://nixos.org">Nix</a></li>
+<li><a href="http://0install.net">Zero Install</a></li>
+<li><a href="http://listaller.tenstral.net/">Listaller</a> (was Autopackage)</li>
+</ul>
+</section></section>
+<section><section class="titleslide slide level1"><h1>Nix</h1></section><section class="slide level2">
+<h1>Commands</h1>
+<p>Find packages</p>
+<pre class="shell_session"><code>$ nix-env --query --available &#39;hello*&#39;
+$ nix-env -qa &#39;hello*&#39;
+</code></pre>
+<p>Install a package</p>
+<pre class="shell_session"><code>$ nix-env --install hello
+$ nix-env -i hello
+</code></pre>
+<p>Remove a package</p>
+<pre class="shell_session"><code>$ nix-env --uninstall hello
+$ nix-env -e hello
+</code></pre>
+</section><section class="slide level2">
+<h1>Commands (continued)</h1>
+<p>Alternatively rollback</p>
+<pre class="shell_session"><code>$ nix-env --rollback
+</code></pre>
+<p>Upgrade your packages</p>
+<pre class="shell_session"><code>$ nix-env --upgrade
+</code></pre>
+</section><section class="slide level2">
+<h1>Accelerating Haskell Development with Nix</h1>
+<p><strong>demo time</strong></p>
+</section></section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: true,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: false,                // Display the page number of the current slide
+        theme: 'black', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
