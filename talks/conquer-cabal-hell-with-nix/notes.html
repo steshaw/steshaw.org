@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section class="titleslide slide level1"><h1>Nix Overview</h1></section><section class="slide level2">
+<h1>Nix Features</h1>
+<ul>
+<li>Add more Nix features from <a href="http://nixos.org/nix/about.html" class="uri">http://nixos.org/nix/about.html</a></li>
+<li>Diagrams.</li>
+</ul>
+</section><section class="slide level2">
+<h1>Architecture of Nix</h1>
+<p><strong>Under the hood a little bit</strong></p>
+<ul>
+<li>/nix/store</li>
+<li>Perhaps the crazy linker thing.</li>
+<li>How hashing works. Why binary subtiution is the thing.</li>
+<li>A -&gt; B. What are the inputs?
+<ul>
+<li>What inputs?</li>
+<li>What outputs?</li>
+<li>hashing for the store</li>
+</ul></li>
+<li>Caching/Memoisation.</li>
+</ul>
+</section><section class="slide level2">
+<h1>Nix Commands</h1>
+<ul>
+<li>Installing haskell tools like ghc (different versions) and nix2cabal.</li>
+<li>Usage of nix-shell</li>
+<li>Usage of nix2cabal</li>
+</ul>
+</section></section>
+<section><section class="titleslide slide level1"><h1>Accelerating Haskell Development with Nix</h1></section><section class="slide level2">
+<h1>Where are we now?</h1>
+<ul>
+<li>Using cabal sandboxes.</li>
+<li>Perhaps some shared sandboxes.</li>
+<li>Waiting for builds is no fun.</li>
+<li>Wasting time building `lens` for each of your projects that uses it is not good.</li>
+<li>Let's not accept the status quo.</li>
+<li>One option is to use Halcyon -- a build cache for Cabal.</li>
+</ul>
+</section><section class="slide level2">
+<h1>What's not good?</h1>
+<ul>
+<li>Long build times.</li>
+<li>Building the same dependencies over and over again in different sandboxes.</li>
+<li>These sandboxes could be on your machine or your team members machine.</li>
+<li>Or on the build box.</li>
+<li>There is wastage of time but also of disk space.</li>
+<li>With SSDs, disk space isn't as cheap as it used to be.</li>
+</ul>
+</section><section class="slide level2">
+<h1>Demo</h1>
+<ul>
+<li>Instant `lens` environment.</li>
+<li>Instant `reflex` environment with tryreflex. <a href="https://github.com/ryantrinkle/try-reflex" class="uri">https://github.com/ryantrinkle/try-reflex</a></li>
+<li>Work through hutton-razor.</li>
+</ul>
+</section><section class="slide level2">
+<h1>Downsides of Nix.</h1>
+<ul>
+<li>Still early (but you'd be getting in at a great time)</li>
+</ul>
+</section><section class="slide level2">
+<h1>Nix Workshop at Hack Night</h1>
+<ul>
+<li>Get set up with NixOS (and perhaps Nix on Mac/Linux/*BSD if you're more adventurous).</li>
+<li>Learn how to set up a modern Haskell development environment.</li>
+<li>Hopefully, learn how to work on sources to multiple dependencies in your tree.</li>
+</ul>
+</section><section class="slide level2">
+<h1>References</h1>
+<ul>
+<li><a href="http://ocharles.org.uk">Ollie Charles</a>
+<ul>
+<li><a href="https://ocharles.org.uk/blog/posts/2014-02-04-how-i-develop-with-nixos.html">How I develop with Nix</a></li>
+<li><a href="http://wiki.ocharles.org.uk/Nix" class="uri">http://wiki.ocharles.org.uk/Nix</a></li>
+</ul></li>
+<li><a href="http://cryp.to/">Peter Simons</a>
+<ul>
+<li><a href="https://youtu.be/BsBhi_r-OeE">Nix loves Haskell</a> — <a href="http://cryp.to/nixos-meetup-3-slides.pdf">slides</a> — <a href="https://github.com/NixOS/cabal2nix/blob/master/doc/nixos-meetup-3-slides.md">slides.md</a></li>
+<li><a href="https://github.com/NixOS/cabal2nix/blob/master/doc/user-guide.md">Haskell User Guide for Nixpkgs</a></li>
+</ul></li>
+<li><a href="https://nixos.org/nix/manual/" class="uri">https://nixos.org/nix/manual/</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: true,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: false,                // Display the page number of the current slide
+        theme: 'black', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>

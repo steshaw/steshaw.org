@@ -1,0 +1,110 @@
+** Conquer Cabal Hell with Nix
+
+#+begin_html
+<div style="float: right; margin-top: 33%; padding-right: 5%;">
+#+end_html
+@steshaw
+#+begin_html
+</div>
+#+end_html
+
+** Overview of talk
+
+1. Purely Functional Package Systems
+2. Overview of Nix
+3. How to use Nix with Haskell
+
+
+* Purely Functional Package Systems
+
+** Features
+
+- multiple variants of a package at the same time (i.e. side by side)
+- immutable packages
+- atomic upgrades/rollbacks
+- mutiple environments
+- usable as non-root
+
+#+begin_comment
+First, we'll introduce [[http://nixos.org/nix/][Nix]], a purely
+functional package system, and highlight its advantages over widespread
+systems such as [[https://wiki.debian.org/Apt][APT]].
+#+end_comment
+
+** Examples
+
+- [[http://nixos.org][Nix]]
+- [[http://0install.net][Zero Install]]
+- [[http://listaller.tenstral.net/][Listaller]] (was Autopackage)
+
+
+* Nix
+
+- Source-based with "binary replacement".
+- Scales up to entire Linux distribution. See NixOS.
+- Written in C and Perl but looks like a Haskell port is in the works.
+- Popular in the Haskell community.
+
+
+** Commands
+
+Find packages
+#+begin_src shell_session
+$ nix-env --query --available 'hello*'
+$ nix-env -qa 'hello*'
+#+end_src
+
+Install a package
+#+begin_src shell_session
+$ nix-env --install hello
+$ nix-env -i hello
+#+end_src
+
+Remove a package
+#+begin_src shell_session
+$ nix-env --uninstall hello
+$ nix-env -e hello
+#+end_src
+
+
+** Commands (continued)
+
+Alternatively rollback
+#+begin_src shell_session
+$ nix-env --rollback
+#+end_src
+
+Upgrade your packages
+#+begin_src shell_session
+$ nix-env --upgrade
+#+end_src
+
+
+** Accelerating Haskell Development with Nix
+
+*demo time*
+
+#+BEGIN_COMMENT
+<div class="notes">
+
+Finally, we'll learn how conquer Cabal hell and accelerate your Haskell
+development with Nix. We'll set up Nix for Haskell development.
+Configure Nix environments containing all your favourite Haskell
+development tools. Most importantly, pull in library dependencies
+without recompiling all of hackage. Discover that there's no need to
+decide between per-project and shared sandboxes --- you get to have your
+cake and eat it too!
+</div>
+
+
+*** Installing ghc-mod
+
+[[http://stackoverflow.com/questions/24228402/nixos-and-ghc-mod-module-not-found][How to install ghc-mod on NixOS]]
+
+OR perhaps this will work:
+
+#+begin_src shell
+nix-env --install haskell-ghc-mod-ghc7.8.4
+#+end_src haskell
+
+#+END_COMMENT
