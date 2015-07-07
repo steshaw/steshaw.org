@@ -21,8 +21,8 @@
 ... or ...
 
 - Concurrent
-- Testing
 - with
+- Testing
 - QuickCheck
 - Systems
 
