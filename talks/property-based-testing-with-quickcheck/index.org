@@ -22,9 +22,7 @@ Choose your own adventure.
 - software
 - QuickCheck
 
-** Looking for race conditions.
-
-- Something about how they did it with Erlang and Quiv
+- Google for "Erlang Quiv"
 
 
 ** References
