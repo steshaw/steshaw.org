@@ -30,7 +30,7 @@
 ** Testing Concurrent systems (Part 2)
 
 - Google for "Erlang QuviQ"
-- Same applied to distributed systems.
+- Same can be applied to distributed systems.
 
 
 ** Further reading
