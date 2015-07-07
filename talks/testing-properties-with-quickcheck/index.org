@@ -16,7 +16,7 @@
 - Demo (arbitrary)
 
 
-** Testing Concurrent systems with QuickCheck
+** Testing Concurrent Systems with QuickCheck
 
 ... or ...
 
