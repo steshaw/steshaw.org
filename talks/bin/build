@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -eu
+${DEBUG:-}
 
 if [[ $# -ne 1 ]]; then
   echo "usage: $0 talk-name" >&2
@@ -16,4 +17,9 @@ pandoc --smart -s -t revealjs --slide-level 2 -V theme:black \
 # Sadly, the setting the theme via the `theme` variable doesn't seem to work. Invoke Perl!
 perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i ${name}.html
 
-which pdflatex && pandoc -t beamer -V theme:Madrid ${src} -o ${name}.pdf || echo 'Install pdflatex!'
+# FIX: hack for index.org
+if [[ $name == 'index' ]]; then
+  pdf="../$(basename $(pwd)).pdf"
+fi
+
+which pdflatex && pandoc -t beamer -V theme:Madrid ${src} -o ${pdf} || echo 'Install pdflatex!'
