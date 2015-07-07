@@ -11,7 +11,7 @@ name=$1
 src=${name}.org
 
 #  -V revealjs-url:http://lab.hakim.se/reveal-js \
-pandoc -s -t revealjs --slide-level 2 -V theme:black \
+pandoc --smart -s -t revealjs --slide-level 2 -V theme:black \
   ${src} -o ${name}.html
 # Sadly, the setting the theme via the `theme` variable doesn't seem to work. Invoke Perl!
 perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i ${name}.html

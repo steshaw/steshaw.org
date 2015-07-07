@@ -1,38 +1,50 @@
-#+title:    Property-based testing with QuickCheck
-#+subtitle: Choose your own adventure
+#+title:    Testing properties with QuickCheck
 
-* Quick overview of QuickCheck
+** Quick overview of QuickCheck
 
-** References
+- Demo (basics)
+
+
+** Appeal to authority
 
 - [[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]], [[http://www.michaelnygard.com][Michael Nygard]]
 
 
-* UI testing with QuickCheck
+** Testing UI
 
-Choose your own adventure.
+- Choose your own adventure — randomised user actions.
+- Demo (arbitrary)
 
 
-* Testing concurrent systems with QuickCheck
+** Testing Concurrent systems
 
 ... or ...
+
 - testing
 - with
 - concurrent
 - software
 - QuickCheck
 
-- Google for "Erlang Quiv"
+** Testing Concurrent systems (Part 2)
+
+- Google for "Erlang QuviQ"
+- Same applied to distributed systems.
 
 
-** References
+** Further reading
+
+- https://hackage.haskell.org/package/QuickCheck
+- Original paper http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf
+
+
+** Further reading---Concurrent Systems
 
 - http://www.quviq.com/products/erlang-quickcheck/
 - [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]]
 
-
-* Testing distributed systems with QuickCheck
+** Future reading---Distributed Systems
 
 - [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]]
 - [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
