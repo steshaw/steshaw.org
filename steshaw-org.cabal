@@ -6,7 +6,7 @@ homepage:               http://steshaw.org
 author:                 Steven Shaw
 maintainer:             steven@steshaw.org
 license:                BSD2
-license-file:           LICENSE
+license-file:           LICENSE—BSD2
 category:               Web
 build-type:             Simple
 extra-source-files:

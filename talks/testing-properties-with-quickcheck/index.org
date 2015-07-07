@@ -7,7 +7,7 @@
 
 ** Appeal to authority
 
-- [[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]], [[http://www.michaelnygard.com][Michael Nygard]]
+- [[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]], [[http://www.michaelnygard.com][Michael Nygard]] (2013)
 
 
 ** Testing UI
@@ -27,25 +27,25 @@
 - Systems
 
 
-** Testing Concurrent systems (Part 2)
+** Testing Concurrent systems (cont.)
 
 - Google for "Erlang QuviQ"
-- Same can be applied to distributed systems.
+- These ideas apply also to distributed systems.
 
 
-** Further reading
+** References
 
-- https://hackage.haskell.org/package/QuickCheck
-- Original paper http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf
+- [[https://hackage.haskell.org/package/QuickCheck][QuickCheck on Hackage]]
+- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper by Koen Claessen and John Hughes]] (2000)
 
 
-** Further reading---Concurrent Systems
+** References---Concurrent Systems
 
-- http://www.quviq.com/products/erlang-quickcheck/
+- [[http://www.quviq.com/products/erlang-quickcheck/][Erlang's QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]]
 
-** Future reading---Distributed Systems
+** References---Distributed Systems
 
 - [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]]
 - [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
