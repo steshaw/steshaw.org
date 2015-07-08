@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <!-- If the query includes 'print-pdf', include the PDF print sheet -->
   <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
@@ -31,17 +32,35 @@
 
 <section class="slide level2">
 <h1>Testing properties with QuickCheck</h1>
-<div style="float: right; margin-top: 33%; padding-right: 5%;">
+<style>
+  section.slide.level2.present {
+    height: 455px;
+  }
+  .fa-terminal {
+    color: green;
+  }
+</style>
 
-<p>@steshaw</p>
+</section>
+<section class="slide level2">
+<h1>“Choose your own adventure”</h1>
+<p>Lightning talk, <a href="http://www.meetup.com/Brisbane-Software-Testers-Meetup/">Brisbane Software Testers</a></p>
+<div style="margin-top: 3em; position: fixed; bottom: 0; right: 0;">
+
+<p><a href="http://steshaw.org/">@steshaw</a></p>
 </div>
 
 </section>
 <section class="slide level2">
-<h1>Quick overview of QuickCheck</h1>
+<h1>Quick overview</h1>
 <ul>
-<li>Demo (basics)</li>
+<li>Test properties of your programs.</li>
+<li>Randomised test inputs.</li>
 </ul>
+<p>
+  <i class="fa fa-terminal"></i> Demo (basics)
+</p>
+
 </section>
 <section class="slide level2">
 <h1>Appeal to authority</h1>
@@ -52,48 +71,67 @@
 <section class="slide level2">
 <h1>Testing UI</h1>
 <ul>
-<li>Choose your own adventure — randomised user actions.</li>
-<li>Demo (arbitrary)</li>
+<li>Choose your own adventure.</li>
+<li>randomised user actions.</li>
 </ul>
+<p>
+  <i class="fa fa-terminal"></i> Demo (arbitrary)
+</p>
+
 </section>
 <section class="slide level2">
-<h1>Testing Concurrent Systems with QuickCheck</h1>
+<h1>Testing Concurrent Systems</h1>
 <p>… or …</p>
 <ul>
 <li>Concurrent</li>
-<li>with</li>
 <li>Testing</li>
-<li>QuickCheck</li>
 <li>Systems</li>
 </ul>
+<p>:P</p>
 </section>
 <section class="slide level2">
-<h1>Testing Concurrent systems (cont.)</h1>
+<h1>Concurrent systems (2)</h1>
 <ul>
-<li>Google for “Erlang QuviQ”</li>
-<li>These ideas apply also to distributed systems.</li>
+<li><a href="https://www.google.com/search?q=Erlang+QuviQ">Google for Erlang QuviQ</a> to find reports and talks.</li>
+<li>Distributed Systems are Concurrency Systems that span multiple nodes.
+<ul>
+<li>i.e. these ideas apply to Distributed Systems.</li>
+<li>i.e. web</li>
+</ul></li>
 </ul>
 </section>
 <section class="slide level2">
 <h1>References</h1>
 <ul>
-<li><a href="http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf">Original QuickCheck paper from 2000 by Koen Claessen and John Hughes</a> (PDF)</li>
-<li><a href="https://hackage.haskell.org/package/QuickCheck">QuickCheck on Hackage</a></li>
+<li><a href="http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf">Original QuickCheck paper (2000), Koen Claessen and John Hughes</a> (PDF)</li>
+<li><a href="http://www.cse.chalmers.se/~rjmh/QuickCheck/">QuickCheck homepage</a></li>
+<li><a href="http://www.cse.chalmers.se/~rjmh/QuickCheck/manual.html">QuickCheck Manual</a></li>
+<li><a href="http://book.realworldhaskell.org/read/testing-and-quality-assurance.html">Testing and quality assurance</a>—Chapter 11 of <a href="http://realworldhaskell.org">Real World Haskell</a></li>
+<li><a href="https://wiki.haskell.org/Introduction_to_QuickCheck1">Introduction to QuickCheck</a> (Haskell Wiki)</li>
 </ul>
 </section>
 <section class="slide level2">
-<h1>References—Concurrent Systems</h1>
+<h1>References (2)</h1>
+<h3>Testing Concurrent Systems</h3>
 <ul>
-<li><a href="http://www.quviq.com/products/erlang-quickcheck/">Erlang’s QuickCheck</a></li>
+<li><a href="http://www.quviq.com/products/erlang-quickcheck/">Erlang QuickCheck</a></li>
 <li><a href="http://publications.lib.chalmers.se/records/fulltext/146291.pdf">Testing Erlang Concurrency with QuickCheck</a> (PDF)</li>
 <li><a href="http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf">Finding Race Conditions in Erlang with QuickCheck and PULSE</a> (PDF)</li>
 </ul>
 </section>
 <section class="slide level2">
-<h1>References—Distributed Systems</h1>
+<h1>References (3)</h1>
+<h3>Testing Distributed Systems</h3>
 <ul>
 <li><a href="http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf">Testing Telecoms Software with Quviq QuickCheck</a> (PDF)</li>
 <li><a href="https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko">Modeling eventually consistent databases with QuickCheck</a> (Video), Jon Meredith, Basho.</li>
+</ul>
+</section>
+<section class="slide level2">
+<h1>See Also</h1>
+<ul>
+<li><a href="https://ro-che.info/articles/2013-02-19-smallcheck.html">SmallCheck</a> for exhaustive checking of your properties (rather than QuickCheck style random samples)</li>
+<li><a href="https://github.com/feuerbach/smallcheck/wiki/Comparison-with-QuickCheck">Comparison of QuickCheck and SmallCheck</a></li>
 </ul>
 </section>
     </div>
