@@ -1,6 +1,6 @@
 ** Testing properties with QuickCheck
 
-#+BEGIN_HTML
+#+begin_html
 <style>
   section.slide.level2.present {
     height: 455px;
@@ -9,14 +9,10 @@
     color: green;
   }
 </style>
-#+END_HTML
-
-** "Choose your own adventure"
-
-Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisbane Software Testers]]
+#+end_html
 
 #+begin_html
-<div style="margin-top: 3em; position: fixed; bottom: 0; right: 0;">
+<div style="margin-top: 3em; position: absolute; bottom: 0; right: 0;">
 #+end_html
 [[http://steshaw.org/][@steshaw]]
 #+begin_html
@@ -24,11 +20,15 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 #+end_html
 
 
+** "Choose your own adventure"
+
+Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisbane Software Testers]]
+
+
 ** Quick overview
 
 - Test properties of your programs.
 - Randomised test inputs.
-
 
 #+begin_html
 <p>
@@ -39,7 +39,13 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 
 ** Appeal to authority
 
-- [[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]], [[http://www.michaelnygard.com][Michael Nygard]] (2013)
+#+begin_html
+<br>
+#+end_html
+
+#+begin_quote
+[[http://thinkrelevance.com/blog/2013/11/26/better-than-unit-tests][Better than unit tests]]---[[http://www.michaelnygard.com][Michael Nygard]] (2013)
+#+end_quote
 
 
 ** Testing UI
@@ -67,7 +73,7 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 
 ** Concurrent systems (2)
 
-- [[https://www.google.com/search?q=Erlang+QuviQ][Google for Erlang QuviQ]] to find reports and talks.
+- Google [[https://www.google.com/search?q=Erlang+QuviQ]["Erlang QuviQ"]] to find reports and talks.
 - Distributed Systems are Concurrency Systems that span multiple nodes.
   - i.e. these ideas apply to Distributed Systems.
   - i.e. web
@@ -75,11 +81,10 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 
 ** References
 
-- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper (2000), Koen Claessen and John Hughes]] (PDF)
-- [[http://www.cse.chalmers.se/~rjmh/QuickCheck/][QuickCheck homepage]]
-- [[http://www.cse.chalmers.se/~rjmh/QuickCheck/manual.html][QuickCheck Manual]]
+- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper from 2000---Claessen and Hughes]] (PDF)
+- [[http://www.cse.chalmers.se/~rjmh/QuickCheck/][QuickCheck homepage]] and [[http://www.cse.chalmers.se/~rjmh/QuickCheck/manual.html][manual]]
 - [[http://book.realworldhaskell.org/read/testing-and-quality-assurance.html][Testing and quality assurance]]---Chapter 11 of [[http://realworldhaskell.org][Real World Haskell]]
-- [[https://wiki.haskell.org/Introduction_to_QuickCheck1][Introduction to QuickCheck]] (Haskell Wiki)
+- [[https://wiki.haskell.org/Introduction_to_QuickCheck1][Introduction to QuickCheck on Haskell Wiki]]
 
 
 ** References (2)
