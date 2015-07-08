@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+${DEBUG:-}
+
+set -eu
+
+#
+# Make talks.
+#
+for dir in talks/*; do
+  [[ -d ${dir} && ${dir} != talks/bin ]] && (cd ${dir} && make)
+done
+
+#
+# Build and deploy to GHP.
+#
+bin/build && bin/site-rebuild && bin/deploy-to-github-pages
