@@ -1,16 +1,40 @@
 ** Testing properties with QuickCheck
 
+#+BEGIN_HTML
+<style>
+  section.slide.level2.present {
+    height: 455px;
+  }
+  .fa-terminal {
+    color: green;
+  }
+</style>
+#+END_HTML
+
+** "Choose your own adventure"
+
+Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisbane Software Testers]]
+
 #+begin_html
-<div style="float: right; margin-top: 33%; padding-right: 5%;">
+<div style="margin-top: 3em; position: fixed; bottom: 0; right: 0;">
 #+end_html
-@steshaw
+[[http://steshaw.org/][@steshaw]]
 #+begin_html
 </div>
 #+end_html
 
-** Quick overview of QuickCheck
 
-- Demo (basics)
+** Quick overview
+
+- Test properties of your programs.
+- Randomised test inputs.
+
+
+#+begin_html
+<p>
+  <i class="fa fa-terminal"></i> Demo (basics)
+</p>
+#+end_html
 
 
 ** Appeal to authority
@@ -20,41 +44,62 @@
 
 ** Testing UI
 
-- Choose your own adventure — randomised user actions.
-- Demo (arbitrary)
+- Choose your own adventure.
+- randomised user actions.
+
+#+begin_html
+<p>
+  <i class="fa fa-terminal"></i> Demo (arbitrary)
+</p>
+#+end_html
 
 
-** Testing Concurrent Systems with QuickCheck
+** Testing Concurrent Systems
 
 ... or ...
 
 - Concurrent
-- with
 - Testing
-- QuickCheck
 - Systems
 
+:P
 
-** Testing Concurrent systems (cont.)
 
-- Google for "Erlang QuviQ"
-- These ideas apply also to distributed systems.
+** Concurrent systems (2)
+
+- [[https://www.google.com/search?q=Erlang+QuviQ][Google for Erlang QuviQ]] to find reports and talks.
+- Distributed Systems are Concurrency Systems that span multiple nodes.
+  - i.e. these ideas apply to Distributed Systems.
+  - i.e. web
 
 
 ** References
 
-- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper from 2000 by Koen Claessen and John Hughes]] (PDF)
-- [[https://hackage.haskell.org/package/QuickCheck][QuickCheck on Hackage]]
+- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper (2000), Koen Claessen and John Hughes]] (PDF)
+- [[http://www.cse.chalmers.se/~rjmh/QuickCheck/][QuickCheck homepage]]
+- [[http://www.cse.chalmers.se/~rjmh/QuickCheck/manual.html][QuickCheck Manual]]
+- [[http://book.realworldhaskell.org/read/testing-and-quality-assurance.html][Testing and quality assurance]]---Chapter 11 of [[http://realworldhaskell.org][Real World Haskell]]
+- [[https://wiki.haskell.org/Introduction_to_QuickCheck1][Introduction to QuickCheck]] (Haskell Wiki)
 
 
-** References---Concurrent Systems
+** References (2)
 
-- [[http://www.quviq.com/products/erlang-quickcheck/][Erlang's QuickCheck]]
+*** Testing Concurrent Systems
+
+- [[http://www.quviq.com/products/erlang-quickcheck/][Erlang QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]] (PDF)
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]] (PDF)
 
 
-** References---Distributed Systems
+** References (3)
+
+*** Testing Distributed Systems
 
 - [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]] (PDF)
 - [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
+
+
+** See Also
+
+- [[https://ro-che.info/articles/2013-02-19-smallcheck.html][SmallCheck]] for exhaustive checking of your properties (rather than QuickCheck style random samples)
+- [[https://github.com/feuerbach/smallcheck/wiki/Comparison-with-QuickCheck][Comparison of QuickCheck and SmallCheck]]
