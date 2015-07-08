@@ -20,6 +20,8 @@ perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i ${name}.html
 # FIX: hack for index.org
 if [[ $name == 'index' ]]; then
   pdf="../$(basename $(pwd)).pdf"
+else
+  pdf="${name}.pdf"
 fi
 
 which pdflatex && pandoc -t beamer -V theme:Madrid ${src} -o ${pdf} || echo 'Install pdflatex!'

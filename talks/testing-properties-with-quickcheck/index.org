@@ -1,4 +1,12 @@
-#+title:    Testing properties with QuickCheck
+** Testing properties with QuickCheck
+
+#+begin_html
+<div style="float: right; margin-top: 33%; padding-right: 5%;">
+#+end_html
+@steshaw
+#+begin_html
+</div>
+#+end_html
 
 ** Quick overview of QuickCheck
 
@@ -35,17 +43,18 @@
 
 ** References
 
+- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper from 2000 by Koen Claessen and John Hughes]] (PDF)
 - [[https://hackage.haskell.org/package/QuickCheck][QuickCheck on Hackage]]
-- [[http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf][Original QuickCheck paper by Koen Claessen and John Hughes]] (2000)
 
 
 ** References---Concurrent Systems
 
 - [[http://www.quviq.com/products/erlang-quickcheck/][Erlang's QuickCheck]]
-- [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]]
-- [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]]
+- [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]] (PDF)
+- [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]] (PDF)
+
 
 ** References---Distributed Systems
 
-- [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]]
+- [[http://www.quviq.com/wp-content/uploads/2014/08/erlang001-arts.pdf][Testing Telecoms Software with Quviq QuickCheck]] (PDF)
 - [[https://erlangcentral.org/modeling-eventual-consistency-databases-with-quickcheck/#.VYeDPBOqqko][Modeling eventually consistent databases with QuickCheck]] (Video), Jon Meredith, Basho.
