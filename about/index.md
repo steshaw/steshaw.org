@@ -13,7 +13,7 @@ I'm an avid computer programmer who loves programming languages. As an industry 
 
 While I was using those languages in industry, I was learning about all sorts of other languages: Component Pascal, Oberon, Oberon-2, Modula-3, Mesa, ALGOL, Eiffel, Sather, CLU, Smalltalk, Scheme, Goo, Dylan, EuLisp, Racket, Common Lisp, [Shen](http://www.shenlanguage.org/), [Slate](http://slatelanguage.org/), [Io](http://iolanguage.org/), Factor, Objective-C, APL, J, K, Prolog, Caml, OCaml, F#, Standard ML, Mythryl, Mozart Oz, Alice ML, Erlang, Haskell, Idris, Coq, Agda, Ur, ATS, F\*, Haxe, Elm, TypeScript, PureScript, Swift. Of course, my depth of study varied greatly. In fact, most of these languages I have learnt only superficially, often from research papers or books alone.
 
-Languages that I seek to use include [Haskell](http://haskell.org), [Scala](http://scala-lang.org), [PureScript](http://purescript.org/), and (as soon as it's ready) [Idris](http://idris-lang.org).
+Languages that I seek to use include [Haskell](http://haskell.org), [Scala](http://scala-lang.org), [PureScript](http://purescript.org/), and [Idris](http://idris-lang.org).
 
 ### Formative Years
 
@@ -26,24 +26,30 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
 ### Interests
 
-  - programming languages, runtime systems and operating systems – very similar beasts!
-  - appdev — trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy and coffee.
-  - distributed systems - cloud, web, messaging, middleware and highly-scalable servers.
-  - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
+  - programming language, type theory, higher type theory (aka HoTT), category theory, proof theory. i.e. types, logic, and categories (TLC).
+  - apps — trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy, and coffee.
+  - Systems
+    - runtime systems and operating systems – very similar beasts!
+    - distributed systems - cloud, web, messaging, middleware, and highly-scalable servers.
+    - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
+    - build systems - make, cook, vesta, sbt [horrors]
 
 ### Hobbies
 
   - human languages
-    - French—currently learning using [Duolingo](http://duolingo)
-    - Spanish—while in UK
-    - Japanese—lapsed after high school
-    - Mandarin Chinese—very aspirational
-    - one day a bit of Greek and Latin
+    - French—was learning via [Duolingo](http://duolingo) on long commute.
+    - Spanish—while in UK.
+    - Japanese—lapsed after high school.
+    - Mandarin Chinese—very aspirational i.e. I can say "hello".
+    - one day a bit of modern and ancient Greek, plus Latin.
   - music
-    - playing guitar
-    - singing and songwriting
-    - playing piano
-  - gamedev — game engines, 2D/3D graphics, scripting engines, AI.
+    - guitar—currently looking for a teacher. Please put me in touch with Matt Denny!
+    - piano—currently looking for a teacher. Want to learn to play:
+      - [[https://youtu.be/w5782PQO5is][Blue—Joni Mitchell]].
+      - [[https://youtu.be/XUNOmN3YVL0][Baby Grand—Billy Joel and Ray Charles]].
+    - singing i.e. once loved drunken karaoke :)
+    - songwriting—some lyrics from my teens
+  - gamedev — game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
   - chess — my progress sadly stalled long ago.
   - ideation
-  - independent thinking :)
+  - independent thinking—poltically agnostic, resists dogma and status quo.
