@@ -6,8 +6,9 @@ ${DEBUG:-}
 #
 # Make talks.
 #
-for dir in talks/*; do
-  [[ -d ${dir} && ${dir} != talks/bin && ${dir} != ${dir#reveal\.js} ]] && (cd ${dir} && make)
+for f in talks/*/index.org; do
+  dir=$(dirname $f)
+  [[ -d ${dir} ]] && (cd ${dir} && make)
 done
 
 #

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 set -eu
 ${DEBUG:-}
 
@@ -39,7 +40,7 @@ function BeamerPdf {
 }
 
 function DeckTapePdf {
-  pdf="${pdfBase}.decktape.pdf"
+  pdf="${pdfBase}.pdf"
   url="file://$(pwd)/${name}.html"
   decktape reveal ${url} ${pdf}
 }
