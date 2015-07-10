@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -eu
+set -o noclobber
+
+if [[ $# -ne 1 ]]; then
+  cat <<! >&2
+usage $(basename $0): subject
+
+  subject — Subject to demystify. Should be plural and correctly capitalised. e.g. "Higher Groupoids"
+!
+  exit 2
+fi
+
+subject=${1}
+filename=$(echo "${subject}" | perl -pe 's/ /-/g' | tr '[A-Z]' '[a-z]').org
+
+cat <<! >${filename}
+* Demystifying ${subject}
+
+
+** Introduction to ${subject}
+
+
+** Deeper into ${subject}
+
+
+** Programming with ${subject}
+!

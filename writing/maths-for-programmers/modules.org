@@ -1,0 +1,12 @@
+* Demystifying modules
+
+Here, of course, we are talking about Modules from mathematics (not modules typically found in programming languages and exemplified by the Standard ML module system).
+
+
+** Introduction to modules
+
+
+** Deeper into modules
+
+
+** Programming with modules
