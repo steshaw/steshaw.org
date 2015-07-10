@@ -85,13 +85,13 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 - [[http://www.cse.chalmers.se/~rjmh/QuickCheck/][QuickCheck homepage]] and [[http://www.cse.chalmers.se/~rjmh/QuickCheck/manual.html][manual]]
 - [[http://book.realworldhaskell.org/read/testing-and-quality-assurance.html][Testing and quality assurance]]---Chapter 11 of [[http://realworldhaskell.org][Real World Haskell]]
 - [[https://wiki.haskell.org/Introduction_to_QuickCheck1][Introduction to QuickCheck on Haskell Wiki]]
+- https://github.com/steshaw/quickcheck-examples
 
 
 ** References (2)
 
 *** Testing Concurrent Systems
 
-- https://github.com/steshaw/quickcheck-examples
 - [[http://www.quviq.com/products/erlang-quickcheck/][Erlang QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]] (PDF)
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]] (PDF)
