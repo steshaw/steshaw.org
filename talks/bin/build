@@ -41,8 +41,6 @@ function BeamerPdf {
 function DeckTapePdf {
   pdf="${pdfBase}.decktape.pdf"
   url="file://$(pwd)/${name}.html"
-  echo "url=[[$url]]"
-  set +x
   decktape reveal ${url} ${pdf}
 }
 
