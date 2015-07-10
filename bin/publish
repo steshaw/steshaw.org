@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
-${DEBUG:-}
-
 set -eu
+${DEBUG:-}
 
 #
 # Make talks.
 #
 for dir in talks/*; do
-  [[ -d ${dir} && ${dir} != talks/bin ]] && (cd ${dir} && make)
+  [[ -d ${dir} && ${dir} != talks/bin && ${dir} != ${dir#reveal\.js} ]] && (cd ${dir} && make)
 done
 
 #
