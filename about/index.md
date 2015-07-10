@@ -32,24 +32,25 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
     - runtime systems and operating systems – very similar beasts!
     - distributed systems - cloud, web, messaging, middleware, and highly-scalable servers.
     - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
-    - build systems - make, cook, vesta, sbt [horrors]
+    - build systems - GNU Make, [Cook](http://miller.emu.id.au/pmiller/software/cook/), [SCons](http://www.scons.org/), [Vesta](http://www.vestasys.org/), Ant, Maven, Ivy, SBT, Cabal, Shake, Nix.
+      - [Recursive Make Considered Harmful](http://aegis.sourceforge.net/auug97.pdf)—Peter Miller
+    - version control systems—CVS, Subversion, [Aegis](http://aegis.sourceforge.net/), [GNU] arch, Vesta, Darcs, Mercurial, [GNU] Bazaar, Git, forgotten1 (the one with the free book and wiki), forgotten2 (the one similar to forgotten1).
+
 
 ### Hobbies
 
-  - human languages
+- human languages
     - French—was learning via [Duolingo](http://duolingo) on long commute.
     - Spanish—while in UK.
     - Japanese—lapsed after high school.
     - Mandarin Chinese—very aspirational i.e. I can say "hello".
     - one day a bit of modern and ancient Greek, plus Latin.
-  - music
+- music
     - guitar—currently looking for a teacher. Please put me in touch with Matt Denny!
-    - piano—currently looking for a teacher. Want to learn to play:
-      - [[https://youtu.be/w5782PQO5is][Blue—Joni Mitchell]].
-      - [[https://youtu.be/XUNOmN3YVL0][Baby Grand—Billy Joel and Ray Charles]].
+    - piano—currently looking for a teacher. Want to learn to play: [Blue—Joni Mitchell](https://youtu.be/w5782PQO5is), [Baby Grand—Billy Joel and Ray Charles](https://youtu.be/XUNOmN3YVL0), [Someone like you—Adele](https://youtu.be/hLQl3WQQoQ0).
     - singing i.e. once loved drunken karaoke :)
     - songwriting—some lyrics from my teens
-  - gamedev — game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
-  - chess — my progress sadly stalled long ago.
-  - ideation
-  - independent thinking—poltically agnostic, resists dogma and status quo.
+- gamedev — game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
+- chess — my progress sadly stalled long ago.
+- [ideation](https://gist.github.com/steshaw/8eb69cc1ee4f4db3420e)
+- independent thinking—politically agnostic.
