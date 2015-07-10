@@ -1,0 +1,9 @@
+
+No idea how this can be "Lambda" the ultimate index. It's actually "Morton Order (with tricks) is the Ultimate Index".
+
+This trick is due to Edward Kmett.
+
+- [[Succinct data structures][http://youtu.be/uA0Z7_4J7u8]].
+- Functionally Oblivious and Succinct — Edward Kmett's keynote from YOW! Lambda Jam 2014 Brisbane.
+- Morton Order with compression.
+
