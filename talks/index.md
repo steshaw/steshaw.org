@@ -10,5 +10,4 @@ Talks
 -   [The future of programming is dependently-typed](./the-future-of-programming-is-dependently-typed/index.html)
 -   [JavaScript solution](./javascript-solution/index.html)
 -   [Lambda the Ultimate Index](./lambda-the-ultimate-index/index.html)
--   [Habits](./habits/index.html) (not a realy talk---just an example to test the workflow)
 
