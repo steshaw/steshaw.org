@@ -91,6 +91,7 @@ Lightning talk, [[http://www.meetup.com/Brisbane-Software-Testers-Meetup/][Brisb
 
 *** Testing Concurrent Systems
 
+- https://github.com/steshaw/quickcheck-examples
 - [[http://www.quviq.com/products/erlang-quickcheck/][Erlang QuickCheck]]
 - [[http://publications.lib.chalmers.se/records/fulltext/146291.pdf][Testing Erlang Concurrency with QuickCheck]] (PDF)
 - [[http://publications.lib.chalmers.se/records/fulltext/125252/local_125252.pdf][Finding Race Conditions in Erlang with QuickCheck and PULSE]] (PDF)
