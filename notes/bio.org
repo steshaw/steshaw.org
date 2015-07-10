@@ -1,0 +1,9 @@
+Steven has 25 years experience in the software industry in roles from Analyst Programmer through Tech Lead. He loves programming languages — including functional programming, type theory, compilers and runtime systems — and has a broad array of related interests including product development, software engineering, distributed systems, database systems and operating systems.
+
+He tries and fails to keep up with all the latest ideas, tools and systems in the industry and is still searching for the holy grail to solve the software crisis … he thinks he's found it, but he's just not sure yet — more experimentation is required :).
+
+When not thinking specifically about computation, he can sometimes be found thinking about philosophy, ethics, law, economics, mathematics, physics and human languages. Occasionally can be found playing guitar or chess.
+
+
+
+Talk to him about hands-on engineering roles such as CTO, VP of Engineering, Tech Lead, Software Magician or Applied Logician. In the domain of highly scalable apps and services, DevOps/Agile/Lean, Continuous Delivery, self-organising teams, Cloud, PaaS, HTML5/JS/altJS, cross-platform mobile/web apps with high doses of enthusiasm, humour, sense, gentleness and Functional Programming.
