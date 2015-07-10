@@ -92,6 +92,16 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
+  match "talks/*.md" $ do
+    route $ setExtension "html"
+    let ctx =  constField "title" "Talks"
+            <> constField "talksactive" "active"
+            <> constField "talksurl" nullLink
+            <> pageCtx
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" ctx
+      >>= relativizeUrls
+
   tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
   let postCtx = tagsField "tags" tags
@@ -255,6 +265,8 @@ pageCtx :: Context String
 pageCtx = mconcat
   [ constField "homeactive" ""
   , constField "homeurl" "/"
+  , constField "talksactive"  ""
+  , constField "talksurl"     "/talks"
   , constField "aboutactive"  ""
   , constField "abouturl"     "/about"
   , constField "author" "Steven Shaw"
