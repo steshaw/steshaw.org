@@ -12,9 +12,9 @@
 #+end_html
 
 #+begin_html
-<div style="float: right; margin-top: 33%; padding-right: 5%;">
+<div style="margin-top: 3em; position: absolute; bottom: 0; right: 0;">
 #+end_html
-@steshaw
+[[http://steshaw.org/][@steshaw]]
 #+begin_html
 </div>
 #+end_html
