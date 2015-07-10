@@ -1,0 +1,16 @@
+
+* The Future of Programming is Dependently Typed
+
+
+
+** Demos:
+
+This short js1k demo platform game:
+  https://marijnhaverbeke.nl/js1k/
+
+LightTable style code editing with live stuff?
+  http://lighttable.com/
+
+Port Cube?
+  http://cubeengine.com/
+

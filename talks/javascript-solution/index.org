@@ -1,0 +1,13 @@
+
+PureScript
+==========
+
+- Awesome items from @paf31's talk http://functorial.com/purescript-slides/#/3
+  - Functional Graphics with HTML 5 Canvas
+  - Property-Based Testing with QuickCheck
+  - Declarative UIs with scrap-your-markup
+
+
+Idris
+=====
+
