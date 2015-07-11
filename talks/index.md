@@ -1,13 +1,14 @@
 Talks
 -----
 
--   [Testing Properties with QuickCheck](./testing-properties-with-quickcheck/index.html)
--   [Conquer Cabal Hell with Nix](./conquer-cabal-hell-with-nix/index.html)
+-   [Testing Properties with QuickCheck](./testing-properties-with-quickcheck/)
+-   [Conquer Cabal Hell with Nix](./conquer-cabal-hell-with-nix/)
 
 ### Works in progress
 
--   [How we got here--the genesis of enlightened programming languages](./how-we-got-here/index.html)
--   [The future of programming is dependently-typed](./the-future-of-programming-is-dependently-typed/index.html)
--   [JavaScript solution](./javascript-solution/index.html)
--   [Lambda the Ultimate Index](./lambda-the-ultimate-index/index.html)
+-   [How we got here--the genesis of enlightened programming languages](./how-we-got-here/)
+-   [The future of programming is dependently-typed](./the-future-of-programming-is-dependently-typed/)
+-   [JavaScript solution](./javascript-solution/)
+-   [Nix—One package system to rule them all!](./nix-one-package-system-to-rule-them-all/)
+-   [Lambda the Ultimate Index](./lambda-the-ultimate-index/)
 
