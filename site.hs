@@ -102,6 +102,16 @@ main = hakyll $ do
       >>= loadAndApplyTemplate "templates/default.html" ctx
       >>= relativizeUrls
 
+  match "ideas/*.org" $ do
+    route $ setExtension "html"
+    let ctx =  constField "title" "Ideas"
+            <> constField "ideasactive" "active"
+            <> constField "ideasurl" nullLink
+            <> pageCtx
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" ctx
+      >>= relativizeUrls
+
   tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
   let postCtx = tagsField "tags" tags

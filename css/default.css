@@ -209,3 +209,7 @@ ul.posts {
 .eqtion {
   margin-left: 5%;
 }
+
+.gist article.markdown-body {
+  padding: 1em;
+}
