@@ -1,0 +1,56 @@
+** Nix
+
+#+begin_quote
+One packge system to rule them all
+#+end_quote
+
+#+begin_html
+<style>
+  section.slide.level2.present {
+    height: 455px;
+  }
+  .fa-terminal {
+    color: green;
+  }
+</style>
+#+end_html
+
+#+begin_html
+<div style="margin-top: 3em; position: absolute; bottom: 0; right: 0;">
+#+end_html
+[[http://steshaw.org/][@steshaw]]
+#+begin_html
+</div>
+#+end_html
+
+
+
+** Intro
+
+-  Cool
+-  Things
+
+
+** Intermediate
+
+-  Ooh, look at this!
+-  Ooh, look at that!
+-  Support for your favourite programming language.
+
+
+** Advanced
+
+- Cloudy things.
+- CI/NixOps.
+
+
+** Whole hog
+
+- Nix'ing all the things.
+- NixOS — entire Linux distribution.
+- We can hope that a FreeBSD adopts Nix too.
+
+
+** Questions
+
+[[images/questions-ideas.png]]
