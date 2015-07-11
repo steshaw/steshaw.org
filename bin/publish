@@ -8,7 +8,13 @@ ${DEBUG:-}
 #
 for f in talks/*/index.org; do
   dir=$(dirname $f)
-  [[ -d ${dir} ]] && (cd ${dir} && make)
+  if [[ -d ${dir} ]]; then
+    (
+      echo Building ${dir}
+      cd ${dir}
+      make
+    )
+  fi
 done
 
 #

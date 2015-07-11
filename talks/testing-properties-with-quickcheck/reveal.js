@@ -1,1 +1,1 @@
-../reveal.js
+../habits/reveal.js

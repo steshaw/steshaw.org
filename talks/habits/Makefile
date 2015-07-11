@@ -1,2 +1,2 @@
-index.html: index.org
+index.html: index.org reveal.js
 	../bin/build index
