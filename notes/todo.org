@@ -1,3 +1,13 @@
+
+* Rational Startup Movement
+
+- Start writing up "The Rational Startup"
+  - Using Haskell for a startup.
+  - rational software tooling.
+  - PureScript.
+  - To Scala or not to Scala, yep, that's the question.
+
+
 * Original public todo.org
 
 - Read "On Bullshit" "spoken word" as "performance art".
