@@ -1,6 +1,7 @@
-.cabal-sandbox/
-dist/
-_cache/
-_site/
+/.cabal-sandbox
+/dist
+/_cache
+/_site
+
 cabal.sandbox.config
 shell.nix
