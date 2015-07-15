@@ -114,7 +114,7 @@ main = hakyll $ do
 
   match "notes/*.org" $ do
     route $ setExtension "html"
-    let ctx =  constField "title" "Ideas"
+    let ctx =  constField "title" "Notes"
             <> constField "notesactive" "active"
             <> constField "notesurl" nullLink
             <> pageCtx
