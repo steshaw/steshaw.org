@@ -1,4 +1,0 @@
-
-You might not realise that I live in Australia these days. I'd be looking for a hands-on senior/executive role where I have autonomy about the technologies used. I'm into functional programming languages such as Haskell, Scala and OCaml. I like HTML5/JS front ends but prefer the use of altJS languages like TypeScript, OCaml (js_of_ocaml) and Haskell (via Haste/GHCJS/PureScript). I really like PaaS such as Cloud Foundry and Docker. I'm also digging into Big Data, along with analytics and Machine Learning etc. Spark looks promising here for real-time streaming analytics — powered by Scala under the hood.
-
-If you have a client who understands the need to build talented teams from a globally distributed pool then I'd be keen to talk. I'm more than happy to travel to Europe/UK every 3-6 months for face-to-face discussions.
