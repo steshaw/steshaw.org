@@ -10,6 +10,6 @@ Steven lives in Brisbane, Australia. He cannot relocate any time soon—if ever.
 
 If you understand that the best teams are built from a globally distributed talent pool then I'd be keen to talk. I'm more than happy to travel to EU or US every 3-6 months for regular face-to-face time.
 
-The Keirsey Temperament Sorter classifies me as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp][Rational/Architect]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
+The Keirsey Temperament Sorter classifies me as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
 
 Dreams in Haskell.
