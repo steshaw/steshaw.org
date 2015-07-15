@@ -1,4 +1,11 @@
 
+* Port [[https://twitter.com/li_haoyi][Li Haoyi]'s Scala-JS examples to PureScript.
+
+  - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
+  - then Idris
+  - then Glorious GHCJS
+
+
 * Rational Startup Movement
 
 - Start writing up "The Rational Startup"
