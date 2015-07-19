@@ -16,6 +16,7 @@
   - What happened to the history
     - Folk
     - [[https://en.wikipedia.org/wiki/Psychedelic_rock][Psychedelic rock]]
+    - Glam rock
 
 - Rock / Pop / RnB
 
@@ -58,6 +59,10 @@ Acid laced psychedelic rock
 --- ??? on "Break on through to the other side" by The Doors
 #+end_quote
 
+#+begin_quote
+We'll have a cup of tea, we'll fix the world
+--- ???
+#+end_quote
 
 
 
@@ -102,7 +107,20 @@ Acid laced psychedelic rock
 - Sgt. Pepper's Lonely Hearts Club Band / With A Little Help From My Friends---Beatles
 - Way otta here---Jimi Hendrix
 - Voodoo child---Jimi Hendrix
+- Electric Ladyland---Jimi Hendrix
+- Rock Opera---Who?
+- Satisfaction---The Stones
+- Wild horses---The Stones
+- You can't get what you want---The Stones
+- ???---The Stones
 
+- Led Zepplin
+  - Whole lot of love
+
+- Grapevine, Motown?
+- Somewhere waiting---David Bowie
+- Ziggy---David Bowie
+- Tapestry---Carol King
 
 - ???
   - Who
@@ -115,6 +133,7 @@ Acid laced psychedelic rock
   - Soft Machine
   - Rolling Stones
   - Kinks
+  - Frank Zappa
 
 
 * Might not be in the documentary
