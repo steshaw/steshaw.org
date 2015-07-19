@@ -1,20 +1,24 @@
 
+
 * Guitar
 
-Johnny be Good, Chuck Berry
+** Meta
 
-X
+- History
+  - Blues
+  - Rocks
+  - Heavy metal
+- Satanic chord?
 
-You really got me
 
-Who?
+** Tracks
 
-Satisfaction
+- Johnny be Good, Chuck Berry
+- X
+- You really got me
+- Who?
+- Satisfaction
+- Communication breakdown, Led Zepplin
+- Black bird, Paul McCartney
+- [[https://www.youtube.com/watch?v=vsl3gBVO2k4][Bohemian Rhapsody]], Queen
 
-Communication breakdown, Led Zepplin
-
-Black bird, Paul McCartney
-
-Satanic chord?
-
-Heavy metal?
