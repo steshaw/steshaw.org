@@ -2,6 +2,8 @@
 
 * Guitar
 
+- Steve Vai
+- Joe Satrinani
 
 ** Meta
 
@@ -18,16 +20,43 @@
 
 - Hip hop formed from "Good times"
 
-- "I don't understand where the hatred came from" — Janis Joplin, Runaways.
+
+#+begin_quote
+I don't understand where the hatred came from -- Janis Joplin, Runaways
+#+end_quote
+
+#+begin_quote
+The guitar is a piece of wood with strings on it. There's no rulebook attached to it -- Someone from that British documentary on the guitar riff
+#+end_quote
+
+#+begin_quote
+"We were just high. We wanted to share that" XXX from "The Joy of the guitar riff"
+#+end_quote
+
+#+begin_quote
+Curt smells like teens spirit
+-- Curt's girl (?)
+#+end_quote
+
+#+begin_quote
+Really speaks to the repitlian brain of rock listeners
+-- ???
+#+end_quote
+
+#+begin_quote
+That's gonna be like an orgasm.
+-- Janis Joplin
+#+end_quote
 
 
-** Tracks
+** Tracks from The Joy of the Guitar Riff
 
 - Johnny be Good, Chuck Berry
 - X
 - You really got me
 - Who?
 - Satisfaction
+- Girl you really got me going
 - Communication breakdown, Led Zepplin
 - Black bird, Paul McCartney
 - [[https://youtu.be/vsl3gBVO2k4][Bohemian Rhapsody]], Queen
@@ -41,3 +70,28 @@
 - I need you tonight, INXS
 - Michael Jackson and Quincy Jones
 - Beat it, Michael Jackson, Eddie Van Halen solo!, Rob / Pop / RnB 
+- ???
+  - Sonic Youth
+  - The Pixies
+  - ???
+- Smells like teen spirit, Nirvana
+
+- Da da dit da da daaah da
+
+- Tooty fruity ol' roody
+- All shook up, Elvis Presley
+- Bob Dylan
+  - Blowing in the wind---Bob Dylan
+  - How does it feel?---Bob Dylan
+  - Hard?--Bob Dylan
+
+
+- Nothing from:
+  - Rolling Stones
+  - Beatles
+  - Kinks
+
+
+* Might not be in the documentary
+
+- [[https://youtu.be/2SXVOkJTSTs][Foxy lady]---Jimi Hendrix
