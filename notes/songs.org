@@ -1,5 +1,4 @@
 
-
 * Guitar
 
 - Steve Vai
@@ -8,17 +7,23 @@
 ** Meta
 
 - History
-  - Blues
-  - Rocks
-  - Heavy metal
-  - Funk / Disco
-  - Hip hop
+  - Sequential
+    - Blues
+    - Rocks
+    - Heavy metal
+    - Funk / Disco
+    - Hip hop
+  - What happened to the history
+    - Folk
+    - [[https://en.wikipedia.org/wiki/Psychedelic_rock][Psychedelic rock]]
 
 - Rock / Pop / RnB
 
 - Satanic chord?
 
 - Hip hop formed from "Good times"
+
+- Kaysan Radio
 
 
 #+begin_quote
@@ -47,6 +52,13 @@ Really speaks to the repitlian brain of rock listeners
 That's gonna be like an orgasm.
 -- Janis Joplin
 #+end_quote
+
+#+begin_quote
+Acid laced psychedelic rock
+--- ??? on "Break on through to the other side" by The Doors
+#+end_quote
+
+
 
 
 ** Tracks from The Joy of the Guitar Riff
@@ -84,7 +96,18 @@ That's gonna be like an orgasm.
   - Blowing in the wind---Bob Dylan
   - How does it feel?---Bob Dylan
   - Hard?--Bob Dylan
+- Break on through to the other side---The Doors
+- Friends, the end---The Doors
+- Can't hurry love
 
+- Sargeants Peppers lonley heart cuts band
+
+
+- ???
+  - Who
+  - Dusty Springfield
+  - ???
+  - ???
 
 - Nothing from:
   - Rolling Stones
