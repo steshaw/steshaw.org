@@ -204,6 +204,18 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/default.html" postsCtx
         >>= relativizeUrls
 
+  create ["notes/index.html"] $ do
+    route idRoute
+    compile $ do
+      drafts <- recentFirst =<< loadAll allDrafts
+      let postsCtx =  listField "posts" pageCtx (return drafts)
+                   <> constField "title" "Notes" -- FIX
+                   <> pageCtx
+      makeItem ""
+--        >>= loadAndApplyTemplate "templates/posts.html" postsCtx
+        >>= loadAndApplyTemplate "templates/default.html" postsCtx
+        >>= relativizeUrls
+
   match allDrafts $ do
     route $ customRoute (floop . toFilePath)
       `composeRoutes` setExtension "html"
