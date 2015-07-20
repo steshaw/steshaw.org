@@ -263,8 +263,8 @@ feed = recentFirst =<<
   loadAllSnapshots allPosts "content"
 
 feedConfig = FeedConfiguration
-  { feedTitle       = "Steven Shaw's Blog"
-  , feedDescription = "Programming Languages and Systems"
+  { feedTitle       = "Steven Shaw"
+  , feedDescription = "Loves Programming Languages"
   , feedAuthorName  = "Steven Shaw"
   , feedAuthorEmail = "steven+feed@steshaw.org"
   , feedRoot        = "http://steshaw.org"
