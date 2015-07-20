@@ -1,35 +1,25 @@
 
+* Piano
+ - [[https://youtu.be/w5782PQO5is][Blue---Joni Mitchell]].
+ - [[https://youtu.be/XUNOmN3YVL0][Baby Grand---Billy Joel and Ray Charles]]
+ - [[https://youtu.be/hLQl3WQQoQ0][Someone like you---Adele]].
+
+
+* Electronic
+
+- The chances of anything coming from Mars are a million to one, and yet they come!
+
+
 * Guitar
 
-- Steve Vai
+- Jimi Hendrix
 - Joe Satrinani
-
-** Meta
-
-- History
-  - Sequential
-    - Blues
-    - Rocks
-    - Heavy metal
-    - Funk / Disco
-    - Hip hop
-  - What happened to the history
-    - Folk
-    - [[https://en.wikipedia.org/wiki/Psychedelic_rock][Psychedelic rock]]
-    - Glam rock
-    - Progressive Rock
-    - Melodic? Rock
-    - Punk?
+- Steve Vai
 
 
-- Rock / Pop / RnB
+** British documentatary on the Guitar Riff
 
-- Satanic chord?
-
-- Hip hop formed from "Good times"
-
-- Kaysan Radio
-
+*** Quotes
 
 #+begin_quote
 I don't understand where the hatred came from -- Janis Joplin, Runaways
@@ -69,8 +59,32 @@ We'll have a cup of tea, we'll fix the world
 #+end_quote
 
 
+*** History
 
-** Tracks from The Joy of the Guitar Riff
+- Sequential
+  - Blues
+  - Rocks
+  - Heavy metal
+  - Funk / Disco
+  - Hip hop
+- What happened to the history
+  - Folk
+  - [[https://en.wikipedia.org/wiki/Psychedelic_rock][Psychedelic rock]]
+  - Glam rock
+  - Progressive Rock
+  - Melodic? Rock
+  - Punk?
+
+- Rock / Pop / RnB
+
+- Satanic chord?
+
+- Hip hop formed from "Good times"
+
+- Kaysan Radio
+
+
+*** Tracks
 
 - Johnny be Good, Chuck Berry
 - X
