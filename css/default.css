@@ -211,5 +211,5 @@ ul.posts {
 }
 
 .gist article.markdown-body {
-  padding: 1em;
+  padding: 1em !important;
 }
