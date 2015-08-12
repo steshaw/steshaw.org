@@ -1,8 +1,8 @@
 
 * Piano
- - [[https://youtu.be/w5782PQO5is][Blue---Joni Mitchell]].
+ - [[https://youtu.be/w5782PQO5is][Blue---Joni Mitchell]]
  - [[https://youtu.be/XUNOmN3YVL0][Baby Grand---Billy Joel and Ray Charles]]
- - [[https://youtu.be/hLQl3WQQoQ0][Someone like you---Adele]].
+ - [[https://youtu.be/hLQl3WQQoQ0][Someone like you---Adele]]
 
 
 * Electronic
@@ -12,9 +12,17 @@
 
 * Guitar
 
-- Jimi Hendrix
-- Joe Satrinani
-- Steve Vai
+- Matt Denny
+  - Jimi Hendrix
+  - David Bowie
+  - Led Zepplin
+  - Deep Purple
+- Nirvana
+- Scotty
+  - Joe Satrinani
+  - Steve Vai
+  - Bees
+  - Extreme
 
 
 ** British documentatary on the Guitar Riff
