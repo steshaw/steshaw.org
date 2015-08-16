@@ -112,17 +112,7 @@ main = hakyll $ do
       >>= loadAndApplyTemplate "templates/default.html" ctx
       >>= relativizeUrls
 
-  match "notes/*.org" $ do
-    route $ setExtension "html"
-    let ctx =  constField "title" "Notes"
-            <> constField "notesactive" "active"
-            <> constField "notesurl" nullLink
-            <> pageCtx
-    compile $ pandocCompiler
-      >>= loadAndApplyTemplate "templates/default.html" ctx
-      >>= relativizeUrls
-
-  tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+  tags <- buildTags allPosts (fromCapture "tags/*.html")
 
   let postCtx = tagsField "tags" tags
              <> field "olderPostUrl" (olderPostUrl sortedPosts)
@@ -158,7 +148,7 @@ main = hakyll $ do
   create ["posts.html"] $ do
     route idRoute
     compile $ do
-      posts <- recentFirst =<< loadAll allPosts
+      posts <- loadAll allPosts
       let postsCtx =  listField "posts" pageCtx (return posts)
                    <> constField "title" "Posts"
                    <> constField "description" "An archive of all my posts:"
@@ -195,25 +185,26 @@ main = hakyll $ do
     route idRoute
     compile $ do
       drafts <- recentFirst =<< loadAll allDrafts
-      let postsCtx =  listField "posts" pageCtx (return drafts)
+      let draftsCtx = listField "posts" pageCtx (return drafts)
                    <> constField "title" "Drafts"
                    <> constField "description" "Works in progress:"
                    <> pageCtx
       makeItem ""
-        >>= loadAndApplyTemplate "templates/posts.html" postsCtx
-        >>= loadAndApplyTemplate "templates/default.html" postsCtx
+        >>= loadAndApplyTemplate "templates/posts.html" draftsCtx
+        >>= loadAndApplyTemplate "templates/default.html" draftsCtx
         >>= relativizeUrls
 
   create ["notes/index.html"] $ do
     route idRoute
     compile $ do
-      drafts <- recentFirst =<< loadAll allDrafts
-      let postsCtx =  listField "posts" pageCtx (return drafts)
-                   <> constField "title" "Notes" -- FIX
+      notes <- loadAll allNotes
+      let notesCtx =  listField "items" pageCtx (return notes)
+                   <> constField "title" "Notes"
+                   <> constField "description" ""
                    <> pageCtx
       makeItem ""
---        >>= loadAndApplyTemplate "templates/posts.html" postsCtx
-        >>= loadAndApplyTemplate "templates/default.html" postsCtx
+        >>= loadAndApplyTemplate "templates/listing.html" notesCtx
+        >>= loadAndApplyTemplate "templates/default.html" notesCtx
         >>= relativizeUrls
 
   match allDrafts $ do
@@ -223,7 +214,15 @@ main = hakyll $ do
     compile $ pandocCompiler
       >>= loadAndApplyTemplate "templates/post.html"    postCtx
       >>= saveSnapshot "content"
-      >>= loadAndApplyTemplate "templates/default.html" postCtx
+
+  match allNotes $ do
+    route $ setExtension "html"
+    let ctx =  constField "title" "Notes"
+            <> constField "notesactive" "active"
+            <> constField "notesurl" nullLink
+            <> pageCtx
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" ctx
       >>= relativizeUrls
 
   where
@@ -260,8 +259,9 @@ compressJsCompiler = fmap jasmin <$> getResourceString
 jasmin :: String -> String
 jasmin src = LB.unpack $ minify $ LB.fromChunks [E.encodeUtf8 $ T.pack src]
 
-allPosts = "posts/*"
+allPosts  = "posts/*"
 allDrafts = "drafts/*.org"
+allNotes = "notes/*.org"
 
 mkFeed file renderer =
   create [file] $ do
@@ -301,6 +301,8 @@ pageCtx = mconcat
   , constField "talksurl"     "/talks"
   , constField "aboutactive"  ""
   , constField "abouturl"     "/about"
+  , constField "notesactive"  ""
+  , constField "notesurl"     "/notes"
   , constField "author" "Steven Shaw"
   , dateField "date" "%e %B %Y"
   , subtitle
@@ -445,7 +447,7 @@ postList language sortFilter = do
     itemTpl <- loadBody "templates/post-item.html"
     list    <- applyTemplateList itemTpl yContext posts
     return list
-    
+
 --------------------------------------------------------------------------------
 imageContext :: Context a
 imageContext = field "image" $ \item -> do
@@ -484,7 +486,7 @@ subtitleContext = field "subtitleTitle" $ \item -> do
   return $ maybe "" showSubtitle subt
     where
       showSubtitle t = "<h2>" ++ t ++ "</h2>\n"
-  
+
 --------------------------------------------------------------------------------
 shortLinkContext :: Context String
 shortLinkContext = field "shorturl" $
