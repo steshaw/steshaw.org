@@ -52,5 +52,5 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
     - songwriting—some lyrics from my teens
 - gamedev — game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
 - chess — my progress sadly stalled long ago.
-- [ideation](https://gist.github.com/steshaw/8eb69cc1ee4f4db3420e)
+- [ideation](/ideas/)
 - independent thinking—politically agnostic.
