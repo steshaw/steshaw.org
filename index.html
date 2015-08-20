@@ -6,9 +6,22 @@ title: Steven Shaw
   <h1>Welcome</h1> <!-- hello -->
 </header>
 
-<div class="content" style="clear: both">
+<div class="content">
 
-  <div class="featured-languages">
+  <div style="float: left;">
+    <p>I'm Steven Shaw, a software developer living in Brisbane, Australia.</p>
+
+    <blockquote class="quote">
+      <p>The future of programming is dependently typed
+      <small><cite>Anon.</cite></small>
+      </p>
+    </blockquote>
+
+    <h2>Posts</h2>
+    $partial("templates/post-list.html")$
+  </div>
+
+  <div class="featured-languages pull-right">
     <div>
       <a class="pull-right" href="https://haskell.org" title="Haskell">
         <img src="/images/haskell.png"/>
@@ -30,16 +43,5 @@ title: Steven Shaw
       </a>
     </div>
   </div>
-
-  <p>I'm Steven Shaw, a software developer living in Brisbane, Australia.</p>
-
-  <blockquote class="quote">
-    <p>The future of programming is dependently typed
-    <small><cite>Anon.</cite></small>
-    </p>
-  </blockquote>
-
-  <h2>Posts</h2>
-  $partial("templates/post-list.html")$
 
 </div>
