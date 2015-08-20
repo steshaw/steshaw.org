@@ -13,7 +13,7 @@ I'm an avid computer programmer who loves programming languages. As an industry 
 
 While I was using those languages in industry, I was learning about all sorts of other languages: Component Pascal, Oberon, Oberon-2, Modula-3, Mesa, ALGOL, Eiffel, Sather, CLU, Smalltalk, Scheme, Goo, Dylan, EuLisp, Racket, Common Lisp, [Shen](http://www.shenlanguage.org/), [Slate](http://slatelanguage.org/), [Io](http://iolanguage.org/), Factor, Objective-C, APL, J, K, Prolog, Caml, OCaml, F#, Standard ML, Mythryl, Mozart Oz, Alice ML, Erlang, Haskell, Idris, Coq, Agda, Ur, ATS, F\*, Haxe, Elm, TypeScript, PureScript, Swift. Of course, my depth of study varied greatly. In fact, most of these languages I have learnt only superficially, often from research papers or books alone.
 
-Languages that I seek to use include [Haskell](http://haskell.org), [Scala](http://scala-lang.org), [PureScript](http://purescript.org/), and [Idris](http://idris-lang.org).
+Languages that I seek to use include [Haskell](http://haskell.org), [PureScript](http://purescript.org/), [Idris](http://idris-lang.org), and [Scala](http://scala-lang.org).
 
 ### Formative Years
 
@@ -26,31 +26,31 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
 ### Interests
 
-  - programming language, type theory, higher type theory (aka HoTT), category theory, proof theory. i.e. types, logic, and categories (TLC).
-  - apps — trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy, and coffee.
+  - Programming languages, type theory, higher type theory (aka HoTT), category theory, proof theory. i.e. types, logic, and categories (TLC).
+  - Apps---trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy, and coffee.
   - Systems
-    - runtime systems and operating systems – very similar beasts!
-    - distributed systems - cloud, web, messaging, middleware, and highly-scalable servers.
-    - database systems — SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
-    - build systems - GNU Make, [Cook](http://miller.emu.id.au/pmiller/software/cook/), [SCons](http://www.scons.org/), [Vesta](http://www.vestasys.org/), Ant, Maven, Ivy, SBT, Cabal, Shake, Nix.
-      - [Recursive Make Considered Harmful](http://aegis.sourceforge.net/auug97.pdf)—Peter Miller
-    - version control systems—CVS, Subversion, [Aegis](http://aegis.sourceforge.net/), [GNU] arch, Vesta, Darcs, Mercurial, [GNU] Bazaar, Git, forgotten1 (the one with the free book and wiki), forgotten2 (the one similar to forgotten1).
+    - Runtime systems and operating systems---very similar beasts!
+    - Distributed systems---cloud, web, messaging, middleware, and highly-scalable servers.
+    - Database systems---SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
+    - Build systems---GNU Make, [Cook](http://miller.emu.id.au/pmiller/software/cook/), [SCons](http://www.scons.org/), [Vesta](http://www.vestasys.org/), Ant, Maven, Ivy, SBT, Cabal, Shake, Nix. My interest was kicked into high gear by Peter Miller's [Recursive Make Considered Harmful](http://aegis.sourceforge.net/auug97.pdf).
+    - Version Control Systems---CVS, Subversion, [Aegis](http://aegis.sourceforge.net/), [GNU] arch, [Vesta](http://www.vestasys.org/), [Darcs](http://darcs.net/), [Mercurial](https://mercurial.selenic.com/), [[GNU] Bazaar](http://bazaar.canonical.com/), [Git](http://git-scm.com/), [Veracity](http://veracity-scm.com/) (with integrated bug tracking and wiki), [Fossil](http://fossil-scm.org/) (with integrated bug tracking, wiki and technical notes).
 
 
 ### Hobbies
 
-- human languages
-    - French—was learning via [Duolingo](http://duolingo) on long commute.
-    - Spanish—while in UK.
-    - Japanese—lapsed after high school.
-    - Mandarin Chinese—very aspirational i.e. I can say "hello".
-    - one day a bit of modern and ancient Greek, plus Latin.
-- music
-    - guitar—currently looking for a teacher. Please put me in touch with Matt Denny!
-    - piano—currently looking for a teacher. Want to learn to play: [Blue—Joni Mitchell](https://youtu.be/w5782PQO5is), [Baby Grand—Billy Joel and Ray Charles](https://youtu.be/XUNOmN3YVL0), [Someone like you—Adele](https://youtu.be/hLQl3WQQoQ0).
-    - singing i.e. once loved drunken karaoke :)
-    - songwriting—some lyrics from my teens
-- gamedev — game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
-- chess — my progress sadly stalled long ago.
-- [ideation](/ideas/)
-- independent thinking—politically agnostic.
+  - Human languages
+    - French---started learning recently (2015) via [Duolingo](http://duolingo) on long commute.
+    - Spanish---while in UK (2005-2007).
+    - Japanese---lapsed after high school (1984-1988).
+    - Tagalog/Filipino---had opportunity to start learning this year (2015).
+    - Mandarin Chinese---very aspirational i.e. I can say "hello".
+    - Some day a bit of modern and ancient Greek, plus Latin.
+  - Music
+    - Guitar---have recently found a teacher. Please put me in touch with Matt Denny (of Embassy Hotel and Her Majesties fame)!
+    - Piano---currently looking for a teacher. Want to learn to play [Joni Mitchell---Blue](https://youtu.be/w5782PQO5is), [Billy Joel and Ray Charles---Baby Grand](https://youtu.be/XUNOmN3YVL0), and [Adele---Someone like you](https://youtu.be/hLQl3WQQoQ0).
+    - Singing i.e. once loved drunken karaoke :)
+    - Songwriting---some lyrics from my teens
+  - GameDev---game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
+  - Chess---my progress sadly stalled long ago but am play the occasional game again!
+  - [Ideation](/ideas/)
+  - Independent thinking---politically agnostic, [peaceful] anarchist :)
