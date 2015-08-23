@@ -2,7 +2,7 @@
 
 ${DEBUG:-}
 
-by="${1:-${USER}}"
+by="Built by ${1:-${USER}}"
 
 cd steshaw.github.io
 git checkout master
@@ -15,6 +15,6 @@ git add -A
 if git diff-index --quiet HEAD; then
   echo No changes to commit
 else
-  git commit -m "Built by ${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
+  git commit -m "${by} on $(date '+%d-%b-%Y %H:%M:%S %Z')"
   git push origin master
 fi
