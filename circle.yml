@@ -1,7 +1,3 @@
-machine:
-  environment:
-    DEBUG: set -x
-
 checkout:
   post:
     - git submodule sync
@@ -19,7 +15,7 @@ dependencies:
 
 test:
   override:
-    - source ~/.nix-profile/etc/profile.d/nix.sh && bin/build
+    - bin/nix-build
     - bin/site-rebuild
 
 deployment:
@@ -28,4 +24,4 @@ deployment:
     commands:
       - git config --global user.name 'Steven Shaw'
       - git config --global user.email 'steven@steshaw.org'
-      - bin/deploy-to-github-pages "This update brought to you courtesy of Nix and Circle CI (${CIRCLE_BUILD_NUM})"
+      - bin/deploy-to-github-pages "Courtesy of Nix and Circle CI (${CIRCLE_BUILD_NUM})"

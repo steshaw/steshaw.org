@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -eu
+
+source ~/.nix-profile/etc/profile.d/nix.sh
+
+exec bin/build
