@@ -2,7 +2,7 @@
 
 ${DEBUG:-}
 
-by="Built by ${1:-${USER}}"
+by="${1:-Built by ${USER}}"
 
 cd steshaw.github.io
 git checkout master
