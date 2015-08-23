@@ -28,4 +28,4 @@ deployment:
     commands:
       - git config --global user.name 'Steven Shaw'
       - git config --global user.email 'steven@steshaw.org'
-      - bin/deploy-to-github-pages "Brought to you by Nix and Circle (${CIRCLE_BUILD_NUM})"
+      - bin/deploy-to-github-pages "This update brought to you courtesy of Nix and Circle CI (${CIRCLE_BUILD_NUM})"
