@@ -8,13 +8,13 @@ checkout:
     - git submodule update --init
 
 dependencies:
-  xxx_pre:
+  pre:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
-  xxx_cache_directories:
-    - /nix
+#  cache_directories:
+#    - /nix
   override:
     - bin/nix-bootstrap
-  xxx_post:
+  post:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
 
 test:
