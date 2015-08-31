@@ -114,12 +114,8 @@ cake and eat it too!
 
 *** Installing ghc-mod
 
-[[http://stackoverflow.com/questions/24228402/nixos-and-ghc-mod-module-not-found][How to install ghc-mod on NixOS]]
-
-OR perhaps this will work:
-
 #+begin_src shell
-nix-env --install haskell-ghc-mod-ghc7.8.4
+nix-env -iA nixpkgs.haskell.packages.ghc784.ghc-mod
 #+end_src haskell
 
 #+END_COMMENT
