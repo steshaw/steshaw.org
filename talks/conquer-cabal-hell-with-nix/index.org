@@ -110,6 +110,7 @@ without recompiling all of hackage. Discover that there's no need to
 decide between per-project and shared sandboxes --- you get to have your
 cake and eat it too!
 </div>
+#+END_COMMENT
 
 
 *** Installing ghc-mod
@@ -117,8 +118,6 @@ cake and eat it too!
 #+begin_src shell
 nix-env -iA nixpkgs.haskell.packages.ghc784.ghc-mod
 #+end_src haskell
-
-#+END_COMMENT
 
 
 
