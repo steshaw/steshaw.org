@@ -1,0 +1,4 @@
+
+- [[http://lichess.org/][lichess]]
+- http://www.shredderchess.com/online-chess/online-databases/opening-database.html
+- [[http://ctart.chessok.com][CT Art online]]
