@@ -2,7 +2,7 @@ Steven has 25 years experience in the software industry in roles from Analyst Pr
 
 Talk to him about hands-on engineering roles in the domain of scalable apps using Functional Programming, DevOps, Continuous Delivery, self-organising teams, Cloud, PaaS, HTML5/JS/altJS, cross-platform mobile/web apps with high doses of enthusiasm, honesty, humour, and not-so-common sense.
 
-The Keirsey Temperament Sorter classifies me as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
+The Keirsey Temperament Sorter classifies him as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
 
 When not thinking specifically about computation, he can sometimes be found thinking about philosophy, ethics, law, economics, mathematics, physics and human languages. Occasionally can be found playing guitar or chess—but does neither well.
 
