@@ -1,15 +1,9 @@
-Steven has 25 years experience in the software industry in roles from Analyst Programmer through Tech Lead. He loves programming languages---including functional programming, type theory, compilers and runtime systems---and has a broad array of related interests including product development, software engineering, distributed systems, database systems and operating systems.
+Steven has 25 years experience in the software industry in roles from Analyst Programmer through Tech Lead. He loves programming languages---including functional programming, type theory, compilers and runtime systems---and has a broad array of related interests including product development, software engineering, distributed systems, database systems and operating systems. He tries and fails to keep up with all the latest ideas, tools and systems in the industry and is still searching for the holy grail to solve the "software crisis"--—he thinks he's found it, but he's just not sure yet. More experimentation is required :).
 
-He tries and fails to keep up with all the latest ideas, tools and systems in the industry and is still searching for the holy grail to solve the "software crisis"--—he thinks he's found it, but he's just not sure yet. More experimentation is required :).
-
-When not thinking specifically about computation, he can sometimes be found thinking about philosophy, ethics, law, economics, mathematics, physics and human languages. Occasionally can be found playing guitar or chess—but does neither well.
-
-Talk to him about hands-on engineering roles such as CTO, VP of Engineering, Tech Lead, Software Mathemagician or Applied Logician. He operates in the domain of highly scalable apps using Functional Programming, DevOps, Continuous Delivery, self-organising teams, Cloud, PaaS, HTML5/JS/altJS, cross-platform mobile/web apps with high doses of enthusiasm, honesty, humour, and not-so-common sense.
-
-Steven lives in Brisbane, Australia. He cannot relocate any time soon---if ever. He's looking for a hands-on executive role where he has autonomy about the technologies used. He's into functional programming languages such as Haskell, PureScript, OCaml, Idris and Scala. He likes HTML5/JS front ends but prefers the use of AltJS languages like PureScript, TypeScript, OCaml (js\_of\_ocaml) and Haskell (via Haste or GHCJS). He really likes PaaS such as Cloud Foundry and build-your-own PaaS with Docker (he doesn't like the name PaaS though and prefers Application Systems for Platform-as-a-Service). He's also digging into Big Data, along with analytics and Machine Learning (aka Learning Algorithms) etc. Spark looks promising here for real-time streaming analytics---powered by Scala under the hood. He'd really like to see streaming analytics tooling in Haskell.
-
-If you understand that the best teams are built from a globally distributed talent pool then I'd be keen to talk. I'm more than happy to travel to EU or US every 3-6 months for regular face-to-face time.
+Talk to him about hands-on engineering roles in the domain of scalable apps using Functional Programming, DevOps, Continuous Delivery, self-organising teams, Cloud, PaaS, HTML5/JS/altJS, cross-platform mobile/web apps with high doses of enthusiasm, honesty, humour, and not-so-common sense.
 
 The Keirsey Temperament Sorter classifies me as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
+
+When not thinking specifically about computation, he can sometimes be found thinking about philosophy, ethics, law, economics, mathematics, physics and human languages. Occasionally can be found playing guitar or chess—but does neither well.
 
 Dreams in Haskell.
