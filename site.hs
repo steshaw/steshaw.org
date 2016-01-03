@@ -219,7 +219,6 @@ main = hakyll $ do
     route $ setExtension "html"
     let ctx =  constField "title" "Notes"
             <> constField "notesactive" "active"
-            <> constField "notesurl" nullLink
             <> pageCtx
     compile $ pandocCompiler
       >>= loadAndApplyTemplate "templates/default.html" ctx
