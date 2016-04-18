@@ -1,5 +1,5 @@
 
-* Port [[https://twitter.com/li_haoyi][Li Haoyi]'s Scala-JS examples to PureScript.
+* Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
 
   - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
   - then Idris
@@ -21,24 +21,7 @@
 - Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
 - Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
 
-- Buy a piano / keyboard
-  - Baby grand?
-  - Digital piano?
-  - Who was the guy from the Canberra Hotel?
-    - What had he recommended? I think it was a digital baby grand. but which brand?
-      - Yamaha Clavinova?
-    - Be good to get lessons from him.
 
-- Buy semi-acoustic Ovation like Scotty's old guitar.
-  - Marshall amp? :-)
-
-- Thoughtworks retropective
-  - Rails is a ghetto
-    - http://harmful.cat-v.org/software/ruby/rails/is-a-ghetto
-    - http://web.archive.org/web/20080103072111/http://www.zedshaw.com/rants/rails_is_a_ghetto.html
-
-
- 
 * from private repo at Bitbucket.org/steshaw/notes
 
 
@@ -46,22 +29,12 @@
 
   - Sell ADC shares. Carry forward huge capital loss on tax.
 
-  - Collect "lost" super into AustralianSuper.
 
-
-** Build "courseware" (aka course notes/slides):
+- Build "courseware" (aka course notes/slides):
   - Advanced Functional Programming
   - Dependently Typed Functional Programming (with Idris)
   - Compilers (for Functional Programming Languages)
   - Higher Type Theory (aka H[o]TT)
-
-- Brian Sullivan's Haskell course (Stanford CS240. http://www.scs.stanford.edu/14sp-cs240h/)
-
-- schemey - Write yourself a Scheme (in Haskell)
-
-- Holy Haskell Project Starter (tutorial on project setup and cabal)
-
-- Yesod Tutorial
 
 - Web frameworks in Haskell.
   - Try out Scotty, Spock, Yesod, Snap.
@@ -70,10 +43,7 @@
   - Write a REST/JSON server in Haskell.
   - Write a "sessionless" web app in Haskell.
 
-- Build pi-forall
-
 - Understand/Demystify "Auto in Agda"
-
 
 - argonaut-hs
   - Use TH to auto-generate encode/decode instances.
@@ -123,9 +93,3 @@
   - Nix for your development environment configuration.
   - Nix for your own tools (aka etools at Ephox).
   - Nix for your (proprietary) software products.
-
-
-** Soft side
-
-- Constantly Winning OR Continuous Wins OR Why you need to stop sprinting OR Software products, a revolution from batch to real time.
-

@@ -3,19 +3,14 @@
 - One blog post per month.
 
 
-* Lifetime
-
-- Earn PhD in Programming Languages, Computer Science and Mathematics.
-- Be rewarded with membership to WG2.8 (IFIP Working Group 2.8 - Functional Programming).
-
-
-* Other
+* Long term
 
 - Design and implement a non-trivial programming language.
 - Understand module systems and integrate into a practical programming language.
-- Become hacker of programming language systems (aka compilers and runtimes), operating systems, distributed systems and database systems.
-- Learn human languages: Spanish, French, Italian, Japanese, Mandarin, Greek and Latin.
-- Study philosophy seriously.
-- Earn a PhD in CS/PL/Math.
-- Study Physics.
-- Study Philosophy seriously.
+- Hack on programming language systems, operating systems, distributed systems and database systems.
+- Earn a PhD in PL/CS/Math.
+
+
+* Lifetime
+
+- Contentment
