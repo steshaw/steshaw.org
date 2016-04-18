@@ -4,6 +4,6 @@ Talk to him about hands-on engineering roles in the domain of scalable apps usin
 
 The Keirsey Temperament Sorter classifies him as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
 
-When not thinking specifically about computation, he can sometimes be found thinking about philosophy, ethics, law, economics, mathematics, physics and human languages. Occasionally can be found playing guitar or chess—but does neither well.
+Occasionally can be found playing guitar or chess—but does neither well.
 
 Dreams in Haskell.

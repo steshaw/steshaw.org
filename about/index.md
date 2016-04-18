@@ -45,5 +45,4 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
     - Mandarin Chinese---very aspirational i.e. I can say "hello".
   - GameDev---game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
   - Chess---my progress sadly stalled long ago but am play the occasional game again!
-  - [Ideation](/ideas/)
   - Independent thinking---politically agnostic, [peaceful] anarchist :)
