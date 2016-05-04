@@ -1,0 +1,15 @@
+
+
+class Applicative m => Monad m where
+    (>>=) :: (a -> m b) -> m b
+
+class Functor w => Comonad w where
+    extract :: w a -> a
+    extend :: (w a -> b) -> w a -> w b
+
+class Functor f => Applicative f where
+    pure :: a -> f a
+    (<*>) :: f (a -> b) -> f a -> f b
+
+class Functor f where
+    fmap :: (a -> b) -> f a -> f b
