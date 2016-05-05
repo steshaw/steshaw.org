@@ -9,11 +9,12 @@ title: About
 
 Born English. Grew up Australian. Dual citizen. Enjoys living in beautiful Brisbane but does still feel the tug of Ol' Blighty — particularly Scotland and my home town near Nottingham.
 
-I'm an avid computer programmer who loves programming languages. As an industry veteran of 25 years, I've used the following languages: C, AWK, Perl, Delphi Object Pascal, C++, Python, Java, Ruby, JavaScript, C#, Scala.
+I'm an avid computer programmer who loves programming languages. As an industry veteran of 25 years, I've used an multitude of languages: C, AWK, Perl, Delphi Object Pascal, C++, Python, Java, Ruby, JavaScript, C#, Scala.
 
 While I was using those languages in industry, I was learning about all sorts of other languages: Component Pascal, Oberon, Oberon-2, Modula-3, Mesa, ALGOL, Eiffel, Sather, CLU, Smalltalk, Scheme, Goo, Dylan, EuLisp, Racket, Common Lisp, [Shen](http://www.shenlanguage.org/), [Slate](http://slatelanguage.org/), [Io](http://iolanguage.org/), Factor, Objective-C, APL, J, K, Prolog, Caml, OCaml, F#, Standard ML, Mythryl, Mozart Oz, Alice ML, Erlang, Haskell, Idris, Coq, Agda, Ur, ATS, F\*, Haxe, Elm, TypeScript, PureScript, Swift. Of course, my depth of study varied greatly. In fact, most of these languages I have learnt only superficially, often from research papers or books alone.
 
-Languages that I seek to use include [Haskell](http://haskell.org), [PureScript](http://purescript.org/), [Idris](http://idris-lang.org), and [Scala](http://scala-lang.org).
+Languages I like at the moment are [Haskell](http://haskell.org), [Scala](http://scala-lang.org), [PureScript](http://purescript.org/), and [Idris](http://idris-lang.org).
+
 
 ### Formative Years
 
@@ -38,11 +39,7 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
 ### Hobbies
 
-  - Human languages
-    - French---started learning recently (2015) via [Duolingo](http://duolingo) on long commute.
-    - Spanish---while in UK (2005-2007).
-    - Japanese---lapsed after high school (1984-1988).
-    - Mandarin Chinese---very aspirational i.e. I can say "hello".
+  - Programming Languages---Types, Logic, Categories.
+  - Human languages---such as Spanish and French.
   - GameDev---game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
-  - Chess---my progress sadly stalled long ago but am play the occasional game again!
-  - Independent thinking---politically agnostic, [peaceful] anarchist :)
+  - Chess---my progress sadly stalled long ago but I play an occasional game.
