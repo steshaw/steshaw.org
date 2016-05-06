@@ -1,4 +1,8 @@
 
+- FPiS
+
+- http://eed3si9n.com/learning-scalaz/
+
 - Steven Awodey OPLSS 2012 lecture notes Category Theory
   - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
