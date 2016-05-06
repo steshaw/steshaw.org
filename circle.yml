@@ -6,8 +6,9 @@ checkout:
 dependencies:
   pre:
     - bash -c 'ls -alF /nix ~/.nix* || echo "does not exist"'
-#  cache_directories:
-#    - /nix
+  cache_directories:
+    - ~/.stack
+    - /nix
   override:
     - bin/nix-bootstrap
   post:
@@ -15,7 +16,7 @@ dependencies:
 
 test:
   override:
-    - bin/nix-build
+    - bin/build
     - bin/site-rebuild
 
 deployment:
