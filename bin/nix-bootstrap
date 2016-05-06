@@ -53,4 +53,4 @@ binary-caches         = ${caches}
   sudo cp /tmp/nix.conf /etc/nix
 fi
 
-nix-env -i cabal2nix
+nix-env -f "<nixpkgs>" -iA haskellPackages.stack

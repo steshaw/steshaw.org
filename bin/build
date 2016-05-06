@@ -15,5 +15,4 @@ trap 'kill $(jobs -p)' EXIT
 
 keep_alive&
 
-cabal2nix --shell . >shell.nix
-nix-shell --run 'cabal configure && cabal build'
+stack -nix build
