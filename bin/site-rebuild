@@ -2,4 +2,4 @@
 
 ${DEBUG:-}
 
-cabal run rebuild
+stack exec site rebuild

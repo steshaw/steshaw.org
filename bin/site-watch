@@ -2,4 +2,4 @@
 
 ${DEBUG:-}
 
-cabal run watch
+stack exec site watch
