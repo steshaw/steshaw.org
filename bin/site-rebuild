@@ -1,6 +1,8 @@
-#!/bin/sh -eu
+#!/usr/bin/env bash
 
 ${DEBUG:-}
+
+set -eu
 
 nixEnv=${HOME}/.nix-profile/etc/profile.d/nix.sh
 if [[ -f $nixEnv ]]; then
