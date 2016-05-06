@@ -24,6 +24,6 @@ fi
 if which stack; then
   stack ${stackArgs:-} build
 else
-  cabal2nix --shell . >shell.nix
+#  cabal2nix --shell . >shell.nix
   nix-shell --run 'cabal configure && cabal build'
 fi
