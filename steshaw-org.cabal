@@ -17,7 +17,7 @@ executable site
   ghc-options:          -O -Wall -threaded
   default-language:     Haskell2010
   build-depends:        base >=4.8 && <4.9
-                      , hakyll == 4.7.*
+                      , hakyll >= 4.7.*
                       , hjsmin
                       , text
                       , bytestring
