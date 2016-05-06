@@ -15,4 +15,4 @@ trap 'kill $(jobs -p)' EXIT
 
 keep_alive&
 
-stack -nix build
+stack "$@" build
