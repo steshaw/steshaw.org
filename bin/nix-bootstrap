@@ -15,7 +15,7 @@ set -eu
 nixrc=~/.nix-profile/etc/profile.d/nix.sh
 [[ -f ${nixrc} ]] && source ${nixrc}
 
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --add 'https://nixos.org/channels/nixos-15.09'
 
 #
 # Configure binary caches.
@@ -23,7 +23,7 @@ nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 if [[ "$(uname)" == 'Darwin' ]]; then 
   caches='http://zalora-public-nix-cache.s3-website-ap-southeast-1.amazonaws.com http://cache.nixos.org'
 else
-  caches='https://cache.nixos.org http://hydra.nixos.org http://hydra.cryp.to'
+  caches='https://cache.nixos.org http://hydra.cryp.to'
 fi
 
 #
@@ -34,12 +34,10 @@ if which nixos-rebuild >/dev/null 2>&1; then
   echo 'Something like:'
   cat <<!
   nix.trustedBinaryCaches = [ 
-    http://hydra.nixos.org
     http://cache.nixos.org
     http://hydra.cryp.to
   ];
   nix.binaryCaches = [ 
-    http://hydra.nixos.org
     http://cache.nixos.org
     http://hydra.cryp.to
   ];
@@ -53,4 +51,5 @@ binary-caches         = ${caches}
   sudo cp /tmp/nix.conf /etc/nix
 fi
 
-nix-env -f "<nixpkgs>" -iA haskellPackages.stack
+nix-env -i cabal2nix
+#nix-env -f "<nixpkgs>" -iA haskellPackages.stack
