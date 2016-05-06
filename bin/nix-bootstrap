@@ -15,7 +15,7 @@ set -eu
 nixrc=~/.nix-profile/etc/profile.d/nix.sh
 [[ -f ${nixrc} ]] && source ${nixrc}
 
-nix-channel --add 'https://nixos.org/channels/nixos-15.09'
+nix-channel --add 'https://nixos.org/channels/nixos-14.12'
 
 #
 # Configure binary caches.
