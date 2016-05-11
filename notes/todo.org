@@ -1,40 +1,7 @@
 
-* Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
+- Read some [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
 
-  - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
-  - then Idris
-  - then Glorious GHCJS
-
-
-* Rational Startup Movement
-
-- Start writing up "The Rational Startup"
-  - Using Haskell for a startup.
-  - rational software tooling.
-  - PureScript.
-  - To Scala or not to Scala, yep, that's the question.
-
-
-* Original public todo.org
-
-- Read "On Bullshit" "spoken word" as "performance art".
-- Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
 - Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
-
-
-* from private repo at Bitbucket.org/steshaw/notes
-
-
-** From docs/todo.txt
-
-  - Sell ADC shares. Carry forward huge capital loss on tax.
-
-
-- Build "courseware" (aka course notes/slides):
-  - Advanced Functional Programming
-  - Dependently Typed Functional Programming (with Idris)
-  - Compilers (for Functional Programming Languages)
-  - Higher Type Theory (aka H[o]TT)
 
 - Web frameworks in Haskell.
   - Try out Scotty, Spock, Yesod, Snap.
@@ -45,26 +12,29 @@
 
 - Understand/Demystify "Auto in Agda"
 
-- argonaut-hs
-  - Use TH to auto-generate encode/decode instances.
-
 - Swift parser for Haskell
   - language-swift-quote
 
+- argonaut-hs
+  - Use TH to auto-generate encode/decode instances.
+
 - Prove that total languages can safely use fusion (because they can evaluated non-strictly).
 
-- Design and implement a Systems Programming Languages suitable for gamedev.
-
 - Port otcc to Idris / F* / Haskell.
+
+- Build "courseware" (aka course notes/slides):
+  - Advanced Functional Programming
+  - Dependently Typed Functional Programming (with Idris)
+  - Compilers (for Functional Programming Languages)
+  - Type Theory including Higher Type Theory (aka H[o]TT)
 
 - Demystifying Compilers (aka course notes/slides for Compilers course)
   - blog series to replace "Let's write a compiler"
   - "The essense of compilation" compiling a simple language in the smallest possible compiler.
     (inspired by http://www.timphilipwilliams.com/posts/2014-05-22-the-essence-of-compilation.html)
   - skeleton
-    - Introduction to language design with the Simple Programming Language (SPL) — or perhaps call it Baby ML.
-    - Lexing
-    - Parsing
+    - Introduction to language design with the BabyML.
+    - Lexing/Parsing
     - Semantic Analysis (Type Checking)
     - Simple IL/IR generation
     - Backend
@@ -93,3 +63,23 @@
   - Nix for your development environment configuration.
   - Nix for your own tools (aka etools at Ephox).
   - Nix for your (proprietary) software products.
+
+- Rational Startup Movement
+  - Start writing up "The Rational Startup"
+    - Using Haskell for a startup.
+    - rational software tooling.
+    - PureScript.
+    - To Scala or not to Scala, yep, that's the question.
+
+- Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
+  - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
+  - then Idris
+  - then Glorious GHCJS
+
+- Design and implement a Systems Programming Languages suitable for gamedev.
+
+- Read "On Bullshit" "spoken word" as "performance art".
+
+- Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
+
+- Sell ADC shares. Carry forward huge capital loss on tax.
