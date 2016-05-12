@@ -3,11 +3,15 @@
 
 ** Continue with PFPL.
   - [ ] Implement Abstract Binding Trees (in Idris?).
+    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
+    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
+
+** Write an efficient nanopass compiler.
+  - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
 
 ** Do some pipes programming
   - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
   - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
-
 
 ** Strict / non-strict
   - strict/cbv (with at least optional call-by-name) v non-strict/lazy/cb-need
@@ -85,9 +89,11 @@
 
 - Demystifying Programming Languages
 
-- Demystifying Dependent Types (aka course notes/slides for Dependent Types course)
+- Demystifying Dependent Types 
+  - aka course notes/slides for Dependent Types course
 
-** Demystifying Automated Deduction (aka course notes/slides for Automated Deduction)
+** Demystifying Automated Deduction
+  - aka course notes/slides for Automated Deduction
   - The theorem prover from ML for the Working Programmer.
   - Djinn walkthrough.
 
