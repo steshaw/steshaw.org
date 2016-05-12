@@ -5,6 +5,8 @@
   - [ ] Implement Abstract Binding Trees (in Idris?).
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
+- Dig up my version of Simply Easy[ier].
+  - https://github.com/freebroccolo/dtlc.rs
 
 ** Write an efficient nanopass compiler.
   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
