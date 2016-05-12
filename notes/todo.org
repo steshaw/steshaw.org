@@ -24,6 +24,10 @@
     - tree search was the defining reason from John Huges Why FP Matters IIRC.
   - it's all delimited control.
   - perhaps we don't need laziness even for modular list/collection methods mentioned by Lennart Augustsson.
+#+begin_src
+  any :: (a -> Bool) -> [a] -> Bool
+  any p = or . map p
+#+end_src
   - take a look at the point of laziness article by Robert Harper.
   - scan FPiS for uses of laziness or call-by-name.
   - Implement this stuff in Idris and/or Scala to try it out.
