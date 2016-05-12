@@ -27,6 +27,7 @@
   - take a look at the point of laziness article by Robert Harper.
   - scan FPiS for uses of laziness or call-by-name.
   - Implement this stuff in Idris and/or Scala to try it out.
+  - CBPV? http://math.andrej.com/2008/11/23/a-toy-call-by-push-value-language/
 
 ** Effects
   - implement monad transformers
