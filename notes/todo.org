@@ -22,6 +22,10 @@
   - with delimited control for (tree) search.
     - http://okmij.org/ftp/continuations/#reify-search
     - tree search was the defining reason from John Huges Why FP Matters IIRC.
+    - isSubstringOf x y = any (isPrefixOf x) (tails y)
+      - Cale Gibbard
+      - http://lambda-the-ultimate.org/node/1277#comment-14313
+      - Noted in FPiS
   - it's all delimited control.
   - perhaps we don't need laziness even for modular list/collection methods mentioned by Lennart Augustsson.
     - http://augustss.blogspot.com.au/2011/05/more-points-for-lazy-evaluation-in.html
