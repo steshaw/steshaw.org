@@ -1,3 +1,22 @@
+* Current
+
+- [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
+
+- https://coq.inria.fr/tutorial-nahas
+
+- http://eed3si9n.com/learning-scalaz/
+
+- So you wanna learn type theory? http://purelytheoretical.com/sywtltt.html
+  - Steven Awodey OPLSS 2012 lecture notes Category Theory
+    - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
+
+  - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
+    - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
+
+- [x] Functional Programming in Scala
+
+
+* Later
 
 - Read some [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
 
