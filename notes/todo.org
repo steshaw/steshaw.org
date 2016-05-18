@@ -3,6 +3,8 @@
 - Coq
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
+  - https://coq.inria.fr/tutorial/1-basic-predicate-calculus
+
   - https://coq.inria.fr/tutorial-nahas
 
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
