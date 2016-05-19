@@ -156,6 +156,8 @@
   - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
   - Idris & Glorious GHCJS.
 
+- Produce something (tech report?) with LaTeX. Perhaps via org-mode.
+
 - Design and implement a Systems Programming Languages suitable for gamedev.
 
 - Read "On Bullshit" "spoken word" as "performance art".
