@@ -32,6 +32,11 @@
 - Dig up my version of Simply Easy[ier].
   - https://github.com/freebroccolo/dtlc.rs
 
+- Follow up on Conor McBride's "well founded trees".
+#begin_quote
+jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
+#end_quote
+
 ** Write an efficient nanopass compiler.
   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
 
