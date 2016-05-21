@@ -16,7 +16,14 @@
 
 * Later
 
-- Read some [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
+** Read [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
+  - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
+    - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
+    - http://www.strictlypositive.org/notanum.ps.gz
+    - https://www.schoolofhaskell.com/user/edwardk/bound
+    - http://hackage.haskell.org/package/unbound
+    - https://hackage.haskell.org/package/unbound-generics
+    - compare with Abtract Binding Trees.
 
 ** Continue with PFPL.
   - [ ] Implement Abstract Binding Trees (in Idris?).
