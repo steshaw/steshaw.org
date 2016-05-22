@@ -28,17 +28,42 @@
   - http://crypto.stanford.edu/~blynn/haskell/papers.html
 
 
+** Dependent Types reading list
+
+- Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
+
+  - Per MarSn Löf. Construc(ve mathema(cs and computer programming, 1982
+  - Nordstrom, Petersson, and Smith. Programming in Mar(n- Löf's Type Theory, 1990
+  - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
+  - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
+  - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
+  - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
+  - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
+
+
+** Implement Dependently Typed PL
+- Recommeded by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
+  – Löh, McBride, Swierstra. “A Tutorial ImplementaSon of a Dependently Typed Lambda Calculus.” Fundamenta Informa(cae, 2001
+  – Lectures on implementing Idris (www.idris-lang.org)
+  – My OPLSS 2013 lectures & pi-forall github repository
+
+- Dig up my version of Simply Easy[ier].
+  - https://github.com/freebroccolo/dtlc.rs
+
+- Contribute to Idris http://www.idris-lang.org/help-required/
+
+
 ** Continue with PFPL.
   - [ ] Implement Abstract Binding Trees (in Idris?).
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
-- Dig up my version of Simply Easy[ier].
-  - https://github.com/freebroccolo/dtlc.rs
+
 
 - Follow up on Conor McBride's "well founded trees".
 #begin_quote
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
 #end_quote
+
 
 ** Learn more Coq
 
