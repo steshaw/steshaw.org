@@ -210,3 +210,5 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 - Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
 
 - Find ADC/Intec shares.
+
+- [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
