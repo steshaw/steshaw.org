@@ -25,6 +25,8 @@
     - https://hackage.haskell.org/package/unbound-generics
       - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
     - compare with Abtract Binding Trees.
+  - http://crypto.stanford.edu/~blynn/haskell/papers.html
+
 
 ** Continue with PFPL.
   - [ ] Implement Abstract Binding Trees (in Idris?).
