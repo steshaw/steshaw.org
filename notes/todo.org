@@ -77,6 +77,13 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
 
+
+** Learn more Agda
+
+  - Computer Aided Formal Reasoning course at University of Nottingham
+    http://www.cs.nott.ac.uk/~psztxa/g53cfr/
+
+
 ** Write an efficient nanopass compiler.
   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
 
