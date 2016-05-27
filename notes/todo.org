@@ -84,6 +84,24 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     http://www.cs.nott.ac.uk/~psztxa/g53cfr/
 
 
+** Homotopy Type Theory
+
+  - https://homotopytypetheory.org/book/
+
+  *** Categorical Logic
+
+  - http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/index.html
+  - https://ncatlab.org/nlab/show/Sheaves+in+Geometry+and+Logic
+  - https://www.andrew.cmu.edu/user/awodey/catlog/notes/
+  - http://www.mathematik.tu-darmstadt.de/~streicher/CTCL.pdf
+  - [[http://www.mpi-sws.org/~dreyer/courses/catlogic/jacobs.pdf][Categorical Logic and Type Theory]]
+
+  *** Topos
+
+  - https://ncatlab.org/nlab/show/topos
+  - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
+
+
 ** Focusing
 
   - https://www.cs.cmu.edu/~fp/courses/oregon-m10/04-focusing.pdf
