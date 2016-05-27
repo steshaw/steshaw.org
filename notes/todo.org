@@ -95,9 +95,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://www.andrew.cmu.edu/user/awodey/catlog/notes/
   - http://www.mathematik.tu-darmstadt.de/~streicher/CTCL.pdf
   - [[http://www.mpi-sws.org/~dreyer/courses/catlogic/jacobs.pdf][Categorical Logic and Type Theory]]
+  - [[http://www.edsko.net/tcd/talks/cattheory.pdf][Abstract nonsense for Functional Programmers]]
 
   *** Topos
 
+  - [[https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories-ebook/dp/B00AKE1VFE?ie=UTF8&me=&ref_=mt_kindle][Conceptual Mathematics]]
   - [[http://arxiv.org/pdf/1012.5647v3.pdf][An information introduction to Topos theory]]
   - https://ncatlab.org/nlab/show/topos
   - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
