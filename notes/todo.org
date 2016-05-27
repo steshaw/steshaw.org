@@ -67,6 +67,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Learn more Coq
 
+  - [[https://www.labri.fr/perso/casteran/CoqArt/]Coq'Art]] (again)
+
   - https://coq.inria.fr/tutorial/1-basic-predicate-calculus
 
   - https://coq.inria.fr/tutorial-nahas
