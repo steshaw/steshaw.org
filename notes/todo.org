@@ -90,6 +90,12 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
   - https://homotopytypetheory.org/book/
 
+  *** Category Theory
+
+  - Dominic Verity introductory talks
+    - [[https://vimeo.com/17207564][Part 1]]
+    - [[https://youtu.be/yilkBvVDB_w][Part 2]]
+
   *** Categorical Logic
 
   - http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/index.html
