@@ -1,20 +1,31 @@
 * Current
 
+** Learn TLC Theory
+
+*** Type Theory
+
 - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
-- http://eed3si9n.com/learning-scalaz/
+- So you wanna learn type theory? http://purelytheoretical.com/sywtltt.html
+
+- https://github.com/type-theory/learn-tt
+
+*** Proof Theory
+
+- Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
+  - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
+
+- http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
+
+*** Category Theory
+
+- Steven Awodey OPLSS 2012 lecture notes Category Theory
+  - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
 
-** Learn Type Theory
+** Functional Programming in Scala
 
-  - So you wanna learn type theory? http://purelytheoretical.com/sywtltt.html
-    - Steven Awodey OPLSS 2012 lecture notes Category Theory
-      - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
-
-    - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
-      - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
-
-   - https://github.com/type-theory/learn-tt
+  - http://eed3si9n.com/learning-scalaz/
 
 
 * Later
