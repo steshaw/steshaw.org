@@ -15,6 +15,8 @@
 - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
   - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
 
+- http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
+
 - http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
 
 - Proof Theory Foundations
@@ -47,7 +49,6 @@
     - compare with Abtract Binding Trees.
   - http://crypto.stanford.edu/~blynn/haskell/papers.html
 
-
 ** Dependent Types reading list
 
 - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
@@ -60,7 +61,6 @@
   - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
   - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
 
-
 ** Implement Dependently Typed PL
 - Recommeded by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
   – Löh, McBride, Swierstra. “A Tutorial ImplementaSon of a Dependently Typed Lambda Calculus.” Fundamenta Informa(cae, 2001
@@ -72,7 +72,6 @@
 
 - Contribute to Idris http://www.idris-lang.org/help-required/
 
-
 ** Continue with PFPL.
   - [ ] Implement Abstract Binding Trees (in Idris?).
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
@@ -83,7 +82,6 @@
 #begin_quote
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
 #end_quote
-
 
 ** Learn more Coq
 
@@ -99,12 +97,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
 
-
 ** Learn more Agda
 
   - Computer Aided Formal Reasoning course at University of Nottingham
     http://www.cs.nott.ac.uk/~psztxa/g53cfr/
 
+  - [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
+
+  - Understand/Demystify "Auto in Agda"
 
 ** Homotopy Type Theory
 
@@ -133,25 +133,27 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
   - [[http://math.ucr.edu/home/baez/topos.html][Topos Theory in a Nutshell]]
 
-
 ** Functional Programming in Scala
 
   - http://eed3si9n.com/learning-scalaz/
+
+*** Contribute to intellij-scala
+   - http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/
 
 ** Focusing
 
   - https://www.cs.cmu.edu/~fp/courses/oregon-m10/04-focusing.pdf
   - https://www.cs.cmu.edu/~fp/courses/15816-s12/lectures/09-focusing.pdf
 
-
 ** Write an efficient nanopass compiler.
   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
 
-** Do some pipes programming
+** Learn pipes
+
   - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
   - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
 
-** Strict / non-strict
+** Investigate Strict / non-strict
   - strict/cbv (with at least optional call-by-name) v non-strict/lazy/cb-need
   - with stream transducers, generators (Simple Generators), pipes, conduits, machines, iteratees, Clojures's transducers/reducers etc for stream processing. These work well with strict languages.
     - https://dl.dropboxusercontent.com/u/4588997/Machines.pdf
@@ -188,39 +190,41 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - http://homepages.inf.ed.ac.uk/slindley/papers/frankly-draft-march2014.pdf
   - Koka
 
-** Contribute to intellij-scala
-  - http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/
-
-** Web frameworks in Haskell.
-  - Try out Scotty, Spock, Yesod, Snap, Servant.
-    - http://www.yesodweb.com/book/yesod-for-haskellers
-  - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
-  - Write a REST/JSON server in Haskell.
-  - Write a "sessionless" web app in Haskell.
-
-- Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
-
-- Understand/Demystify "Auto in Agda"
-
-- Swift parser for Haskell
-  - language-swift-quote
+** Haskell
 
 - argonaut-hs
   - Use TH to auto-generate encode/decode instances.
 
 - Prove that total languages can safely use fusion (because they can evaluated non-strictly).
 
-- Port otcc to Idris / F* / Haskell.
+- Port otcc to Idris/Haskell.
 
-- Write notes/slides/courseware for
-  - Advanced Functional Programming
-  - Dependently Typed Functional Programming (with Idris)
-  - Compilers (for Functional Programming Languages)
-  - Type Theory including Higher Type Theory (aka H[o]TT)
+*** Swift parser for Haskell
 
+- sigh
+- language-swift-quote
+
+*** Turtle
+
+- Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
+
+*** Web frameworks in Haskell.
+   - Try out Scotty, Spock, Yesod, Snap, Servant.
+     - http://www.yesodweb.com/book/yesod-for-haskellers
+   - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
+   - Write a REST/JSON server in Haskell.
+   - Write a "sessionless" web app in Haskell.
+
+** Demystifying Type Theory
+** Demystifying Homotopy Type Theory
+** Deymystifying Advanced Functional Programming
+  - notes/slides/courseware on advanced FP techniques
+
+** Deymystifying Dependently Typed Functional Programming with Idris
 ** Demystifying Compilers 
   - aka course notes/slides/courseware.
   - blog series to replace "Let's write a compiler"
+  - http://jozefg.bitbucket.org/posts/2015-03-24-pcf.html
   - "The essense of compilation" compiling a simple language in the smallest possible compiler.
     (inspired by http://www.timphilipwilliams.com/posts/2014-05-22-the-essence-of-compilation.html)
   - skeleton
@@ -234,10 +238,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - Compile to JS.
       - Compile to JVM.
       - Compile to CLR/CLI.
-
-- Demystifying Programming Languages
-
-- Demystifying Dependent Types 
+** Demystifying Programming Languages
+** Demystifying Dependent Types 
   - aka course notes/slides for Dependent Types course
 
 ** Demystifying Automated Deduction
@@ -252,6 +254,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - Introduction to Twelf.
 
 ** Nix or Package all the things
+
   - Nix for your dotfiles.
   - Nix for your development environment configuration.
   - Nix for your own tools (aka etools at Ephox).
@@ -264,18 +267,25 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - PureScript.
     - To Scala or not to Scala, yep, that's the question.
 
+** PureScript
+
 - Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
   - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
   - Idris & Glorious GHCJS.
 
+** Learn LaTex
+
 - Produce something (tech report?) with LaTeX. Perhaps via org-mode.
 
+** PL suitable for gamedev
+
 - Design and implement a Systems Programming Languages suitable for gamedev.
+- Gamedev's would probably be super happy with Rust...
+
+** Misc
 
 - Read "On Bullshit" "spoken word" as "performance art".
 
 - Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
 
 - Find ADC/Intec shares.
-
-- [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
