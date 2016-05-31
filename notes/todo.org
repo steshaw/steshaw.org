@@ -11,8 +11,6 @@
   - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
     - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
 
-- [x] Functional Programming in Scala
-
 
 * Later
 
