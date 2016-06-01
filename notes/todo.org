@@ -64,7 +64,7 @@
 
 - Contribute to Idris http://www.idris-lang.org/help-required/
 
-*** Continue with PFPL.
+*** Continue with PFPL
 
    - Implement Abstract Binding Trees (in Idris?).
      - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
