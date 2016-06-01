@@ -34,6 +34,12 @@
 
 * Later
 
+** Demystifying Type Theory
+
+- Explain predicative/impredicative. intensional/extensional.
+- Explain variants such as UTT, OTT, CTT.
+- [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
+
 ** Logic Programming
 
 - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
@@ -216,7 +222,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - Write a REST/JSON server in Haskell.
    - Write a "sessionless" web app in Haskell.
 
-** Demystifying Type Theory
 ** Demystifying Homotopy Type Theory
 ** Deymystifying Advanced Functional Programming
   - notes/slides/courseware on advanced FP techniques
