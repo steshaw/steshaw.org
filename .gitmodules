@@ -1,6 +1,8 @@
 [submodule "steshaw.github.io"]
-	path = steshaw.github.io
-	url = git@github.com:steshaw/steshaw.github.io.git
+  path = steshaw.github.io
+  url = git@github.com:steshaw/steshaw.github.io.git
+  ignore = all
+
 [submodule "talks/testing-properties-with-quickcheck/quickcheck-examples"]
-	path = talks/testing-properties-with-quickcheck/quickcheck-examples
-	url = git@github.com:steshaw/quickcheck-examples
+  path = talks/testing-properties-with-quickcheck/quickcheck-examples
+  url = git@github.com:steshaw/quickcheck-examples
