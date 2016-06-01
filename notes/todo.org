@@ -24,7 +24,7 @@
   - http://www.cs.mcgill.ca/~bpientka/oplss/
   - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
 
-- [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes] by Robert Harper, 2005 Summer School.
+- [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
 
 *** Category Theory
 
@@ -73,7 +73,7 @@
 - Contribute to Idris http://www.idris-lang.org/help-required/
 
 ** Continue with PFPL.
-  - [ ] Implement Abstract Binding Trees (in Idris?).
+  - Implement Abstract Binding Trees (in Idris?).
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
 
@@ -85,7 +85,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Learn more Coq
 
-  - [[https://www.labri.fr/perso/casteran/CoqArt/]Coq'Art]] (again)
+  - [[https://www.labri.fr/perso/casteran/CoqArt/][Coq'Art]] (again)
 
   - https://coq.inria.fr/tutorial/1-basic-predicate-calculus
 
@@ -109,6 +109,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Homotopy Type Theory
 
   - https://homotopytypetheory.org/book/
+  - https://www.cs.cmu.edu/~rwh/courses/hott/
 
   *** Category Theory
 
@@ -167,10 +168,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - it's all delimited control.
   - perhaps we don't need laziness even for modular list/collection methods mentioned by Lennart Augustsson.
     - http://augustss.blogspot.com.au/2011/05/more-points-for-lazy-evaluation-in.html
-#+begin_src
+#+BEGIN_SRC
   any :: (a -> Bool) -> [a] -> Bool
   any p = or . map p
-#+end_src
+#+END_SRC
   - take a look at the point of laziness article by Robert Harper.
   - scan FPiS for uses of laziness or call-by-name.
   - Implement this stuff in Idris and/or Scala to try it out.
