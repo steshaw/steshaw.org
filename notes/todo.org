@@ -6,7 +6,7 @@
 
 - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
-- [[Bind Scope U_scope with U.][So you wanna learn type theory?]]
+- [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
 
 - https://github.com/type-theory/learn-tt
 
