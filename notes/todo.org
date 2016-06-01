@@ -248,7 +248,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - Simple IL/IR generation
     - Backend
       - Simple IL interpreter/engine + runtime.
-      - Compile to x86_64.
+      - Compile to x86-64.
       - Compile to JS.
       - Compile to JVM.
       - Compile to CLR/CLI.
