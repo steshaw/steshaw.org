@@ -140,6 +140,21 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     style module system.
   - Investigate modules/type-classes in Agda/Coq/Cayenne.
 
+** Demystifying Datatype Generic Programming
+  - polytypic programming or whatevers
+  - [[http://itu.dk/people/asal/pubs/msc-thesis-report.pdf][The Practical Guide to Levitation]], Ahmad Salim Al-Sibahi M.Sc. Thesis
+    - https://github.com/ahmadsalim/MSc-Thesis
+  - Gentle Art of Levitation
+  - SYB
+  - GHC.Generic - why do people not like this
+  - uniplate etc.
+  - how does this apply in a dependently typed setting?
+  - http://www.andres-loeh.de/ExploringGH.pdf
+  - Talk from Andres Löh
+    - http://skillsmatter.com/podcast/home/a-haskell-lecture-with-leading-expert-andres-loh
+    - http://www.andres-loeh.de/GP-ITB.pdf
+  - add datatype generic programming section to PLT website.
+
 ** Demystifying Homotopy Type Theory
 
 - https://homotopytypetheory.org/book/
