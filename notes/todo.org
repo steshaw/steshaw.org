@@ -144,7 +144,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - polytypic programming or whatevers
   - [[http://itu.dk/people/asal/pubs/msc-thesis-report.pdf][The Practical Guide to Levitation]], Ahmad Salim Al-Sibahi M.Sc. Thesis
     - https://github.com/ahmadsalim/MSc-Thesis
-  - Gentle Art of Levitation
+  - [[https://personal.cis.strath.ac.uk/conor.mcbride/levitation.pdf][Gentle Art of Levitation]]
   - SYB
   - GHC.Generic - why do people not like this
   - uniplate etc.
