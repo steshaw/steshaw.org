@@ -154,6 +154,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - http://skillsmatter.com/podcast/home/a-haskell-lecture-with-leading-expert-andres-loh
     - http://www.andres-loeh.de/GP-ITB.pdf
   - add datatype generic programming section to PLT website.
+  - [[http://dreixel.net/research/pdf/gpif.pdf][Generic Programming with Indexed Functors]], Andres Löh, José Pedro Magalhães
 
 ** Demystifying Homotopy Type Theory
 
