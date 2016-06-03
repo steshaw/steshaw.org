@@ -10,21 +10,24 @@
 
 - https://github.com/type-theory/learn-tt
 
-*** Proof Theory
+*** Logic (Proof Theory)
 
-- Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
-  - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
+  - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
+    - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
+    - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html
 
-- http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
+  - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
 
-- http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
+  - http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
 
-- Proof Theory Foundations
-  - https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html
-  - http://www.cs.mcgill.ca/~bpientka/oplss/
-  - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
+  - http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
 
-- [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
+  - Proof Theory Foundations
+    - https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html
+    - http://www.cs.mcgill.ca/~bpientka/oplss/
+    - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
+
+  - [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
 
 *** Category Theory
 
