@@ -65,6 +65,7 @@
     Perhaps stick to Haskell and implement readline style repl.
     - https://github.com/freebroccolo/dtlc.rs
   - https://github.com/jyp/nano-Agda
+  - https://github.com/jyp/sctt
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
 
