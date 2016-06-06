@@ -64,6 +64,7 @@
   - Dig up my version of Simply Easy[ier]. Do a version in Idris?
     Perhaps stick to Haskell and implement readline style repl.
     - https://github.com/freebroccolo/dtlc.rs
+  - https://github.com/jyp/nano-Agda
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
 
