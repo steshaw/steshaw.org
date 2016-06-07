@@ -174,6 +174,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 - https://homotopytypetheory.org/book/
 - https://www.cs.cmu.edu/~rwh/courses/hott/
+- https://mdnahas.github.io/doc/Reading_HoTT_in_Coq.pdf
 
 *** Category Theory
 
