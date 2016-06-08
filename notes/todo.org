@@ -48,18 +48,20 @@
 
 ** Demystifying Type Theory
 
-- Explain predicative/impredicative. intensional/extensional.
-- Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
-- [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
-- Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
+  - Explain predicative/impredicative. intensional/extensional.
+  - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
+  - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
+  - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
 
-  - Per Martin-Löf. Constructive mathematics and computer programming, 1982
-  - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
-  - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
-  - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
-  - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
-  - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
-  - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
+    - Per Martin-Löf. Constructive mathematics and computer programming, 1982
+    - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
+    - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
+    - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
+    - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
+    - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
+    - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
+  - [[https://github.com/michaelt/martin-lof][Works of Per Martin-Löf]]. Jon Sterling recommends especially: Constructive mathematics and computer programming, On the Meanings of the Logical Constants and the Justification of Logical Laws, and Intuitionistic Type Theory.
+  - http://www.jonmsterling.com/pdfs/meaning-explanations.pdf
 
 - build courseware notes/articles/slides for TT/DTs course.
 - [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
@@ -119,14 +121,13 @@
 
 ** Learn more Agda
 
-- Computer Aided Formal Reasoning course at University of Nottingham
-  http://www.cs.nott.ac.uk/~psztxa/g53cfr/
-
-- [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
-
-- Understand/Demystify "Auto in Agda"
-
-- Follow up on Conor McBride's "well founded trees".
+  - Computer Aided Formal Reasoning course at University of Nottingham
+    http://www.cs.nott.ac.uk/~psztxa/g53cfr/
+  - [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
+  - Understand/Demystify "Auto in Agda"
+  - Follow up on Conor McBride's "well founded trees".
+  - Peter Dybjer's lectures from [[https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html][OPLSS 2015]]
+    His notes http://www.cse.chalmers.se/~peterd/papers/oplss15.html
 
 #+BEGIN_QUOTE
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
@@ -148,6 +149,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
      - recursive modules
    - [[https://wiki.mpi-sws.org/star/paramore][Parametricity and Modular Reasoning]] course by Derek Dreyer.
    - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
+   - [[http://www.cis.upenn.edu/~bcpierce/papers/modules-icfp.ps][Advanced Module Systems - a guide for the perplexed]] Dreyer and Harper.
+   - [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf][Why Applicator Functors Matter]]
 
 *** Modules and Dependently Typed Languages
   - Agda/Coq/Cayenne
