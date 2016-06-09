@@ -1,24 +1,33 @@
 * Now
 
-** Learn TLC Theory
+  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
-*** Type Theory
+** So you wanna learn Type Theory
 
-- [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
+  [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
 
-- [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
-
-- https://github.com/type-theory/learn-tt
-
-*** Logic (Proof Theory)
-
-  - Frank Pfennings OPLSS 2012 lecture notes on Proof Theory
+  - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
+  - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
+  - [ ] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][lectures notes on Constructive Logic]].
     - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
     - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html
+  - [X] Watch Bob Harper's [[https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN][OPLSS-2012 lectures "Type Theory Foundations"]].
+  - [ ] Read [[http://www.cse.chalmers.se/research/group/logic/book/book.pdf][Programming in Martin-Löf Type Theory]].
 
+* Next
+
+** Category Theory side of the TLC triangle
+
+  - Steven Awodey OPLSS 2012 lecture notes Category Theory
+    - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
+
+** Learn more on Logic  (Proof Theory)
   - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
-
   - http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
+  - [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
+
+  - https://github.com/mietek/haskell-exchange-2015
+  - https://github.com/mietek/formal-logic
 
   - http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
 
@@ -26,16 +35,6 @@
     - https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html
     - http://www.cs.mcgill.ca/~bpientka/oplss/
     - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
-
-  - [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
-
-*** Category Theory
-
-- Steven Awodey OPLSS 2012 lecture notes Category Theory
-  - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
-
-
-* Next
 
 ** Improve Mathematical Background/Foundations
 
@@ -128,6 +127,7 @@
   - Follow up on Conor McBride's "well founded trees".
   - Peter Dybjer's lectures from [[https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html][OPLSS 2015]]
     His notes http://www.cse.chalmers.se/~peterd/papers/oplss15.html
+  - [[http://www.cl.cam.ac.uk/~ok259/agda-course-13/][Dependently typed metaprogramming (in Agda)]] course by Conor McBride
 
 #+BEGIN_QUOTE
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
@@ -366,6 +366,64 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Logic Programming
 
 - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
+
+** learn-tt
+  https://github.com/type-theory/learn-tt
+  - [ ] Textbooks
+    - [ ] PFPL
+    - [ ] TAPL
+    - [ ] ATTAPL
+    - [ ] TTFP
+    - [ ] PFM [[http://www.paultaylor.eu/%7Ept/prafm/html/index.html][Practical Foundations of Mathematics]] Paul Taylor
+    - [ ] SF [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
+  - Proof Assistants
+    - [ ] Coq
+    - [ ] Agda
+    - [ ] Idris
+    - [ ] Twelf
+  - [ ] Type Theory
+    - [ ] The Works of Per Martin-Löf
+      - [ ] 1972
+      - [ ] 1979
+      - [ ] 1984
+    - [ ] Programming In Martin-Löf's Type Theory
+    - [ ] The Works of John Reynolds
+      - [ ] Types, Abstraction and Parametric Polymorphism (Parametricity for System F)
+      - [ ] A Logic For Shared Mutable State
+      - [ ] Course notes on separation logic
+      - [ ] Course notes on denotational semantics
+    - [ ] Computational Type Theory
+      - [ ] Type Theory and its Meaning Explanations
+      - [ ] A Non-Type-Theoretic Definition of Martin-Löf’s Types
+      - [ ] Constructing a type system over operational semantics 
+	    (Similar to the above, they're helpful to read together)
+      - [ ] Equality in Lazy Computation System (of general interest)
+      - [ ] Naive Computational Type Theory
+      - [ ] Innovations in CTT using NuPRL
+      - [ ] Two Lectures on Constructive Type Theory
+    - [ ] Homotopy Type Theory
+      - [ ] The HoTT book
+      - [ ] Student's Notes on HoTT
+  - [ ] Proof Theory
+    - [ ] Frank Pfenning's Lecture Notes
+      - [ ] Constructive Logic
+      - [ ] Linear Logic
+      - [ ] Modal Logic
+  - [ ] Category Theory
+    - [ ] Category Theory for Computer Scientists
+    - [ ] Category Theory, Awodey
+    - [ ] Ed Morehouse's Category Theory Lecture Notes
+	  [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS 2015
+  - [ ] Other Goodness
+    - [ ] Gunter's "Semantics of Programming Language"
+    - [ ] OPLSS
+      - [ ] 2010
+      - [ ] 2011
+      - [ ] 2012
+      - [ ] 2013
+      - [ ] 2014
+      - [ ] 2015
+      - [ ] 2016
 
 ** PL suitable for gamedev
 
