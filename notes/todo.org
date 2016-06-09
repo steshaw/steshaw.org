@@ -2,6 +2,7 @@
 
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
+
 ** So you wanna learn Type Theory
 
   [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
@@ -35,6 +36,10 @@
     - https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html
     - http://www.cs.mcgill.ca/~bpientka/oplss/
     - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
+
+  - Frank Pfennings Computation and Deduction Course and notes
+    - https://www.cs.cmu.edu/~fp/courses/comp-ded/handouts.html
+    - Uses Twelf
 
 ** Improve Mathematical Background/Foundations
 
@@ -80,7 +85,6 @@
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
 
-*** Continue with PFPL
 
 ** Read [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
   - I am not a Number (see [[#name-binding][below]]).
@@ -367,8 +371,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
 
-** learn-tt
-  https://github.com/type-theory/learn-tt
+** Learning Type Theory
+  Adapted from https://github.com/type-theory/learn-tt
   - [ ] Textbooks
     - [ ] PFPL
     - [ ] TAPL
@@ -376,7 +380,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - [ ] TTFP
     - [ ] PFM [[http://www.paultaylor.eu/%7Ept/prafm/html/index.html][Practical Foundations of Mathematics]] Paul Taylor
     - [ ] SF [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
-  - Proof Assistants
+  - [ ] Proof Assistants
     - [ ] Coq
     - [ ] Agda
     - [ ] Idris
@@ -412,12 +416,16 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - [ ] Category Theory
     - [ ] Category Theory for Computer Scientists
     - [ ] Category Theory, Awodey
-    - [ ] Ed Morehouse's Category Theory Lecture Notes
-	  [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS 2015
-  - [ ] Other Goodness
-    - [ ] Gunter's "Semantics of Programming Language"
-    - [ ] OPLSS
-      - [ ] 2010
+    - [ ] [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS
+      2015 Ed Morehouse
+  - [-] Other Goodness
+    - [ ] [[https://mitpress.mit.edu/books/semantics-programming-languages][Semantics of Programming Languages]], Carl Gunter
+    - [-] OPLSS
+      - [-] 2010
+	- [X] Type Theory Foundations — Robert Harper
+	- [ ] Proof Theory Foundations — Frank Pfenning
+	- [X] Software Foundations in Coq — Benjamin Pierce
+	- [X] Essential Coq from Scratch — Andrew Tolmach
       - [ ] 2011
       - [ ] 2012
       - [ ] 2013
