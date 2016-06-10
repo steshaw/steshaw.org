@@ -22,7 +22,7 @@
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
-** Learn more on Logic  (Proof Theory)
+** More Logic  (Proof Theory)
   - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
   - http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
   - [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
@@ -84,7 +84,6 @@
   - https://github.com/jyp/sctt
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
-
 
 ** Read [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
   - I am not a Number (see [[#name-binding][below]]).
