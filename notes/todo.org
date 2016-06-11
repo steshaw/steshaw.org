@@ -2,7 +2,6 @@
 
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
 
-
 ** So you wanna learn Type Theory
 
   [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
@@ -132,6 +131,7 @@
   - Peter Dybjer's lectures from [[https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html][OPLSS 2015]]
     His notes http://www.cse.chalmers.se/~peterd/papers/oplss15.html
   - [[http://www.cl.cam.ac.uk/~ok259/agda-course-13/][Dependently typed metaprogramming (in Agda)]] course by Conor McBride
+  - http://oxij.org/note/BrutalDepTypes/
 
 #+BEGIN_QUOTE
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
