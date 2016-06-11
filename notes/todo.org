@@ -140,6 +140,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
    - Start with SML and OCaml module systems.
    - expand modules reading list http://steshaw.org/plt/modules
+   - [[https://github.com/purescript/purescript/issues/1886#issuecomment-225209443][Nice modules reading list from Chris Allen]]
    - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
    - https://www.mpi-sws.org/~rossberg/f-ing/
    - https://www.mpi-sws.org/%7Erossberg/1ml/
