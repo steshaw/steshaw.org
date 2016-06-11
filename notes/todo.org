@@ -106,6 +106,7 @@
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
   - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
+  - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
 
 ** Learn more Coq
 
@@ -126,12 +127,17 @@
   - Computer Aided Formal Reasoning course at University of Nottingham
     http://www.cs.nott.ac.uk/~psztxa/g53cfr/
   - [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
+  - http://people.inf.elte.hu/divip/AgdaTutorial/Index.html
+  - http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Othertutorials
   - Understand/Demystify "Auto in Agda"
   - Follow up on Conor McBride's "well founded trees".
   - Peter Dybjer's lectures from [[https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html][OPLSS 2015]]
     His notes http://www.cse.chalmers.se/~peterd/papers/oplss15.html
   - [[http://www.cl.cam.ac.uk/~ok259/agda-course-13/][Dependently typed metaprogramming (in Agda)]] course by Conor McBride
   - http://oxij.org/note/BrutalDepTypes/
+  - Conor's notes from [[https://www.cs.ox.ac.uk/projects/utgp/school/notes.html][Summer School on Generic and Effectful Programming 2015]]
+    - https://github.com/pigworker/SSGEP-datadata
+    - https://www.cs.ox.ac.uk/projects/utgp/school/conor.pdf
 
 #+BEGIN_QUOTE
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
