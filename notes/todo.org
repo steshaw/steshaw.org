@@ -106,6 +106,7 @@
   - Implement Abstract Binding Trees (in Idris?).
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
+  - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
 
 ** Learn more Coq
 
