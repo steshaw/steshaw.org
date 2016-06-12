@@ -1,6 +1,8 @@
 * Now
 
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
+  - PFPL
+  - Namely Painless
 
 ** So you wanna learn Type Theory
 
