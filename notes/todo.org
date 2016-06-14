@@ -2,7 +2,6 @@
 
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
   - PFPL
-  - Namely Painless
 
 ** So you wanna learn Type Theory
 
@@ -11,8 +10,6 @@
   - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
   - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
   - [ ] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][lectures notes on Constructive Logic]].
-    - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.pdf
-    - http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html
   - [X] Watch Bob Harper's [[https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN][OPLSS-2012 lectures "Type Theory Foundations"]].
   - [ ] Read [[http://www.cse.chalmers.se/research/group/logic/book/book.pdf][Programming in Martin-Löf Type Theory]].
 
@@ -41,6 +38,10 @@
   - Frank Pfennings Computation and Deduction Course and notes
     - https://www.cs.cmu.edu/~fp/courses/comp-ded/handouts.html
     - Uses Twelf
+
+  - https://avigad.github.io/logic_and_proof/
+    
+  - Velleman "How to Prove it"
 
 ** Improve Mathematical Background/Foundations
 
@@ -109,6 +110,7 @@
     - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
   - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
   - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
+  - [X] Namely Painless
 
 ** Learn more Coq
 
@@ -153,6 +155,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
    - https://www.mpi-sws.org/~rossberg/f-ing/
    - https://www.mpi-sws.org/%7Erossberg/1ml/
+     - 1ML approach seems related to an Idris module system
    - http://www.mpi-sws.org/~skilpat/modsem/
    - [[https://web.archive.org/web/20110910021609/http://www.cs.cmu.edu/~rwh/courses/modules/][Bob Harper's Modules courses]] (from archive.org)
    - Does [[https://www.mpi-sws.org/~rossberg/mixml/][MixML]] go too far? i.e. is it principled?
@@ -272,6 +275,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - scan FPiS for uses of laziness or call-by-name.
   - Implement this stuff in Idris and/or Scala to try it out.
   - CBPV? http://math.andrej.com/2008/11/23/a-toy-call-by-push-value-language/
+
+** Investigate totality / partiality / Turing-completeness etc.
+
+  - https://personal.cis.strath.ac.uk/conor.mcbride/TotallyFree.pdf
+  - http://www.cs.nott.ac.uk/~pszvc/publications/General_Recursion_MSCS_2005.pdf
 
 ** Effects
   - implement monad transformers
@@ -432,7 +440,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - [-] OPLSS
       - [-] 2010
 	- [X] Type Theory Foundations — Robert Harper
-	- [ ] Proof Theory Foundations — Frank Pfenning
+	- [X] Proof Theory Foundations — Frank Pfenning
+	- [ ] Dependently Typed Programming — Conor McBride
+	- [ ] Proofs-as-Processes (in CTT) — Robert Constable
+	- [ ] Proving a Compiler — Xavier Leroy
 	- [X] Software Foundations in Coq — Benjamin Pierce
 	- [X] Essential Coq from Scratch — Andrew Tolmach
       - [ ] 2011
@@ -442,15 +453,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] 2015
       - [ ] 2016
 
-** PL suitable for gamedev
-
-- Design and implement a Systems Programming Languages suitable for gamedev.
-- Gamedev's would probably be super happy with Rust...
-
 ** Misc
 
-- Read "On Bullshit" "spoken word" as "performance art".
-
-- Write an essay/book "On Money". inspired by "On Bullshit" and "On Assholes"
-
-- Find ADC/Intec shares.
+- Find old ADC/Intec shares.
