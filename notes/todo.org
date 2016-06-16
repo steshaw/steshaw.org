@@ -15,6 +15,29 @@
 
 * Next
 
+** Demystifying Idris
+
+  - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
+  - Read [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
+  - Contribute to Idris.
+  - Courseware: notes/articles/slides.
+
+** PL / Type Systems / Type Inference / Semantics / Design
+
+  - TAPL
+  - Type systems for programming languages Didier Rémy
+    - http://pauillac.inria.fr/~remy/mpri/cours1.pdf
+    - http://pauillac.inria.fr/~remy/mpri/cours2.pdf
+    - http://pauillac.inria.fr/~remy/mpri/cours3.pdf
+    - http://pauillac.inria.fr/~remy/mpri/cours4.pdf
+    - http://pauillac.inria.fr/~remy/mpri/cours5.pdf
+  - http://www.eecs.harvard.edu/~greg/cs256sp2005/
+  - [[https://www.cl.cam.ac.uk/~gw104/dens.pdf][Denotational Semantics notes, Glynn Winskel]]
+  - [X] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/pottier.pdf][Type Inference (slides), François Pottier]]
+  - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
+  - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
+  - [ ] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/][PLMW @ ICFP 2015 - The Programming Languages Mentoring Workshop]]
+
 ** Category Theory side of the TLC triangle
 
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
@@ -40,7 +63,7 @@
     - Uses Twelf
 
   - https://avigad.github.io/logic_and_proof/
-    
+  - [[https://www.cl.cam.ac.uk/~gw104/PLC-mini-course.pdf][Mini-course on proof theory, Pierre-Louis Curien]]
   - Velleman "How to Prove it"
 
 ** Improve Mathematical Background/Foundations
@@ -87,9 +110,11 @@
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
 
-** Read [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
+** Read Functional Pearls
+  - [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
   - I am not a Number (see [[#name-binding][below]]).
   - http://crypto.stanford.edu/~blynn/haskell/papers.html
+  - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
 
 ** Name binding
   - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
@@ -111,6 +136,7 @@
   - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
   - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
   - [X] Namely Painless
+  - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
 
 ** Learn more Coq
 
@@ -167,6 +193,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
    - [[http://www.cis.upenn.edu/~bcpierce/papers/modules-icfp.ps][Advanced Module Systems - a guide for the perplexed]] Dreyer and Harper.
    - [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf][Why Applicator Functors Matter]]
+   - http://www.ccs.neu.edu/home/amal/course/7480-s12/modules-notes.pdf
 
 *** Modules and Dependently Typed Languages
   - Agda/Coq/Cayenne
@@ -184,6 +211,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     type classes. Kmett says he wants both type classes and an ML
     style module system.
   - Investigate modules/type-classes in Agda/Coq/Cayenne.
+  - [[http://www.cs.unibo.it/%7Easperti/PAPERS/tphol09.pdf][Unification Hints]]
 
 ** Demystifying Datatype Generic Programming
   - polytypic programming or whatevers
@@ -239,7 +267,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 *** Contribute to intellij-scala
    - http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/
-
 ** Focusing
 
   - https://www.cs.cmu.edu/~fp/courses/oregon-m10/04-focusing.pdf
@@ -297,17 +324,13 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Haskell
 
-- argonaut-hs
-  - Use TH to auto-generate encode/decode instances.
-
-- Prove that total languages can safely use fusion (because they can evaluated non-strictly).
-
-- Port otcc to Idris/Haskell.
+- Can it be proven that total languages can safely use fusion (because 
+  they can evaluated non-strictly)?
 
 *** Swift parser for Haskell
 
-- sigh
-- language-swift-quote
+  - sigh, language-swift-quote is stalled because of ambiguities in
+    the grammar
 
 *** Turtle
 
@@ -319,17 +342,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
    - Write a REST/JSON server in Haskell.
    - Write a "sessionless" web app in Haskell.
-
 ** Demystifying Advanced Functional Programming
   - recursion schemes
   - Algebra of Programming.
   - notes/slides/courseware on advanced FP techniques
-
-** Demystifying Dependently Typed Functional Programming with Idris
-
-- Read [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
-- Contribute to Idris.
-- Courseware: notes/articles/slides.
 
 ** Demystifying Compilers 
   - aka course notes/slides/courseware.
@@ -435,23 +451,39 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - [ ] Category Theory, Awodey
     - [ ] [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS
       2015 Ed Morehouse
-  - [-] Other Goodness
+  - [ ] Other Goodness
     - [ ] [[https://mitpress.mit.edu/books/semantics-programming-languages][Semantics of Programming Languages]], Carl Gunter
-    - [-] OPLSS
-      - [-] 2010
-	- [X] Type Theory Foundations — Robert Harper
-	- [X] Proof Theory Foundations — Frank Pfenning
-	- [ ] Dependently Typed Programming — Conor McBride
-	- [ ] Proofs-as-Processes (in CTT) — Robert Constable
-	- [ ] Proving a Compiler — Xavier Leroy
-	- [X] Software Foundations in Coq — Benjamin Pierce
-	- [X] Essential Coq from Scratch — Andrew Tolmach
-      - [ ] 2011
+    - [ ] OPLSS
       - [ ] 2012
       - [ ] 2013
       - [ ] 2014
       - [ ] 2015
-      - [ ] 2016
+
+** OPLSS
+  - [-] OPLSS
+    - [-] 2010
+      - [X] Type Theory Foundations — Robert Harper
+      - [X] Proof Theory Foundations — Frank Pfenning
+      - [ ] Dependently Typed Programming — Conor McBride
+      - [ ] Proofs-as-Processes (in CTT) — Robert Constable
+      - [ ] Proving a Compiler — Xavier Leroy
+      - [X] Software Foundations in Coq — Benjamin Pierce
+      - [X] Essential Coq from Scratch — Andrew Tolmach
+    - [ ] 2011
+    - [ ] 2012
+    - [ ] 2013
+    - [ ] 2014
+    - [ ] 2015
+      - [ ] Basic Proof Theory — Frank Pfenning
+      - [ ] Introduction to Dependent Type Theory — Robert Harper
+      - [ ] Basic Category Theory: Semantics of Proof Theory — Ed Morehouse
+      - [ ] Inductive and Inductive-Recursive Definitions in Intuitionistic Type Theory — Peter Dybjer
+      - [ ] The Coq Proof Assistant and Its Applications to
+        Programming-Language Semantics — Adam Chlipala
+      - [ ] Logical Relations — Amal Ahmed
+      - [ ] Mark Bickford
+      - [ ] Robert Constable
+    - [ ] 2016
 
 ** Misc
 
