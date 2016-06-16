@@ -1,7 +1,7 @@
 * Now
 
-  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
-  - PFPL
+  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
+  - PFPL (book)
 
 ** So you wanna learn Type Theory
 
@@ -17,26 +17,45 @@
 
 ** Demystifying Idris
 
-  - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
-  - Read [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
-  - Contribute to Idris.
-  - Courseware: notes/articles/slides.
+  - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
+    - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
+  - [ ] BabyML in Idris
+    - plzoo
+    - https://github.com/hanazuki/miniml (OCaml)
+    - https://github.com/cadesalaberry/ocaml-practice/tree/master/hw5 (OCaml)
+    - https://github.com/pierthodo/Mini-ML (OCaml)
+    - https://github.com/timcolonel/socs/tree/master/Comp%20302/hw5/mini-ml (SML)
+    - https://github.com/bitonic/ml-w (Haskell)
+    - [[https://esumii.github.io/min-caml/index-e.html][Min-Caml (website)]]
+      [[https://esumii.github.io/min-caml/paper.pdf][MinCaml: A Simple and Efficient Compiler for a Minimal Functional Language, Eijiro Sumii (paper)]]
+    - Coq verification of a MiniML https://github.com/coq-contribs/miniml
+    - Mini ML is defined in paper [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]])
+  - [ ] BabyIdris in Idris
+  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
+  - [ ] Contribute to Idris.
+    - [ ] Check out  Paul Körbitz's look at Idris internals:
+      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-I-Overview-and-Parsing.html][Part 1]]
+      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part 2]]
+      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
+  - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
+  - [ ] Courseware: notes/articles/slides.
 
-** PL / Type Systems / Type Inference / Semantics / Design
+** PL: Type Systems / Type Inference / Semantics / Design
 
-  - TAPL
-  - Type systems for programming languages Didier Rémy
-    - http://pauillac.inria.fr/~remy/mpri/cours1.pdf
-    - http://pauillac.inria.fr/~remy/mpri/cours2.pdf
-    - http://pauillac.inria.fr/~remy/mpri/cours3.pdf
-    - http://pauillac.inria.fr/~remy/mpri/cours4.pdf
-    - http://pauillac.inria.fr/~remy/mpri/cours5.pdf
-  - http://www.eecs.harvard.edu/~greg/cs256sp2005/
-  - [[https://www.cl.cam.ac.uk/~gw104/dens.pdf][Denotational Semantics notes, Glynn Winskel]]
+  - [ ] TAPL (book)
+  - [ ] Type systems for programming languages Didier Rémy (course notes)
+    - [ ] http://pauillac.inria.fr/~remy/mpri/cours1.pdf
+    - [ ] http://pauillac.inria.fr/~remy/mpri/cours2.pdf
+    - [ ] http://pauillac.inria.fr/~remy/mpri/cours3.pdf
+    - [ ] http://pauillac.inria.fr/~remy/mpri/cours4.pdf
+    - [ ] http://pauillac.inria.fr/~remy/mpri/cours5.pdf
+  - [ ] http://www.eecs.harvard.edu/~greg/cs256sp2005/
+  - [ ] [[https://www.cl.cam.ac.uk/~gw104/dens.pdf][Denotational Semantics notes, Glynn Winskel]]
   - [X] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/pottier.pdf][Type Inference (slides), François Pottier]]
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
   - [ ] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/][PLMW @ ICFP 2015 - The Programming Languages Mentoring Workshop]]
+  - [ ] [[http://caml.inria.fr/pub/docs/u3-ocaml/][(UUU) Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa]]
 
 ** Category Theory side of the TLC triangle
 
@@ -77,7 +96,11 @@
 
 ** Demystifying Type Theory
 
-  - Explain predicative/impredicative. intensional/extensional.
+  - [ ] Demystify terminology.
+    - [ ] Demystify predicative/impredicative.
+    - [ ] Demystify intensional/extensional.
+    - [ ] Demystify relational parametricity.
+      - http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated
   - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
   - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
   - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
@@ -138,7 +161,7 @@
   - [X] Namely Painless
   - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
 
-** Learn more Coq
+** Demystifying Coq
 
   - [[https://www.labri.fr/perso/casteran/CoqArt/][Coq'Art]] (again)
 
@@ -152,7 +175,7 @@
 
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
 
-** Learn more Agda
+** Demystifying Agda
 
   - Computer Aided Formal Reasoning course at University of Nottingham
     http://www.cs.nott.ac.uk/~psztxa/g53cfr/
@@ -176,8 +199,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Demystifying Module Systems
 
    - Start with SML and OCaml module systems.
-   - expand modules reading list http://steshaw.org/plt/modules
-   - [[https://github.com/purescript/purescript/issues/1886#issuecomment-225209443][Nice modules reading list from Chris Allen]]
+     - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
+     - [[http://stackoverflow.com/questions/15584848/whats-the-difference-if-any-between-standard-mls-module-system-and-ocaml-mod][Rossberg on SML OCaml module systems (StackOverflow)]]
+   - Expand/revise modules reading list http://steshaw.org/plt/modules
+     - [[https://github.com/purescript/purescript/issues/1886#issuecomment-225209443][Nice modules reading list from Chris Allen]]
    - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
    - https://www.mpi-sws.org/~rossberg/f-ing/
    - https://www.mpi-sws.org/%7Erossberg/1ml/
@@ -185,12 +210,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - http://www.mpi-sws.org/~skilpat/modsem/
    - [[https://web.archive.org/web/20110910021609/http://www.cs.cmu.edu/~rwh/courses/modules/][Bob Harper's Modules courses]] (from archive.org)
    - Does [[https://www.mpi-sws.org/~rossberg/mixml/][MixML]] go too far? i.e. is it principled?
-   - Common extensions 
+   - Common extensions
      - separate compilation
      - first class modules
      - recursive modules
    - [[https://wiki.mpi-sws.org/star/paramore][Parametricity and Modular Reasoning]] course by Derek Dreyer.
-   - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
    - [[http://www.cis.upenn.edu/~bcpierce/papers/modules-icfp.ps][Advanced Module Systems - a guide for the perplexed]] Dreyer and Harper.
    - [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf][Why Applicator Functors Matter]]
    - http://www.ccs.neu.edu/home/amal/course/7480-s12/modules-notes.pdf
@@ -264,9 +288,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Functional Programming in Scala
 
   - http://eed3si9n.com/learning-scalaz/
+  - [[http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/][Contribute to intellij-scala]]
 
-*** Contribute to intellij-scala
-   - http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/
 ** Focusing
 
   - https://www.cs.cmu.edu/~fp/courses/oregon-m10/04-focusing.pdf
@@ -274,11 +297,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Write an efficient nanopass compiler.
   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
-
-** Learn pipes
-
-  - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
-  - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
 
 ** Investigate strict v non-strict
   - strict/cbv (with at least optional call-by-name) v non-strict/lazy/cb-need
@@ -313,14 +331,16 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - take a look at algebraic effects.
   - Idris 
     - https://eb.host.cs.st-andrews.ac.uk/drafts/effects.pdf
-  - PureScript.
+    - [[http://docs.idris-lang.org/en/latest/effects/index.html][Idris Effects Tutorial]]
+  - PureScript
     - http://www.purescript.org/learn/eff/
   - Eff
     - http://www.eff-lang.org
-  - Frank.
+  - Frank
     - https://personal.cis.strath.ac.uk/conor.mcbride/pub/Frank/
     - http://homepages.inf.ed.ac.uk/slindley/papers/frankly-draft-march2014.pdf
   - Koka
+  - https://github.com/yallop/effects-bibliography
 
 ** Haskell
 
@@ -334,7 +354,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 *** Turtle
 
-- Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
+  - Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
 
 *** Web frameworks in Haskell.
    - Try out Scotty, Spock, Yesod, Snap, Servant.
@@ -342,6 +362,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
    - Write a REST/JSON server in Haskell.
    - Write a "sessionless" web app in Haskell.
+
+*** Learn pipes
+
+   - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
+   - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
 ** Demystifying Advanced Functional Programming
   - recursion schemes
   - Algebra of Programming.
@@ -488,3 +513,4 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Misc
 
 - Find old ADC/Intec shares.
+- Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
