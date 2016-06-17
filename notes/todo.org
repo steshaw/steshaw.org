@@ -1,7 +1,9 @@
 * Now
 
-  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
+  - BabyML
   - PFPL (book)
+  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
+    - currently at Equiv.v assign_aequiv.
 
 ** So you wanna learn Type Theory
 
