@@ -1,0 +1,8 @@
+
+- Pretty bad error messages. Let's try to list some:
+  
+
+- Could do 'implementation Layout String' in calc.idr because it was defined in Lightyear.Strings (but I wasn't importing that and Idris was asking for an implementation).
+
+
+- No (>>) operator?

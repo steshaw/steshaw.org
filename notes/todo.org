@@ -39,6 +39,8 @@
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
   - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
   - [ ] Courseware: notes/articles/slides.
+  - Is it possible to build total parser combinators?
+  - An LALR/LR/LL(k) parser generator would be nice (like Happy or something).
 
 ** PL: Type Systems / Type Inference / Semantics / Design
 
@@ -372,23 +374,70 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - Algebra of Programming.
   - notes/slides/courseware on advanced FP techniques
 
-** Demystifying Compilers 
-  - aka course notes/slides/courseware.
-  - blog series to replace "Let's write a compiler"
-  - http://jozefg.bitbucket.org/posts/2015-03-24-pcf.html
-  - "The essense of compilation" compiling a simple language in the smallest possible compiler.
-    (inspired by http://www.timphilipwilliams.com/posts/2014-05-22-the-essence-of-compilation.html)
-  - skeleton
+** Demystifying Compilers
+  - Develop (literate) code, articles, slides, notes, articles.
+  - Writing/blog series on BabyML / BabyIdris:
+    - Let noone ever recommend "Let's write a compiler" ever again.
+    - Stephen Diehl is doing a very nice job for a Haskell-like
+      language so let's stick with CBV and move into DTs.
+    - "The essense of compilation" compiling a simple language in the
+      smallest possible compiler ([[http://www.timphilipwilliams.com/posts/2014-05-22-the-essence-of-compilation.html][inspiration]]). More than Hutton's Razor!
+    - http://jozefg.bitbucket.org/posts/2015-03-24-pcf.html
+    - There seem to be a few Min/Mini-ML/NanoML and NanoAgda's about.
+    - Also Simply Easy / Simply Easier / PiSigma and pi-forall.
+  - Main outline
+    - First there's a high-level language (probably interpreter or
+      "bytecode" compiler". Basically the "front-end".
+      - Type checking.
+      - [Parametric] Polymorphism (aka generics).
+      - Type inference. Probably HM/ML sweet spot.
+    - Second, there's the compiler to native machine code with
+      Instruction Selection, Register Allocation, Flow control,
+      calling conventions, first-class functions and closure conversion.
+      Basically the back-end.
+    - Thirdly, there's optimisations like inlining, constant folding,
+      copy propagation etc. This should probably be 2nd.
+    - Fourthly, there's runtime system considerations:
+      - Garbage collection.
+  - Another skeleton:
     - Introduction to language design with the BabyML.
     - Lexing/Parsing
     - Semantic Analysis (Type Checking)
     - Simple IL/IR generation
-    - Backend
+    - Backends
       - Simple IL interpreter/engine + runtime.
-      - Compile to x86-64.
-      - Compile to JS.
-      - Compile to JVM.
-      - Compile to CLR/CLI.
+      - Compile to native x86 or x86-64 (or x86-64 in with 32 bit pointers).
+      - "transpile" to JS.
+      - "transpile" to C?
+      - "transpile" to Java (pro'ly unnecessary).
+      - Compile to JVM (pro'ly unnecessary).
+      - Compile to CLR/CLI (pro'ly unnecessary).
+  - MinCaml looks great particularly for the middle to backend. Would
+    be nice to have polymorphism (i.e. nicer PL) in the front-end though.
+  - [[https://www.cs.indiana.edu/~sabry/teaching/b522/s03/][CSCI B522 Programming Language Foundations Amr Sabry (course)]]
+    - MinML/NanoML semantics. Be nice to write it up in `org-mode`
+      and/or $$\LaTex$$.
+    - Also seems to have verifications/proofs in Twelf.
+  - [[https://iu.instructure.com/courses/1517577][SP16 Compilers 11241 Jeremy Siek (course)]]
+    - [[https://www.sharelatex.com/project/5637a774990f556d48bab667][course book/notes]]
+    - http://github.com/jsiek/Essentials-of-Compilation
+
+** Demystifiying Lexer Generators
+
+   - Would like to be able to generate the lexer from an embedded
+     description. Pretty sure that Manuel Chakravarty did work on this
+     (I have a note somewhere's).
+   - Let's have something like this in Idris (and all the cool PLs).
+     At least a Lex like thing.
+
+** Demystifiying Parser Generators
+
+  - I the approach of [[https://hackage.haskell.org/package/BNFC-meta][BNFC-meta]]. It defines the grammar in the language (even
+    if it's via TH). Let's have this in Idris (and the cool PLs). At
+    least something like Happy.
+  - I know there's supposed to be more general way to parse these days
+    than LR and LALR but perhaps they are slow too (if not, embed
+    those types of grammars instead!).
 
 ** Demystifying Automated Deduction
   - aka course notes/slides for Automated Deduction
@@ -509,6 +558,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] Mark Bickford
       - [ ] Robert Constable
     - [ ] 2016
+
+** Demystifying Isabelle/HOL
+
+  - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
 
 ** Misc
 
