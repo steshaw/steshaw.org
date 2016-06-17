@@ -1,8 +1,20 @@
 
-- Pretty bad error messages. Let's try to list some:
-  
+* Error messages
 
+  - Pretty bad error messages. Let's try to list some:
+  - This happened when I tried to import Data.Nat which does not exist. However, it doesn't say in which file!
+
+#+BEGIN_QUOTE
+$ make
+idris --build calc.ipkg
+Entering directory `./src'
+Can't find import Data/Nat
+make: *** [build] Error 1
+#+END_QUOTE
+  
 - Could do 'implementation Layout String' in calc.idr because it was defined in Lightyear.Strings (but I wasn't importing that and Idris was asking for an implementation).
 
 
-- No (>>) operator?
+* Other
+
+- Expected to have an (>>) operator. Wasn't there...
