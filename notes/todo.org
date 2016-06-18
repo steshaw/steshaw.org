@@ -1,6 +1,9 @@
 * Now
 
   - BabyML
+  - Lightyear 
+    - patch with chainl/chainl1
+    - add [[https://github.com/ekmett/parsers/blob/master/src/Text/Parser/Expression.hs][expression helper]]?
   - PFPL (book)
     - at Chapter 8, Function Definitions and Values
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
@@ -33,6 +36,7 @@
       [[https://esumii.github.io/min-caml/paper.pdf][MinCaml: A Simple and Efficient Compiler for a Minimal Functional Language, Eijiro Sumii (paper)]]
     - Coq verification of a MiniML https://github.com/coq-contribs/miniml
     - Mini ML is defined in paper [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]])
+    - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]]
   - [ ] BabyIdris in Idris
   - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
   - [ ] Contribute to Idris.
@@ -44,6 +48,12 @@
   - Courseware: notes/articles/slides.
   - Is it possible to build total parser combinators?
   - An LALR/LR/LL(k) parser generator would be nice (like Happy or something).
+  - Try deriving with the elaborator.
+    - https://gist.github.com/david-christiansen/8c66822a471bf929a22f
+    - https://github.com/david-christiansen/derive-all-the-instances
+  - [[http://toss.sourceforge.net/ocaml.html][Implement the NNF of formulas tutorial]]. Looks like the same as the
+    one from the tail end of ML for the Working Programmer.
+  - Implement the prover from ML for the Working Programmer.
 
 ** PL: Type Systems / Type Inference / Semantics / Design
 
@@ -230,6 +240,9 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - [[http://www.cis.upenn.edu/~bcpierce/papers/modules-icfp.ps][Advanced Module Systems - a guide for the perplexed]] Dreyer and Harper.
    - [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf][Why Applicator Functors Matter]]
    - http://www.ccs.neu.edu/home/amal/course/7480-s12/modules-notes.pdf
+   - OCaml course at Cornell
+     - [[http://www.cs.cornell.edu/courses/cs3110/2015fa/][cs3110/2015fa]] pretty
+     - [[http://www.cs.cornell.edu/courses/cs3110/2016sp/lecture_notes.php][cs3110/2016sp]] more type theory
 
 *** Modules and Dependently Typed Languages
   - Agda/Coq/Cayenne
@@ -439,6 +452,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
      (I have a note somewhere's).
    - Let's have something like this in Idris (and all the cool PLs).
      At least a Lex like thing.
+   - [[http://programatica.cs.pdx.edu/P/hallgren.pdf][This]] lexer for Haskell embedded a lexer generator.
+     - Looks like it was used in hssources (is that a Hackage
+       project?)
+     - Paper says that the regex generator was based on the
+       presentation in Appel's Modern Compiler Implementation in ML. 
 
 ** Demystifiying Parser Generators
 
@@ -450,6 +468,9 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     those types of grammars instead!).
   - [[https://github.com/ollef/Earley/][Early]] an embedded Early (context-free) parser combinator library
     in Haskell.
+  - Haskell style "layout rule". PKA Landin's offside rule.
+    - https://github.com/ghc/ghc/blob/master/compiler/parser/Lexer.x
+    - https://michaeldadams.org/papers/layout_parsing/
 
 ** Demystifying Automated Deduction
   - aka course notes/slides for Automated Deduction
