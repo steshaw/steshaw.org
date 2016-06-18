@@ -2,8 +2,9 @@
 
   - BabyML
   - PFPL (book)
+    - at Chapter 8, Function Definitions and Values
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
-    - currently at Equiv.v assign_aequiv.
+    - at Equiv.v assign_aequiv.
 
 ** So you wanna learn Type Theory
 
@@ -40,7 +41,7 @@
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part 2]]
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
   - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
-  - [ ] Courseware: notes/articles/slides.
+  - Courseware: notes/articles/slides.
   - Is it possible to build total parser combinators?
   - An LALR/LR/LL(k) parser generator would be nice (like Happy or something).
 
@@ -55,11 +56,18 @@
     - [ ] http://pauillac.inria.fr/~remy/mpri/cours5.pdf
   - [ ] http://www.eecs.harvard.edu/~greg/cs256sp2005/
   - [ ] [[https://www.cl.cam.ac.uk/~gw104/dens.pdf][Denotational Semantics notes, Glynn Winskel]]
-  - [X] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/pottier.pdf][Type Inference (slides), François Pottier]]
-  - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
-  - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
   - [ ] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/][PLMW @ ICFP 2015 - The Programming Languages Mentoring Workshop]]
   - [ ] [[http://caml.inria.fr/pub/docs/u3-ocaml/][(UUU) Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa]]
+
+*** Type Inference
+  - [X] [[https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/pottier.pdf][Type Inference (slides), François Pottier]]
+  - [[http://www.cs.bham.ac.uk/~krishnan/bidir.pdf][Complete and Easy Bidirectional Typechecking for Higher-Rank Polymorphism]], Joshua Dunfield, Neelakantan R. Krishnaswami
+    - an implementation https://github.com/ollef/Bidirectional
+    - [[http://www.cs.cmu.edu/~joshuad/talks/icfp13/Dunfield_icfp13-talk.pdf][Joshua's bidir website]]
+    - [[http://www.cs.cmu.edu/~joshuad/talks/icfp13/Dunfield_icfp13-talk.pdf][slides]]
+  - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
+  - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
+  - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
 
 ** Category Theory side of the TLC triangle
 
@@ -434,12 +442,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Demystifiying Parser Generators
 
-  - I the approach of [[https://hackage.haskell.org/package/BNFC-meta][BNFC-meta]]. It defines the grammar in the language (even
-    if it's via TH). Let's have this in Idris (and the cool PLs). At
-    least something like Happy.
+  - I like the approach of [[https://hackage.haskell.org/package/BNFC-meta][BNFC-meta]]. It defines the grammar in the
+    language (even if it's via TH). Let's have this in Idris (and the
+    cool PLs). At least something like Happy.
   - I know there's supposed to be more general way to parse these days
     than LR and LALR but perhaps they are slow too (if not, embed
     those types of grammars instead!).
+  - [[https://github.com/ollef/Earley/][Early]] an embedded Early (context-free) parser combinator library
+    in Haskell.
 
 ** Demystifying Automated Deduction
   - aka course notes/slides for Automated Deduction

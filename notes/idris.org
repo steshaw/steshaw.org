@@ -13,6 +13,43 @@ make: *** [build] Error 1
 #+END_QUOTE
   
 - Could do 'implementation Layout String' in calc.idr because it was defined in Lightyear.Strings (but I wasn't importing that and Idris was asking for an implementation).
+  
+- Cannot say "export public", only "public export". Error message is:
+  
+#+begin_quote
+➯ make check doc
+idris --checkpkg babyml.ipkg
+Entering directory `./src'
+./Syntax.idr:16:1: error: expected: ")",
+    "->", ";", "in",
+    ambiguous use of a left-associative operator,
+    ambiguous use of a non-associative operator,
+    ambiguous use of a right-associative operator,
+    declaration, end of input,
+    matching application expression
+export public
+^
+Type checking ./Syntax.idr
+make: *** [check] Error 1
+#+end_quote
+
+
+- Weird error was due to not having a Show instance on one of my datatypes.
+
+#+begin_quote
+➯ make
+idris --build babyml.ipkg
+Entering directory `./src'
+Type checking ./TypeCheck.idr
+TypeCheck.idr:17:9:
+When checking right hand side of TypeCheck.check with expected type
+        Either TypeError Ty
+
+When checking an application of function TypeCheck.typeError:
+        Can't disambiguate since no name has a suitable type:
+                Prelude.List.++, Prelude.Strings.++
+make: *** [build] Error 1
+#+end_quote
 
 
 * Other
