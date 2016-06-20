@@ -37,6 +37,8 @@
     - Coq verification of a MiniML https://github.com/coq-contribs/miniml
     - Mini ML is defined in paper [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]])
     - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]]
+  - [ ] Build a printf (puffnfresh has great video).
+    - Other standard dependently-typed examples?
   - [ ] BabyIdris in Idris
   - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
   - [ ] Contribute to Idris.
