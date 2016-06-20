@@ -16,6 +16,7 @@
   - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
   - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
   - [ ] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][lectures notes on Constructive Logic]].
+    - at Lecture 4, "Proofs as Programs"
   - [X] Watch Bob Harper's [[https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN][OPLSS-2012 lectures "Type Theory Foundations"]].
   - [ ] Read [[http://www.cse.chalmers.se/research/group/logic/book/book.pdf][Programming in Martin-Löf Type Theory]].
 
@@ -597,6 +598,12 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Demystifying Isabelle/HOL
 
   - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
+
+** Writing papers
+  - org-mode
+  - [[https://github.com/jkitchin/org-ref][org-ref]]
+  - https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
+  - [[https://github.com/kawabata/ox-pandoc][ox-pandoc]]
 
 ** Misc
 
