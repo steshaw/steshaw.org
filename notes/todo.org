@@ -143,7 +143,10 @@
     - [ ] Demystify predicative/impredicative.
     - [ ] Demystify intensional/extensional.
     - [ ] Demystify relational parametricity.
-      - http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated
+      - [[http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated][How can relational parametricity by movitated (Stackoverflow)]]
+    - [ ] Demystify "parametricity".
+    - [ ] Demystify "first-class polymorphism".
+    - [ ] Demystify "second-class polymorphism".
     - [ ] Demystify "polymorphic recursion".
     - [ ] Demystify "universal polymorphism".
     - [ ] Demystify "existential polymorphism".
