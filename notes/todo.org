@@ -1,6 +1,7 @@
 * Now
 
   - [ ] [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
+
   - [X] PFPL (book)
     - [X] Chapter 1
     - [X] Chapter 2
@@ -10,12 +11,15 @@
     - [X] Chapter 6
     - [X] Chapter 7
     - at Chapter 8, Function Definitions and Values
+
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
     - at =Equiv.v=, =assign_aequiv=.
-  - [-] Type Driven Development with Idris
+
+  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
     - [X] Chapter 1
     - [ ] Chapter 2
     - [ ] Chapter 3
+
   - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
@@ -43,7 +47,6 @@
   - Read "Modular modules" paper by Leroy.
     - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]]).
     - /Mini ML/ (and /Mini C/) is defined in paper.
-  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
   - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
     - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
   - [-] idris-miniml
