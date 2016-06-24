@@ -1,13 +1,21 @@
 * Now
 
-  - BabyML
-  - Lightyear 
-    - patch with chainl/chainl1
-    - add [[https://github.com/ekmett/parsers/blob/master/src/Text/Parser/Expression.hs][expression helper]]?
-  - PFPL (book)
+  - [ ] [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
+  - [X] PFPL (book)
+    - [X] Chapter 1
+    - [X] Chapter 2
+    - [X] Chapter 3
+    - [X] Chapter 4
+    - [X] Chapter 5
+    - [X] Chapter 6
+    - [X] Chapter 7
     - at Chapter 8, Function Definitions and Values
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
     - at Equiv.v assign_aequiv.
+  - [-] Type Driven Development with Idris
+    - [X] Chapter 1
+    - [ ] Chapter 2
+    - [ ] Chapter 3
 
 ** So you wanna learn Type Theory
 
@@ -24,31 +32,39 @@
 
 ** Demystifying Idris
 
+  - Read "Modular modules" paper by Leroy.
+    - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]]).
+    - /Mini ML/ (and /Mini C/) is defined in paper.
+  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
   - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
     - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
-  - [ ] BabyML in Idris
-    - plzoo
+  - [-] idris-miniml
+    - [X] idris-miniml port of plzoo/miniml
+    - [ ] Extend with ideas from [[http://ucsd-progsys.github.io/cse130/homeworks/hw4.html][CSE130's NanoML]].
     - https://github.com/hanazuki/miniml (OCaml)
     - https://github.com/cadesalaberry/ocaml-practice/tree/master/hw5 (OCaml)
     - https://github.com/pierthodo/Mini-ML (OCaml)
     - https://github.com/timcolonel/socs/tree/master/Comp%20302/hw5/mini-ml (SML)
     - https://github.com/bitonic/ml-w (Haskell)
-    - [[https://esumii.github.io/min-caml/index-e.html][Min-Caml (website)]]
-      [[https://esumii.github.io/min-caml/paper.pdf][MinCaml: A Simple and Efficient Compiler for a Minimal Functional Language, Eijiro Sumii (paper)]]
     - Coq verification of a MiniML https://github.com/coq-contribs/miniml
-    - Mini ML is defined in paper [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]])
-    - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]]
+    - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]].
+  - [ ] BabyML in Idris.
+    - Haskellish syntax. Type applications. Function signatures.
+    - MLish with D-H-M type inference / unification.
+    - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
+  - MinCaml "port"
+    - [[https://esumii.github.io/min-caml/index-e.html][Min-Caml (website)]] [[https://esumii.github.io/min-caml/paper.pdf][paper]]
+    - Would like to see nanopass ideas applied here but using
+      recursion schemes rather than schemey dynamic typing.
   - [ ] Build a printf (puffnfresh has great video).
     - Other standard dependently-typed examples?
   - [ ] BabyIdris in Idris
-  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
   - [ ] Contribute to Idris.
     - [ ] Check out  Paul Körbitz's look at Idris internals:
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-I-Overview-and-Parsing.html][Part 1]]
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part 2]]
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
   - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
-  - Courseware: notes/articles/slides.
   - Is it possible to build total parser combinators?
   - An LALR/LR/LL(k) parser generator would be nice (like Happy or something).
   - Try deriving with the elaborator.
@@ -57,6 +73,8 @@
   - [[http://toss.sourceforge.net/ocaml.html][Implement the NNF of formulas tutorial]]. Looks like the same as the
     one from the tail end of ML for the Working Programmer.
   - Implement the prover from ML for the Working Programmer.
+  - Courseware: notes/articles/slides.
+  - [X] idris-calc port of plzoo/calc
 
 ** PL: Type Systems / Type Inference / Semantics / Design
 
@@ -126,10 +144,23 @@
     - [ ] Demystify intensional/extensional.
     - [ ] Demystify relational parametricity.
       - http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated
+    - [ ] Demystify "polymorphic recursion".
+    - [ ] Demystify "universal polymorphism".
+    - [ ] Demystify "existential polymorphism".
+      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
+#+begin_quote
+**It's second-class vs first-class that matters**
+
+That's not quite right. You seem to be assuming that you can always statically monomorphise universal polymorphism, but that is only true if polymorphism is second-class (*). And in that case, it is just as true for existential polymorphism (e.g., some SML compilers "monomorphise" modules routinely).
+As soon as you have first-class polymorphism, though (e.g., higher-ranked polymorphic types), you cannot do that anymore, neither for universal nor for existential polymorphism. Furthermore, as naasking pointed out, you can encode existentials with universals then, so there really is no difference in the degree of static knowledge.
+In short, the compile time vs run time distinction does not hinge on universal vs existential polymorphism, but on second-class vs first-class polymorphism (and existentials in Haskell happen to be first-class).
+(*) And in fact, not even then, as Haskell's counter-example of polymorphic recursion shows -- contrary to popular belief, type class polymorphism is not static in Haskell, not even in plain H'98. Common optimisations notwithstanding.
+#+end_quote
+    - [ ] Encoding existentials with universals. [[Http://lambda-the-ultimate.org/node/4865#comment-78207][See here]].
   - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
   - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
+  - http://www.cse.chalmers.se/~peterd/papers/historyidentitytype.pdf
   - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
-
     - Per Martin-Löf. Constructive mathematics and computer programming, 1982
     - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
     - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
@@ -140,7 +171,7 @@
   - [[https://github.com/michaelt/martin-lof][Works of Per Martin-Löf]]. Jon Sterling recommends especially: Constructive mathematics and computer programming, On the Meanings of the Logical Constants and the Justification of Logical Laws, and Intuitionistic Type Theory.
   - http://www.jonmsterling.com/pdfs/meaning-explanations.pdf
 
-- build courseware notes/articles/slides for TT/DTs course.
+- Notes/articles/slides.
 - [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
 
 *** Implement Dependently Typed PL
@@ -227,14 +258,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
      - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
      - [[http://stackoverflow.com/questions/15584848/whats-the-difference-if-any-between-standard-mls-module-system-and-ocaml-mod][Rossberg on SML OCaml module systems (StackOverflow)]]
    - Expand/revise modules reading list http://steshaw.org/plt/modules
-     - [[https://github.com/purescript/purescript/issues/1886#issuecomment-225209443][Nice modules reading list from Chris Allen]]
-   - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
-   - https://www.mpi-sws.org/~rossberg/f-ing/
-   - https://www.mpi-sws.org/%7Erossberg/1ml/
-     - 1ML approach seems related to an Idris module system
-   - http://www.mpi-sws.org/~skilpat/modsem/
-   - [[https://web.archive.org/web/20110910021609/http://www.cs.cmu.edu/~rwh/courses/modules/][Bob Harper's Modules courses]] (from archive.org)
-   - Does [[https://www.mpi-sws.org/~rossberg/mixml/][MixML]] go too far? i.e. is it principled?
+     - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
+     - http://www.mpi-sws.org/~skilpat/modsem/
+     - [[https://web.archive.org/web/20110910021609/http://www.cs.cmu.edu/~rwh/courses/modules/][Bob Harper's Modules courses]] (from archive.org)
+     - https://www.mpi-sws.org/~rossberg/f-ing/
+     - https://www.mpi-sws.org/%7Erossberg/1ml/
+       - 1ML approach seems related to an Idris module system
+     - Does [[https://www.mpi-sws.org/~rossberg/mixml/][MixML]] go too far? i.e. is it "principled"?
+       - You end up with initialisation ordering issues like in OOP.
    - Common extensions
      - separate compilation
      - first class modules
@@ -246,6 +277,9 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - OCaml course at Cornell
      - [[http://www.cs.cornell.edu/courses/cs3110/2015fa/][cs3110/2015fa]] pretty
      - [[http://www.cs.cornell.edu/courses/cs3110/2016sp/lecture_notes.php][cs3110/2016sp]] more type theory
+   - Rossberg's SML and sML (successor ML) implementations.
+     - http://www.mpi-sws.org/~rossberg/hamlet/
+     - http://www.mpi-sws.org/~rossberg/hamlet/#successor-ml
 
 *** Modules and Dependently Typed Languages
   - Agda/Coq/Cayenne
@@ -285,33 +319,35 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Demystifying Homotopy Type Theory
 
-- https://homotopytypetheory.org/book/
-- https://www.cs.cmu.edu/~rwh/courses/hott/
-- https://mdnahas.github.io/doc/Reading_HoTT_in_Coq.pdf
+  - https://homotopytypetheory.org/book/
+  - https://www.cs.cmu.edu/~rwh/courses/hott/
+  - https://mdnahas.github.io/doc/Reading_HoTT_in_Coq.pdf
+  - [[https://inconsistentuniverse.wordpress.com/2014/02/04/simplicial-sets/][Simplical sets]] (blog series)
+  - [[https://inconsistentuniverse.wordpress.com/2014/02/05/thinking-about-the-design-space-of-higher-dimensional-type-theories/][Thinking about the design space of higher dimensional type theories]]
 
 *** Category Theory
 
-- Dominic Verity introductory talks
-  - [[https://vimeo.com/17207564][Part 1]]
-  - [[https://youtu.be/yilkBvVDB_w][Part 2]]
-- http://category-theory.mitpress.mit.edu
+  - Dominic Verity introductory talks
+    - [[https://vimeo.com/17207564][Part 1]]
+    - [[https://youtu.be/yilkBvVDB_w][Part 2]]
+  - http://category-theory.mitpress.mit.edu
 
 *** Categorical Logic
 
-- http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/index.html
-- https://ncatlab.org/nlab/show/Sheaves+in+Geometry+and+Logic
-- https://www.andrew.cmu.edu/user/awodey/catlog/notes/
-- http://www.mathematik.tu-darmstadt.de/~streicher/CTCL.pdf
-- [[http://www.mpi-sws.org/~dreyer/courses/catlogic/jacobs.pdf][Categorical Logic and Type Theory]]
-- [[http://www.edsko.net/tcd/talks/cattheory.pdf][Abstract nonsense for Functional Programmers]]
+  - http://www.cs.man.ac.uk/~pt/Practical-Foundations/html/index.html
+  - https://ncatlab.org/nlab/show/Sheaves+in+Geometry+and+Logic
+  - https://www.andrew.cmu.edu/user/awodey/catlog/notes/
+  - http://www.mathematik.tu-darmstadt.de/~streicher/CTCL.pdf
+  - [[http://www.mpi-sws.org/~dreyer/courses/catlogic/jacobs.pdf][Categorical Logic and Type Theory]]
+  - [[http://www.edsko.net/tcd/talks/cattheory.pdf][Abstract nonsense for Functional Programmers]]
 
 *** Topos
 
-- [[https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories-ebook/dp/B00AKE1VFE?ie=UTF8&me=&ref_=mt_kindle][Conceptual Mathematics]]
-- [[http://arxiv.org/pdf/1012.5647v3.pdf][An information introduction to Topos theory]]
-- https://ncatlab.org/nlab/show/topos
-- http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
-- [[http://math.ucr.edu/home/baez/topos.html][Topos Theory in a Nutshell]]
+  - [[https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories-ebook/dp/B00AKE1VFE?ie=UTF8&me=&ref_=mt_kindle][Conceptual Mathematics]]
+  - [[http://arxiv.org/pdf/1012.5647v3.pdf][An information introduction to Topos theory]]
+  - https://ncatlab.org/nlab/show/topos
+  - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
+  - [[http://math.ucr.edu/home/baez/topos.html][Topos Theory in a Nutshell]]
 
 ** Functional Programming in Scala
 
