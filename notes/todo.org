@@ -1,6 +1,6 @@
 * Now
 
-  - [ ] [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
+  - [ ] [[http://gallium.inria.fr/~xleroy/bibrefs/Leroy-modular-modules.html][A modular module system]], Xavier Leroy
 
   - [X] PFPL (book)
     - [X] Chapter 1
@@ -117,7 +117,7 @@
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
 
-** Category Theory side of the TLC triangle
+** Demystifying Category Theory
 
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
@@ -574,10 +574,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
   - Idris & Glorious GHCJS.
 
-** Learn LaTex
-
-- Produce something (tech report?) with LaTeX. Perhaps via org-mode.
-
 ** Logic Programming
 
 - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
@@ -672,6 +668,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - [[https://github.com/jkitchin/org-ref][org-ref]]
   - https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
   - [[https://github.com/kawabata/ox-pandoc][ox-pandoc]]
+
+*** Learn LaTex
+
+ - Produce something (tech report?) with LaTeX. Perhaps via org-mode.
+
+** Reading
+
+  - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroys publications]]
 
 ** Misc
 
