@@ -74,6 +74,12 @@
       - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
   - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
   - Is it possible to build total parser combinators?
+    - Yes, apparently. See [[http://www.cse.chalmers.se/~nad/publications/danielsson-parser-combinators.html][Total Parser Combinators (paper)]]. This
+      requires the use of dependent types as so is quite
+      interesting. An undergraduate Cambridge student may be taking
+      this up (overhead on #idris). Edwin Brady suggested that a total
+      parser combinator library in Idris would ideally make use of the
+      partial evaluator (see [[https://eb.host.cs.st-andrews.ac.uk/writings/icfp10.pdf][this paper]]).
   - An LALR/LR/LL(k) parser generator would be nice (like Happy or something).
   - Try deriving with the elaborator.
     - https://gist.github.com/david-christiansen/8c66822a471bf929a22f
