@@ -283,6 +283,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - Rossberg's SML and sML (successor ML) implementations.
      - http://www.mpi-sws.org/~rossberg/hamlet/
      - http://www.mpi-sws.org/~rossberg/hamlet/#successor-ml
+   - Pros and Cons of modules
+     - [[http://lambda-the-ultimate.org/node/4865#comment-78074][Some comments from Andreas Rossberg on LtU]]
 
 *** Modules and Dependently Typed Languages
   - Agda/Coq/Cayenne
@@ -295,12 +297,23 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     #+end_quote
 
 *** Relationship with Type Classes
-  - read modular type classes (MTC) in http://steshaw.org/plt/modules
+  - read modular type classes (MTC) in http://steshaw.org/plt/modules.
+    - Update with "modular implicits" in OCaml.
+    - The work of Bruno C. d. S. Oliverira
+      - [[http://www.cs.ox.ac.uk/people/bruno.oliveira/objects.pdf][Objects to Unify Type Classes and GADTs]] with Martin Sulzmann.
+      - [[https://infoscience.epfl.ch/record/150280/files/TypeClasses.pdf][Type Classes as Objects and Implicits]] with Adriaan Moors and
+        Martin Odersky.
+      - [[http://homepages.inf.ed.ac.uk/wadler/papers/implicits/implicits.pdf][The Implicit Calculus: A New Foundation for Generic
+        Programming]] with Tom Schrijvers, Wontae Choi, Wonchan Lee,
+        Kwangkeun Yi, Philip Wadler.
   - Kmett's type classes versus the world. i.e. global uniqueness of
     type classes. Kmett says he wants both type classes and an ML
     style module system.
   - Investigate modules/type-classes in Agda/Coq/Cayenne.
   - [[http://www.cs.unibo.it/%7Easperti/PAPERS/tphol09.pdf][Unification Hints]]
+  - [[http://lambda-the-ultimate.org/node/4865#comment-78251][Comments on Type class implementation by Oleg (LtU)]]
+  - http://okmij.org/ftp/Computation/typeclass.html
+  - Coq's "First Class Type Classes" [[http://mattam.org/research/publications/First-Class_Type_Classes.pdf][paper]] [[http://mattam.org/research/publications/First-Class_Type_Classes-Gallium-031108.pdf][slides]].
 
 ** Demystifying Datatype Generic Programming
   - polytypic programming or whatevers
