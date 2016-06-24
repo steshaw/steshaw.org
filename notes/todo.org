@@ -11,16 +11,16 @@
     - [X] Chapter 7
     - at Chapter 8, Function Definitions and Values
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
-    - at Equiv.v assign_aequiv.
+    - at =Equiv.v=, =assign_aequiv=.
   - [-] Type Driven Development with Idris
     - [X] Chapter 1
     - [ ] Chapter 2
     - [ ] Chapter 3
-   - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
-     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
-     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
-     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
-     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
+  - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
+    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
+    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
+    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
+    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
 
 ** So you wanna learn Type Theory
 
