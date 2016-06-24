@@ -56,7 +56,7 @@
     - https://github.com/bitonic/ml-w (Haskell)
     - Coq verification of a MiniML https://github.com/coq-contribs/miniml
     - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]].
-  - [ ] BabyML in Idris.
+  - [ ] [[https://github.com/steshaw/babyml][BabyML]] in Idris.
     - Haskellish syntax. Type applications. Function signatures.
     - MLish with D-H-M type inference / unification.
     - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
