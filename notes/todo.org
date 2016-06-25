@@ -211,9 +211,10 @@ In short, the compile time vs run time distinction does not hinge on universal v
 
 ** Read Functional Pearls
   - [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
-  - I am not a Number (see [[#name-binding][below]]).
+  - [ ] I am not a Number (see [[#name-binding][below]]).
   - http://crypto.stanford.edu/~blynn/haskell/papers.html
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
+  - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
 
 ** Name binding
   - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
@@ -299,6 +300,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
    - Rossberg's SML and sML (successor ML) implementations.
      - http://www.mpi-sws.org/~rossberg/hamlet/
      - http://www.mpi-sws.org/~rossberg/hamlet/#successor-ml
+   - [[https://github.com/kfl/mosml][Moscow ML]] with a simple runtime based on caml-light.
    - Pros and Cons of modules
      - [[http://lambda-the-ultimate.org/node/4865#comment-78074][Some comments from Andreas Rossberg on LtU]]
 
@@ -512,6 +514,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - MinML/NanoML semantics. Be nice to write it up in `org-mode`
       and/or $$\LaTex$$.
     - Also seems to have verifications/proofs in Twelf.
+  - [[https://www.seas.upenn.edu/~cis341/current/#lectures][UPenn cis341 Compilers]] Steve Zdancewic. OCaml. Beautiful slides. *****
   - [[https://iu.instructure.com/courses/1517577][SP16 Compilers 11241 Jeremy Siek (course)]]
     - [[https://www.sharelatex.com/project/5637a774990f556d48bab667][course book/notes]]
     - http://github.com/jsiek/Essentials-of-Compilation
