@@ -119,27 +119,27 @@
       - [-] I Polymorphic sets
         - [X] 4 The semantics of the judgement forms
         - [X] 5 General rules
-	- [ ] 6 Enumeration sets
-	- [ ] 7 Cartesian product of a family of sets
-	- [ ] 8 Equality sets
-	- [ ] 9 Natural numbers
-	- [ ] 10 Lists
-	- [ ] 11 Cartesian product of two sets
-	- [ ] 12 Disjoint union of two sets
-	- [ ] 13 Disjoint union of a family of sets
-	- [ ] 14 The set of small sets (The first universe)
-	- [ ] 15 Well-orderings
-	- [ ] 16 General trees
+        - [ ] 6 Enumeration sets
+        - [ ] 7 Cartesian product of a family of sets
+        - [ ] 8 Equality sets
+        - [ ] 9 Natural numbers
+        - [ ] 10 Lists
+        - [ ] 11 Cartesian product of two sets
+        - [ ] 12 Disjoint union of two sets
+        - [ ] 13 Disjoint union of a family of sets
+        - [ ] 14 The set of small sets (The first universe)
+        - [ ] 15 Well-orderings
+        - [ ] 16 General trees
       - [ ] II Subsets
-	- [ ] 17 Subsets in the basic set theory
-	- [ ] 18 The subset theory
+        - [ ] 17 Subsets in the basic set theory
+        - [ ] 18 The subset theory
       - [ ] III Monomorphic sets
-	- [ ] 19 Types
-	- [ ] 20 Defining sets in terms of types
+        - [ ] 19 Types
+        - [ ] 20 Defining sets in terms of types
       - [ ] IV Examples
-	- [ ] 21 Some small examples
-	- [ ] 22 Program derivation
-	- [ ] 23 Specification of abstract data types
+        - [ ] 21 Some small examples
+        - [ ] 22 Program derivation
+        - [ ] 23 Specification of abstract data types
       - [ ] A Constants and their arities
       - [ ] B Operational semantics
 
@@ -735,7 +735,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] Type Theory and its Meaning Explanations
       - [ ] A Non-Type-Theoretic Definition of Martin-Löf’s Types
       - [ ] Constructing a type system over operational semantics 
-	    (Similar to the above, they're helpful to read together)
+            (Similar to the above, they're helpful to read together)
       - [ ] Equality in Lazy Computation System (of general interest)
       - [ ] Naive Computational Type Theory
       - [ ] Innovations in CTT using NuPRL
@@ -787,14 +787,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] Robert Constable
     - [-] 2016
       - [-] Programming Languages Background — Robert Harper and Dan Licata
-	- [X] Lecture 1
-	- [X] Lecture 2
-	- [X] Lecture 3
-	- [X] Lecture 4
-	- [X] Lecture 5
-	- [ ] Lecture 6
-	- [ ] Lecture 7
-	- [ ] Lecture 8
+        - [X] Lecture 1
+        - [X] Lecture 2
+        - [X] Lecture 3
+        - [X] Lecture 4
+        - [X] Lecture 5
+        - [ ] Lecture 6
+        - [ ] Lecture 7
+        - [ ] Lecture 8
       - [ ] Category Theory Background — Ed Morehouse
       - [ ] Logical Relations — Patricia Johann
       - [ ] Principles of Type Refinement — Noam Zeilberger
