@@ -1,52 +1,149 @@
-* Now
+* Todo Now
 
-  - [ ] [[http://gallium.inria.fr/~xleroy/bibrefs/Leroy-modular-modules.html][A modular module system]], Xavier Leroy
-
-  - [X] PFPL (book)
-    - [X] Chapter 1
-    - [X] Chapter 2
-    - [X] Chapter 3
-    - [X] Chapter 4
-    - [X] Chapter 5
-    - [X] Chapter 6
-    - [X] Chapter 7
-    - at Chapter 8, Function Definitions and Values
+  - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
+    - [X] I Judgements and Rules
+      - [X] 1 Abstract Syntax
+      - [X] 2 Inductive Definitions
+      - [X] 3 Hypothetical and General Judgements
+    - [X] II Statics and Dynamics
+      - [X] 4 Statics
+      - [X] 5 Dynamics
+      - [X] 6 Type Safety
+      - [X] 7 Evaluation Dynamics
+    - [ ] III Total Functions
+      - [ ] 8 Function Definitions and Values
+      - [ ] 9 System T of Higher-Order Recursion
+    - [ ] IV Finite Data Types
+      - [ ] 10 Product Types
+      - [ ] 11 Sum Types
+    - [ ] V Types and Propositions
+      - [ ] 12 Constructive Logic
+      - [ ] 13 Classical Logic
+    - [ ] VI Infinite Data Types
+      - [ ] 14 Generic Programming
+      - [ ] 15 Inductive and Coinductive Types
+    - [ ] VII Variable Types
+      - [ ] 16 System F of Polymorphic Types
+      - [ ] 17 Abstract Types
+      - [ ] 18 Higher Kinds
+    - [ ] VIII Partiality and Recursive Types
+      - [ ] 19 System PCF of Recursive Functions
+      - [ ] 20 System FPC of Recursive Types
+    - [ ] IX Dynamic Types
+      - [ ] 21 The Untyped λ-Calculus
+      - [ ] 22 Dynamic Typing
+      - [ ] 23 Hybrid Typing
+    - [ ] X Subtyping
+      - [ ] 24 Structual Subtyping
+      - [ ] 25 Behavioural Subtyping
+    - [ ] XI Dynamic Dispatch
+      - [ ] 26 Classes and Methods
+      - [ ] 27 Inheritance
+    - [ ] XII Control Flow
+      - [ ] 28 Control Stacks
+      - [ ] 29 Exceptions
+      - [ ] 30 Continuations
+    - [ ] XIII Symbolic Data
+      - [ ] 31 Symbols
+      - [ ] 32 Fluid Binding
+      - [ ] 33 Dynamic Classification
+    - [ ] XIV Mutable State
+      - [ ] 34 Modernized Algol
+      - [ ] 35 Assignable References
+      - [ ] 36 Lazy Evaluation
+    - [ ] XV Parallelism
+      - [ ] 37 Nested Parallelism
+      - [ ] 38 Futures and Speculations
+    - [ ] XVI Concurrency and Distribution
+      - [ ] 39 Process Calculus
+      - [ ] 40 Concurrent Algol
+      - [ ] 41 Distributed Algol
+    - [ ] XVII Modularity
+      - [ ] 42 Modularity and Linking
+      - [ ] 43 Singleton Kinds and Subkinding
+      - [ ] 44 Type Abstraction and Type Classes
+      - [ ] 45 Heirarchy and Parameterization
+    - [ ] XVIII Equational Reasoning
+      - [ ] 46 Equality for System T
+      - [ ] 47 Equality for System PCF
+      - [ ] 48 Parametricty
+      - [ ] 49 Process Equivalence
+    - [ ] XIX Equational Reasoning
+      - [ ] A Background on Finite Sets
 
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
     - at =Equiv.v=, =assign_aequiv=.
 
-  - [ ] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
+  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
     - [X] Chapter 1
     - [ ] Chapter 2
     - [ ] Chapter 3
 
-  - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
-    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
-    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
+  - [-] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
+    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
+    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
 
 ** So you wanna learn Type Theory
 
-  [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
+  - [-] [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
+    - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
+    - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
+    - [-] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][course notes on Constructive Logic]].
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/01-overview.html][Lecture 1: Overview]]
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.html][Lecture 2: Natural Deduction]]
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html][Lecture 3: Harmony]]
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/04-pap.html][Lecture 4: Proofs as Programs]]
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/05-quant.html][Lecture 5: Quantification]]
+      - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/06-nat.html][Lecture 6: Natural Numbers]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/07-classical.html][Lecture 7: Classical Logic]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/08-classical-programs.html][Lecture 8: Classical Computation]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/09-seqcalc.html][Lecture 9: Sequent Calculus]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/10-cutelim.html][Lecture 10: Cut Elimination]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/11-inversion.html][Lecture 11: Inversion]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/12-proving.html][Lecture 12: Propositional Theorem Proving]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/13-lp.html][Lecture 13: Logic Programming]]
+      - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/14-prolog.html][Lecture 14: Prolog]]
+    - [X] Watch Bob Harper's [[https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN][OPLSS-2012 lectures "Type Theory Foundations"]].
+    - [-] Read [[http://www.cse.chalmers.se/research/group/logic/book/book.pdf][Programming in Martin-Löf Type Theory]].
+      - [X] 1 Introduction
+      - [X] 2 The identification of sets, propositions and specifications
+      - [X] 3 Expressions and definitional equality
+      - [-] I Polymorphic sets
+        - [X] 4 The semantics of the judgement forms
+        - [X] 5 General rules
+	- [ ] 6 Enumeration sets
+	- [ ] 7 Cartesian product of a family of sets
+	- [ ] 8 Equality sets
+	- [ ] 9 Natural numbers
+	- [ ] 10 Lists
+	- [ ] 11 Cartesian product of two sets
+	- [ ] 12 Disjoint union of two sets
+	- [ ] 13 Disjoint union of a family of sets
+	- [ ] 14 The set of small sets (The first universe)
+	- [ ] 15 Well-orderings
+	- [ ] 16 General trees
+      - [ ] II Subsets
+	- [ ] 17 Subsets in the basic set theory
+	- [ ] 18 The subset theory
+      - [ ] III Monomorphic sets
+	- [ ] 19 Types
+	- [ ] 20 Defining sets in terms of types
+      - [ ] IV Examples
+	- [ ] 21 Some small examples
+	- [ ] 22 Program derivation
+	- [ ] 23 Specification of abstract data types
+      - [ ] A Constants and their arities
+      - [ ] B Operational semantics
 
-  - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
-  - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
-  - [-] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][lectures notes on Constructive Logic]].
-    - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/01-overview.html][Lecture 1: Overview]]
-    - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.html][Lecture 2: Natural Deduction]]
-    - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html][Lecture 3: Harmony]]
-    - [ ] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/04-pap.html][Lecture 4, Proofs as Programs]] (currently here)
-  - [X] Watch Bob Harper's [[https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN][OPLSS-2012 lectures "Type Theory Foundations"]].
-  - [ ] Read [[http://www.cse.chalmers.se/research/group/logic/book/book.pdf][Programming in Martin-Löf Type Theory]].
-
-* Next
+* Todo Next
 
 ** Demystifying Idris
 
-  - Read "Modular modules" paper by Leroy.
-    - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]] ([[http://wiki.call-cc.org/eggref/4/miniML][see here]]).
-    - /Mini ML/ (and /Mini C/) is defined in paper.
+  - [ ] MiniCaml
+    - https://github.com/lambdataro/zam-test looks to have OCaml
+      MiniCaml and ZAM.
   - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
     - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
   - [-] idris-miniml
@@ -122,37 +219,58 @@
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
-** More Logic  (Proof Theory)
-  - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
-  - http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
-  - [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
+** Demystifying Proof Theory
 
-  - https://github.com/mietek/haskell-exchange-2015
-  - https://github.com/mietek/formal-logic
-
-  - http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/
-
-  - Proof Theory Foundations
+  - [X] http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
+  - [ ] [[https://www.cl.cam.ac.uk/~gw104/PLC-mini-course.pdf][Mini-course on proof theory, Pierre-Louis Curien]]
+  - [ ] [[https://www.cs.uoregon.edu/research/summerschool/summer05/lectures/outline.pdf][Constructive Logic notes]] by Robert Harper, 2005 Summer School.
+  - [ ] [[http://logitext.mit.edu/logitext.fcgi/tutorial][Interactive sequent calculus tutorial]]
+  - [ ] [[https://avigad.github.io/logic_and_proof/][Logic and Proof]] Introduction to Lean theorem prover (via Lean.JS)
+  - [ ] Proof Theory Foundations, OPLSS 2014
     - https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html
     - http://www.cs.mcgill.ca/~bpientka/oplss/
     - http://www.cs.mcgill.ca/~bpientka/oplss/book.pdf
+  - [[http://math.ucsd.edu/~sbuss/ResearchWeb/handbookI/][An Introduction to Proof Theory]], Samuel R. Buss.
+  - Demystify terminology
+    - propositional logic
+    - predicate calculus
+    - first-order intuitionistic logic
+    - first order logic
+
+** Demystifying Mathematical Logic & Logic Programming
+
+  - Are there other interesting part of Mathematical Logic other than
+    Proof Theory? Wikipedia mentions the following sub fields:
+    - Set Theory
+    - Model Theory
+    - Recursion Theory
+    - Proof Theory
+
+  - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
+
+  - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
+
+  - https://github.com/mietek/haskell-exchange-2015
+  - https://github.com/mietek/formal-logic
 
   - Frank Pfennings Computation and Deduction Course and notes
     - https://www.cs.cmu.edu/~fp/courses/comp-ded/handouts.html
     - Uses Twelf
 
-  - https://avigad.github.io/logic_and_proof/
-  - [[https://www.cl.cam.ac.uk/~gw104/PLC-mini-course.pdf][Mini-course on proof theory, Pierre-Louis Curien]]
-  - Velleman "How to Prove it"
+  - Velleman, How to Prove It.
 
-** Improve Mathematical Background/Foundations
+** Increase Mathematical Sophistication & Demystify Mathematical Foundations
 
-   - for Heyting algebras 
-     - [[http://www.amazon.com/Introduction-Lattices-Order-B-Davey/dp/0521784514][Introduction to Lattices and Order]]
-     - Category Theory by Awodey
-     - [[http://www.math.mcgill.ca/triples/Barr-Wells-ctcs.pdf][Category Theory for Computing Science]]
-     - [[http://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html][A course in Universal Algebra]] [[http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf][PDF]]
-     - https://github.com/UniversalAlgebra/UAResources
+  - [[http://paultaylor.eu/~pt/prafm/html/index.html][Practical Foundations of Mathematics]], Paul Taylor.
+
+  - for Heyting algebras
+    - [[http://www.amazon.com/Introduction-Lattices-Order-B-Davey/dp/0521784514][Introduction to Lattices and Order]]
+    - Category Theory by Awodey
+    - [[http://www.math.mcgill.ca/triples/Barr-Wells-ctcs.pdf][Category Theory for Computing Science]]
+    - [[http://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html][A course in Universal Algebra]] [[http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf][PDF]]
+    - https://github.com/UniversalAlgebra/UAResources
+
+  - HoTT book
 
 ** Demystifying Type Theory
 
@@ -161,6 +279,8 @@
     - [ ] Demystify intensional/extensional.
     - [ ] Demystify relational parametricity.
       - [[http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated][How can relational parametricity by movitated (Stackoverflow)]]
+    - [ ] Demystify "logical relations" aka apparently "Tait's
+      method", "the method of computability" and "realizability".
     - [ ] Demystify "parametricity".
     - [ ] Demystify "first-class polymorphism".
     - [ ] Demystify "second-class polymorphism".
@@ -279,7 +399,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
      - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
      - [[http://stackoverflow.com/questions/15584848/whats-the-difference-if-any-between-standard-mls-module-system-and-ocaml-mod][Rossberg on SML OCaml module systems (StackOverflow)]]
    - Expand/revise modules reading list http://steshaw.org/plt/modules
-     - [[http://caml.inria.fr/pub/papers/xleroy-modular_modules-jfp.pdf][A modular module system]], Xavier Leroy
+     - [X] [[http://gallium.inria.fr/~xleroy/bibrefs/Leroy-modular-modules.html][A modular module system]], Xavier Leroy
      - [[http://www.mpi-sws.org/~skilpat/modsem/][Type Systems for Modules (Winter 2010)]] course by Derek Dreyer
      - [[https://web.archive.org/web/20110910021609/http://www.cs.cmu.edu/~rwh/courses/modules/][Bob Harper's Modules courses]] (from archive.org)
      - https://www.mpi-sws.org/~rossberg/f-ing/
@@ -358,6 +478,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://mdnahas.github.io/doc/Reading_HoTT_in_Coq.pdf
   - [[https://inconsistentuniverse.wordpress.com/2014/02/04/simplicial-sets/][Simplical sets]] (blog series)
   - [[https://inconsistentuniverse.wordpress.com/2014/02/05/thinking-about-the-design-space-of-higher-dimensional-type-theories/][Thinking about the design space of higher dimensional type theories]]
+  - Should Toplogy be required:
+    - Topology, Second Edition, James R. Munkres
 
 *** Category Theory
 
@@ -565,21 +687,18 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - Nix for your (proprietary) software products.
 
 ** Rational Startup Movement
+
   - Start writing up "The Rational Startup"
     - Using Haskell for a startup.
-    - rational software tooling.
+    - Rational software tooling.
+    - Haskell.
     - PureScript.
-    - To Scala or not to Scala, yep, that's the question.
 
 ** PureScript
 
-- Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
-  - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
-  - Idris & Glorious GHCJS.
-
-** Logic Programming
-
-- [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
+  - Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
+    - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
+    - Idris & Glorious GHCJS.
 
 ** Learning Type Theory
   Adapted from https://github.com/type-theory/learn-tt
@@ -660,7 +779,20 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] Logical Relations — Amal Ahmed
       - [ ] Mark Bickford
       - [ ] Robert Constable
-    - [ ] 2016
+    - [-] 2016
+      - [-] Programming Languages Background — Robert Harper and Dan Licata
+	- [X] Lecture 1
+	- [X] Lecture 2
+	- [X] Lecture 3
+	- [X] Lecture 4
+	- [X] Lecture 5
+	- [ ] Lecture 6
+	- [ ] Lecture 7
+	- [ ] Lecture 8
+      - [ ] Category Theory Background — Ed Morehouse
+      - [ ] Logical Relations — Patricia Johann
+      - [ ] Principles of Type Refinement — Noam Zeilberger
+      - [ ] Logical relations/Compiler verification — Amal Ahmed
 
 ** Demystifying Isabelle/HOL
 
