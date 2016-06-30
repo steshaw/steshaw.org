@@ -82,7 +82,7 @@
   - [-] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
     - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
     - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
-    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
+    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
     - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
 
 ** So you wanna learn Type Theory
