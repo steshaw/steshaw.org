@@ -252,9 +252,17 @@
     - Recursion Theory
     - Proof Theory
 
-  - [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
+  - [ ] [[http://users.cecs.anu.edu.au/~jks/LogicNotes/][The Logic Notes]], John Slaney, ANU
 
-  - [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
+  - [ ] [[http://www.cse.chalmers.se/~coquand/TRIESTE/][Constructive Logic]] (course), Thierry Coquand
+    - [ ] Introduction to logic
+    - [ ] Distributive lattices as topological spaces (???)
+    - [ ] Krull Dimension (???)
+    - [ ] Prufer Domain (???)
+
+  - [ ] [[http://people.cs.uchicago.edu/~odonnell/Scholar/Technical_papers/Intro_Logic_Prog/description.html][Logic and Logic Programming]]
+
+  - [ ] [[https://www.cs.cmu.edu/~fp/papers/mdorf01.pdf][Logical Frameworks –—— A Brief Introduction]]
 
   - https://github.com/mietek/haskell-exchange-2015
   - https://github.com/mietek/formal-logic
@@ -263,7 +271,7 @@
     - https://www.cs.cmu.edu/~fp/courses/comp-ded/handouts.html
     - Uses Twelf
 
-  - Velleman, How to Prove It.
+  - [ ] How to Prove It, Velleman.
 
 ** Increase Mathematical Sophistication & Demystify Mathematical Foundations
 
