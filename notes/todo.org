@@ -1,8 +1,9 @@
-* Fri 01-Jun-2016
+* Tue 05-Jul-2016
 
-  - Chapters 8 and 9 of PFPL
-  - Chapter 5 of PiMLTT
-  - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
+  - 1 chapter of TDDwI
+  - 1 chapter of PiMLTT
+  - 1 chapter of PFPL
+  - 1 chapter of FPCL
 
 * Todo Now
 
@@ -85,18 +86,12 @@
     - [ ] Chapter 2
     - [ ] Chapter 3
 
-  - [-] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
-    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/1][Week 1 -- What is learning?]]
-    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/2][Week 2 -- Chunking]]
-    - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/3][Week 3 -- Procrastination and Memory]]
-    - [ ] [[https://www.coursera.org/learn/learning-how-to-learn/home/week/4][Week 4 -- Renaissance Learning]]
-
 ** So you wanna learn Type Theory
 
   - [-] [[http://purelytheoretical.com/sywtltt.html][So you wanna learn type theory?]]
     - [X] Watch Frank Pfenning's [[https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b][OPLSS-2012 lectures "Proof Theory Foundations"]].
     - [ ] Read [[http://purelytheoretical.com/papers/ATCHC.pdf][A Tutorial on the Curry-Howard Correspondence]] by Darryl McAdams.
-    - [-] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][course notes on Constructive Logic]].
+    - [-] Read Frank Pfenning's [[http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html][course notes on Constructive Logic]] (FPCL).
       - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/01-overview.html][Lecture 1: Overview]]
       - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/02-natded.html][Lecture 2: Natural Deduction]]
       - [X] [[http://www.cs.cmu.edu/~fp/courses/15317-f09/lectures/03-harmony.html][Lecture 3: Harmony]]
@@ -119,9 +114,9 @@
       - [-] I Polymorphic sets
         - [X] 4 The semantics of the judgement forms
         - [X] 5 General rules
-        - [ ] 6 Enumeration sets
-        - [ ] 7 Cartesian product of a family of sets
-        - [ ] 8 Equality sets
+        - [X] 6 Enumeration sets
+        - [X] 7 Cartesian product of a family of sets
+        - [X] 8 Equality sets
         - [ ] 9 Natural numbers
         - [ ] 10 Lists
         - [ ] 11 Cartesian product of two sets
@@ -193,8 +188,184 @@
   - [[http://toss.sourceforge.net/ocaml.html][Implement the NNF of formulas tutorial]]. Looks like the same as the
     one from the tail end of ML for the Working Programmer.
   - Implement the prover from ML for the Working Programmer.
+  - Paul Callagan's series on dependent types:
+    - https://pragprog.com/magazines/2013-04/dependent-types
+    - https://pragprog.com/magazines/2013-05/dependent-types-part-ii
+    - https://pragprog.com/magazines/2013-06/unification
+    - https://pragprog.com/magazines/2013-07/dependent-types-iii
   - Courseware: notes/articles/slides.
   - [X] idris-calc port of plzoo/calc
+
+** Demystifying Type Theory
+
+  - [ ] Demystify terminology.
+    - [ ] Demystify predicative/impredicative.
+    - [ ] Demystify intensional/extensional.
+    - [ ] Demystify relational parametricity.
+      - [[http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated][How can relational parametricity by movitated (Stackoverflow)]]
+    - [ ] Demystify "logical relations". aka apparently: "Tait's
+      method", "the method of computability", "realizability", "Tait’s
+      computability method" (PiMLTT).
+    - [ ] β law (aka beta law). Seen on http://cstheory.stackexchange.com.
+    - [ ] η law (aka eta law). Seen on http://cstheory.stackexchange.com.
+    - [ ] Subject reduction
+    - [ ] Reduction termination
+    - [ ] "Church-Rosser property". Seen in PiMLTT.
+    - [ ] "convertability". Seen in PiMLTT: "equality is
+      convertibility in the sense of combinatory logic".
+    - [ ] "combinatory logic". Seen in PiMLTT.
+    - [ ] "convertability relation". Seen in PiMLTT.
+    - [ ] "ξ conversion is abandoned" (aka Xi conversion), PiMLTT.
+    - [ ] Demystify "parametricity".
+    - [ ] Demystify "first-class polymorphism".
+    - [ ] Demystify "second-class polymorphism".
+    - [ ] Demystify "polymorphic recursion".
+    - [ ] Demystify "universal polymorphism".
+    - [ ] Demystify "existential polymorphism".
+      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
+	#+begin_quote
+	**It's second-class vs first-class that matters**
+
+	That's not quite right. You seem to be assuming that you can
+	always statically monomorphise universal polymorphism, but
+	that is only true if polymorphism is second-class (*). And in
+	that case, it is just as true for existential polymorphism
+	(e.g., some SML compilers "monomorphise" modules routinely).
+	As soon as you have first-class polymorphism, though (e.g.,
+	higher-ranked polymorphic types), you cannot do that anymore,
+	neither for universal nor for existential
+	polymorphism. Furthermore, as naasking pointed out, you can
+	encode existentials with universals then, so there really is
+	no difference in the degree of static knowledge.  In short,
+	the compile time vs run time distinction does not hinge on
+	universal vs existential polymorphism, but on second-class vs
+	first-class polymorphism (and existentials in Haskell happen
+	to be first-class).  (*) And in fact, not even then, as
+	Haskell's counter-example of polymorphic recursion shows --
+	contrary to popular belief, type class polymorphism is not
+	static in Haskell, not even in plain H'98. Common
+	optimisations notwithstanding.
+	#+end_quote
+    - [ ] Encoding existentials with universals. [[Http://lambda-the-ultimate.org/node/4865#comment-78207][See here]].
+  - Demystify equality
+    - [X] http://jozefg.bitbucket.org/posts/2014-08-06-equality.html
+      (mentions Axiom K)
+    - [X] [[http://kodu.ut.ee/~varmo/tday-andu/chapman-slides.pdf][A biased history of equality in type theory]]
+      (slides). Definitional, intentional, extentional, observational,
+      John Major, Axiom K.
+  - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
+  - Type theory comparisons
+    - Equality
+      - homogeneous/heterogeneous
+      - intensional/extensional
+      - decidable/undecidable definitional equality (with just how much eta?)
+    - Universes
+      - impredicativity/predicativity
+      - proof-irrelevance
+      - a single universe/(accumulative, polymorphic?) universe hierarchy
+      - large elimination
+    - Recursion and datatypes
+      - eliminators/pattern matching + guardedness/sized types/...
+      - induction-recursion/induction-induction/...
+      - (same for coinduction)
+  - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
+  - http://www.cse.chalmers.se/~peterd/papers/historyidentitytype.pdf
+  - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
+    - Per Martin-Löf. Constructive mathematics and computer programming, 1982
+    - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
+    - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
+    - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
+    - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
+    - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
+    - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
+  - [[https://github.com/michaelt/martin-lof][Works of Per Martin-Löf]]. Jon Sterling recommends especially:
+    "Constructive mathematics and computer programming", "On the
+    Meanings of the Logical Constants and the Justification of Logical
+    Laws", and "Intuitionistic Type Theory".
+  - http://www.jonmsterling.com/pdfs/meaning-explanations.pdf
+  - Online courses
+    - http://cs.ru.nl/~freek/courses/tt-2009/
+    - http://cs.ru.nl/~freek/courses/tt-2010/
+    - http://cs.ru.nl/~freek/courses/tt-2011/
+    - http://cs.ru.nl/~freek/courses/tt-2012/
+    - http://cs.ru.nl/~freek/courses/tt-2013/
+    - http://cs.ru.nl/~freek/courses/tt-2014/
+    - http://cs.ru.nl/~freek/courses/tt-2015/
+  - [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
+  - [[http://oxij.org/note/BrutalDepTypes/][Brutal introduction to dependent types]]
+  - http://axisofeval.blogspot.com/2010/11/dependent-types-linkdump.html
+  - Notes/articles/slides.
+
+*** Implement Dependently Typed PL
+
+  - Recommeded by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
+    – Löh, McBride, Swierstra. "A Tutorial Implementation of a Dependently Typed Lambda Calculus."
+    – Lectures on implementing Idris (www.idris-lang.org)
+    – My OPLSS 2013 lectures & pi-forall github repository
+
+  - Dig up my version of Simply Easy[ier]. Do a version in Idris?
+    Perhaps stick to Haskell and implement readline style repl.
+    - https://github.com/freebroccolo/dtlc.rs
+  - https://github.com/jyp/nano-Agda
+  - https://github.com/jyp/sctt
+  - https://hackage.haskell.org/package/pisigma
+
+  - Contribute to Idris http://www.idris-lang.org/help-required/
+
+*** Learning Type Theory
+   Adapted from https://github.com/type-theory/learn-tt
+   - [ ] Textbooks
+     - [ ] PFPL
+     - [ ] TAPL
+     - [ ] ATTAPL
+     - [ ] TTFP
+     - [ ] PFM [[http://www.paultaylor.eu/%7Ept/prafm/html/index.html][Practical Foundations of Mathematics]] Paul Taylor
+     - [ ] SF [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
+   - [ ] Proof Assistants
+     - [ ] Coq
+     - [ ] Agda
+     - [ ] Idris
+     - [ ] Twelf
+   - [ ] Type Theory
+     - [ ] The Works of Per Martin-Löf
+       - [ ] 1972
+       - [ ] 1979
+       - [ ] 1984
+     - [ ] Programming In Martin-Löf's Type Theory
+     - [ ] The Works of John Reynolds
+       - [ ] Types, Abstraction and Parametric Polymorphism (Parametricity for System F)
+       - [ ] A Logic For Shared Mutable State
+       - [ ] Course notes on separation logic
+       - [ ] Course notes on denotational semantics
+     - [ ] Computational Type Theory
+       - [ ] Type Theory and its Meaning Explanations
+       - [ ] A Non-Type-Theoretic Definition of Martin-Löf’s Types
+       - [ ] Constructing a type system over operational semantics 
+             (Similar to the above, they're helpful to read together)
+       - [ ] Equality in Lazy Computation System (of general interest)
+       - [ ] Naive Computational Type Theory
+       - [ ] Innovations in CTT using NuPRL
+       - [ ] Two Lectures on Constructive Type Theory
+     - [ ] Homotopy Type Theory
+       - [ ] The HoTT book
+       - [ ] Student's Notes on HoTT
+   - [ ] Proof Theory
+     - [ ] Frank Pfenning's Lecture Notes
+       - [ ] Constructive Logic
+       - [ ] Linear Logic
+       - [ ] Modal Logic
+   - [ ] Category Theory
+     - [ ] Category Theory for Computer Scientists
+     - [ ] Category Theory, Awodey
+     - [ ] [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS
+       2015 Ed Morehouse
+   - [ ] Other Goodness
+     - [ ] [[https://mitpress.mit.edu/books/semantics-programming-languages][Semantics of Programming Languages]], Carl Gunter
+     - [ ] OPLSS
+       - [ ] 2012
+       - [ ] 2013
+       - [ ] 2014
+       - [ ] 2015
 
 ** PL: Type Systems / Type Inference / Semantics / Design
 
@@ -219,12 +390,6 @@
   - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
-
-** Demystifying Category Theory
-
-  - Steven Awodey OPLSS 2012 lecture notes Category Theory
-    - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
-
 ** Demystifying Proof Theory
 
   - [X] http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
@@ -242,6 +407,10 @@
     - predicate calculus
     - first-order intuitionistic logic
     - first order logic
+** Demystifying Category Theory
+
+  - Steven Awodey OPLSS 2012 lecture notes Category Theory
+    - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
 ** Demystifying Mathematical Logic & Logic Programming
 
@@ -252,6 +421,7 @@
     - Recursion Theory
     - Proof Theory
 
+  - [ ] [[http://oxij.org/note/ReinventingFormalLogic/][Reinventing formal logic]] (article)
   - [ ] [[http://users.cecs.anu.edu.au/~jks/LogicNotes/][The Logic Notes]], John Slaney, ANU
 
   - [ ] [[http://www.cse.chalmers.se/~coquand/TRIESTE/][Constructive Logic]] (course), Thierry Coquand
@@ -286,69 +456,13 @@
 
   - HoTT book
 
-** Demystifying Type Theory
+** Demystify Great Papers
 
-  - [ ] Demystify terminology.
-    - [ ] Demystify predicative/impredicative.
-    - [ ] Demystify intensional/extensional.
-    - [ ] Demystify relational parametricity.
-      - [[http://cstheory.stackexchange.com/questions/19548/how-can-relational-parametricity-be-motivated][How can relational parametricity by movitated (Stackoverflow)]]
-    - [ ] Demystify "logical relations" aka apparently "Tait's
-      method", "the method of computability" and "realizability".
-    - [ ] Demystify "parametricity".
-    - [ ] Demystify "first-class polymorphism".
-    - [ ] Demystify "second-class polymorphism".
-    - [ ] Demystify "polymorphic recursion".
-    - [ ] Demystify "universal polymorphism".
-    - [ ] Demystify "existential polymorphism".
-      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
-#+begin_quote
-**It's second-class vs first-class that matters**
-
-That's not quite right. You seem to be assuming that you can always statically monomorphise universal polymorphism, but that is only true if polymorphism is second-class (*). And in that case, it is just as true for existential polymorphism (e.g., some SML compilers "monomorphise" modules routinely).
-As soon as you have first-class polymorphism, though (e.g., higher-ranked polymorphic types), you cannot do that anymore, neither for universal nor for existential polymorphism. Furthermore, as naasking pointed out, you can encode existentials with universals then, so there really is no difference in the degree of static knowledge.
-In short, the compile time vs run time distinction does not hinge on universal vs existential polymorphism, but on second-class vs first-class polymorphism (and existentials in Haskell happen to be first-class).
-(*) And in fact, not even then, as Haskell's counter-example of polymorphic recursion shows -- contrary to popular belief, type class polymorphism is not static in Haskell, not even in plain H'98. Common optimisations notwithstanding.
-#+end_quote
-    - [ ] Encoding existentials with universals. [[Http://lambda-the-ultimate.org/node/4865#comment-78207][See here]].
-  - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
-  - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
-  - http://www.cse.chalmers.se/~peterd/papers/historyidentitytype.pdf
-  - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
-    - Per Martin-Löf. Constructive mathematics and computer programming, 1982
-    - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
-    - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
-    - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
-    - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
-    - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
-    - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
-  - [[https://github.com/michaelt/martin-lof][Works of Per Martin-Löf]]. Jon Sterling recommends especially: Constructive mathematics and computer programming, On the Meanings of the Logical Constants and the Justification of Logical Laws, and Intuitionistic Type Theory.
-  - http://www.jonmsterling.com/pdfs/meaning-explanations.pdf
-
-- Notes/articles/slides.
-- [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
-
-*** Implement Dependently Typed PL
-
-  - Recommeded by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
-    – Löh, McBride, Swierstra. “A Tutorial Implementation of a Dependently Typed Lambda Calculus.” Fundamenta Informa(cae, 2001
-    – Lectures on implementing Idris (www.idris-lang.org)
-    – My OPLSS 2013 lectures & pi-forall github repository
-
-  - Dig up my version of Simply Easy[ier]. Do a version in Idris?
-    Perhaps stick to Haskell and implement readline style repl.
-    - https://github.com/freebroccolo/dtlc.rs
-  - https://github.com/jyp/nano-Agda
-  - https://github.com/jyp/sctt
-
-  - Contribute to Idris http://www.idris-lang.org/help-required/
-
-** Read Functional Pearls
   - [[https://wiki.haskell.org/Research_papers/Functional_pearls][Functional Pearls]]
-  - [ ] I am not a Number (see [[#name-binding][below]]).
-  - http://crypto.stanford.edu/~blynn/haskell/papers.html
-  - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
-  - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
+    - [ ] I am not a Number (see [[#name-binding][below]]).
+    - http://crypto.stanford.edu/~blynn/haskell/papers.html
+    - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
+    - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
 
 ** Name binding
   - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
@@ -466,7 +580,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - [[http://lambda-the-ultimate.org/node/4865#comment-78251][Comments on Type class implementation by Oleg (LtU)]]
   - http://okmij.org/ftp/Computation/typeclass.html
   - Coq's "First Class Type Classes" [[http://mattam.org/research/publications/First-Class_Type_Classes.pdf][paper]] [[http://mattam.org/research/publications/First-Class_Type_Classes-Gallium-031108.pdf][slides]].
-
 ** Demystifying Datatype Generic Programming
   - polytypic programming or whatevers
   - [[http://itu.dk/people/asal/pubs/msc-thesis-report.pdf][The Practical Guide to Levitation]], Ahmad Salim Al-Sibahi M.Sc. Thesis
@@ -518,7 +631,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://ncatlab.org/nlab/show/topos
   - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
   - [[http://math.ucr.edu/home/baez/topos.html][Topos Theory in a Nutshell]]
-
 ** Functional Programming in Scala
 
   - http://eed3si9n.com/learning-scalaz/
@@ -687,11 +799,8 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - The theorem prover from ML for the Working Programmer.
   - Djinn walkthrough.
 
-** Demystifying Proof Assistants
-  - Introduction to Coq.
-  - Introduction to Agda.
-  - Introduction to Isabelle.
-  - Introduction to Twelf.
+** Demystifying Twelf
+  - http://jozefg.bitbucket.org/posts/2015-02-28-twelf.html
 
 ** Nix or Package all the things
 
@@ -713,61 +822,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
     - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
     - Idris & Glorious GHCJS.
-
-** Learning Type Theory
-  Adapted from https://github.com/type-theory/learn-tt
-  - [ ] Textbooks
-    - [ ] PFPL
-    - [ ] TAPL
-    - [ ] ATTAPL
-    - [ ] TTFP
-    - [ ] PFM [[http://www.paultaylor.eu/%7Ept/prafm/html/index.html][Practical Foundations of Mathematics]] Paul Taylor
-    - [ ] SF [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
-  - [ ] Proof Assistants
-    - [ ] Coq
-    - [ ] Agda
-    - [ ] Idris
-    - [ ] Twelf
-  - [ ] Type Theory
-    - [ ] The Works of Per Martin-Löf
-      - [ ] 1972
-      - [ ] 1979
-      - [ ] 1984
-    - [ ] Programming In Martin-Löf's Type Theory
-    - [ ] The Works of John Reynolds
-      - [ ] Types, Abstraction and Parametric Polymorphism (Parametricity for System F)
-      - [ ] A Logic For Shared Mutable State
-      - [ ] Course notes on separation logic
-      - [ ] Course notes on denotational semantics
-    - [ ] Computational Type Theory
-      - [ ] Type Theory and its Meaning Explanations
-      - [ ] A Non-Type-Theoretic Definition of Martin-Löf’s Types
-      - [ ] Constructing a type system over operational semantics 
-            (Similar to the above, they're helpful to read together)
-      - [ ] Equality in Lazy Computation System (of general interest)
-      - [ ] Naive Computational Type Theory
-      - [ ] Innovations in CTT using NuPRL
-      - [ ] Two Lectures on Constructive Type Theory
-    - [ ] Homotopy Type Theory
-      - [ ] The HoTT book
-      - [ ] Student's Notes on HoTT
-  - [ ] Proof Theory
-    - [ ] Frank Pfenning's Lecture Notes
-      - [ ] Constructive Logic
-      - [ ] Linear Logic
-      - [ ] Modal Logic
-  - [ ] Category Theory
-    - [ ] Category Theory for Computer Scientists
-    - [ ] Category Theory, Awodey
-    - [ ] [[http://www.cs.cmu.edu/%7Eedmo/research/notes/intro_categorical_semantics.pdf][Introduction to Categorical Semantics for Proof Theory]] OPLSS
-      2015 Ed Morehouse
-  - [ ] Other Goodness
-    - [ ] [[https://mitpress.mit.edu/books/semantics-programming-languages][Semantics of Programming Languages]], Carl Gunter
-    - [ ] OPLSS
-      - [ ] 2012
-      - [ ] 2013
-      - [ ] 2014
-      - [ ] 2015
 
 ** OPLSS
   - [-] OPLSS
@@ -828,5 +882,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
 ** Misc
 
-- Find old ADC/Intec shares.
-- Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
+  - Find old ADC/Intec shares.
+  - Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
+
+  - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
