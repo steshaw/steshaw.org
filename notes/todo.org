@@ -1,9 +1,10 @@
-* Tue 05-Jul-2016
+* Wed 06-Jul-2016
 
-  - 1 chapter of TDDwI
-  - 1 chapter of PiMLTT
-  - 1 chapter of PFPL
-  - 1 chapter of FPCL
+  - 2 chapters of either of:
+    - TDDwI
+    - PiMLTT
+    - PFPL
+    - FPCL
 
 * Todo Now
 
@@ -82,9 +83,30 @@
     - at =Equiv.v=, =assign_aequiv=.
 
   - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
-    - [X] Chapter 1
-    - [ ] Chapter 2
-    - [ ] Chapter 3
+    - [X] Part 1: Introduction
+      - [X] 1 Overview
+      - [X] 2 Getting Started with Idris
+    - [-] Part 2: Core Idris
+      - [X] 3 Interactive Development with Types
+      - [ ] 4 User Defined Data Types
+      - [ ] 5 Interactive Programs: Input and Ouput Processing
+      - [ ] 6 Programming with First Class Types
+      - [ ] 7 Interfaces: Using Constrained Generic Types
+      - [ ] 8 Classes: Overloading and Generic Functions
+      - [ ] 9 Dependently Typed Programming Idioms
+      - [ ] 10 Views: Extending Pattern Matching
+      - [ ] 11 Streams and Processes: Working with Infinite Data
+    - [ ] Part 3: Idris and the Real World
+      - [ ] 12 Domain Specific Languages
+      - [ ] 13 The Effects Library: Stateful, Interactive and
+        Side-effecting Programs
+      - [ ] 14 A Case Study: Concurrent Programming
+    - [ ] Appendixes:
+      - [ ] A Installing Idris & Editor Modes
+      - [ ] Interactive Editing Commands
+      - [ ] REPL Commands
+      - [ ] The Packaging System
+
 
 ** So you wanna learn Type Theory
 
