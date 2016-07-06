@@ -5,6 +5,7 @@
     - PiMLTT
     - PFPL
     - FPCL
+  - Finish Edwin Brady on Idris Implementation (paper).
 
 * Todo Now
 
@@ -164,6 +165,8 @@
 
 ** Demystifying Idris
 
+  - [ ] [[https://www.youtube.com/watch?v=4i7KrG1Afbk][Idris: Practical Dependent Types with Practical Examples by
+    Brian McKenna]] (video)
   - [ ] MiniCaml
     - https://github.com/lambdataro/zam-test looks to have OCaml
       MiniCaml and ZAM.
@@ -903,8 +906,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroys publications]]
 
 ** Misc
-
-  - Find old ADC/Intec shares.
-  - Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
-
+  - [ ] Find old ADC/Intec shares.
+  - [ ] Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
+  - [ ] Revise blog's Hakyll code. See https://github.com/gallais/gallais.github.io
   - [X] [[https://www.coursera.org/learn/learning-how-to-learn/home/welcome][Learning How to Learn]] (Coursera Course)
