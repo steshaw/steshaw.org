@@ -1,8 +1,9 @@
-* Thu 07-Jul-2016
+* Fri 08-Jul-2016
 
-  - Edwin Brady on Idris Implementation (paper).
-  - 1 chapter of TTDwI (book)
-  - 1 chapter of PiMLTT (book)
+  - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
+  - [ ] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
+  - [ ] 1 chapter of TTDwI (book)
+  - [ ] 1 chapter of PiMLTT (book)
 
 * Todo Now
 
@@ -159,7 +160,7 @@
 
 * Todo Next
 
-** Demystifying Idris
+** Demystify Idris
 
   - [ ] [[https://www.youtube.com/watch?v=4i7KrG1Afbk][Idris: Practical Dependent Types with Practical Examples by
     Brian McKenna]] (video)
@@ -216,8 +217,9 @@
     - https://pragprog.com/magazines/2013-07/dependent-types-iii
   - Courseware: notes/articles/slides.
   - [X] idris-calc port of plzoo/calc
+  - [X] [[https://eb.host.cs.st-andrews.ac.uk/drafts/impldtp.pdf][Idris, a General Purpose Dependently Typed Programming Language: Design and Implementation]] -- Edwin Brady
 
-** Demystifying Type Theory
+** Demystify Type Theory
 
   - [ ] [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html][Understanding typing judgements]]
   - Liam O'Connor articles:
@@ -401,7 +403,7 @@
        - [ ] 2014
        - [ ] 2015
 
-** PL: Type Systems / Type Inference / Semantics / Design
+** Demystify PLs: Type Systems / Type Inference / Semantics / Design
 
   - [ ] TAPL (book)
   - [ ] Type systems for programming languages Didier Rémy (course notes)
@@ -424,7 +426,7 @@
   - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
-** Demystifying Proof Theory
+** Demystify Proof Theory
 
   - [X] http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
   - [ ] [[https://www.cl.cam.ac.uk/~gw104/PLC-mini-course.pdf][Mini-course on proof theory, Pierre-Louis Curien]]
@@ -441,13 +443,13 @@
     - predicate calculus
     - first-order intuitionistic logic
     - first order logic
-** Demystifying Category Theory
+** Demystify Category Theory
 
   - [[http://www.hedonisticlearning.com/posts/you-know-more-about-presheaves-than-you-think.html][You known more about presheaves than you think]]
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
-** Demystifying Mathematical Logic & Logic Programming
+** Demystify Mathematical Logic & Logic Programming
 
   - Are there other interesting part of Mathematical Logic other than
     Proof Theory? Wikipedia mentions the following sub fields:
@@ -498,8 +500,9 @@
     - http://crypto.stanford.edu/~blynn/haskell/papers.html
     - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
     - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
+  - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroys publications]]
 
-** Name binding
+** Demystify Name binding
   - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
     - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
     - http://www.strictlypositive.org/notanum.ps.gz
@@ -521,7 +524,7 @@
   - [X] Namely Painless
   - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
 
-** Demystifying Coq
+** Demystify Coq
 
   - [[https://www.labri.fr/perso/casteran/CoqArt/][Coq'Art]] (again)
 
@@ -535,7 +538,7 @@
 
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
 
-** Demystifying Agda
+** Demystify Agda
 
   - Computer Aided Formal Reasoning course at University of Nottingham
     http://www.cs.nott.ac.uk/~psztxa/g53cfr/
@@ -556,7 +559,7 @@
 jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
 #+END_QUOTE
 
-** Demystifying Module Systems
+** Demystify Module Systems
 
    - Start with SML and OCaml module systems.
      - http://jozefg.bitbucket.org/posts/2015-01-08-modules.html
@@ -615,7 +618,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - [[http://lambda-the-ultimate.org/node/4865#comment-78251][Comments on Type class implementation by Oleg (LtU)]]
   - http://okmij.org/ftp/Computation/typeclass.html
   - Coq's "First Class Type Classes" [[http://mattam.org/research/publications/First-Class_Type_Classes.pdf][paper]] [[http://mattam.org/research/publications/First-Class_Type_Classes-Gallium-031108.pdf][slides]].
-** Demystifying Datatype Generic Programming
+** Demystify Datatype Generic Programming
   - polytypic programming or whatevers
   - [[http://itu.dk/people/asal/pubs/msc-thesis-report.pdf][The Practical Guide to Levitation]], Ahmad Salim Al-Sibahi M.Sc. Thesis
     - https://github.com/ahmadsalim/MSc-Thesis
@@ -633,7 +636,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - port to Idris https://github.com/pbl64k/gpif-idris
   - Andres recommends generics-sop these days. Introduction at https://github.com/kosmikus/SSGEP.
 
-** Demystifying Homotopy Type Theory
+** Demystify Homotopy Type Theory
 
   - https://homotopytypetheory.org/book/
   - https://www.cs.cmu.edu/~rwh/courses/hott/
@@ -666,18 +669,11 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://ncatlab.org/nlab/show/topos
   - http://www.staff.science.uu.nl/~ooste110/syllabi/toposmoeder.pdf
   - [[http://math.ucr.edu/home/baez/topos.html][Topos Theory in a Nutshell]]
-** Functional Programming in Scala
 
-  - http://eed3si9n.com/learning-scalaz/
-  - [[http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/][Contribute to intellij-scala]]
-
-** Focusing
+** Demystify Focusing
 
   - https://www.cs.cmu.edu/~fp/courses/oregon-m10/04-focusing.pdf
   - https://www.cs.cmu.edu/~fp/courses/15816-s12/lectures/09-focusing.pdf
-
-** Write an efficient nanopass compiler.
-  - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
 
 ** Investigate strict v non-strict
   - strict/cbv (with at least optional call-by-name) v non-strict/lazy/cb-need
@@ -707,7 +703,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
   - https://personal.cis.strath.ac.uk/conor.mcbride/TotallyFree.pdf
   - http://www.cs.nott.ac.uk/~pszvc/publications/General_Recursion_MSCS_2005.pdf
 
-** Effects
+** Demystify Effects
   - implement monad transformers
   - take a look at algebraic effects.
   - Idris 
@@ -722,38 +718,12 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - http://homepages.inf.ed.ac.uk/slindley/papers/frankly-draft-march2014.pdf
   - Koka
   - https://github.com/yallop/effects-bibliography
-
-** Haskell
-
-- Can it be proven that total languages can safely use fusion (because 
-  they can evaluated non-strictly)?
-
-*** Swift parser for Haskell
-
-  - sigh, language-swift-quote is stalled because of ambiguities in
-    the grammar
-
-*** Turtle
-
-  - Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
-
-*** Web frameworks in Haskell.
-   - Try out Scotty, Spock, Yesod, Snap, Servant.
-     - http://www.yesodweb.com/book/yesod-for-haskellers
-   - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
-   - Write a REST/JSON server in Haskell.
-   - Write a "sessionless" web app in Haskell.
-
-*** Learn pipes
-
-   - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
-   - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
-** Demystifying Advanced Functional Programming
+** Demystify Advanced Functional Programming
   - recursion schemes
   - Algebra of Programming.
-  - notes/slides/courseware on advanced FP techniques
+  - notes/slides/articles/courseware
 
-** Demystifying Compilers
+** Demystify Compilers
   - Develop (literate) code, articles, slides, notes, articles.
   - Writing/blog series on BabyML / BabyIdris:
     - Let noone ever recommend "Let's write a compiler" ever again.
@@ -802,7 +772,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - [[https://www.sharelatex.com/project/5637a774990f556d48bab667][course book/notes]]
     - http://github.com/jsiek/Essentials-of-Compilation
 
-** Demystifiying Lexer Generators
+*** Write an efficient nanopass compiler.
+   - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
+
+** Demystify Lexer Generators
 
    - Would like to be able to generate the lexer from an embedded
      description. Pretty sure that Manuel Chakravarty did work on this
@@ -815,7 +788,7 @@ jonsterling: Conor's insight is that you can define the graph of such a function
      - Paper says that the regex generator was based on the
        presentation in Appel's Modern Compiler Implementation in ML. 
 
-** Demystifiying Parser Generators
+** Demystify Parser Generators
 
   - I like the approach of [[https://hackage.haskell.org/package/BNFC-meta][BNFC-meta]]. It defines the grammar in the
     language (even if it's via TH). Let's have this in Idris (and the
@@ -829,13 +802,52 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - https://github.com/ghc/ghc/blob/master/compiler/parser/Lexer.x
     - https://michaeldadams.org/papers/layout_parsing/
 
-** Demystifying Automated Deduction
+** Demystify Automated Deduction
   - aka course notes/slides for Automated Deduction
   - The theorem prover from ML for the Working Programmer.
   - Djinn walkthrough.
 
-** Demystifying Twelf
+** Demystify Twelf
   - http://jozefg.bitbucket.org/posts/2015-02-28-twelf.html
+
+** Demystify Isabelle/HOL
+
+  - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
+
+** Haskell
+
+- Can it be proven that total languages can safely use fusion (because 
+  they can evaluated non-strictly)?
+
+*** Swift parser for Haskell
+
+  - sigh, language-swift-quote is stalled because of ambiguities in
+    the grammar
+
+*** Turtle
+
+  - Convert the [[http://tldp.org/LDP/abs/html/string-manipulation.html][horrors of Bash]] to the wonders of Turtle Haskell
+
+*** Web frameworks in Haskell.
+   - Try out Scotty, Spock, Yesod, Snap, Servant.
+     - http://www.yesodweb.com/book/yesod-for-haskellers
+   - Write a REST/JSON client in Haskell (Twitter/GitHub client, say).
+   - Write a REST/JSON server in Haskell.
+   - Write a "sessionless" web app in Haskell.
+
+*** Learn pipes
+
+   - https://ocharles.org.uk/talks/2013-09-18-pipes.pdf
+   - https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Pipes%20tutorial
+** PureScript
+
+  - Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
+    - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
+    - Idris & Glorious GHCJS.
+** Scala
+
+  - http://eed3si9n.com/learning-scalaz/
+  - [[http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/][Contribute to intellij-scala]]
 
 ** Nix or Package all the things
 
@@ -851,12 +863,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - Rational software tooling.
     - Haskell.
     - PureScript.
-
-** PureScript
-
-  - Port [[https://twitter.com/li_haoyi][Li Haoyi]]'s Scala-JS examples to PureScript.
-    - https://gist.github.com/lihaoyi/9443f8e0ecc68d1058ad
-    - Idris & Glorious GHCJS.
 
 ** OPLSS
   - [-] OPLSS
@@ -897,10 +903,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
       - [ ] Principles of Type Refinement — Noam Zeilberger
       - [ ] Logical relations/Compiler verification — Amal Ahmed
 
-** Demystifying Isabelle/HOL
-
-  - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
-
 ** Writing papers
   - org-mode
   - [[https://github.com/jkitchin/org-ref][org-ref]]
@@ -910,10 +912,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 *** Learn LaTex
 
  - Produce something (tech report?) with LaTeX. Perhaps via org-mode.
-
-** Reading
-
-  - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroys publications]]
 
 ** Misc
   - [ ] Find old ADC/Intec shares.
