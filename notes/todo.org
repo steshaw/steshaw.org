@@ -1,11 +1,8 @@
-* Wed 06-Jul-2016
+* Thu 07-Jul-2016
 
-  - 2 chapters of either of:
-    - TDDwI
-    - PiMLTT
-    - PFPL
-    - FPCL
-  - Finish Edwin Brady on Idris Implementation (paper).
+  - Edwin Brady on Idris Implementation (paper).
+  - 1 chapter of TTDwI (book)
+  - 1 chapter of PiMLTT (book)
 
 * Todo Now
 
@@ -107,7 +104,6 @@
       - [ ] Interactive Editing Commands
       - [ ] REPL Commands
       - [ ] The Packaging System
-
 
 ** So you wanna learn Type Theory
 
@@ -223,6 +219,10 @@
 
 ** Demystifying Type Theory
 
+  - [ ] [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html][Understanding typing judgements]]
+  - Liam O'Connor articles:
+    - [ ] http://liamoc.net/posts/2015-08-23-verified-compiler.html
+    - [ ] http://liamoc.net/posts/2014-01-01-context-split.html
   - [ ] Demystify terminology.
     - [ ] Demystify predicative/impredicative.
     - [ ] Demystify intensional/extensional.
@@ -318,7 +318,16 @@
     - http://cs.ru.nl/~freek/courses/tt-2015/
   - [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
   - [[http://oxij.org/note/BrutalDepTypes/][Brutal introduction to dependent types]]
-  - http://axisofeval.blogspot.com/2010/11/dependent-types-linkdump.html
+  - [X] http://axisofeval.blogspot.com/2010/11/dependent-types-linkdump.html
+  - [-] Morte intermediate language based on CoC by Gabriel Gonzalez
+    - Uses Boehm-Berarducci encoding which is related to Church
+      encoding, CPS encoding, and F-algebras.
+      - [ ] [[http://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html][Oleg on Boehm-Beraducci]]
+    - super optimisation by normalisation!
+    - [ ] [[http://www.haskellforall.com/2014/09/morte-intermediate-language-for-super.html][Morte blog post]]
+    - [X] [[https://hackage.haskell.org/package/morte-1.6.0/docs/Morte-Tutorial.html][Morte tutorial]]
+  - [ ] [[http://winterkoninkje.dreamwidth.org/101420.html][Introduction to recursive types]] by Wren Romano. An annotated
+    bibliography / reading list.
   - Notes/articles/slides.
 
 *** Implement Dependently Typed PL
@@ -434,6 +443,7 @@
     - first order logic
 ** Demystifying Category Theory
 
+  - [[http://www.hedonisticlearning.com/posts/you-know-more-about-presheaves-than-you-think.html][You known more about presheaves than you think]]
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
