@@ -2,10 +2,12 @@
 
   - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
   - [ ] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
-  - [ ] 1 chapter of TTDwI (book)
-  - [ ] 1 chapter of PiMLTT (book)
+  - [ ] 1 chapter of TTDwI
+  - [ ] 1 chapter of PiMLTT
 
 * Todo Now
+
+  - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
 
   - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
     - [X] I Judgements and Rules
@@ -406,6 +408,8 @@
 ** Demystify PLs: Type Systems / Type Inference / Semantics / Design
 
   - [ ] TAPL (book)
+  - [ ] [[https://www.semanticscholar.org/paper/Natural-Semantics-Kahn/44890ee8966028d0f12ca7a6eb43c41a17871cfe/pdf][Natural Semantics]], Gilles Kahn
+    - [ ] [[https://hal.inria.fr/inria-00076025/document][A simple applicative language, Mini-ML]]
   - [ ] Type systems for programming languages Didier Rémy (course notes)
     - [ ] http://pauillac.inria.fr/~remy/mpri/cours1.pdf
     - [ ] http://pauillac.inria.fr/~remy/mpri/cours2.pdf
@@ -426,6 +430,29 @@
   - [[http://steshaw.org/hm/][Ian Grant's Hindly-Milner tutorial]]
   - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
+** Demystify Name binding
+
+  - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
+    - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
+    - http://www.strictlypositive.org/notanum.ps.gz
+  - https://www.schoolofhaskell.com/user/edwardk/bound
+  - http://hackage.haskell.org/package/unbound
+  - https://hackage.haskell.org/package/unbound-generics
+    - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
+  - Compare with Abtract Binding Trees.
+  - https://github.com/jyp/NameBindingSurvey/blob/master/WhiteBoard.md
+    - https://github.com/jyp/TTNameBinders
+    - Names for free
+      - [[https://nicolaspouillard.fr/talks/names-for-free-haskell-symposium/names-for-free.html#/][talk]]
+      - [[http://www.cse.chalmers.se/~bernardy/NamesForFree.pdf][paper]]
+  - Implement Abstract Binding Trees (in Idris?).
+    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
+    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
+  - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
+  - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
+  - [X] Namely Painless
+  - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
+
 ** Demystify Proof Theory
 
   - [X] http://jozefg.bitbucket.org/posts/2015-02-11-proof-theory1.html
@@ -480,7 +507,7 @@
 
   - [ ] How to Prove It, Velleman.
 
-** Increase Mathematical Sophistication & Demystify Mathematical Foundations
+** Demystify Mathematical Foundations and Increase Mathematical Sophistication
 
   - [[http://paultaylor.eu/~pt/prafm/html/index.html][Practical Foundations of Mathematics]], Paul Taylor.
 
@@ -501,28 +528,6 @@
     - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
     - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
   - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroys publications]]
-
-** Demystify Name binding
-  - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
-    - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
-    - http://www.strictlypositive.org/notanum.ps.gz
-  - https://www.schoolofhaskell.com/user/edwardk/bound
-  - http://hackage.haskell.org/package/unbound
-  - https://hackage.haskell.org/package/unbound-generics
-    - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
-  - compare with Abtract Binding Trees.
-  - https://github.com/jyp/NameBindingSurvey/blob/master/WhiteBoard.md
-    - https://github.com/jyp/TTNameBinders
-    - Names for free
-      - https://nicolaspouillard.fr/talks/names-for-free-haskell-symposium/names-for-free.html#/
-      - http://www.cse.chalmers.se/~bernardy/NamesForFree.pdf
-  - Implement Abstract Binding Trees (in Idris?).
-    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
-    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
-  - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
-  - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
-  - [X] Namely Painless
-  - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
 
 ** Demystify Coq
 
@@ -814,6 +819,57 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
   - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
 
+** Demystify Nix and Package all the things
+
+  - Nix for your dotfiles.
+  - Nix for your development environment configuration.
+  - Nix for your own tools (aka etools at Ephox).
+  - Nix for your (proprietary) software products.
+
+** OPLSS
+  - [-] OPLSS
+    - [-] 2010
+      - [X] Type Theory Foundations — Robert Harper
+      - [X] Proof Theory Foundations — Frank Pfenning
+      - [ ] Dependently Typed Programming — Conor McBride
+      - [ ] Proofs-as-Processes (in CTT) — Robert Constable
+      - [ ] Proving a Compiler — Xavier Leroy
+      - [X] Software Foundations in Coq — Benjamin Pierce
+      - [X] Essential Coq from Scratch — Andrew Tolmach
+    - [ ] 2011
+    - [ ] 2012
+    - [ ] 2013
+    - [ ] 2014
+    - [ ] 2015
+      - [ ] Basic Proof Theory — Frank Pfenning
+      - [ ] Introduction to Dependent Type Theory — Robert Harper
+      - [ ] Basic Category Theory: Semantics of Proof Theory — Ed Morehouse
+      - [ ] Inductive and Inductive-Recursive Definitions in Intuitionistic Type Theory — Peter Dybjer
+      - [ ] The Coq Proof Assistant and Its Applications to
+        Programming-Language Semantics — Adam Chlipala
+      - [ ] Logical Relations — Amal Ahmed
+      - [ ] Mark Bickford
+      - [ ] Robert Constable
+    - [-] 2016 ([[https://www.youtube.com/playlist?list=PLiHLLF-foEez5Dis-VqoGcg3WepdMh4XT][Youtube playlist]])
+      - [X] Programming Languages Background — Robert Harper and Dan Licata
+      - [-] Category Theory Background — Ed Morehouse
+	- [X] Lecture 1
+	- [X] Lecture 2
+	- [ ] Lecture 3
+	- [ ] Lecture 4
+      - [ ] Logical Relations — Patricia Johann
+      - [ ] Principles of Type Refinement — Noam Zeilberger
+      - [ ] Logical relations/Compiler verification — Amal Ahmed
+
+** Writing papers
+  - org-mode
+  - [[https://github.com/jkitchin/org-ref][org-ref]]
+  - https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
+  - [[https://github.com/kawabata/ox-pandoc][ox-pandoc]]
+
+*** Learn LaTex
+
+ - Produce something (tech report?) with LaTeX. Perhaps via org-mode.
 ** Haskell
 
 - Can it be proven that total languages can safely use fusion (because 
@@ -848,70 +904,6 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 
   - http://eed3si9n.com/learning-scalaz/
   - [[http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/][Contribute to intellij-scala]]
-
-** Nix or Package all the things
-
-  - Nix for your dotfiles.
-  - Nix for your development environment configuration.
-  - Nix for your own tools (aka etools at Ephox).
-  - Nix for your (proprietary) software products.
-
-** Rational Startup Movement
-
-  - Start writing up "The Rational Startup"
-    - Using Haskell for a startup.
-    - Rational software tooling.
-    - Haskell.
-    - PureScript.
-
-** OPLSS
-  - [-] OPLSS
-    - [-] 2010
-      - [X] Type Theory Foundations — Robert Harper
-      - [X] Proof Theory Foundations — Frank Pfenning
-      - [ ] Dependently Typed Programming — Conor McBride
-      - [ ] Proofs-as-Processes (in CTT) — Robert Constable
-      - [ ] Proving a Compiler — Xavier Leroy
-      - [X] Software Foundations in Coq — Benjamin Pierce
-      - [X] Essential Coq from Scratch — Andrew Tolmach
-    - [ ] 2011
-    - [ ] 2012
-    - [ ] 2013
-    - [ ] 2014
-    - [ ] 2015
-      - [ ] Basic Proof Theory — Frank Pfenning
-      - [ ] Introduction to Dependent Type Theory — Robert Harper
-      - [ ] Basic Category Theory: Semantics of Proof Theory — Ed Morehouse
-      - [ ] Inductive and Inductive-Recursive Definitions in Intuitionistic Type Theory — Peter Dybjer
-      - [ ] The Coq Proof Assistant and Its Applications to
-        Programming-Language Semantics — Adam Chlipala
-      - [ ] Logical Relations — Amal Ahmed
-      - [ ] Mark Bickford
-      - [ ] Robert Constable
-    - [-] 2016
-      - [-] Programming Languages Background — Robert Harper and Dan Licata
-        - [X] Lecture 1
-        - [X] Lecture 2
-        - [X] Lecture 3
-        - [X] Lecture 4
-        - [X] Lecture 5
-        - [ ] Lecture 6
-        - [ ] Lecture 7
-        - [ ] Lecture 8
-      - [ ] Category Theory Background — Ed Morehouse
-      - [ ] Logical Relations — Patricia Johann
-      - [ ] Principles of Type Refinement — Noam Zeilberger
-      - [ ] Logical relations/Compiler verification — Amal Ahmed
-
-** Writing papers
-  - org-mode
-  - [[https://github.com/jkitchin/org-ref][org-ref]]
-  - https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
-  - [[https://github.com/kawabata/ox-pandoc][ox-pandoc]]
-
-*** Learn LaTex
-
- - Produce something (tech report?) with LaTeX. Perhaps via org-mode.
 
 ** Misc
   - [ ] Find old ADC/Intec shares.
