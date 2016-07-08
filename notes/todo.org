@@ -1,13 +1,12 @@
-* Fri 08-Jul-2016
+* Todo Now
 
-  - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
-  - [ ] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
   - [ ] 1 chapter of TTDwI
   - [ ] 1 chapter of PiMLTT
 
-* Todo Now
-
-  - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
+  - References from Edwin Brady's "Implementation of Idris" paper.
+    - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
+    - [ ] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
+    - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
 
   - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
     - [X] I Judgements and Rules
@@ -277,6 +276,14 @@
         optimisations notwithstanding.
         #+end_quote
     - [ ] Encoding existentials with universals. [[Http://lambda-the-ultimate.org/node/4865#comment-78207][See here]].
+    - [ ] "axiom of reducibility" ([[http://cstheory.stackexchange.com/questions/7561/whats-the-relation-and-difference-between-calculus-of-inductive-constructions-a][seen here]])
+      #+begin_quote
+      Unfortunately, Girard found that this system [Martin-Löf first TT]
+      contradictory, prompting Martin-Löf to adopt "Russel-style" predicative
+      universes, severely limiting the expressiveness of the theory (by
+      effectively removing the axiom of reducibility) and making it slightly
+      more complex (but had the advantage of making it consistent).
+      #+end_quote
   - Demystify equality
     - [X] http://jozefg.bitbucket.org/posts/2014-08-06-equality.html
       (mentions Axiom K)
@@ -284,8 +291,23 @@
       (slides). Definitional, intentional, extentional, observational,
       John Major, Axiom K.
   - Explain variants such as UTT, OTT, CTT, CoC, CIC, ETT, Idris TT...
-  - CIC
+  - =CoC= Calculus of Constructions
+    - [X] [[https://ncatlab.org/nlab/show/calculus+of+constructions][nlab on =CoC=]]
+      - Notes that =CoC= is an _intensional_ dependent type theory.
+    - [ ] https://en.wikipedia.org/wiki/Calculus_of_constructions
+    - [ ] [[https://hal.inria.fr/inria-00076024/document][The calculus of constructions]] T. Coquand, Gérard Huet (1986)
+    - The origin of =CoC= is Coqand's PhD thesis which is naturally (but
+      unfortunately) in French.
+  - =CIC= Calculus of Inductive Constructions
     - [ ] [[https://coq.inria.fr/refman/Reference-Manual006.html][Chapter 4 Calculus of Inductive Constructions]]
+    - [ ] [[https://www.cs.uoregon.edu/research/summerschool/summer11/curriculum.html][The Calculus of Inductive Constructions]], Hugo Herbelin, OPLSS 2011
+      - [ ] videos
+      - [ ] [[https://www.cs.uoregon.edu/research/summerschool/summer11/lectures/oplss-herbelin1.pdf][notes]]
+    - [[http://adam.chlipala.net/papers/ChlipalaPhD/][ Implementing Certified Programming Language Tools in Dependent Type
+      Theory]] Adam Chlipala's PhD dissertation
+      - [ ] Section 2.1
+  - Comparing CoC and MLTT
+    - [[http://www.cs.ru.nl/~herman/PUBS/CC_CHiso.pdf][The Calculus of Constructions and Higher Order Logic]], Herman Geuvers, 1992
   - Type theory comparisons
     - Equality
       - homogeneous/heterogeneous
@@ -323,6 +345,7 @@
     - http://cs.ru.nl/~freek/courses/tt-2013/
     - http://cs.ru.nl/~freek/courses/tt-2014/
     - http://cs.ru.nl/~freek/courses/tt-2015/
+    - [[https://github.com/williamdemeo/TypeFunc][William Demeo's Type Theory resources]] (includes many courses etc)
   - [[http://jozefg.bitbucket.org/posts/2015-09-27-flavors.html][Two Different Flavors of Type Theory]], Danny Gratzer
   - [[http://oxij.org/note/BrutalDepTypes/][Brutal introduction to dependent types]]
   - [X] http://axisofeval.blogspot.com/2010/11/dependent-types-linkdump.html
@@ -341,17 +364,24 @@
 
 *** Implement Dependently Typed PL
 
-  - Recommeded by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
+  - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf. She says: "Don’t have to start from scratch"
     – Löh, McBride, Swierstra. "A Tutorial Implementation of a Dependently Typed Lambda Calculus."
     – Lectures on implementing Idris (www.idris-lang.org)
     – My OPLSS 2013 lectures & pi-forall github repository
 
-  - Dig up my version of Simply Easy[ier]. Do a version in Idris?
-    Perhaps stick to Haskell and implement readline style repl.
-    - https://github.com/freebroccolo/dtlc.rs
-  - https://github.com/jyp/nano-Agda
-  - https://github.com/jyp/sctt
-  - https://hackage.haskell.org/package/pisigma
+  - Existing mini/tutorial DT PLs:
+    - [[http://www2.tcs.ifi.lmu.de/~abel/miniagda/][MiniAgda]] by Andreas Abel
+    - https://github.com/jyp/nano-Agda by Jean-Philippe Bernardy
+    - https://github.com/larrytheliquid/uAgda by Jean-Philippe Bernardy
+    - https://github.com/jyp/sctt by Jean-Philippe Bernardy
+    - https://hackage.haskell.org/package/pisigma
+    - LambdaPi / SimplyEasy
+    - Lennart Augustsson's SimplyEasier
+    - pi-forall
+
+  - Dig up my version of Simply Easy[ier].
+    - [ ] Port to Idris.
+    - Other have done similar https://github.com/freebroccolo/dtlc.rs
 
   - Contribute to Idris http://www.idris-lang.org/help-required/
 
@@ -438,8 +468,8 @@
 ** Demystify Name binding
 
   - =bound=
-    - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] 
-    - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]]
+    - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] (article)
+    - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]] (gist)
   - =unbound=
     - http://hackage.haskell.org/package/unbound
     - https://hackage.haskell.org/package/unbound-generics
@@ -458,6 +488,9 @@
     - [ ] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html][Abstract Binding Trees, an addendum]] -- post by Neel Krishnaswami
     - [X] Chapter 1 PFPL
     - [ ] [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
+  - Nominal Logic: A First Order Theory of Names and Binding
+    - [ ] [[http://www.cl.cam.ac.uk/~amp12/talks/tacs01.pdf][slides]]
+    - [ ] [[https://www.cl.cam.ac.uk/~amp12/papers/nomlfo/nomlfo.pdf][paper]]
   - https://github.com/jyp/NameBindingSurvey/blob/master/WhiteBoard.md
     - https://github.com/jyp/TTNameBinders
     - Names for free
@@ -585,8 +618,8 @@
 
 ** Demystify Agda
 
-  - Computer Aided Formal Reasoning course at University of Nottingham
-    http://www.cs.nott.ac.uk/~psztxa/g53cfr/
+  - [[http://learnyouanagda.liamoc.net/toc.html][Learn you an Agda]] by Liam O'Connor
+  - [[http://www.cs.nott.ac.uk/~psztxa/g53cfr/][Computer Aided Formal Reasoning]] course at University of Nottingham
   - [[http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Publications][Papers using Agda]]
   - http://people.inf.elte.hu/divip/AgdaTutorial/Index.html
   - http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.Othertutorials
@@ -599,12 +632,11 @@
   - Conor's notes from [[https://www.cs.ox.ac.uk/projects/utgp/school/notes.html][Summer School on Generic and Effectful Programming 2015]]
     - https://github.com/pigworker/SSGEP-datadata
     - https://www.cs.ox.ac.uk/projects/utgp/school/conor.pdf
-
-  #+BEGIN_QUOTE
+  #+begin_quote
   jonsterling: Conor's insight is that you can define the graph of
   such a function as a well founded tree, and then compute by
   structural recursion on that tree
-  #+END_QUOTE
+  #+end_quote
 
 ** Demystify Module Systems
 
@@ -861,13 +893,30 @@
 
   - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
 
-** Demystify Compiler Correctness
+** Demystify Verified/Certified Programming
 
-  - Software Foundations
-  - http://ltamer.sourceforge.net
-  - CompCert
-    - Leroy lectures at OPLSS
-  - CakeML
+  - [[http://adam.chlipala.net/cpdt/][Certified Programming with Dependent Types]], Adam Chlipala
+  - =[VFPiA]= Verified Functional Programming in Agda, Aaron Stump
+    - [ ] [[https://svn.divms.uiowa.edu/repos/clc/projects/agda/book/book.pdf][draft version from August 2015]]
+
+    #+begin_quote
+    The book is intended as an introduction for undergraduates who do not have a
+    background in Agda, or type theory, or even functional programming.  (Note
+    that the book is not intended to be a reference on advanced features of
+    Agda; that would be a great book for others on this list to write!)  The
+    goal of VFPiA is an introduction, for beginners, to ideas in applied type
+    theory using Agda.
+    #+end_quote
+
+  - Certified Compilers
+    - Software Foundations
+    - http://ltamer.sourceforge.net
+    - CompCert
+      - Leroy lectures at OPLSS
+    - CakeML
+    - [ ] [[http://adam.chlipala.net/papers/ChlipalaPhD/][Implementing Certified Programming Language Tools in Dependent Type
+      Theory]] Adam Chlipala's PhD dissertation
+    - [ ] Program Logic for Certified Compilers, Andrew W. Appel (book)
 
 ** Demystify Nix and Package all the things
 
@@ -955,7 +1004,7 @@
   - http://eed3si9n.com/learning-scalaz/
   - [[http://blog.jetbrains.com/scala/2016/04/21/how-to-contribute-to-intellij-scala-plugin/][Contribute to intellij-scala]]
 
-** Misc
+** Miscellaneous
   - [ ] Find old ADC/Intec shares.
   - [ ] Fix old Hakyll blog http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html
   - [ ] Revise blog's Hakyll code. See https://github.com/gallais/gallais.github.io
