@@ -224,6 +224,7 @@
 ** Demystify Type Theory
 
   - [ ] [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html][Understanding typing judgements]]
+  - [ ] [[http://www.cs.ru.nl/~herman/PUBS/IntroTT-improved.pdf][Introduction to Type Theory]], Herman Geuvers
   - Liam O'Connor articles:
     - [ ] http://liamoc.net/posts/2015-08-23-verified-compiler.html
     - [ ] http://liamoc.net/posts/2014-01-01-context-split.html
@@ -251,30 +252,30 @@
     - [ ] Demystify "polymorphic recursion".
     - [ ] Demystify "universal polymorphism".
     - [ ] Demystify "existential polymorphism".
-      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
-	#+begin_quote
-	**It's second-class vs first-class that matters**
+      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]]. asdf
+        #+begin_quote
+        **It's second-class vs first-class that matters**
 
-	That's not quite right. You seem to be assuming that you can
-	always statically monomorphise universal polymorphism, but
-	that is only true if polymorphism is second-class (*). And in
-	that case, it is just as true for existential polymorphism
-	(e.g., some SML compilers "monomorphise" modules routinely).
-	As soon as you have first-class polymorphism, though (e.g.,
-	higher-ranked polymorphic types), you cannot do that anymore,
-	neither for universal nor for existential
-	polymorphism. Furthermore, as naasking pointed out, you can
-	encode existentials with universals then, so there really is
-	no difference in the degree of static knowledge.  In short,
-	the compile time vs run time distinction does not hinge on
-	universal vs existential polymorphism, but on second-class vs
-	first-class polymorphism (and existentials in Haskell happen
-	to be first-class).  (*) And in fact, not even then, as
-	Haskell's counter-example of polymorphic recursion shows --
-	contrary to popular belief, type class polymorphism is not
-	static in Haskell, not even in plain H'98. Common
-	optimisations notwithstanding.
-	#+end_quote
+        That's not quite right. You seem to be assuming that you can
+        always statically monomorphise universal polymorphism, but
+        that is only true if polymorphism is second-class (*). And in
+        that case, it is just as true for existential polymorphism
+        (e.g., some SML compilers "monomorphise" modules routinely).
+        As soon as you have first-class polymorphism, though (e.g.,
+        higher-ranked polymorphic types), you cannot do that anymore,
+        neither for universal nor for existential
+        polymorphism. Furthermore, as naasking pointed out, you can
+        encode existentials with universals then, so there really is
+        no difference in the degree of static knowledge.  In short,
+        the compile time vs run time distinction does not hinge on
+        universal vs existential polymorphism, but on second-class vs
+        first-class polymorphism (and existentials in Haskell happen
+        to be first-class).  (*) And in fact, not even then, as
+        Haskell's counter-example of polymorphic recursion shows --
+        contrary to popular belief, type class polymorphism is not
+        static in Haskell, not even in plain H'98. Common
+        optimisations notwithstanding.
+        #+end_quote
     - [ ] Encoding existentials with universals. [[Http://lambda-the-ultimate.org/node/4865#comment-78207][See here]].
   - Demystify equality
     - [X] http://jozefg.bitbucket.org/posts/2014-08-06-equality.html
@@ -282,7 +283,9 @@
     - [X] [[http://kodu.ut.ee/~varmo/tday-andu/chapman-slides.pdf][A biased history of equality in type theory]]
       (slides). Definitional, intentional, extentional, observational,
       John Major, Axiom K.
-  - Explain variants such as UTT, OTT, CTT, CoC, CoiC, Idris TT...
+  - Explain variants such as UTT, OTT, CTT, CoC, CIC, ETT, Idris TT...
+  - CIC
+    - [ ] [[https://coq.inria.fr/refman/Reference-Manual006.html][Chapter 4 Calculus of Inductive Constructions]]
   - Type theory comparisons
     - Equality
       - homogeneous/heterogeneous
@@ -332,7 +335,9 @@
     - [X] [[https://hackage.haskell.org/package/morte-1.6.0/docs/Morte-Tutorial.html][Morte tutorial]]
   - [ ] [[http://winterkoninkje.dreamwidth.org/101420.html][Introduction to recursive types]] by Wren Romano. An annotated
     bibliography / reading list.
-  - Notes/articles/slides.
+  - [ ] [[http://www.cambridge.org/cr/academic/subjects/computer-science/programming-languages-and-applied-logic/type-theory-and-formal-proof-introduction][Type Theory and Formal Proof, An Introduction]] by Rob Nederpelt
+    and Herman Geuvers
+  - Notes/articles/slides/courseware.
 
 *** Implement Dependently Typed PL
 
@@ -432,10 +437,10 @@
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
 ** Demystify Name binding
 
-  - =bound= ~bound~
+  - =bound=
     - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] 
     - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]]
-  - =unbound= ~unbound~
+  - =unbound=
     - http://hackage.haskell.org/package/unbound
     - https://hackage.haskell.org/package/unbound-generics
     - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
@@ -460,12 +465,17 @@
       - [[http://www.cse.chalmers.se/~bernardy/NamesForFree.pdf][paper]]
   - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
   - Namely Painless
-    - [X] Namely Painless Technical Report
+    - [X] [[https://nicolaspouillard.fr/publis/jfp-unified-binders.pdf][A unified treatment of syntax with binders]], Nicolas
+      Pouillard and François Pottier
     - [ ] https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
   - HOS
     - [[http://www.cse.chalmers.se/%7Eemax/documents/axelsson2013using.pdf][Using Circular Programs for Higher-Order Syntax, Functional
       pearl]], Emil Axelsson Koen Claessen
   - https://namebinding.wordpress.com/
+  - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
+    #+begin_quote
+    We consider the problem of providing formal support for working with abstract syntax involving variable binders. Gabbay and Pitts have shown in their work on Fraenkel-Mostowski (FM) set theory how to address this through first-class names: in this paper we present a dependent type theory for programming and reasoning with such names. Our development is based on a categorical axiomatisation of names, with freshness as its central notion. An associated adjunction captures constructions known from FM theory: the freshness quantifier N, name-binding, and unique choice of fresh names. The Schanuel topos -- the category underlying FM set theory -- is an instance of this axiomatisation. Working from the categorical structure, we define a dependent type theory which it models. This uses bunches to integrate the monoidal structure corresponding to freshness, from which we define novel multiplicative dependent products Π∗ and sums Σ∗, as well as a propositions-as-types generalisation H of the freshness quantifier.
+    #+end_quote
 
 ** Demystify Proof Theory
 
@@ -574,9 +584,11 @@
     - https://github.com/pigworker/SSGEP-datadata
     - https://www.cs.ox.ac.uk/projects/utgp/school/conor.pdf
 
-#+BEGIN_QUOTE
-jonsterling: Conor's insight is that you can define the graph of such a function as a well founded tree, and then compute by structural recursion on that tree
-#+END_QUOTE
+  #+BEGIN_QUOTE
+  jonsterling: Conor's insight is that you can define the graph of
+  such a function as a well founded tree, and then compute by
+  structural recursion on that tree
+  #+END_QUOTE
 
 ** Demystify Module Systems
 
@@ -875,10 +887,10 @@ jonsterling: Conor's insight is that you can define the graph of such a function
     - [-] 2016 ([[https://www.youtube.com/playlist?list=PLiHLLF-foEez5Dis-VqoGcg3WepdMh4XT][Youtube playlist]])
       - [X] Programming Languages Background — Robert Harper and Dan Licata
       - [-] Category Theory Background — Ed Morehouse
-	- [X] Lecture 1
-	- [X] Lecture 2
-	- [ ] Lecture 3
-	- [ ] Lecture 4
+        - [X] Lecture 1
+        - [X] Lecture 2
+        - [ ] Lecture 3
+        - [ ] Lecture 4
       - [ ] Logical Relations — Patricia Johann
       - [ ] Principles of Type Refinement — Noam Zeilberger
       - [ ] Logical relations/Compiler verification — Amal Ahmed
