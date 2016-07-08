@@ -80,10 +80,10 @@
     - [ ] XIX Equational Reasoning
       - [ ] A Background on Finite Sets
 
-  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]] (book)
+  - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
     - at =Equiv.v=, =assign_aequiv=.
 
-  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady (book).
+  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
     - [X] Part 1: Introduction
       - [X] 1 Overview
       - [X] 2 Getting Started with Idris
@@ -432,26 +432,40 @@
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
 ** Demystify Name binding
 
-  - I am not a Number—I am a Free Variable. Conor McBride and James McKinna.
+  - =bound= ~bound~
+    - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] 
+    - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]]
+  - =unbound= ~unbound~
+    - http://hackage.haskell.org/package/unbound
+    - https://hackage.haskell.org/package/unbound-generics
+    - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
+  - I am not a Number -- I am a Free Variable. Conor McBride and James McKinna.
     - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
     - http://www.strictlypositive.org/notanum.ps.gz
-  - https://www.schoolofhaskell.com/user/edwardk/bound
-  - http://hackage.haskell.org/package/unbound
-  - https://hackage.haskell.org/package/unbound-generics
-    - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
-  - Compare with Abtract Binding Trees.
+  - PHOAS
+    - Parametric Higher-Order Abstract Syntax for Mechanized
+      Semantics, Adam Chlipala
+    - [[https://www.schoolofhaskell.com/user/edwardk/phoas][PHOAS for Free by Edward Kmett]]
+  - De Bruijn Indices
+    - [[http://disciple-devel.blogspot.com.au/2011/08/how-i-learned-to-stop-worrying-and-love.html][How I learned to stop worrying and love De Bruijn indices]] Ben Lippmeier
+  - Abstract Binding Trees
+    - [X] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html][Abstract Binding Trees]] -- post by Neel Krishnaswami
+    - [ ] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html][Abstract Binding Trees, an addendum]] -- post by Neel Krishnaswami
+    - [X] Chapter 1 PFPL
+    - [ ] [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
   - https://github.com/jyp/NameBindingSurvey/blob/master/WhiteBoard.md
     - https://github.com/jyp/TTNameBinders
     - Names for free
       - [[https://nicolaspouillard.fr/talks/names-for-free-haskell-symposium/names-for-free.html#/][talk]]
       - [[http://www.cse.chalmers.se/~bernardy/NamesForFree.pdf][paper]]
-  - Implement Abstract Binding Trees (in Idris?).
-    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html
-    - http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html
-  - https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
   - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
-  - [X] Namely Painless
-  - [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
+  - Namely Painless
+    - [X] Namely Painless Technical Report
+    - [ ] https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
+  - HOS
+    - [[http://www.cse.chalmers.se/%7Eemax/documents/axelsson2013using.pdf][Using Circular Programs for Higher-Order Syntax, Functional
+      pearl]], Emil Axelsson Koen Claessen
+  - https://namebinding.wordpress.com/
 
 ** Demystify Proof Theory
 
@@ -818,6 +832,14 @@ jonsterling: Conor's insight is that you can define the graph of such a function
 ** Demystify Isabelle/HOL
 
   - [[http://homes.soic.indiana.edu/classes/spring2015/csci/b522-jsiek/][CSCI B522 Programming Language Foundations, Jeremy Siek (course)]]
+
+** Demystify Compiler Correctness
+
+  - Software Foundations
+  - http://ltamer.sourceforge.net
+  - CompCert
+    - Leroy lectures at OPLSS
+  - CakeML
 
 ** Demystify Nix and Package all the things
 
