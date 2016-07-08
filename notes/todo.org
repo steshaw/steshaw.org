@@ -252,7 +252,7 @@
     - [ ] Demystify "polymorphic recursion".
     - [ ] Demystify "universal polymorphism".
     - [ ] Demystify "existential polymorphism".
-      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]]. asdf
+      - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
         #+begin_quote
         **It's second-class vs first-class that matters**
 
@@ -474,7 +474,23 @@
   - https://namebinding.wordpress.com/
   - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
     #+begin_quote
-    We consider the problem of providing formal support for working with abstract syntax involving variable binders. Gabbay and Pitts have shown in their work on Fraenkel-Mostowski (FM) set theory how to address this through first-class names: in this paper we present a dependent type theory for programming and reasoning with such names. Our development is based on a categorical axiomatisation of names, with freshness as its central notion. An associated adjunction captures constructions known from FM theory: the freshness quantifier N, name-binding, and unique choice of fresh names. The Schanuel topos -- the category underlying FM set theory -- is an instance of this axiomatisation. Working from the categorical structure, we define a dependent type theory which it models. This uses bunches to integrate the monoidal structure corresponding to freshness, from which we define novel multiplicative dependent products Π∗ and sums Σ∗, as well as a propositions-as-types generalisation H of the freshness quantifier.
+    We consider the problem of providing formal support for working
+    with abstract syntax involving variable binders. Gabbay and Pitts
+    have shown in their work on Fraenkel-Mostowski (FM) set theory how
+    to address this through first-class names: in this paper we
+    present a dependent type theory for programming and reasoning with
+    such names. Our development is based on a categorical
+    axiomatisation of names, with freshness as its central notion. An
+    associated adjunction captures constructions known from FM theory:
+    the freshness quantifier N, name-binding, and unique choice of
+    fresh names. The Schanuel topos -- the category underlying FM set
+    theory -- is an instance of this axiomatisation. Working from the
+    categorical structure, we define a dependent type theory which it
+    models. This uses bunches to integrate the monoidal structure
+    corresponding to freshness, from which we define novel
+    multiplicative dependent products Π∗ and sums Σ∗, as well as a
+    propositions-as-types generalisation H of the freshness
+    quantifier.
     #+end_quote
 
 ** Demystify Proof Theory
