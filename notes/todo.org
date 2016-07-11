@@ -213,9 +213,13 @@
   - [X] [[https://eb.host.cs.st-andrews.ac.uk/drafts/impldtp.pdf][Idris, a General Purpose Dependently Typed Programming Language: Design and Implementation]] -- Edwin Brady
 
 ** Demystify Type Theory
+:properties:
+:custom_id: type-theory
+:end:
 *** The Theory
   - [ ] [[http://plato.stanford.edu/entries/type-theory/][Type Theory on SEP]] by Thierry Coquand
   - [ ] [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html][Understanding typing judgements]]
+    - I'm up to [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html#type-systems][Type Systems]]
   - [ ] [[http://www.cs.ru.nl/~herman/PUBS/IntroTT-improved.pdf][Introduction to Type Theory]], Herman Geuvers
   - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
   - Liam O'Connor articles:
@@ -278,6 +282,7 @@
       effectively removing the axiom of reducibility) and making it slightly
       more complex (but had the advantage of making it consistent).
       #+end_quote
+    - [ ] "occurs-check" ([[https://namebinding.wordpress.com/2010/03/26/optimizing-higher-order-pattern-unification/][seen here]])
   - Demystify equality
     - [X] [[http://jozefg.bitbucket.org/posts/2014-08-06-equality.html][Equality is Hard]] by Danny Gratzer. Mentions Axiom K.
     - [X] [[http://kodu.ut.ee/~varmo/tday-andu/chapman-slides.pdf][A biased history of equality in type theory]]
@@ -318,18 +323,21 @@
   - [[http://www.cs.nott.ac.uk/~psztxa/talks/constructive-06.pdf][Should Extensional Type Theory be considered harmful?]]
   - http://www.cse.chalmers.se/~peterd/papers/historyidentitytype.pdf
   - Recommended by Stephanie Weirich http://plmw2014.inria.fr/talks/weirich-plmw14.pdf
-    - Per Martin-Löf. Constructive mathematics and computer programming, 1982
-    - Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
-    - Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
-    - Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
-    - Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
-    - Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
-    - Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
+    - [X] Per Martin-Löf. Constructive mathematics and computer programming, 1982
+    - [ ] Nordstrom, Petersson, and Smith. Programming in Martin-Löf's Type Theory, 1990
+    - [ ] Barendregt. “Lambda Calculi with Types.” Handbook of Logic in Computer Science II, 1992
+    - [ ] Harper, Honsell, Plotkin. “A Framework for Defining Logics.” JACM 1993
+    - [ ] Aspinall and Hoffman. “Dependent types.” ATTAPL, 2004
+    - [ ] Sørensen and Urzyczyn, Lectures on the Curry-Howard Isomorphism, 2006
+    - [ ] Homotopy Type Theory: Univalent Foundations of Mathematics, 2013
   - [[https://github.com/michaelt/martin-lof][Works of Per Martin-Löf]]. Jon Sterling recommends especially:
-    "Constructive mathematics and computer programming", "On the
-    Meanings of the Logical Constants and the Justification of Logical
-    Laws", and "Intuitionistic Type Theory".
-  - http://www.jonmsterling.com/pdfs/meaning-explanations.pdf
+    - [X] Constructive mathematics and computer programming
+    - [ ] On the Meanings of the Logical Constants and the Justification of
+      Logical Laws
+    - [ ] Intuitionistic Type Theory
+  - Type Theory and it's Meaning Explanations, Jon Sterling
+    - [ ] [[http://www.jonmsterling.com/pdfs/meaning-explanations.pdf][Jon's paper]]
+    - [ ] [[https://youtu.be/xMAqniX2Paw][Video of Jon's LambdaConf talk]]
   - Online courses
     - http://cs.ru.nl/~freek/courses/tt-2009/
     - http://cs.ru.nl/~freek/courses/tt-2010/
@@ -351,8 +359,9 @@
     - [X] [[https://hackage.haskell.org/package/morte-1.6.0/docs/Morte-Tutorial.html][Morte tutorial]]
   - [ ] [[http://winterkoninkje.dreamwidth.org/101420.html][Introduction to recursive types]] by Wren Romano. An annotated
     bibliography / reading list.
-  - [ ] [[http://www.cambridge.org/cr/academic/subjects/computer-science/programming-languages-and-applied-logic/type-theory-and-formal-proof-introduction][Type Theory and Formal Proof, An Introduction]] by Rob Nederpelt
-    and Herman Geuvers
+  - [ ] [[http://www.cambridge.org/cr/academic/subjects/computer-science/programming-languages-and-applied-logic/type-theory-and-formal-proof-introduction][Type Theory and Formal Proof, An Introduction]] by Rob Nederpelt and
+    Herman Geuvers
+  - https://coq.inria.fr/cocorico/TheoryBehindCoq
   - Notes/articles/slides/courseware.
 
 *** Learning Type Theory
@@ -418,32 +427,52 @@
     :end:
     - Start by porting my Simply Easier code scrapped from Augustsson's blog post.
     - Inspired by existing mini/tutorial DT PLs:
+      - LambdaPi / SimplyEasy
+      - Lennart Augustsson's SimplyEasier
+      - pi-forall 2013/2014 branches
+        - https://github.com/jonsterling/ETT-Lite (fork of 2013 branch I think)
+        - https://github.com/jonsterling/Luitzen (fork of 2013 branch I think)
+        - [[https://github.com/reuleaux/pire][pire]] -- a refactorer for pi-forall by [[http://a-rx.info][Andreas Reuleaux]].
+          - Andreas has made the move from industry into research under Simon
+            Thompson at Kent.
+          - Refactorer uses =trifecta= and =unbound= (instead of =parsec= and
+            =unbound=).
+          - [[http://a-rx.info/static/pire/pire.html][Extensive docs]].
       - [[http://www2.tcs.ifi.lmu.de/~abel/miniagda/][MiniAgda]] by Andreas Abel
       - https://github.com/jyp/nano-Agda by Jean-Philippe Bernardy
       - https://github.com/larrytheliquid/uAgda by Jean-Philippe Bernardy
       - https://github.com/jyp/sctt by Jean-Philippe Bernardy
       - https://hackage.haskell.org/package/pisigma
         - code from the paper [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
-      - LambdaPi / SimplyEasy
-      - Lennart Augustsson's SimplyEasier
-      - pi-forall
       - [[https://github.com/freebroccolo/dtlc.rs][dtlc.rs]] -- also inspired by Simply Easy/Easier! 
       - [[http://www.cse.chalmers.se/~coquand/def.pdf][A Calculus of Definitions]] by Coquand (2008). Contains a MiniTT
         implemented in Haskell.
     - Implementing your own DT-PL is recommended by Stephanie Weirich in [[http://plmw2014.inria.fr/talks/weirich-plmw14.pdf][this
-      talk]]. Stephanie says: "Don’t have to start from scratch", refering to.  –
-      Löh, McBride, Swierstra. "A Tutorial Implementation of a Dependently Typed
-      Lambda Calculus.".  – [[http://www.idris-lang.org/dependently-typed-functional-programming-with-idris-course-videos-and-slides/][Lecture on implementing Idris]] by Edwin Brady
+      talk]]. Stephanie says: "Don’t have to start from scratch", refering to.
+      - Löh, McBride, Swierstra. "A Tutorial Implementation of a Dependently Typed Lambda Calculus.".
+      - [[http://www.idris-lang.org/dependently-typed-functional-programming-with-idris-course-videos-and-slides/][Lecture on implementing Idris]] by Edwin Brady
         - [[http://www.cs.st-andrews.ac.uk/~eb/talks/idris-cph-lec4.pdf][slides]]
         - [[https://vimeo.com/62059837][video]]
-      – Her own OPLSS 2014 lectures on pi-forall.
-        - [[https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html][Designing Dependently-Typed Programming Languages lectures]].
-        - https://github.com/sweirich/pi-forall
+      - Her own OPLSS 2013 lectures on pi-forall (2013 branch).
+    - Be sure to check out Stephanie Weirich's OPLSS 2013 _and_ 2014 lectures.
+      - 2014
+        - [[https://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html][Designing Dependently-Typed Programming Languages]]
+        - https://github.com/sweirich/pi-forall (2014 is on =2014= branch)
+      - 2013
+        - [[https://www.cs.uoregon.edu/research/summerschool/summer13/curriculum.html][Designing Dependently-Typed Programming Languages]]
+        - https://github.com/sweirich/pi-forall/tree/master (2013 is on =master=
+          branch)
 
   - Work on the real thing -- [[http://www.idris-lang.org/help-required/][contribute to Idris!]]
 
-** Demystify PLs: Type Systems / Type Inference / Semantics / Design
-
+** Demystify Programming Languages
+   _Everything_ is programming languages, isn't it? However, leaving this
+   heading to cover topics that don't readily come under [[#type-theory][Type Theory]] etc.
+    - Type Systems
+    - Type Inference
+    - Semantics
+    - Design
+    - Usability
   - [ ] TAPL (book)
   - [ ] [[https://www.semanticscholar.org/paper/Natural-Semantics-Kahn/44890ee8966028d0f12ca7a6eb43c41a17871cfe/pdf][Natural Semantics]], Gilles Kahn
     - [ ] [[https://hal.inria.fr/inria-00076025/document][A simple applicative language, Mini-ML]]
@@ -476,15 +505,16 @@
     - http://hackage.haskell.org/package/unbound
     - https://hackage.haskell.org/package/unbound-generics
     - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
-  - I am not a Number -- I am a Free Variable. Conor McBride and James McKinna.
-    - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf 
-    - http://www.strictlypositive.org/notanum.ps.gz
+    - Kmett says this "mixes Barendregt with Locally Nameless"
+  - [[http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf][I am not a Number -- I am a Free Variable]] by Conor McBride and James McKinna.
   - PHOAS
     - Parametric Higher-Order Abstract Syntax for Mechanized
       Semantics, Adam Chlipala
     - [[https://www.schoolofhaskell.com/user/edwardk/phoas][PHOAS for Free by Edward Kmett]]
   - De Bruijn Indices
     - [[http://disciple-devel.blogspot.com.au/2011/08/how-i-learned-to-stop-worrying-and-love.html][How I learned to stop worrying and love De Bruijn indices]] Ben Lippmeier
+  - Locally Nameless
+    - [[http://www.chargueraud.org/research/2009/ln/main.pdf][The Locally Nameless Representation]] Arthur Chargueraud
   - Abstract Binding Trees
     - [X] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html][Abstract Binding Trees]] -- post by Neel Krishnaswami
     - [ ] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html][Abstract Binding Trees, an addendum]] -- post by Neel Krishnaswami
@@ -506,7 +536,9 @@
   - HOS
     - [[http://www.cse.chalmers.se/%7Eemax/documents/axelsson2013using.pdf][Using Circular Programs for Higher-Order Syntax, Functional
       pearl]], Emil Axelsson Koen Claessen
-  - https://namebinding.wordpress.com/
+  - [[http://bentnib.org/syntaxforfree.html][Syntax for Free: Representing Syntax with Binding Using Parametricity]] Robert
+    Atkey
+  - [[http://complogic.cs.mcgill.ca/beluga/][Beluga]] seems to be a PL with built in support for name binding (contexts).
   - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
     #+begin_quote
     We consider the problem of providing formal support for working
@@ -527,6 +559,8 @@
     propositions-as-types generalisation H of the freshness
     quantifier.
     #+end_quote
+  - Collections of binding techniques:
+    - https://namebinding.wordpress.com/
 
 ** Demystify Proof Theory
 
@@ -611,20 +645,19 @@
     - [[http://www.mpi-sws.org/~skilpat/plerg/][plerg -- Defunct PL reading group at MPI-SWS]] 
     - [[http://www.contrib.andrew.cmu.edu/~rjsimmon/concertrg/][concertrg -- Defunct PL reading group at CMU]]
     - Must be some good "papers we like" groups doing PL-mostly papers
+  - [[https://www.cis.upenn.edu/~sweirich/cis670/10/][Advanced Topics in PL]] course by Stephanie Weirich. Classic papers and new
+    research.
+  - [[http://www.sigplan.org/Awards/ICFP/][Most Influential ICFP Paper Award]]
 
 ** Demystify Coq
 
-  - [[https://www.labri.fr/perso/casteran/CoqArt/][Coq'Art]] (again)
-
+  - [[https://www.labri.fr/perso/casteran/CoqArt/][Coq'Art]] -- again but better this time!
   - https://coq.inria.fr/tutorial/1-basic-predicate-calculus
-
   - https://coq.inria.fr/tutorial-nahas
-
   - http://www.di.ens.fr/~zappa/teaching/coq/ecole11/
-
   - http://adam.chlipala.net/cpdt/
-
   - [[http://ilyasergey.net/pnp/][Proofs and Programs]]
+  - https://coq.inria.fr/cocorico/TheoryBehindCoq
 
 ** Demystify Agda
 
@@ -708,6 +741,7 @@
   - http://okmij.org/ftp/Computation/typeclass.html
   - Coq's "First Class Type Classes" [[http://mattam.org/research/publications/First-Class_Type_Classes.pdf][paper]] [[http://mattam.org/research/publications/First-Class_Type_Classes-Gallium-031108.pdf][slides]].
 ** Demystify Datatype Generic Programming
+
   - polytypic programming or whatevers
   - [[http://itu.dk/people/asal/pubs/msc-thesis-report.pdf][The Practical Guide to Levitation]], Ahmad Salim Al-Sibahi M.Sc. Thesis
     - https://github.com/ahmadsalim/MSc-Thesis
@@ -715,15 +749,17 @@
   - SYB
   - GHC.Generic - why do people not like this
   - uniplate etc.
-  - how does this apply in a dependently typed setting?
+  - how does this apply (get much better) in a dependently typed setting?
+    - Conor will have talked about this.
   - http://www.andres-loeh.de/ExploringGH.pdf
+    - Andres recommends =generics-sop= in Haskell these days. Introduction at
+      https://github.com/kosmikus/SSGEP.
   - Talk from Andres Löh
     - http://skillsmatter.com/podcast/home/a-haskell-lecture-with-leading-expert-andres-loh
     - http://www.andres-loeh.de/GP-ITB.pdf
-  - add datatype generic programming section to PLT website.
+  - Add a datatype generic programming section to [[http://steshaw.org/plt/][PLT]].
   - [[http://dreixel.net/research/pdf/gpif.pdf][Generic Programming with Indexed Functors]], Andres Löh, José Pedro Magalhães
     - port to Idris https://github.com/pbl64k/gpif-idris
-  - Andres recommends generics-sop these days. Introduction at https://github.com/kosmikus/SSGEP.
 
 ** Demystify Homotopy Type Theory
 
