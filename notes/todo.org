@@ -1,7 +1,9 @@
 * Todo Now
 
-  - [ ] 1 chapter of TTDwI
-  - [ ] 1 chapter of PiMLTT
+  - [ ] Watch Stephanie Wierich's pi-forall lectures from OPLSS 2014 again. This
+    time, work through the exercises in the pi-forall code.
+
+* Todo Soon
 
   - References from Edwin Brady's "Implementation of Idris" paper.
     - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
@@ -217,10 +219,11 @@
 :custom_id: type-theory
 :end:
 *** The Theory
-  - [ ] [[http://plato.stanford.edu/entries/type-theory/][Type Theory on SEP]] by Thierry Coquand
+  - [ ] [[http://plato.stanford.edu/entries/type-theory/][Type Theory on SEP]] by Thierry Coquand.
+  - [ ] [[http://plato.stanford.edu/entries/type-theory-intuitionistic/][Intuitionistic Type Theory on SEP]] by Peter Dybjer and Erik Palmgren.
   - [ ] [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html][Understanding typing judgements]]
     - I'm up to [[http://www.hedonisticlearning.com/posts/understanding-typing-judgments.html#type-systems][Type Systems]]
-  - [ ] [[http://www.cs.ru.nl/~herman/PUBS/IntroTT-improved.pdf][Introduction to Type Theory]], Herman Geuvers
+  - [ ] [[http://www.cs.ru.nl/~herman/PUBS/IntroTT-improved.pdf][Introduction to Type Theory]], Herman Geuvers.
   - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
   - Liam O'Connor articles:
     - [ ] http://liamoc.net/posts/2015-08-23-verified-compiler.html
@@ -335,9 +338,9 @@
     - [ ] On the Meanings of the Logical Constants and the Justification of
       Logical Laws
     - [ ] Intuitionistic Type Theory
-  - Type Theory and it's Meaning Explanations, Jon Sterling
+  - [-] Type Theory and it's Meaning Explanations, Jon Sterling
     - [ ] [[http://www.jonmsterling.com/pdfs/meaning-explanations.pdf][Jon's paper]]
-    - [ ] [[https://youtu.be/xMAqniX2Paw][Video of Jon's LambdaConf talk]]
+    - [X] [[https://youtu.be/xMAqniX2Paw][Video of Jon's LambdaConf talk]]
   - Online courses
     - http://cs.ru.nl/~freek/courses/tt-2009/
     - http://cs.ru.nl/~freek/courses/tt-2010/
@@ -362,6 +365,14 @@
   - [ ] [[http://www.cambridge.org/cr/academic/subjects/computer-science/programming-languages-and-applied-logic/type-theory-and-formal-proof-introduction][Type Theory and Formal Proof, An Introduction]] by Rob Nederpelt and
     Herman Geuvers
   - https://coq.inria.fr/cocorico/TheoryBehindCoq
+  - Parametricity and Logical Relations
+    - [X] [[http://www.mpi-sws.org/~dreyer/talks/plmw2014-talk.pdf][Dreyer talk on Parametricity and Kripke Logical Relations]]
+      - [[http://www.mpi-sws.org/~dreyer/parametric/][The Parametric Facebook]]
+    - [ ] Classic papers on parametricity
+      - [ ] Reynolds (1983), Types, abstraction and parametric polymorphism
+      - [ ] Mitchell (1986), Representation independence and data abstraction
+      - [ ] Wadler (1989), Theorems for free!
+  - [X] [[http://davidchristiansen.dk/tutorials/bidirectional.pdf][Bidirectional Typing Rules: A Tutorial]] David Raymond Christiansen
   - Notes/articles/slides/courseware.
 
 *** Learning Type Theory
@@ -993,8 +1004,26 @@
       - [X] Essential Coq from Scratch — Andrew Tolmach
     - [ ] 2011
     - [ ] 2012
-    - [ ] 2013
+    - [-] 2013
+      - [ ] Logical Relations — Amal Ahmed
+      - [ ] Type Theory Foundations — Robert Harper
+      - [ ] Dependently-typed Programming in Agda — Dan Licata
+      - [ ] Adventures with types in Haskell — Simon Peyton-Jones
+      - [ ] Linear Logic and Session-based Concurrency — Frank Pfenning
+      - [ ] Software Foundations in Coq — Andrew Tolmach
+      - [X] Designing Dependently-Typed Programming Languages — Stephanie Weirich
+      - [ ] Verifying LLVM Optimizations in Coq — Steve Zdancewic
     - [ ] 2014
+      - [ ] Software Verification — Andrew Appel
+      - [ ] Category Theory — Lars Birkedal
+      - [ ] Parametricity and Relational Reasoning — Derek Dreyer
+      - [ ] Type Theory Foundations — Robert Harper
+      - [ ] Programming in Agda — Ulf Norell
+      - [ ] Certified Programming and State — Greg Morrisett
+      - [ ] Proof Theory Foundations — Brigitte Pientka
+      - [ ] Designing Dependently-Typed Programming Languages — Stephanie Weirich
+      - [ ] Software Foundations in Coq — Steve Zdancewic
+      - [ ] Featured Lecture - Tom Ball
     - [ ] 2015
       - [ ] Basic Proof Theory — Frank Pfenning
       - [ ] Introduction to Dependent Type Theory — Robert Harper
