@@ -557,6 +557,8 @@
     Atkey
   - Totally Nameless
     - [ ] [[http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html][Totally Nameless Representation]] article by Robert J. Simmons
+  - http://research.microsoft.com/en-us/um/people/simonpj/Papers/inlining/
+    (Mentioned in Kmett's bound tutorial)
   - [[http://complogic.cs.mcgill.ca/beluga/][Beluga]] seems to be a PL with built in support for name binding (contexts).
   - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
     #+begin_quote
