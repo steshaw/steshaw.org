@@ -1,7 +1,11 @@
 * Todo Now
 
-  - [ ] Watch Stephanie Wierich's pi-forall lectures from OPLSS 2014 again. This
-    time, work through the exercises in the pi-forall code.
+  - [-] Watch Stephanie Wierich's pi-forall lectures from OPLSS 2014 again. This
+    time, work finish all the exercises in the pi-forall codebase.
+    - [X] Lecture 1
+    - [X] Lecture 2
+    - [ ] Lecture 3
+    - [ ] Lecture 4
 
 * Todo Soon
 
@@ -286,6 +290,8 @@
       more complex (but had the advantage of making it consistent).
       #+end_quote
     - [ ] "occurs-check" ([[https://namebinding.wordpress.com/2010/03/26/optimizing-higher-order-pattern-unification/][seen here]])
+    - [ ] "congruence rules for equality" (seems like structural equality). Seen
+      on OPLSS pi-forall videos.
   - Demystify equality
     - [X] [[http://jozefg.bitbucket.org/posts/2014-08-06-equality.html][Equality is Hard]] by Danny Gratzer. Mentions Axiom K.
     - [X] [[http://kodu.ut.ee/~varmo/tday-andu/chapman-slides.pdf][A biased history of equality in type theory]]
@@ -549,6 +555,8 @@
       pearl]], Emil Axelsson Koen Claessen
   - [[http://bentnib.org/syntaxforfree.html][Syntax for Free: Representing Syntax with Binding Using Parametricity]] Robert
     Atkey
+  - Totally Nameless
+    - [ ] [[http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html][Totally Nameless Representation]] article by Robert J. Simmons
   - [[http://complogic.cs.mcgill.ca/beluga/][Beluga]] seems to be a PL with built in support for name binding (contexts).
   - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
     #+begin_quote
@@ -659,6 +667,7 @@
   - [[https://www.cis.upenn.edu/~sweirich/cis670/10/][Advanced Topics in PL]] course by Stephanie Weirich. Classic papers and new
     research.
   - [[http://www.sigplan.org/Awards/ICFP/][Most Influential ICFP Paper Award]]
+  - https://github.com/sweirich/tal
 
 ** Demystify Coq
 
