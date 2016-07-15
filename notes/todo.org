@@ -292,6 +292,7 @@
     - [ ] "occurs-check" ([[https://namebinding.wordpress.com/2010/03/26/optimizing-higher-order-pattern-unification/][seen here]])
     - [ ] "congruence rules for equality" (seems like structural equality). Seen
       on OPLSS pi-forall videos.
+    - [ ] "normal form (NF)" / "weak-head normal form (WHNF)"
   - Demystify equality
     - [X] [[http://jozefg.bitbucket.org/posts/2014-08-06-equality.html][Equality is Hard]] by Danny Gratzer. Mentions Axiom K.
     - [X] [[http://kodu.ut.ee/~varmo/tday-andu/chapman-slides.pdf][A biased history of equality in type theory]]
