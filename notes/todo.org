@@ -1,19 +1,21 @@
 * Todo Now
 
-  - [-] Watch Stephanie Wierich's pi-forall lectures from OPLSS 2014 again. This
-    time, work finish all the exercises in the pi-forall codebase.
-    - [X] Lecture 1
-    - [X] Lecture 2
-    - [ ] Lecture 3
-    - [ ] Lecture 4
+  - [ ] pi-forall
+    - [ ] Work through the remaining differences between version1 and
+      version2. i.e. version1 => version2.
+    - [ ] Work through the full implementation of pi-forall. i.e. version2 => full.
+  - [ ] Simply Easy
+  - [ ] Lambda Pi
 
 * Todo Soon
 
-  - References from Edwin Brady's "Implementation of Idris" paper.
+  - References from Edwin Brady's "Idris, a General Purpose Dependently Typed
+    Programming Language: Design and Implementation" paper.
     - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
-    - [ ] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
+    - [X] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
     - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
-    - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
+    - [X] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
+    - [ ] ? Computation and reasoning: a type theory for computer science, Zhaohui Luo
 
   - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
     - [X] I Judgements and Rules
@@ -95,8 +97,8 @@
       - [X] 2 Getting Started with Idris
     - [-] Part 2: Core Idris
       - [X] 3 Interactive Development with Types
-      - [ ] 4 User Defined Data Types
-      - [ ] 5 Interactive Programs: Input and Ouput Processing
+      - [X] 4 User Defined Data Types
+      - [X] 5 Interactive Programs: Input and Ouput Processing
       - [ ] 6 Programming with First Class Types
       - [ ] 7 Interfaces: Using Constrained Generic Types
       - [ ] 8 Classes: Overloading and Generic Functions
@@ -1025,7 +1027,7 @@
       - [ ] Software Foundations in Coq — Andrew Tolmach
       - [X] Designing Dependently-Typed Programming Languages — Stephanie Weirich
       - [ ] Verifying LLVM Optimizations in Coq — Steve Zdancewic
-    - [ ] 2014
+    - [-] 2014
       - [ ] Software Verification — Andrew Appel
       - [ ] Category Theory — Lars Birkedal
       - [ ] Parametricity and Relational Reasoning — Derek Dreyer
@@ -1033,7 +1035,7 @@
       - [ ] Programming in Agda — Ulf Norell
       - [ ] Certified Programming and State — Greg Morrisett
       - [ ] Proof Theory Foundations — Brigitte Pientka
-      - [ ] Designing Dependently-Typed Programming Languages — Stephanie Weirich
+      - [X] Designing Dependently-Typed Programming Languages — Stephanie Weirich
       - [ ] Software Foundations in Coq — Steve Zdancewic
       - [ ] Featured Lecture - Tom Ball
     - [ ] 2015
@@ -1041,8 +1043,7 @@
       - [ ] Introduction to Dependent Type Theory — Robert Harper
       - [ ] Basic Category Theory: Semantics of Proof Theory — Ed Morehouse
       - [ ] Inductive and Inductive-Recursive Definitions in Intuitionistic Type Theory — Peter Dybjer
-      - [ ] The Coq Proof Assistant and Its Applications to
-        Programming-Language Semantics — Adam Chlipala
+      - [ ] The Coq Proof Assistant and Its Applications to Programming-Language Semantics — Adam Chlipala
       - [ ] Logical Relations — Amal Ahmed
       - [ ] Mark Bickford
       - [ ] Robert Constable
