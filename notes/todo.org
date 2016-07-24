@@ -485,6 +485,13 @@
 
   - Work on the real thing -- [[http://www.idris-lang.org/help-required/][contribute to Idris!]]
 
+*** Type Theory in Type Theory
+
+  - Nils Anders Danielsson's "A Formalisation of a Dependently Typed
+  - Language as an Inductive-Recursive Family" James Chapman's "Type Theory
+    Should Eat Itself"
+  - Conor McBride's "Outrageous But Meaningful Coincidences".
+
 ** Demystify Programming Languages
    _Everything_ is programming languages, isn't it? However, leaving this
    heading to cover topics that don't readily come under [[#type-theory][Type Theory]] etc.
