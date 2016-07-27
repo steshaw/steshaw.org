@@ -1,10 +1,44 @@
 * Todo Now
 
   - [[https://web.archive.org/web/20130527195748/http://www.lwh.jp/lisp/][Building Lisp]] includes a GC
-  - [[http://www.buildyourownlisp.com/contents][Build Your Own Lisp]] (no GC)
-  - [[http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/][Baby's First Garbage Collector]]
 
 * Todo Soon
+
+  - [[https://davidterei.com/downloads/papers/terei:2009:honours_thesis.pdf][Low Level Virtual Machine for Glasgow Haskell Compiler]] David Terei's Honour's thesis
+    - Check calling convention.
+    - Was there any trouble looking for GC roots with LLVM?
+    - Any other changes required to GC or Runtime?
+
+  - [[http://www.buildyourownlisp.com/contents][Build Your Own Lisp]] (no GC)
+    - [[http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/][Baby's First Garbage Collector]]
+
+  - 90-mins-scc i.e. 90 minutes Scheme to C compiler
+    - [[https://www.youtube.com/watch?v=HIr9eO1kB8g][schemetoc1]]
+    - [[https://www.youtube.com/watch?v=Vxy1x1kaed4][schemetoc2]]
+    - [[http://churchturing.org/y/90-min-scc.pdf][slides]]
+    - [[http://www.iro.umontreal.ca/~feeley/90-min-scc.tar.gz][code tarball]]
+
+  - Other Lispy/Schemey implementations:
+    - https://github.com/Ravenbrook/mps/tree/master/example/scheme
+    - https://github.com/gambit/gambit
+    - [[http://practical-scheme.net/gauche/][Gauche]]
+      - https://github.com/shirok/Gauche/
+      - Uses bdw-gc
+    - [[https://racket-lang.org][Racket]] [[https://github.com/racket/racket][GitHub]]
+    - Chez Scheme https://github.com/cisco/ChezScheme
+    - Larceny
+    - Rhizome/pi
+    - Scheme48
+    - SCM
+
+  - PLC - Programming Language Concepts (uses F#)
+    - https://www.itu.dk/people/sestoft/plc/
+    - Course http://www.itu.dk/courses/BPRD/E2013/
+
+  - Compiler Construction at Colorado
+    - http://www.cs.colorado.edu/~bec/courses/csci4555-s15/
+    - [[http://www.cs.colorado.edu/~bec/courses/csci4555-s15/reading/notes.pdf][A Problem Course in Compilation: From Python to x86 Assembly]]
+
   - [ ] pi-forall
     - [ ] Work through the remaining differences between version1 and
       version2. i.e. version1 => version2.
@@ -961,7 +995,9 @@
     Erlang style tasks but apparently much more scalable).
 
 *** Demystify Memory Management / Garbage Collection
-  - http://lua-users.org/wiki/GarbageCollection
+  - [ ] Implement a GC. Perhaps in Rust.
+    - https://manishearth.github.io/blog/2015/09/01/designing-a-gc-in-rust/
+
   - Terminology
     - Mutators (user threads)
   - Algorithms
@@ -976,9 +1012,20 @@
     - C4
       - http://www.azul.com/files/c4_paper_acm1.pdf
       - http://www.azul.com/files/Understanding_Java_Garbage_Collection_v41.pdf
+  - Open source collectors:
+    - open-source language implementations
+      - https://github.com/ocaml/ocaml
+      - https://github.com/ghc/ghc
+      - http://smlnj.org
+      - https://github.com/polyml/polyml/
+      - https://github.com/kfl/mosml
+      - http://mlton.org
+      - https://github.com/melsman/mlkit
+    - [[http://www.ravenbrook.com/project/mps/][Memory Pool System]] (not a friendly license but suitable for study)
   - Classifications
     - Incremental v Stop-the-world
     - Incremental v Concurrent v Parallel v Synchronous v ???
+  - http://lua-users.org/wiki/GarbageCollection
   - [ ] [[http://flyingfrogblog.blogspot.com.au/2010/09/are-multicore-capable-garbage.html][Are multicore-capable garbage collectors hard to write?]] Jon Harrop
     (answer: no)
     - [ ] [[http://www.ffconsultancy.com/ocaml/hlvm/][HLVM]] 100 LOC apparently (stop-the-world)
@@ -988,7 +1035,6 @@
   - OCaml multicore
     - http://www.ocamlpro.com/pub/multi-runtime.pdf
     - https://github.com/ocamllabs/ocaml-multicore/wiki/Garbage-collector-invariants
-  - [ ] Implement a GC. Perhaps in Rust.
   - [ ] [[http://doc.cat-v.org/inferno/concurrent_gc/][Very Concurrent Mark and Sweep Garbage Collection without Fine-Grain
     Synchronization]] (aka VCGC).
   - Multicore considerations
