@@ -1,13 +1,17 @@
 * Todo Now
 
+  - [[https://web.archive.org/web/20130527195748/http://www.lwh.jp/lisp/][Building Lisp]] includes a GC
+  - [[http://www.buildyourownlisp.com/contents][Build Your Own Lisp]] (no GC)
+  - [[http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/][Baby's First Garbage Collector]]
+
+* Todo Soon
   - [ ] pi-forall
     - [ ] Work through the remaining differences between version1 and
       version2. i.e. version1 => version2.
     - [ ] Work through the full implementation of pi-forall. i.e. version2 => full.
-  - [ ] Simply Easy
+  - [ ] Simply Easy (again)
   - [ ] Lambda Pi
-
-* Todo Soon
+  - [ ] Simply Easier (again)
 
   - References from Edwin Brady's "Idris, a General Purpose Dependently Typed
     Programming Language: Design and Implementation" paper.
@@ -941,6 +945,65 @@
 
 *** Write an efficient nanopass compiler.
    - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
+
+*** Demystify Linkers
+** Demystify Runtime Systems
+
+  - What goes into a runtime?
+  - [ ] [[https://users-cs.au.dk/hosc/local/LaSC-3-4-pp343-380.pdf][A Runtime System]], Andrew W. Appel. Covers the runtime data structures of SML/NJ.
+  - [ ] [[https://realworldocaml.org/v1/en/html/pt03.html][The Runtime System]] Part II, Real World OCaml
+  - http://www.mono-project.com/docs/advanced/runtime/
+  - Multicore considerations.
+  - Write a "bytecode" interpreter.
+  - Tasks/Processes/Threads/Stacks.
+  - Userspace/"green" threads, Erlang/GHC/Go/Rust style threads.
+  - opensourceresearchinstitute.org's proto-runtime -- for parallel tasks (aka
+    Erlang style tasks but apparently much more scalable).
+
+*** Demystify Memory Management / Garbage Collection
+  - http://lua-users.org/wiki/GarbageCollection
+  - Terminology
+    - Mutators (user threads)
+  - Algorithms
+    - Mark/Sweep
+    - Mark/Compact
+    - Tricolour mark/sweep
+    - Semispace/Copying
+    - Train algorithm
+    - Dijkstra's algorithm
+    - Doligez-Leroy
+    - Pauseless
+    - C4
+      - http://www.azul.com/files/c4_paper_acm1.pdf
+      - http://www.azul.com/files/Understanding_Java_Garbage_Collection_v41.pdf
+  - Classifications
+    - Incremental v Stop-the-world
+    - Incremental v Concurrent v Parallel v Synchronous v ???
+  - [ ] [[http://flyingfrogblog.blogspot.com.au/2010/09/are-multicore-capable-garbage.html][Are multicore-capable garbage collectors hard to write?]] Jon Harrop
+    (answer: no)
+    - [ ] [[http://www.ffconsultancy.com/ocaml/hlvm/][HLVM]] 100 LOC apparently (stop-the-world)
+    - [ ] GHC multicore-friendly GC by Simon Marlow
+    - [ ] [[https://github.com/polyml/polyml/blob/master/libpolyml/gc.cpp][PolyML]]
+    - [ ] Manticore
+  - OCaml multicore
+    - http://www.ocamlpro.com/pub/multi-runtime.pdf
+    - https://github.com/ocamllabs/ocaml-multicore/wiki/Garbage-collector-invariants
+  - [ ] Implement a GC. Perhaps in Rust.
+  - [ ] [[http://doc.cat-v.org/inferno/concurrent_gc/][Very Concurrent Mark and Sweep Garbage Collection without Fine-Grain
+    Synchronization]] (aka VCGC).
+  - Multicore considerations
+  - MMTk - collectors written in Java originally for the JikesVM.
+  - https://rwmj.wordpress.com/2009/08/08/ocaml-internals-part-5-garbage-collection/
+  - http://www.mono-project.com/docs/advanced/garbage-collector/sgen/
+  - Papers
+    - [ ] [[http://www3.nd.edu/~dthain/courses/cse40243/spring2006/gc-survey.pdf][Uniprocessor Garbage Collection Techniques]] Paul W. Wilson
+    - [ ] [[https://www.usenix.org/legacy/events/vee05/full_papers/p46-click.pdf][The Pauseless GC Algorithm]] Click Click, Gil Tene, Michael Wolf (2005).
+    - [X] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.406.7321&rep=rep1&type=pdf][The Collie: A Wait-Free Compacting Collector]] Gil Tene and others (2012).
+    - [ ] [[http://welf.se/files/OL16.pdf][Block-Free Concurrent GC: Stack Scanning and Copying]] Erik Osterlund, Welf Löwe
+
+*** Demystify Debuggers
+
+  - [ ] How to get a symbolic debugger? Note Poly/ML has one.
 
 ** Demystify Lexer Generators
 
