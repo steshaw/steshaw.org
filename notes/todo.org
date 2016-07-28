@@ -1021,6 +1021,7 @@
       - https://github.com/kfl/mosml
       - http://mlton.org
       - https://github.com/melsman/mlkit
+      - https://github.com/urweb/urweb
     - [[http://www.ravenbrook.com/project/mps/][Memory Pool System]] (not a friendly license but suitable for study)
   - Classifications
     - Incremental v Stop-the-world
