@@ -1,8 +1,38 @@
 * Todo Now
 
   - [[https://web.archive.org/web/20130527195748/http://www.lwh.jp/lisp/][Building Lisp]] includes a GC
+  - http://norvig.com/silk/
+    - Use synrules.scm to get hygenic macros?
+    - Use r4stest.scm to test for R4RS compliance.
+  - http://norvig.com/lugm.pdf
+    - The six things you need:
+      1. Read and write.
+      2. Eval and apply.
+      3. Memory management / GC.
+      4. Run-time stack ?
+      5. Primitive functions.
+      6. Primitive data types.
 
 * Todo Soon
+
+  - [[http://www.cs.indiana.edu/%7Edyb/pubs/3imp.pdf][Three Implementation Models for Scheme]] R. Kent Dybvig
+
+  - Introduction to Scheme and it's implementation
+    - ftp://ftp.cs.utexas.edu/pub/garbage/cs345/schintro-v13/schintro_toc.html
+
+  - "Threaded code" interpreters
+    - https://www.complang.tuwien.ac.at/forth/threaded-code.html
+
+  - Cheney on the M.T.A.
+    - "CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A", Henry G. Baker
+    - http://home.pipeline.com/~hbaker1/CheneyMTA.html
+
+  - ParentheC https://www.cs.indiana.edu/cgi-pub/c311/lib/exe/fetch.php?media=parenthec.pdf
+
+  - Lambda, the Ultimate Label
+    - http://3e8.org/pub/scheme/doc/lisp-pointers/v7i3/p128-clinger.pdf
+
+  - x85 asm guide and C calling convention http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 
   - [[https://davidterei.com/downloads/papers/terei:2009:honours_thesis.pdf][Low Level Virtual Machine for Glasgow Haskell Compiler]] David Terei's Honour's thesis
     - Check calling convention.
