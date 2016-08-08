@@ -736,6 +736,7 @@
     - http://crypto.stanford.edu/~blynn/haskell/papers.html
     - [ ] [[http://gallium.inria.fr/~fpottier/publis/fpottier-elaboration.pdf][Hindley-Milner Elaboration in Applicative Style, Functional pearl, François Pottier]]
     - [ ] [[https://jonathan.protzenko.fr/papers/iwil15.pdf][Functional Pearl: the Proof Search Monad]], Jonathan Protzenko
+  - https://ghc.haskell.org/trac/ghc/wiki/ReadingList
   - Researchers:
     - [[http://gallium.inria.fr/~xleroy/bibrefs/leroy.html][Xavier Leroy]]
     - [[https://edwinb.wordpress.com/publications/][Edwin Brady]]
