@@ -5,6 +5,7 @@
   - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
     - Uses F#. Let's try to use [[https://github.com/dotnet/coreclr][CoreCLR]] on Mac.
     - Course http://www.itu.dk/courses/BPRD/E2013/
+    - https://channel9.msdn.com/Tags/peter-sestoft
 
 * Todo Soon
 
