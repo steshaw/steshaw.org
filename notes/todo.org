@@ -1,36 +1,44 @@
 * Todo Now
 
-  - http://norvig.com/silk/
-    - Use synrules.scm to get hygenic macros?
-    - Use r4stest.scm to test for R4RS compliance.
+  - Continue contributing to Idris.
 
-  - http://norvig.com/lugm.pdf
-    - The six things you need:
-      1. Read and write.
-      2. Eval and apply.
-      3. Memory management / GC.
-      4. Run-time stack?
-      5. Primitive functions.
-      6. Primitive data types.
+  - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
+    - Uses F#. Let's try to use [[https://github.com/dotnet/coreclr][CoreCLR]] on Mac.
+    - Course http://www.itu.dk/courses/BPRD/E2013/
 
 * Todo Soon
 
-  - [[http://www.cs.indiana.edu/%7Edyb/pubs/3imp.pdf][Three Implementation Models for Scheme]] R. Kent Dybvig
+** TTDwI
+  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
+    - [X] Part 1: Introduction
+      - [X] 1 Overview
+      - [X] 2 Getting Started with Idris
+    - [-] Part 2: Core Idris
+      - [X] 3 Interactive Development with Types
+      - [X] 4 User Defined Data Types
+      - [X] 5 Interactive Programs: Input and Ouput Processing
+      - [ ] 6 Programming with First Class Types
+      - [ ] 7 Interfaces: Using Constrained Generic Types
+      - [ ] 8 Classes: Overloading and Generic Functions
+      - [ ] 9 Dependently Typed Programming Idioms
+      - [ ] 10 Views: Extending Pattern Matching
+      - [ ] 11 Streams and Processes: Working with Infinite Data
+    - [ ] Part 3: Idris and the Real World
+      - [ ] 12 Domain Specific Languages
+      - [ ] 13 The Effects Library: Stateful, Interactive and
+        Side-effecting Programs
+      - [ ] 14 A Case Study: Concurrent Programming
+    - [ ] Appendixes:
+      - [ ] A Installing Idris & Editor Modes
+      - [ ] Interactive Editing Commands
+      - [ ] REPL Commands
+      - [ ] The Packaging System
 
-  - Introduction to Scheme and it's implementation
-    - ftp://ftp.cs.utexas.edu/pub/garbage/cs345/schintro-v13/schintro_toc.html
 
-  - "Threaded code" interpreters
-    - https://www.complang.tuwien.ac.at/forth/threaded-code.html
 
-  - Cheney on the M.T.A.
-    - "CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A", Henry G. Baker
-    - http://home.pipeline.com/~hbaker1/CheneyMTA.html
+* Todo Next
 
-  - ParentheC https://www.cs.indiana.edu/cgi-pub/c311/lib/exe/fetch.php?media=parenthec.pdf
-
-  - Lambda, the Ultimate Label
-    - http://3e8.org/pub/scheme/doc/lisp-pointers/v7i3/p128-clinger.pdf
+** Ultimate GOTO
 
   - x85 asm guide and C calling convention 
     - http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
@@ -40,36 +48,7 @@
     - Was there any trouble looking for GC roots with LLVM?
     - Any other changes required to GC or Runtime?
 
-  - [[http://www.buildyourownlisp.com/contents][Build Your Own Lisp]] (no GC)
-    - [[http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/][Baby's First Garbage Collector]]
-
-  - 90-mins-scc i.e. 90 minutes Scheme to C compiler
-    - [[https://www.youtube.com/watch?v=HIr9eO1kB8g][schemetoc1]]
-    - [[https://www.youtube.com/watch?v=Vxy1x1kaed4][schemetoc2]]
-    - [[http://churchturing.org/y/90-min-scc.pdf][slides]]
-    - [[http://www.iro.umontreal.ca/~feeley/90-min-scc.tar.gz][code tarball]]
-
-  - Other Lispy/Schemey implementations:
-    - https://github.com/Ravenbrook/mps/tree/master/example/scheme
-    - https://github.com/gambit/gambit
-    - [[http://practical-scheme.net/gauche/][Gauche]]
-      - https://github.com/shirok/Gauche/
-      - Uses bdw-gc
-    - [[https://racket-lang.org][Racket]] [[https://github.com/racket/racket][GitHub]]
-    - Chez Scheme https://github.com/cisco/ChezScheme
-    - Larceny
-    - Rhizome/pi
-    - Scheme48
-    - SCM
-
-  - PLC - Programming Language Concepts (uses F#)
-    - https://www.itu.dk/people/sestoft/plc/
-    - Course http://www.itu.dk/courses/BPRD/E2013/
-
-  - Compiler Construction at Colorado
-    - http://www.cs.colorado.edu/~bec/courses/csci4555-s15/
-    - [[http://www.cs.colorado.edu/~bec/courses/csci4555-s15/reading/notes.pdf][A Problem Course in Compilation: From Python to x86 Assembly]]
-
+** pi-forall
   - [ ] pi-forall
     - [ ] Work through the remaining differences between version1 and
       version2. i.e. version1 => version2.
@@ -78,6 +57,7 @@
   - [ ] Lambda Pi
   - [ ] Simply Easier (again)
 
+** Idris' TT
   - References from Edwin Brady's "Idris, a General Purpose Dependently Typed
     Programming Language: Design and Implementation" paper.
     - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
@@ -86,6 +66,7 @@
     - [X] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
     - [ ] ? Computation and reasoning: a type theory for computer science, Zhaohui Luo
 
+** PFPL
   - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
     - [X] I Judgements and Rules
       - [X] 1 Abstract Syntax
@@ -157,33 +138,9 @@
     - [ ] XIX Equational Reasoning
       - [ ] A Background on Finite Sets
 
+** SF
   - [[https://www.cis.upenn.edu/~bcpierce/sf/][Software Foundations]]
     - at =Equiv.v=, =assign_aequiv=.
-
-  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
-    - [X] Part 1: Introduction
-      - [X] 1 Overview
-      - [X] 2 Getting Started with Idris
-    - [-] Part 2: Core Idris
-      - [X] 3 Interactive Development with Types
-      - [X] 4 User Defined Data Types
-      - [X] 5 Interactive Programs: Input and Ouput Processing
-      - [ ] 6 Programming with First Class Types
-      - [ ] 7 Interfaces: Using Constrained Generic Types
-      - [ ] 8 Classes: Overloading and Generic Functions
-      - [ ] 9 Dependently Typed Programming Idioms
-      - [ ] 10 Views: Extending Pattern Matching
-      - [ ] 11 Streams and Processes: Working with Infinite Data
-    - [ ] Part 3: Idris and the Real World
-      - [ ] 12 Domain Specific Languages
-      - [ ] 13 The Effects Library: Stateful, Interactive and
-        Side-effecting Programs
-      - [ ] 14 A Case Study: Concurrent Programming
-    - [ ] Appendixes:
-      - [ ] A Installing Idris & Editor Modes
-      - [ ] Interactive Editing Commands
-      - [ ] REPL Commands
-      - [ ] The Packaging System
 
 ** So you wanna learn Type Theory
 
@@ -236,8 +193,6 @@
         - [ ] 23 Specification of abstract data types
       - [ ] A Constants and their arities
       - [ ] B Operational semantics
-
-* Todo Next
 
 ** Demystify Idris
 
@@ -1008,6 +963,10 @@
   - [[https://iu.instructure.com/courses/1517577][SP16 Compilers 11241 Jeremy Siek (course)]]
     - [[https://www.sharelatex.com/project/5637a774990f556d48bab667][course book/notes]]
     - http://github.com/jsiek/Essentials-of-Compilation
+  - Compiler Construction at Colorado
+    - http://www.cs.colorado.edu/~bec/courses/csci4555-s15/
+    - [[http://www.cs.colorado.edu/~bec/courses/csci4555-s15/reading/notes.pdf][A Problem Course in Compilation: From Python to x86 Assembly]]
+
 
 *** Write an efficient nanopass compiler.
    - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
@@ -1083,6 +1042,59 @@
 *** Demystify Debuggers
 
   - [ ] How to get a symbolic debugger? Note Poly/ML has one.
+
+** Lisp/Scheme Implementation
+  - [[http://www.cs.indiana.edu/%7Edyb/pubs/3imp.pdf][Three Implementation Models for Scheme]] R. Kent Dybvig
+
+  - http://norvig.com/silk/
+    - Use synrules.scm to get hygenic macros?
+    - Use r4stest.scm to test for R4RS compliance.
+
+  - http://norvig.com/lugm.pdf
+    - The six things you need:
+      1. Read and write.
+      2. Eval and apply.
+      3. Memory management / GC.
+      4. Run-time stack?
+      5. Primitive functions.
+      6. Primitive data types.
+
+  - Introduction to Scheme and it's implementation
+    - ftp://ftp.cs.utexas.edu/pub/garbage/cs345/schintro-v13/schintro_toc.html
+
+  - "Threaded code" interpreters
+    - https://www.complang.tuwien.ac.at/forth/threaded-code.html
+
+  - Cheney on the M.T.A.
+    - "CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A", Henry G. Baker
+    - http://home.pipeline.com/~hbaker1/CheneyMTA.html
+
+  - ParentheC https://www.cs.indiana.edu/cgi-pub/c311/lib/exe/fetch.php?media=parenthec.pdf
+
+  - Lambda, the Ultimate Label
+    - http://3e8.org/pub/scheme/doc/lisp-pointers/v7i3/p128-clinger.pdf
+
+  - [[http://www.buildyourownlisp.com/contents][Build Your Own Lisp]] (no GC)
+    - [[http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/][Baby's First Garbage Collector]]
+
+  - 90-mins-scc i.e. 90 minutes Scheme to C compiler
+    - [[https://www.youtube.com/watch?v=HIr9eO1kB8g][schemetoc1]]
+    - [[https://www.youtube.com/watch?v=Vxy1x1kaed4][schemetoc2]]
+    - [[http://churchturing.org/y/90-min-scc.pdf][slides]]
+    - [[http://www.iro.umontreal.ca/~feeley/90-min-scc.tar.gz][code tarball]]
+
+  - Other Lispy/Schemey implementations:
+    - https://github.com/Ravenbrook/mps/tree/master/example/scheme
+    - https://github.com/gambit/gambit
+    - [[http://practical-scheme.net/gauche/][Gauche]]
+      - https://github.com/shirok/Gauche/
+      - Uses bdw-gc
+    - [[https://racket-lang.org][Racket]] [[https://github.com/racket/racket][GitHub]]
+    - Chez Scheme https://github.com/cisco/ChezScheme
+    - Larceny
+    - Rhizome/pi
+    - Scheme48
+    - SCM
 
 ** Demystify Lexer Generators
 
