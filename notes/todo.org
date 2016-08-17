@@ -553,6 +553,7 @@
   - =bound=
     - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] (article)
     - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]] (gist)
+    - [ ] http://comonad.com/reader/2014/fast-circular-substitution/
   - =unbound=
     - http://hackage.haskell.org/package/unbound
     - https://hackage.haskell.org/package/unbound-generics
