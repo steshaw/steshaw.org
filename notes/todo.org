@@ -739,6 +739,7 @@
   such a function as a well founded tree, and then compute by
   structural recursion on that tree
   #+end_quote
+  - http://www.itu.dk/courses/SPLG/E2013/
 
 ** Demystify Module Systems
 
