@@ -6,6 +6,17 @@
     - Uses F#. Let's try to use [[https://github.com/dotnet/coreclr][CoreCLR]] on Mac.
     - Course http://www.itu.dk/courses/BPRD/E2013/
     - https://channel9.msdn.com/Tags/peter-sestoft
+      
+  - Probably shouldn't have REPL/console command `execute` with alias `exec` when
+    `--execute` and `--exec` are semantically different command line options.
+  
+** Set up Emacs for Haskell and Idris
+
+  - company mode https://company-mode.github.io/
+  - projectile http://projectile.readthedocs.io/en/latest/
+  - neotree
+  - dired
+
 
 * Todo Soon
 
