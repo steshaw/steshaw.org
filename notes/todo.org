@@ -17,7 +17,6 @@
   - neotree
   - dired
 
-
 * Todo Soon
 
 ** TTDwI
