@@ -1,0 +1,23 @@
+
+- Edwin's paper, [[https://eb.host.cs.st-andrews.ac.uk/drafts/impldtp.pdf][Idris, a General Purpose Dependently Typed Programming
+  Language: Design and Implementation]]. Covers =TT=, the elaboration monad,
+  tactic-based elaboration and more.
+
+- [[https://github.com/idris-lang/Idris-dev/wiki/Idris-Internals-Guide][Idris-Internals-Guide]]
+
+- "A Look at the Idris Internals" series by Paul Körbitz.
+
+  - [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-I-Overview-and-Parsing.html][Part I: Overview and Parsing]]
+  - [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part II: Taking the Parser for a Spin]]
+  - [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part III: From Parsing to Elaboration]]
+  - [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-IV-From-TT-Onward.html][Part IV: From TT Onward]]
+
+
+** Backend/Codegen
+ 
+- Edwin's paper on backend/codegen: [[https://eb.host.cs.st-andrews.ac.uk/drafts/compile-idris.pdf][Cross-platform Compilers for Functional Languages]].
+- Edwin's example backend/codegen: [[https://github.com/edwinb/idris-php/][idris-php]].
+- Other backends/codegens:
+  - [[https://github.com/mmhelloworld/idris-jvm/][mmhelloworld/idris-jvm]]
+  - [[https://github.com/bamboo/idris-cil/][bamboo/idris-cil]]
+- [[https://github.com/idris-lang/Idris-dev/wiki/Idris-back-end-IRs][Idris-backend-IRs]]
