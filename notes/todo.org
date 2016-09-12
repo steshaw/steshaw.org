@@ -22,7 +22,13 @@
 
   - Rectify the FIXME IN =IRTS/Lang.hs= about using =LAlt'= for all the IRs.
 
-  
+  - Fix IRTS.Bytecode.isConst -> collapse False cases together.
+
+  - Get -Wall -Wwarn-tabs happening.
+    - Noticing many errors with Intero. Need to turn on GHC warnings. 
+    - There are many non-exhaustive patterns warnings!
+    - -Werror already turns on with "CI" flag.
+
 *** Project n Paper ideas
 
     - elisp backend/codegen.
