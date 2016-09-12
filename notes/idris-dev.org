@@ -22,3 +22,8 @@
   - [[https://github.com/mmhelloworld/idris-jvm/][mmhelloworld/idris-jvm]]
   - [[https://github.com/bamboo/idris-cil/][bamboo/idris-cil]]
 - [[https://github.com/idris-lang/Idris-dev/wiki/Idris-back-end-IRs][Idris-backend-IRs]]
+- Levels of backend IR:
+  - 0. (IR/case) = ??? FIXME: Does this exist?
+  - 1. LDecl (IR/lift) = [Lambda] Lifted Decl = lambda-lifted untyped lambda calculus
+  - 2. DDecl (IR/defunc) = Defunctionalised Decl = defunctionalised untyped lambda calculus
+  - 3. SDecl (IR/ANF) = Simplified Decl = ANF
