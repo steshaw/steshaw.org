@@ -17,13 +17,16 @@
     - global coherence
     - resolution algorithm
 
-  - Probably shouldn't have REPL/console command `execute` with alias `exec` when
-    `--execute` and `--exec` are semantically different command line options.
+  - Probably shouldn't have REPL/console command =execute= with alias =exec= when
+    =--execute= and =--exec= are semantically different command line options.
+
+  - Rectify the FIXME IN =IRTS/Lang.hs= about using =LAlt'= for all the IRs.
+
   
 *** Project n Paper ideas
 
     - elisp backend/codegen.
-      - Consider using the "portable" IR (IR->JSON) in order to write the backend in Idris.
+      - Consider using the "portable" IR (CodegenInfo->JSON) in order to write the backend in Idris.
     - Idris in Idris (probably limited the backend/codegen passes).
     - Using Elaborator reflection to do Idris-in-Idris for high-level to TT
       transformations.
