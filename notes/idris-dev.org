@@ -1,3 +1,4 @@
+* Idris Development Notes
 
 - Edwin's paper, [[https://eb.host.cs.st-andrews.ac.uk/drafts/impldtp.pdf][Idris, a General Purpose Dependently Typed Programming
   Language: Design and Implementation]]. Covers =TT=, the elaboration monad,
