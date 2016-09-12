@@ -15,11 +15,11 @@ trap 'kill $(jobs -p)' EXIT
 
 keep_alive&
 
-nixEnv=${HOME}/.nix-profile/etc/profile.d/nix.sh
-if [[ -f $nixEnv ]]; then
-  source ~/.nix-profile/etc/profile.d/nix.sh
-  stackArgs="--nix"
-fi
+#nixEnv=${HOME}/.nix-profile/etc/profile.d/nix.sh
+#if [[ -f $nixEnv ]]; then
+#  source ~/.nix-profile/etc/profile.d/nix.sh
+#  stackArgs="--nix"
+#fi
 
 if which stack; then
   stack ${stackArgs:-} build
