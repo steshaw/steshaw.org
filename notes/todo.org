@@ -1,7 +1,5 @@
 * Todo Now
 
-  - Contact Jon Sterling about PhD.
-
   - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
     - Courses
       -  http://www.itu.dk/courses/BPRD/E2010/
