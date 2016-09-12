@@ -22,10 +22,14 @@
   
 *** Project n Paper ideas
 
-    - elisp backend/codegen
-    - Calculating Correct Compilers in Idris
-    - total parser combinator library
-    - bidirectional type inference
+    - elisp backend/codegen.
+    - Idris in Idris (probably limited the backend/codegen passes).
+    - Using Elaborator reflection to do Idris-in-Idris for high-level to TT
+      transformations.
+    - Nanopass in Idris (perhaps with Idris in Idris). Should be faster.
+    - Calculating Correct Compilers in Idris.
+    - total parser combinator library.
+    - bidirectional type inference.
 
 *** Read "Type Driven Development with Idris"
 
