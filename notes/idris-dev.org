@@ -4,7 +4,7 @@
   Language: Design and Implementation]]. Covers =TT=, the elaboration monad,
   tactic-based elaboration and more.
 
-- [[https://github.com/idris-lang/Idris-dev/wiki/Idris-Internals-Guide][Idris-Internals-Guide]]
+- [[http://idris.readthedocs.io/en/latest/reference/internals.html][Idris' Internals]]
 
 - "A Look at the Idris Internals" series by Paul Körbitz.
 
