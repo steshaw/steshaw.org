@@ -1,50 +1,58 @@
 * Todo Now
 
-  - Continue contributing to Idris.
+  - Contact Jon Sterling about PhD.
 
   - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
-    - Uses F#. Let's try to use [[https://github.com/dotnet/coreclr][CoreCLR]] on Mac.
-    - Course http://www.itu.dk/courses/BPRD/E2013/
-    - https://channel9.msdn.com/Tags/peter-sestoft
-      
+    - Courses
+      -  http://www.itu.dk/courses/BPRD/E2010/
+      -  http://www.itu.dk/courses/BPRD/E2011/
+      -  http://www.itu.dk/courses/BPRD/E2012/
+      -  http://www.itu.dk/courses/BPRD/E2013/
+
+** Idris
+
+  - Continue contributing to Idris via low-hanging fruit.
+
+  - type-class related QA for Haskell/Scala folk.
+    - global coherence
+    - resolution algorithm
+
   - Probably shouldn't have REPL/console command `execute` with alias `exec` when
     `--execute` and `--exec` are semantically different command line options.
   
-** Set up Emacs for Haskell and Idris
+*** Project n Paper ideas
 
-  - company mode https://company-mode.github.io/
-  - projectile http://projectile.readthedocs.io/en/latest/
-  - neotree
-  - dired
+    - elisp backend/codegen
+    - Calculating Correct Compilers in Idris
+    - total parser combinator library
+    - bidirectional type inference
 
+*** Read "Type Driven Development with Idris"
 
-* Todo Soon
-
-** TTDwI
-  - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
-    - [X] Part 1: Introduction
-      - [X] 1 Overview
-      - [X] 2 Getting Started with Idris
-    - [X] Part 2: Core Idris
-      - [X] 3 Interactive Development with Types
-      - [X] 4 User Defined Data Types
-      - [X] 5 Interactive Programs: Input and Ouput Processing
-      - [X] 6 Programming with First Class Types
-      - [X] 7 Interfaces: Using Constrained Generic Types
-      - [X] 8 Classes: Overloading and Generic Functions
-      - [X] 9 Dependently Typed Programming Idioms
-      - [X] 10 Views: Extending Pattern Matching
-      - [X] 11 Streams and Processes: Working with Infinite Data
-    - [ ] Part 3: Idris and the Real World
-      - [ ] 12 Domain Specific Languages
-      - [ ] 13 The Effects Library: Stateful, Interactive and
-        Side-effecting Programs
-      - [ ] 14 A Case Study: Concurrent Programming
-    - [-] Appendixes:
-      - [X] A Installing Idris & Editor Modes
-      - [ ] Interactive Editing Commands
-      - [ ] REPL Commands
-      - [ ] The Packaging System
+   - [-] [[https://www.manning.com/books/type-driven-development-with-idris][Type-Driven Development with Idris]], by Edwin Brady.
+     - [X] Part 1: Introduction
+       - [X] 1 Overview
+       - [X] 2 Getting Started with Idris
+     - [X] Part 2: Core Idris
+       - [X] 3 Interactive Development with Types
+       - [X] 4 User Defined Data Types
+       - [X] 5 Interactive Programs: Input and Ouput Processing
+       - [X] 6 Programming with First Class Types
+       - [X] 7 Interfaces: Using Constrained Generic Types
+       - [X] 8 Classes: Overloading and Generic Functions
+       - [X] 9 Dependently Typed Programming Idioms
+       - [X] 10 Views: Extending Pattern Matching
+       - [X] 11 Streams and Processes: Working with Infinite Data
+     - [ ] Part 3: Idris and the Real World
+       - [ ] 12 Domain Specific Languages
+       - [ ] 13 The Effects Library: Stateful, Interactive and
+         Side-effecting Programs
+       - [ ] 14 A Case Study: Concurrent Programming
+     - [-] Appendixes:
+       - [X] A Installing Idris & Editor Modes
+       - [ ] Interactive Editing Commands
+       - [ ] REPL Commands
+       - [ ] The Packaging System
 
 
 * Todo Next
