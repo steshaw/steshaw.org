@@ -13,6 +13,8 @@
 
   - Continue contributing to Idris via low-hanging fruit.
 
+  - Get involved in [[https://github.com/idris-hackers/software-foundations][Software Foundations in Idris]].
+
   - type-class related QA for Haskell/Scala folk.
     - global coherence
     - resolution algorithm
