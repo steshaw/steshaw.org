@@ -305,7 +305,7 @@
     - [ ] Demystify "polymorphic recursion".
     - [ ] Demystify "universal polymorphism".
     - [ ] Demystify "relevance" --- something to do with the distinction between
-      TTs that separate Pi and forall and those that don't.
+      TTs that separate Π and ∀ and those that don't.
     - [ ] Demystify "existential polymorphism".
       - See [[http://lambda-the-ultimate.org/node/4865#comment-78185][Andreas Rossberg's comment(s) on Lambda the Ultimate]].
         #+begin_quote
