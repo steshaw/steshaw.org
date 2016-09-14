@@ -1,11 +1,9 @@
 * Todo Now
 
-  - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
-    - Courses
-      -  http://www.itu.dk/courses/BPRD/E2010/
-      -  http://www.itu.dk/courses/BPRD/E2011/
-      -  http://www.itu.dk/courses/BPRD/E2012/
-      -  http://www.itu.dk/courses/BPRD/E2013/
+** Digging into Type Theory
+
+    - [ ] "Intuistionistic Type Theory" Per Martin-Loef
+    - [ ] "Naïve Computational Type Theory" by Robert Constable
 
 ** Idris
 
@@ -23,11 +21,6 @@
   - Rectify the FIXME IN =IRTS/Lang.hs= about using =LAlt'= for all the IRs.
 
   - Fix IRTS.Bytecode.isConst -> collapse False cases together.
-
-  - Get -Wall -Wwarn-tabs happening.
-    - Noticing many errors with Intero. Need to turn on GHC warnings. 
-    - There are many non-exhaustive patterns warnings!
-    - -Werror already turns on with "CI" flag.
 
 *** Project n Paper ideas
 
@@ -69,6 +62,15 @@
        - [ ] The Packaging System
 
 
+* Todo Soon
+
+  - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
+    - Courses
+      -  http://www.itu.dk/courses/BPRD/E2010/
+      -  http://www.itu.dk/courses/BPRD/E2011/
+      -  http://www.itu.dk/courses/BPRD/E2012/
+      -  http://www.itu.dk/courses/BPRD/E2013/
+
 * Todo Next
 
 ** Ultimate GOTO
@@ -89,15 +91,6 @@
   - [ ] Simply Easy (again)
   - [ ] Lambda Pi
   - [ ] Simply Easier (again)
-
-** Idris' TT
-  - References from Edwin Brady's "Idris, a General Purpose Dependently Typed
-    Programming Language: Design and Implementation" paper.
-    - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
-    - [X] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
-    - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
-    - [X] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
-    - [ ] ? Computation and reasoning: a type theory for computer science, Zhaohui Luo
 
 ** PFPL
   - [-] PFPL (book). OPLSS 2016 chapters 1-10, 14-20, 37-38, 46-48.
@@ -248,11 +241,10 @@
     - Very interesting looking verified [[http://www.cl.cam.ac.uk/~mom22/miniml/][mini-ml]].
   - [ ] Build a printf (puffnfresh has great video).
     - Other standard dependently-typed examples?
-  - [ ] Contribute to Idris.
-    - [ ] Check out  Paul Körbitz's look at Idris internals:
-      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-I-Overview-and-Parsing.html][Part 1]]
-      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part 2]]
-      - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
+  - [-] Check out  Paul Körbitz's look at Idris internals:
+    - [X] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-I-Overview-and-Parsing.html][Part 1]]
+    - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-II-Taking-the-Parser-for-a-Spin.html][Part 2]]
+    - [ ] [[http://koerbitz.me/posts/A-Look-at-the-Idris-Internals-Part-III-From-Parsing-to-Elaboration.html][Part 3]]
   - [ ] [[https://gist.github.com/edwinb/46da18e2fc6be3f92177ea02ea4b3a1a][Edwin's code for merge sort]]
   - Is it possible to build total parser combinators?
     - Yes, apparently. See [[http://www.cse.chalmers.se/~nad/publications/danielsson-parser-combinators.html][Total Parser Combinators (paper)]]. This
@@ -276,6 +268,15 @@
   - Courseware: notes/articles/slides.
   - [X] idris-calc port of plzoo/calc
   - [X] [[https://eb.host.cs.st-andrews.ac.uk/drafts/impldtp.pdf][Idris, a General Purpose Dependently Typed Programming Language: Design and Implementation]] -- Edwin Brady
+
+*** Idris' TT
+   - References from Edwin Brady's "Idris, a General Purpose Dependently Typed
+     Programming Language: Design and Implementation" paper.
+     - [ ] [[http://www.cs.nott.ac.uk/~psztxa/publ/checking.pdf][Epigram Reloaded: A Standalone Typechecker for ETT]]
+     - [X] [[https://www.andres-loeh.de/LambdaPi/][A tutorial implementation of a dependently typed lambda calculus]]
+     - [ ] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.451.2794&rep=rep1&type=pdf][Unification Under a Mixed Prefix]], Dale Miller (paper).
+     - [X] [[http://www.cs.nott.ac.uk/~psztxa/publ/pisigma-new.pdf][ΠΣ: Dependent Types without the Sugar]]
+     - [ ] ? Computation and reasoning: a type theory for computer science, Zhaohui Luo
 
 ** Demystify Type Theory
 :properties:
