@@ -1,0 +1,30 @@
+
+- Programming language features that help:
+
+  - static types (for easier and better analses)
+  - a standard code format (since otherwise the coding format must be preserved
+    by the refactoring tools.
+
+
+- Compiler should expose:
+  - parsing (retaining comments, layout, radix of constants etc).
+  - tree building
+  - prettyprinting
+  - tree manipulation
+  - source-to-source rewriting
+  - attribute grammar evaluations ?
+  - control flow analysis
+  - data flow analysis
+  - other program analses?
+
+For instance the Ada Semantic Interface Specification (ASIS) can be used to
+build code restructuring tools, code browsing and navigation tools, coding style
+and standards compliance tools, cross-reference tools, data flow analysis tools,
+dependency tree analysis tools, design tools, document generation tools,
+invocation (call) tree analysis tools, language- sensitive editing and
+pretty-printing tools, language translation tools, quality assessment tools,
+reverse engineering tools, re- engineering tools, safety and security compliance
+tools, static correctness verifiers, tasking analysis tools, test-case
+generation and coverage analysis tools, and usage, quality, and complexity
+metrics tools.
+http://www.sigada.org/WG/asiswg/ASIS_FAQ.html
