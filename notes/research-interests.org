@@ -1,42 +1,18 @@
 
-* Focus
-
 - programming languages
-- programming language design and implementation
-- type theory / type systems
-- module systems
-- compiler construction
+- type theory
+- type systems
 - functional programming
+- dependently-typed functional programming
+- compilers
+  - support for interactive editing and IDEs
+  - support for refactoring
+- runtime systems
+- module systems
 
-- mechanized meta-theory
-
-- verification
-- proof assistants / automated theorem provers
+- mechanised meta-theory
+- verified/certified programming
+- proof assistants
+- automated theorem provers
+- automated reasoning
 - logical frameworks
-- automated deduction
-
-
-* Lesser
-
-- language engineering
-- program analysis
-- object-oriented programming
-
-
-* Should be
-
-- security
-
-
-* Andreas Rossberg
-
-:: type systems
-:: module systems
-:: functional languages
-:: object-oriented languages
-:: compilers
-:: runtime systems
-:: concurrency
-:: program semantics
-:: mechanized meta-theory
-:: broken beats
