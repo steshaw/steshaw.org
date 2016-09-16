@@ -5,7 +5,9 @@
 - functional programming
 - dependently-typed functional programming
 - compilers
-  - support for interactive editing and IDEs
+  - support for program analysis
+  - support for interactive proof/program development
+  - support for IDE features
   - support for refactoring
 - runtime systems
 - module systems
