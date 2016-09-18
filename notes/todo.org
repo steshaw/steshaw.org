@@ -33,6 +33,8 @@
     - elisp backend/codegen.
       - Consider using the "portable" IR (CodegenInfo->JSON) in order to write the backend in Idris.
     - Idris in Idris (probably limited the backend/codegen passes).
+      - "How do you structure a large Idris program to take advance of the types"
+      - "How much of a big system can be made total"
     - Using Elaborator reflection to do Idris-in-Idris for high-level to TT
       transformations.
     - Nanopass in Idris (perhaps with Idris in Idris). Should be faster.
