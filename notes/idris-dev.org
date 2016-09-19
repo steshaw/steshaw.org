@@ -34,3 +34,13 @@
   - =PDecl= :: Program declaration. Essentially top of AST.
   - =PTerm= :: Program Term. The parameter for PDecl. i.e. =type PDecl = PDecl' PTerm=.
   - =FC= :: probably short for FileContext. Contains source positions produced by Parser.
+
+
+** Build times (iMac late 2009)
+
+  - Clean build but dependencies already built (Stack, GHC 8.0.1)
+    - =modularise-ast= 
+      - 891.74 real  819.78 user  29.68 sys --- (14.86 minutes)
+      - 922.26 real  828.76 user  33.22 sys --- (15.37 minutes)
+    - =master=
+      - 770.54 real  669.36 user  26.31 sys --- (12.84 minutes)
