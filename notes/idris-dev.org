@@ -27,3 +27,10 @@
   - 1. LDecl (IR/lift) = [Lambda] Lifted Decl = lambda-lifted untyped lambda calculus
   - 2. DDecl (IR/defunc) = Defunctionalised Decl = defunctionalised untyped lambda calculus
   - 3. SDecl (IR/ANF) = Simplified Decl = ANF
+
+
+** Abbreviations
+
+  - =PDecl= :: Program declaration. Essentially top of AST.
+  - =PTerm= :: Program Term. The parameter for PDecl. i.e. =type PDecl = PDecl' PTerm=.
+  - =FC= :: probably short for FileContext. Contains source positions produced by Parser.
