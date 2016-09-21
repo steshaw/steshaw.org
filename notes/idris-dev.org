@@ -42,5 +42,7 @@
     - =modularise-ast= 
       - 891.74 real  819.78 user  29.68 sys --- (14.86 minutes)
       - 922.26 real  828.76 user  33.22 sys --- (15.37 minutes)
+      - 693.39 real  659.26 user  22.45 sys --- (11.56 minutes)
+      - 753.93 real  687.58 user  25.12 sys --- (12.57 minutes)
     - =master=
       - 770.54 real  669.36 user  26.31 sys --- (12.84 minutes)
