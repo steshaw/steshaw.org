@@ -593,52 +593,76 @@
   - [ ] [[https://www.mpi-sws.org/~beta/papers/unicoq.pdf][A Unification Algorithm for COQ Featuring Universe Polymorphism and Overloading]] (paper)
 ** Demystify Name binding
 
+  - Some references maybe not mentioned below:
+    - http://www.chargueraud.org/research/2009/ln/main.pdf
+    - http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf
+    - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
+    - http://www.cs.nott.ac.uk/~psztxa/publ/pisigma.pdf -- uses Locally Nameless
+    - Binders Unbound, http://ozark.hendrix.edu/~yorgey/pub/unbound.pdf
+    - http://bentnib.org/syntaxforfree.pdf
+
   - =bound=
     - [ ] [[https://www.schoolofhaskell.com/user/edwardk/bound][Edward Kmett on Bound]] (article)
     - [ ] [[https://gist.github.com/cartazio/5727196][Higher order bound]] (gist)
     - [ ] http://comonad.com/reader/2014/fast-circular-substitution/
+
   - =unbound=
     - http://hackage.haskell.org/package/unbound
     - https://hackage.haskell.org/package/unbound-generics
     - used in [[https://github.com/sweirich/pi-forall][pi-forall]]
     - Kmett says this "mixes Barendregt with Locally Nameless"
+
   - [[http://www.cs.ru.nl/~james/RESEARCH/haskell2004.pdf][I am not a Number -- I am a Free Variable]] by Conor McBride and James McKinna.
+
   - PHOAS
     - Parametric Higher-Order Abstract Syntax for Mechanized
       Semantics, Adam Chlipala
     - [[https://www.schoolofhaskell.com/user/edwardk/phoas][PHOAS for Free by Edward Kmett]]
+
   - De Bruijn Indices
     - [[http://disciple-devel.blogspot.com.au/2011/08/how-i-learned-to-stop-worrying-and-love.html][How I learned to stop worrying and love De Bruijn indices]] Ben Lippmeier
+
   - Locally Nameless
     - [[http://www.chargueraud.org/research/2009/ln/main.pdf][The Locally Nameless Representation]] Arthur Chargueraud
+
   - Abstract Binding Trees
     - [X] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees.html][Abstract Binding Trees]] -- post by Neel Krishnaswami
     - [ ] [[http://semantic-domain.blogspot.com.au/2015/03/abstract-binding-trees-addendum.html][Abstract Binding Trees, an addendum]] -- post by Neel Krishnaswami
     - [X] Chapter 1 PFPL
     - [ ] [[http://winterkoninkje.dreamwidth.org/103978.html][Well-typed ABTs]]
+
   - Nominal Logic: A First Order Theory of Names and Binding
     - [ ] [[http://www.cl.cam.ac.uk/~amp12/talks/tacs01.pdf][slides]]
     - [ ] [[https://www.cl.cam.ac.uk/~amp12/papers/nomlfo/nomlfo.pdf][paper]]
+
   - https://github.com/jyp/NameBindingSurvey/blob/master/WhiteBoard.md
     - https://github.com/jyp/TTNameBinders
     - Names for free
       - [[https://nicolaspouillard.fr/talks/names-for-free-haskell-symposium/names-for-free.html#/][talk]]
       - [[http://www.cse.chalmers.se/~bernardy/NamesForFree.pdf][paper]]
+
   - http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html
+
   - Namely Painless
     - [X] [[https://nicolaspouillard.fr/publis/jfp-unified-binders.pdf][A unified treatment of syntax with binders]], Nicolas
       Pouillard and François Pottier
     - [ ] https://nicolaspouillard.fr/publis/namely-painless-defense-version.pdf
+
   - HOS
     - [[http://www.cse.chalmers.se/%7Eemax/documents/axelsson2013using.pdf][Using Circular Programs for Higher-Order Syntax, Functional
       pearl]], Emil Axelsson Koen Claessen
+
   - [[http://bentnib.org/syntaxforfree.html][Syntax for Free: Representing Syntax with Binding Using Parametricity]] Robert
     Atkey
+
   - Totally Nameless
     - [ ] [[http://requestforlogic.blogspot.com.au/2010/11/totally-nameless-representation.html][Totally Nameless Representation]] article by Robert J. Simmons
+
   - http://research.microsoft.com/en-us/um/people/simonpj/Papers/inlining/
     (Mentioned in Kmett's bound tutorial)
+
   - [[http://complogic.cs.mcgill.ca/beluga/][Beluga]] seems to be a PL with built in support for name binding (contexts).
+
   - [[http://www2.tcs.ifi.lmu.de/~schoepp/Docs/bunches.pdf][A Dependent Type Theory with Names and Binding]] A categorically /yikes/ abstract.
     #+begin_quote
     We consider the problem of providing formal support for working
@@ -659,6 +683,7 @@
     propositions-as-types generalisation H of the freshness
     quantifier.
     #+end_quote
+
   - Collections of binding techniques:
     - https://namebinding.wordpress.com/
 
@@ -953,6 +978,7 @@
 
 ** Demystify Compilers
   - Develop (literate) code, articles, slides, notes, articles.
+  - http://tratt.net/laurie/blog/entries/how_difficult_is_it_to_write_a_compiler.html
   - [ ] [[https://github.com/steshaw/babyml][BabyML]] in Idris.
     - MLish: strict/CBV, D-H-M type inference / unification.
     - No modules (for now).
