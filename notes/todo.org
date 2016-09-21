@@ -69,7 +69,6 @@
        - [ ] REPL Commands
        - [ ] The Packaging System
 
-
 * Todo Soon
 
   - PLC [[https://www.itu.dk/people/sestoft/plc/][Programming Language Concepts]] by Peter Sestoft
@@ -1056,6 +1055,9 @@
   - Userspace/"green" threads, Erlang/GHC/Go/Rust style threads.
   - opensourceresearchinstitute.org's proto-runtime -- for parallel tasks (aka
     Erlang style tasks but apparently much more scalable).
+  - [ ] Virtual Machine course
+    - http://www.wolczko.com/CS294/
+    - [[https://www.youtube.com/playlist?list=PLoa_3vdLBIP7dWamrPPWYryPKppncht_i][Video playlist]]
 
 *** Demystify Memory Management / Garbage Collection
   - [ ] Implement a GC. Perhaps in Rust.
