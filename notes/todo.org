@@ -229,6 +229,7 @@
 
 ** Demystify Idris
 
+  - [ ] [[https://m.youtube.com/watch?v=AWeT_G04a0A][David Christiansen on the Universe Pattern (video)]]
   - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
     - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
   - [ ] [[https://www.youtube.com/watch?v=4i7KrG1Afbk][Idris: Practical Dependent Types with Practical Examples by
