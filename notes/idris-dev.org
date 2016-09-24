@@ -46,3 +46,96 @@
       - 753.93 real  687.58 user  25.12 sys --- (12.57 minutes)
     - =master=
       - 770.54 real  669.36 user  26.31 sys --- (12.84 minutes)
+
+** AST (and perhaps Core) Refactoring
+
+  - [X] importing Idris.AbsSyntaxTree
+    - [X] src/Idris/AbsSyntax.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/ASTUtils.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/CaseSplit.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/CmdOptions.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Completion.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Core/Execute.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/DataOpts.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/DeepSeq.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Elab/Rewrite.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Elab/Term.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Package/Common.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Package/Parser.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Prover.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Providers.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/Reflection.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/REPL/Browse.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/REPL/Commands.hs:import Idris.AbsSyntaxTree
+    - [X] src/Idris/TypeSearch.hs:import Idris.AbsSyntaxTree
+    - [X] src/IRTS/Compiler.hs:import Idris.AbsSyntaxTree
+
+  - [-] importing Idris.AbsSyntax
+    - [X] src/Idris/Apropos.hs:import Idris.AbsSyntax
+    - [X] src/Idris/CaseSplit.hs:import Idris.AbsSyntax (
+    - [X] src/Idris/Chaser.hs:import Idris.AbsSyntax
+    - [X] src/Idris/CmdOptions.hs:import Idris.AbsSyntax (
+    - [X] src/Idris/Completion.hs:import Idris.AbsSyntax (runIO)
+    - [X] src/Idris/Core/Execute.hs:import Idris.AbsSyntax (getIState, getContext)
+    - [X] src/Idris/Coverage.hs:import Idris.AbsSyntax
+    - [X] src/Idris/DataOpts.hs:import Idris.AbsSyntax ()
+    - [X] src/Idris/Delaborate.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Directives.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Docs.hs:import Idris.AbsSyntax (
+    - [X] src/Idris/DSL.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/AsPat.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Clause.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Data.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Implementation.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Interface.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Provider.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Quasiquote.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Record.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Rewrite.hs:import Idris.AbsSyntax (addImplBound, getIState)
+    - [X] src/Idris/Elab/RunElab.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Term.hs:import Idris.AbsSyntax (
+    - [X] src/Idris/Elab/Transform.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Type.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Utils.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Elab/Value.hs:import Idris.AbsSyntax
+    - [X] src/Idris/ElabDecls.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Erasure.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Error.hs:import Idris.AbsSyntax
+    - [X] src/Idris/ErrReverse.hs:import Idris.AbsSyntax
+    - [X] src/Idris/IBC.hs:import Idris.AbsSyntax
+    - [X] src/Idris/IdrisDoc.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Imports.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Info.hs:import Idris.AbsSyntax (loggingCatsStr)
+    - [X] src/Idris/Inliner.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Interactive.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Main.hs:import Idris.AbsSyntax
+    - [X] src/Idris/ModeCommon.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Output.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Package.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Parser/Data.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Parser/Expr.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Parser/Helpers.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Parser/Ops.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Parser.hs:import Idris.AbsSyntax hiding (namespace, params)
+    - [ ] src/Idris/PartialEval.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Primitives.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/ProofSearch.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Prover.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/REPL/Browse.hs:import Idris.AbsSyntax (getContext)
+    - [ ] src/Idris/REPL/Parser.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/REPL.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/Transforms.hs:import Idris.AbsSyntax
+    - [ ] src/Idris/TypeSearch.hs:import Idris.AbsSyntax     (addUsingConstraints, addImpl, getIState, putIState, implicit)
+    - [ ] src/Idris/WhoCalls.hs:import Idris.AbsSyntax
+    - [ ] src/IRTS/CodegenC.hs:import Idris.AbsSyntax
+    - [ ] src/IRTS/CodegenJavaScript.hs:import Idris.AbsSyntax hiding (TypeCase)
+    - [ ] src/IRTS/Compiler.hs:import Idris.AbsSyntax
+    - [ ] src/IRTS/Compiler.hs:import qualified Idris.AbsSyntax as AbsSyntax
+    - [ ] src/IRTS/Exports.hs:import Idris.AbsSyntax
+
+**** Potential refactorings:
+
+    - Can we lift Opt and option processing functions from AbsSyntax?
+      - made obvious in Idris.Main.
+    - Can we lift OutputAnnotations from Core.TT?
+    - Can we lift Name and associated functions from Core.TT?
