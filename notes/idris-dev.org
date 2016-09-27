@@ -112,20 +112,20 @@
     - [X] src/Idris/ModeCommon.hs:import Idris.AbsSyntax
     - [X] src/Idris/Output.hs:import Idris.AbsSyntax
     - [X] src/Idris/Package.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Parser/Data.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Parser/Expr.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Parser/Helpers.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Parser/Ops.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Parser.hs:import Idris.AbsSyntax hiding (namespace, params)
-    - [ ] src/Idris/PartialEval.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Primitives.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/ProofSearch.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Prover.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/REPL/Browse.hs:import Idris.AbsSyntax (getContext)
-    - [ ] src/Idris/REPL/Parser.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/REPL.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/Transforms.hs:import Idris.AbsSyntax
-    - [ ] src/Idris/TypeSearch.hs:import Idris.AbsSyntax     (addUsingConstraints, addImpl, getIState, putIState, implicit)
+    - [X] src/Idris/Parser/Data.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Parser/Expr.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Parser/Helpers.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Parser/Ops.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Parser.hs:import Idris.AbsSyntax hiding (namespace, params)
+    - [X] src/Idris/PartialEval.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Primitives.hs:import Idris.AbsSyntax
+    - [X] src/Idris/ProofSearch.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Prover.hs:import Idris.AbsSyntax
+    - [X] src/Idris/REPL/Browse.hs:import Idris.AbsSyntax (getContext)
+    - [X] src/Idris/REPL/Parser.hs:import Idris.AbsSyntax
+    - [X] src/Idris/REPL.hs:import Idris.AbsSyntax
+    - [X] src/Idris/Transforms.hs:import Idris.AbsSyntax
+    - [X] src/Idris/TypeSearch.hs:import Idris.AbsSyntax     (addUsingConstraints, addImpl, getIState, putIState, implicit)
     - [ ] src/Idris/WhoCalls.hs:import Idris.AbsSyntax
     - [ ] src/IRTS/CodegenC.hs:import Idris.AbsSyntax
     - [ ] src/IRTS/CodegenJavaScript.hs:import Idris.AbsSyntax hiding (TypeCase)
@@ -139,3 +139,21 @@
       - made obvious in Idris.Main.
     - Can we lift OutputAnnotations from Core.TT?
     - Can we lift Name and associated functions from Core.TT?
+
+**** Errors
+
+See if this happens on =master=.
+
+#+BEGIN_QUOTE
+OK (5.88s)
+    ffi009:
+Error: test/ffi009
+idris: Foreign Function calls cannot be partially applied, without being inlined.
+CallStack (from HasCallStack):
+  error, called at src/IRTS/CodegenC.hs:343:36 in idris-0.12.3-LoUXGyrDJU677RY2CaNGaq:IRTS.CodegenC
+clang: warning: argument unused during compilation: '-fno-strict-overflow'
+
+OK (6.91s)
+  Folding
+    folding001:        OK (4.73s)
+#+END_QUOTE
