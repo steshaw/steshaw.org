@@ -706,11 +706,18 @@
     - first order logic
 ** Demystify Category Theory
 
+  - Resources for learning Categories by Peter Smith
+    - [[http://www.logicmatters.net/resources/pdfs/GentleIntro.pdf][Category Theory: A Gentle Introduction]]
+    - http://www.logicmatters.net/categories/
+    - http://www.logicmatters.net/tyl/category-theory/
+
   - [[http://www.hedonisticlearning.com/posts/you-know-more-about-presheaves-than-you-think.html][You known more about presheaves than you think]]
   - Steven Awodey OPLSS 2012 lecture notes Category Theory
     - http://www.andrew.cmu.edu/user/awodey/SummerSchool/
 
-** Demystify Mathematical Logic & Logic Programming
+** Demystify Logic
+
+  - [[http://www.logicmatters.net/tyl/][Teach Yourself Logic: A Study Guide]] Peter Smith.
 
   - Are there other interesting part of Mathematical Logic other than
     Proof Theory? Wikipedia mentions the following sub fields:
@@ -741,7 +748,7 @@
 
   - [ ] How to Prove It, Velleman.
 
-** Demystify Mathematical Foundations and Increase Mathematical Sophistication
+** Demystify Mathematical Foundations
 
   - [[http://paultaylor.eu/~pt/prafm/html/index.html][Practical Foundations of Mathematics]], Paul Taylor.
 
@@ -1235,8 +1242,13 @@
       Theory]] Adam Chlipala's PhD dissertation
     - [ ] Program Logic for Certified Compilers, Andrew W. Appel (book)
 
-** Demystify Nix and Package all the things
+** Demystify Packages
 
+  - AKA "Package Management"
+
+  - Nix is cool.
+
+*** Package all the things
   - Nix for your dotfiles.
   - Nix for your development environment configuration.
   - Nix for your own tools (aka etools at Ephox).
