@@ -70,7 +70,7 @@
     - [X] src/Idris/TypeSearch.hs:import Idris.AbsSyntaxTree
     - [X] src/IRTS/Compiler.hs:import Idris.AbsSyntaxTree
 
-  - [-] importing Idris.AbsSyntax
+  - [X] importing Idris.AbsSyntax
     - [X] src/Idris/Apropos.hs:import Idris.AbsSyntax
     - [X] src/Idris/CaseSplit.hs:import Idris.AbsSyntax (
     - [X] src/Idris/Chaser.hs:import Idris.AbsSyntax
@@ -126,12 +126,12 @@
     - [X] src/Idris/REPL.hs:import Idris.AbsSyntax
     - [X] src/Idris/Transforms.hs:import Idris.AbsSyntax
     - [X] src/Idris/TypeSearch.hs:import Idris.AbsSyntax     (addUsingConstraints, addImpl, getIState, putIState, implicit)
-    - [ ] src/Idris/WhoCalls.hs:import Idris.AbsSyntax
-    - [ ] src/IRTS/CodegenC.hs:import Idris.AbsSyntax
-    - [ ] src/IRTS/CodegenJavaScript.hs:import Idris.AbsSyntax hiding (TypeCase)
-    - [ ] src/IRTS/Compiler.hs:import Idris.AbsSyntax
-    - [ ] src/IRTS/Compiler.hs:import qualified Idris.AbsSyntax as AbsSyntax
-    - [ ] src/IRTS/Exports.hs:import Idris.AbsSyntax
+    - [X] src/Idris/WhoCalls.hs:import Idris.AbsSyntax
+    - [X] src/IRTS/CodegenC.hs:import Idris.AbsSyntax
+    - [X] src/IRTS/CodegenJavaScript.hs:import Idris.AbsSyntax hiding (TypeCase)
+    - [X] src/IRTS/Compiler.hs:import Idris.AbsSyntax
+    - [X] src/IRTS/Compiler.hs:import qualified Idris.AbsSyntax as AbsSyntax
+    - [X] src/IRTS/Exports.hs:import Idris.AbsSyntax
 
 **** Potential refactorings:
 
