@@ -984,6 +984,8 @@
   - notes/slides/articles/courseware
 
 ** Demystify Compilers
+
+  - http://www.cl.cam.ac.uk/teaching/1314/L26/materials.html
   - Develop (literate) code, articles, slides, notes, articles.
   - http://tratt.net/laurie/blog/entries/how_difficult_is_it_to_write_a_compiler.html
   - [ ] [[https://github.com/steshaw/babyml][BabyML]] in Idris.
@@ -1127,7 +1129,9 @@
 
 ** Lisp/Scheme Implementation
 
+  - https://github.com/jsiek/Essentials-of-Compilation (book)
   - https://github.com/cgswords/sgc
+
 
   - [[http://www.cs.indiana.edu/%7Edyb/pubs/3imp.pdf][Three Implementation Models for Scheme]] R. Kent Dybvig
 
@@ -1169,6 +1173,7 @@
     - [[http://www.iro.umontreal.ca/~feeley/90-min-scc.tar.gz][code tarball]]
 
   - Other Lispy/Schemey implementations:
+    - http://orchid-hybrid.github.io/2014/10/10/notes-on-compilers/
     - https://github.com/Ravenbrook/mps/tree/master/example/scheme
     - https://github.com/gambit/gambit
     - [[http://practical-scheme.net/gauche/][Gauche]]
