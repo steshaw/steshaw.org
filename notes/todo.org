@@ -1038,18 +1038,19 @@
     + Seems that datatypes a la carte is not possible in Idris... Can it be fixed?
   - Courses:
     - http://flint.cs.yale.edu/cs421/
+    - [[https://www.seas.upenn.edu/~cis341/current/#lectures][UPenn cis341 Compilers]] Steve Zdancewic. OCaml. Beautiful slides. *****
     - http://www.cl.cam.ac.uk/teaching/1314/L26/materials.html
     - [[https://www.cs.indiana.edu/~sabry/teaching/b522/s03/][CSCI B522 Programming Language Foundations Amr Sabry (course)]]
       - MinML/NanoML semantics. Be nice to write it up in `org-mode`
         and/or $$\LaTex$$.
       - Also seems to have verifications/proofs in Twelf.
-    - [[https://www.seas.upenn.edu/~cis341/current/#lectures][UPenn cis341 Compilers]] Steve Zdancewic. OCaml. Beautiful slides. *****
     - [[https://iu.instructure.com/courses/1517577][SP16 Compilers 11241 Jeremy Siek (course)]]
       - [[https://www.sharelatex.com/project/5637a774990f556d48bab667][course book/notes]]
       - http://github.com/jsiek/Essentials-of-Compilation
     - Compiler Construction at Colorado
       - http://www.cs.colorado.edu/~bec/courses/csci4555-s15/
       - [[http://www.cs.colorado.edu/~bec/courses/csci4555-s15/reading/notes.pdf][A Problem Course in Compilation: From Python to x86 Assembly]]
+    - http://cs.mcgill.ca/~cs520/2015/
 
 *** Write an efficient nanopass compiler.
    - https://github.com/sellout/recursion-scheme-talk/blob/master/nanopass-compiler-talk.org
