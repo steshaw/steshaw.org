@@ -229,6 +229,10 @@
 
 ** Demystify Idris
 
+  - [ ] Extensible records in Idris
+    - https://github.com/jmars/Records
+    - https://twitter.com/edwinbrady/status/465824408838602752
+
   - [ ] [[https://m.youtube.com/watch?v=AWeT_G04a0A][David Christiansen on the Universe Pattern (video)]]
   - [ ] Implement a number of simple TT/PLs in Idris/ML (perhaps from TAPL).
     - [[http://ozark.hendrix.edu/~yorgey/490/][STLC in Idris]] and more (course notes by Brent Yorgey).
