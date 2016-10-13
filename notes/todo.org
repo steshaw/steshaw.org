@@ -28,7 +28,7 @@
       they will only use the Idris library exposed API just as a contributed
       codegen would have to).
 
-*** Project n Paper ideas
+*** Project ideas
 
     - elisp backend/codegen.
       - Consider using the "portable" IR (CodegenInfo->JSON) in order to write the backend in Idris.
