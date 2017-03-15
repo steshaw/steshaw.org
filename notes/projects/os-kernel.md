@@ -1,4 +1,6 @@
-# Instructional Operating System Kernels
+# Write an OS kernel
+
+## Instructional Operating System Kernels
 
 [From NAND to Tetris](http://nand2tetris.org/) or "The Elements of Computing Systems: Building a Modern Computer from First Principles"
 - love this approach and have the book!
@@ -22,3 +24,12 @@
 
 [Weenix (Brown cs167)](http://cs.brown.edu/courses/cs167/)
 - currently no publically available information
+
+
+## Books
+
+- [From NAND to Tetris](http://nand2tetris.org/book.php)
+- [The little books about OS development](http://littleosbook.github.io/)
+- [How to Make a Computer Operating System](https://www.gitbook.com/book/samypesse/how-to-create-an-operating-system)
+- [Operating Systems and Middleware: Supporting Controlled Interaction](https://gustavus.edu/mcs/max/os-book/)
+- [The Design and Implementation of the Anykernel and Rump Kernels](http://www.fixup.fi/misc/rumpkernel-book/)
