@@ -33,3 +33,4 @@
 - [How to Make a Computer Operating System](https://www.gitbook.com/book/samypesse/how-to-create-an-operating-system)
 - [Operating Systems and Middleware: Supporting Controlled Interaction](https://gustavus.edu/mcs/max/os-book/)
 - [The Design and Implementation of the Anykernel and Rump Kernels](http://www.fixup.fi/misc/rumpkernel-book/)
+- [Project Oberson (New Edition 2013)](https://www.inf.ethz.ch/personal/wirth/ProjectOberon/)
