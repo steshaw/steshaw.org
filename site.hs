@@ -259,8 +259,8 @@ jasmin :: String -> String
 jasmin src = LB.unpack $ minify $ LB.fromChunks [E.encodeUtf8 $ T.pack src]
 
 allPosts  = "posts/*"
-allDrafts = "drafts/*.org"
-allNotes = "notes/*.org"
+allDrafts = "drafts/*.org" .||. "drafts/*.md"
+allNotes = "notes/*.org" .||. "notes/*.md"
 
 mkFeed file renderer =
   create [file] $ do
