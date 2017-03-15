@@ -5,10 +5,15 @@
 
 * Long term
 
-- Design and implement a non-trivial programming language.
+- Hack on systems:
+  - programming language systems
+    - type theory
+    - compilers
+    - runtime systems / gc
+  - operating systems
+  - distributed systems and database systems.
+- Design and implement (a non-trivial) programming language.
 - Understand module systems and integrate into a practical programming language.
-- Hack on programming language systems, operating systems, distributed systems and database systems.
-- Earn a PhD in PL/CS/Math.
 
 
 * Lifetime
