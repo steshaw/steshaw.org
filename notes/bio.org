@@ -1,9 +1,5 @@
-Steven has 25 years experience in the software industry in roles from Analyst Programmer through Tech Lead. He loves programming languages---including functional programming, type theory, compilers and runtime systems---and has a broad array of related interests including product development, software engineering, distributed systems, database systems and operating systems. He tries and fails to keep up with all the latest ideas, tools and systems in the industry and is still searching for the holy grail to solve the "software crisis"--—he thinks he's found it, but he's just not sure yet. More experimentation is required :).
+Steven has 25 years experience in the software industry in roles from Analyst Programmer through Tech Lead. He loves programming languages and has a broad array of related interests including software engineering, product development, distributed systems, database systems and operating systems. He tries and fails to keep up with all the latest ideas, tools and systems in the industry and is still searching for the holy grail to solve the “software crisis”.
 
-Talk to him about hands-on engineering roles in the domain of scalable apps using Functional Programming, DevOps, Continuous Delivery, self-organising teams, Cloud, PaaS, HTML5/JS/altJS, cross-platform mobile/web apps with high doses of enthusiasm, honesty, humour, and not-so-common sense.
+He's interested in hands-on engineering roles using Cloud, automation (DevOps, CI/CD), functional programming (FP) and HTML5/JS/altJS with high doses of enthusiasm, honesty, humour, and not-so-common sense.
 
 The Keirsey Temperament Sorter classifies him as in INTP. Keisey call INTP the [[http://keirsey.com/4temps/architect.asp]["Architect"]], elsewhere it is known as [[http://www.16personalities.com/intp-personality]["The Logician"]].
-
-Occasionally can be found playing guitar or chess—but does neither well.
-
-Dreams in Haskell.
