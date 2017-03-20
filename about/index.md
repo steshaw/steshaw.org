@@ -27,19 +27,17 @@ I enjoyed programming for about 10 years prior to joining the industry. I had he
 
 ### Interests
 
-  - Programming languages, type theory, higher type theory (aka HoTT), category theory, proof theory. i.e. types, logic, and categories (TLC).
-  - Apps---trade-offs, tricks, patterns, big-picture, dogma-slaying, philosophy, and coffee.
-  - Systems
+  - Programming languages: Type theory, Category theory, Logic/proof theory (TLC).
+  - Apps---trade-offs, tricks, patterns, big-picture, dogma-slaying, and philosophy.
+  - Systems:
     - Runtime systems and operating systems---very similar beasts!
     - Distributed systems---cloud, web, messaging, middleware, and highly-scalable servers.
     - Database systems---SQL, NoSQL, NewSQL, and APIs (e.g. LINQ).
-    - Build systems---GNU Make, [Cook](http://miller.emu.id.au/pmiller/software/cook/), [SCons](http://www.scons.org/), [Vesta](http://www.vestasys.org/), Ant, Maven, Ivy, SBT, Cabal, Shake, Nix. My interest was kicked into high gear by Peter Miller's [Recursive Make Considered Harmful](http://aegis.sourceforge.net/auug97.pdf).
-    - Version Control Systems---CVS, Subversion, [Aegis](http://aegis.sourceforge.net/), [GNU] arch, [Vesta](http://www.vestasys.org/), [Darcs](http://darcs.net/), [Mercurial](https://mercurial.selenic.com/), [[GNU] Bazaar](http://bazaar.canonical.com/), [Git](http://git-scm.com/), [Veracity](http://veracity-scm.com/) (with integrated bug tracking and wiki), [Fossil](http://fossil-scm.org/) (with integrated bug tracking, wiki and technical notes).
+    - Build systems---GNU Make, [Cook](http://miller.emu.id.au/pmiller/software/cook/), [SCons](http://www.scons.org/), [Vesta](http://www.vestasys.org/), Ant, Maven, Ivy, SBT, Cabal, Shake, Nix. My interest was originally piqued by Peter Miller's [Recursive Make Considered Harmful](http://aegis.sourceforge.net/auug97.pdf).
+    - Version Control Systems---RCS, CVS, Subversion, [Aegis](http://aegis.sourceforge.net/), [GNU] arch, [Vesta](http://www.vestasys.org/), [Darcs](http://darcs.net/), [Mercurial](https://mercurial.selenic.com/), [[GNU] Bazaar](http://bazaar.canonical.com/), [Git](http://git-scm.com/), [Veracity](http://veracity-scm.com/) (with integrated bug tracking and wiki), [Fossil](http://fossil-scm.org/) (with integrated bug tracking, wiki and technical notes).
 
 
 ### Hobbies
 
-  - Programming Languages---Types, Logic, Categories.
+  - Programming Languages---Types, Logic, Categories (TLC).
   - Human languages---such as Spanish and French.
-  - GameDev---game engines, 2D/3D graphics, OpenGL/WebGL, scripting engines, AI.
-  - Chess---my progress sadly stalled long ago but I play an occasional game.
