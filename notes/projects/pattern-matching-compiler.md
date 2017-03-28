@@ -25,7 +25,7 @@ What about pattern-matching for dependently-typed functional languages?
 How well does Idris produce warnings for redundancy and exhaustiveness?
 In the face of guards? View patterns? Pattern synonyms?
 
-What _is_ axiom K and why would you want to avoid it?
+[What _is_ axiom K](http://stackoverflow.com/questions/39239363/what-is-axiom-k/39256457) and why would you want to avoid it?
 
 
 - [Pattern Matching with Dependent Types](http://strictlypositive.org/dpm/) Conor supplies some colourful slides.
