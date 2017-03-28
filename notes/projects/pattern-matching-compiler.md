@@ -17,3 +17,12 @@ http://stackoverflow.com/questions/586362/pattern-matching-implementation
     - More exotic features like view-patterns and pattern-synonyms.
   - [GADTs and exhaustiveness: looking for the impossible](http://www.math.nagoya-u.ac.jp/~garrigue/papers/gadtspm.pdf). Paper about pattern-matching GADTs in OCaml.
   - [Compiling Functional Languages](http://www.cse.chalmers.se/edu/year/2011/course/CompFun/) course pages at Chalmers. Uses "The Implementation of Functional Programming Languages" by SPJ.
+
+### Dependent pattern-matching
+
+What about pattern-matching for dependently-typed functional languages?
+What _is_ axiom K?
+How well does Idris produce warnings for redundancy and exhaustiveness? In the face of guards? View patterns? Pattern synonyms?
+
+- [Pattern Matching with Dependent Types](http://strictlypositive.org/dpm/) Conor supplies some colourful slides.
+- [Pattern matching without K](https://people.cs.kuleuven.be/~jesper.cockx/Without-K/Pattern-matching-without-K.pdf)
