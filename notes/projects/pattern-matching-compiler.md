@@ -15,4 +15,5 @@ http://stackoverflow.com/questions/586362/pattern-matching-implementation
     - _redundancy_ --- Do all equations have accessible RHSs?
     - _laziness_ --- How does left-to-right evaluation order affect the above?
     - More exotic features like view-patterns and pattern-synonyms.
+  - [GADTs and exhaustiveness: looking for the impossible](http://www.math.nagoya-u.ac.jp/~garrigue/papers/gadtspm.pdf). Paper about pattern-matching GADTs in OCaml.
   - [Compiling Functional Languages](http://www.cse.chalmers.se/edu/year/2011/course/CompFun/) course pages at Chalmers. Uses "The Implementation of Functional Programming Languages" by SPJ.
