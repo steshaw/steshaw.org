@@ -35,3 +35,6 @@ f is an epimorphism if, f : X → Y such that,
   for all morphisms g1, g2 : Y → Z,
     g1 ∘ f = g2 ∘ f => g1 = g2
 ```
+
+Note: apparently, in CT, isomorphism != monomorphism + epimorphism.
+I guess you need something a little stronger than in set theory.
