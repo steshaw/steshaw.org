@@ -1,3 +1,4 @@
+# Category Theory
 
 ## Monic / Epic
 
@@ -38,3 +39,17 @@ f is an epimorphism if, f : X → Y such that,
 
 Note: apparently, in CT, isomorphism != monomorphism + epimorphism.
 I guess you need something a little stronger than in set theory.
+
+
+## Preorders / Orders / Partial Orders
+
+- [Category Theory 3.1: Examples of categories, orders, monoids](https://youtu.be/aZjhqkD6k6w?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM)
+
+TODO
+
+
+## Monoids
+
+- [Category Theory 3.1: Examples of categories, orders, monoids](https://youtu.be/aZjhqkD6k6w?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM)
+
+TODO
