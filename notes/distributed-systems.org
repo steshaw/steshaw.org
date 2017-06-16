@@ -1,0 +1,57 @@
+* Distributed Systems
+
+Aka "Microservices in the Cloud".
+
+** Cloud
+
+- Service Discovery.
+- load balancing (resource utilisation).
+- encryption?
+
+- circuit breaker
+  - Helps prevent cascading failures using a fast-fail service invocation
+    when a service is misbehaving (just for a timeout period and then retried
+    occasionally).
+  - http://microservices.io/patterns/reliability/circuit-breaker.html
+- saying "No" to distributed transactions and the alternatives.
+- Failures. Partitions. Outages.
+- CAP theorem.
+
+
+** Microservices
+
+- Architecture
+  - NGINX Microservices Reference Architecture (MRA) -- 3 models: Proxy , Router Mesh, Fabric.
+- Service discovery - local proxy or etcd/consul/zookeeper or Netflix/Spring-Cloud.
+  - client-side -- client communicates to Service Registry (e.g. etcd).
+    e.g. Netflix OSS.
+  - server-side -- client communicates to a router (proxy/load-balancer) which in
+    turn communicates with the Service Registry. e.g. Kubernetes proxy.
+    - Kubernetes apparently has other ways of avoiding using the proxy pattern
+      (which requires two networks hops per service invocation).
+
+- Messaging/Queuing v REST (async v sync).
+- JSON or binary serialisation.
+- Service Invocation. Fan-out / Fan-in etc. Error handling. Reactive/Futures.
+
+- Microservice Kit.
+  - configuration, logging, health checks, metrics, distributed-tracing (aka correlation id)
+  - examples:
+    - Java
+      - Dropwizard
+      - Spring Boot / Spring Cloud
+    - Go
+      - Gizmo
+      - Micro
+      - Go kit
+
+- Authentication
+  - Access token e.g. JSON Web Token. https://jwt.io
+  - Web app stateless authentication cookies (ala Rails / PlayFramework).
+
+
+** Persistence
+
+- Databases - SQL, NoSQL, NewSQL.
+- [Persistent] Queues / Messaging.
+- Event streaming / CQRS / Kafka.
