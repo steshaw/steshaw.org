@@ -11,6 +11,7 @@
 
 ## Attoparsec
 
+- [CPS is great! CPS is terrible!](http://www.serpentine.com/blog/2011/02/25/cps-is-great-cps-is-terrible/)
 - [What's in a parsing library](http://www.serpentine.com/blog/2010/03/03/whats-in-a-parsing-library-1/)
   - Parsec has an appealing API.
   - Parsec 3 is slower than Parsec 2.
