@@ -20,6 +20,9 @@
   - 3rd generation attoparsec is much faster.
   - 0.11 -> 0.12
   - Up to x2 on micro-benchmarks.
+  - Uses buffers and cursors (index into buffer).
+    - Uses unsafe tricks to grow the buffer.
+    - Remains resilent to programmer misuse via a "generation" tag.
 
 ## Megaparsec
 
