@@ -1,5 +1,11 @@
 # Parsing
 
+> A parser for things
+> is a function from strings
+> to lists
+> of pairs
+> of things and strings!
+
 ## Libraries
 
 - [Parsec](http://www.haskell.org/haskellwiki/Parsec)
