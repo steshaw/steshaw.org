@@ -1,0 +1,118 @@
+---
+title: Haskell on Spacemacs
+date: 2017-08-12 13:40
+tags: Haskell, Emacs, Spacemacs
+---
+
+I've been wanting to give Spacemacs another try for Haskell development.
+In particular, I wanted it to work with =intero= and =hindent=.
+
+
+** Install Emacs
+
+I like to use Mitsuharu Yamamoto's emacs-mac, rather than Aquamacs or
+emacsformacosx.
+
+#+begin_src shell
+$ brew tap railwaycat/emacsmacport
+$ brew cask install emacs-mac
+#+end_src
+
+
+** Install Dependencies
+
+The haskell layer in Spacemacs requires a few dependencies. I installed them
+with Stack.
+
+#+begin_src shell
+$ stack install hlint hasktags hoogle ghc-mod intero
+$ stack --resolver nightly-2017-08-12 install apply-refact
+#+end_src
+
+
+** Haskell layer
+
+I added the =haskell= layer plus =autocompletion= which it seems to require.
+I also followed the documentation in configuring intero and hindent (though
+the style "johan-tibell" no longer seems required as hindent no longer
+supports multiple styles).
+
+After adding a few other layers, my configuration layers in =~/.spacemacs=
+looked like this:
+
+#+begin_src emacs-lisp
+   dotspacemacs-configuration-layers
+   '(
+     ansible
+     auto-completion
+     emacs-lisp
+     git
+     (haskell :variables
+              haskell-completion-backend 'intero
+              haskell-enable-hindent-style "johan-tibell")
+     helm
+     html
+     javascript
+     markdown
+     org
+     osx
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     spell-checking
+     syntax-checking
+     themes-megapack
+     version-control
+     yaml
+     )
+#+end_src
+
+** Project sidebar
+
+I missed having a project sidebar (such as seems to be the default in 
+editors like Atom). Eventually I found that Spacemacs includes NeoTree
+which makes a viable project sidebar. Toggle on/off with =SPC p t= or
+=SPC f t= for a file rather than project browser.
+
+[[https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#neotree-file-tree][See more in the documentation]]
+
+** Tab bar
+
+I also missed having a tab bar (for open files) such as that in Atom.
+There doesn't seem to be anything built into Spacemacs for this. I
+tried the [[https://github.com/evacchi/tabbar-layer][tabbar-layer]] but it was pretty ugly.
+
+After some searching, I figured I could rely on "helm-mini". It lets you open
+search/select files from the open buffers (=SPC b b=). Also searching/selecting
+for files in the same project is possible from projectile (=SPC p f=).
+
+
+** Fill column indicator
+
+I wanted my little indicator for the 80th column.
+Here, you need to tweak your =~/.spacemacs= file.
+
+#+begin_src emacs-lisp
+(defun dotspacemacs/user-config ()
+  (spacemacs/toggle-fill-column-indicator-on)
+  )
+#+end_src
+
+** Theme
+
+It was fun seeing the different themes available for Spacemacs. It's best to
+install =themes-megapack= layer (see my layers configuration above). I don't
+mind the default =spacemacs-dark= theme but here are some of my other favourites:
+
+- =deeper-blue=
+- =dracula=
+- =sanityinc-solarized-dark=
+- =solarized-dark=
+
+Check out [[http://themegallery.robdor.com/][the gallery]].
+
+I finally settled on =deeper-blue=.
+
+#+begin_html
+<img width="800px" style="display:block; margin: 0 auto;" src="../../../../../images/haskell-on-spacemacs.png">
+#+end_html
