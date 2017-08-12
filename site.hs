@@ -1,6 +1,7 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE FlexibleContexts #-}
+
+module Main where
 
 import Hakyll
 import Data.Monoid
