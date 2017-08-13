@@ -18,3 +18,4 @@ Some nice `lens` resources?
 - Simon Peyton Jones has a great explanation of the thinking process 
   behind Twan van Laahoven style lenses.
   https://skillsmatter.com/skillscasts/4251-lenses-compositional-data-access-and-manipulation
+- https://twanvl.nl/blog/haskell/cps-functional-references 
