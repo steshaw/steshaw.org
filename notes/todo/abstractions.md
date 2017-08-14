@@ -1,3 +1,4 @@
+# Abstractions
 
 Walk through the typeclassopedia and related resources:
 
