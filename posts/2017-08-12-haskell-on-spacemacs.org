@@ -114,5 +114,5 @@ Check out [[http://themegallery.robdor.com/][the gallery]].
 I finally settled on =deeper-blue=.
 
 #+begin_html
-<img width="800px" style="display:block; margin: 0 auto;" src="../../../../../images/haskell-on-spacemacs.png">
+<img class="img-responsive" src="../../../../../images/haskell-on-spacemacs.png">
 #+end_html
