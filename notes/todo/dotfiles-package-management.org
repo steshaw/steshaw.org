@@ -1,11 +1,10 @@
+* Dotfiles package management
 
-https://github.com/andsens/homeshick
+- https://github.com/andsens/homeshick
+- http://freshshell.com/
+- http://vcs-home.branchable.com/
 
-http://freshshell.com/
-
-http://vcs-home.branchable.com/
-
-Some dotfiles to crib:
+** Example dotfiles
 
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/holman/dotfiles

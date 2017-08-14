@@ -1,3 +1,6 @@
+# Laziness
+
+AKA non-strict evaluation.
 
 Read these:
 
@@ -11,3 +14,9 @@ Read these:
 See how difficult it is to simulate these lazy patterns in strict languages. Use
 Idris, PureScript or OCaml. It should be particularly hard for some of John's
 examples where essentially you have communicating co-routines.
+
+## call-by-push-value
+
+Probably worth understanding "call-by-push-value".
+
+- http://www.cs.bham.ac.uk/~pbl/cbpv.html
