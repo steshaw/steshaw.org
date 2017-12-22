@@ -4,6 +4,7 @@ import System.Directory
 import System.FilePath
 import Control.Monad
 
+
 ignoreDirs = [".", "..", ".git", "_site", "_store", "_cache"]
 
 getSubdirs dir = do
