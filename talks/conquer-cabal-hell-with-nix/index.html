@@ -4,22 +4,20 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <title></title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <!-- Printing and PDF exports -->
   <script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'reveal.js/css/print/pdf.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
   <script src="reveal.js/lib/js/html5shiv.js"></script>
@@ -30,7 +28,7 @@
     <div class="slides">
 
 
-<section class="slide level2">
+<section id="conquer-cabal-hell-with-nix" class="slide level2">
 <h1>Conquer Cabal Hell with Nix</h1>
 <style>
   section.slide.level2.present {
@@ -47,7 +45,7 @@
 </div>
 
 </section>
-<section class="slide level2">
+<section id="overview-of-talk" class="slide level2">
 <h1>Overview of talk</h1>
 <ol>
 <li>Purely Functional Package Systems</li>
@@ -55,7 +53,7 @@
 <li>How to use Nix with Haskell</li>
 </ol>
 </section>
-<section><section class="titleslide slide level1"><h1>Purely Functional Package Systems</h1></section><section class="slide level2">
+<section><section id="purely-functional-package-systems" class="titleslide slide level1"><h1>Purely Functional Package Systems</h1></section><section id="features" class="slide level2">
 <h1>Features</h1>
 <ul>
 <li>multiple variants of a package at the same time (i.e. side by side)</li>
@@ -64,7 +62,7 @@
 <li>mutiple environments</li>
 <li>usable as non-root</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="examples" class="slide level2">
 <h1>Examples</h1>
 <ul>
 <li><a href="http://nixos.org">Nix</a></li>
@@ -72,7 +70,7 @@
 <li><a href="http://listaller.tenstral.net/">Listaller</a> (was Autopackage)</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>Nix</h1></section><section class="slide level2">
+<section><section id="nix" class="titleslide slide level1"><h1>Nix</h1></section><section id="commands" class="slide level2">
 <h1>Commands</h1>
 <p>Find packages</p>
 <pre class="shell_session"><code>$ nix-env --query --available &#39;hello*&#39;
@@ -86,7 +84,7 @@ $ nix-env -i hello
 <pre class="shell_session"><code>$ nix-env --uninstall hello
 $ nix-env -e hello
 </code></pre>
-</section><section class="slide level2">
+</section><section id="commands-continued" class="slide level2">
 <h1>Commands (continued)</h1>
 <p>Alternatively rollback</p>
 <pre class="shell_session"><code>$ nix-env --rollback
@@ -94,24 +92,24 @@ $ nix-env -e hello
 <p>Upgrade your packages</p>
 <pre class="shell_session"><code>$ nix-env --upgrade
 </code></pre>
-</section><section class="slide level2">
+</section><section id="accelerating-haskell-development-with-nix" class="slide level2">
 <h1>Accelerating Haskell Development with Nix</h1>
 <p>
   <i class="fa fa-terminal"></i> <b>demo time</b>
 </p>
 
-<h3>Installing ghc-mod</h3>
+<h3 id="installing-ghc-mod">Installing ghc-mod</h3>
 <pre class="shell"><code>nix-env -iA nixpkgs.haskell.packages.ghc784.ghc-mod
 </code></pre>
 <p>haskell</p>
 </section></section>
-<section><section class="titleslide slide level1"><h1>Notes (work in progress)</h1></section><section class="slide level2">
+<section><section id="notes-work-in-progress" class="titleslide slide level1"><h1>Notes (work in progress)</h1></section><section id="nix-features" class="slide level2">
 <h1>Nix Features</h1>
 <ul>
 <li>Add more Nix features from <a href="http://nixos.org/nix/about.html" class="uri">http://nixos.org/nix/about.html</a></li>
 <li>Diagrams!</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="architecture-of-nix" class="slide level2">
 <h1>Architecture of Nix</h1>
 <p><strong>Under the hood a little bit</strong></p>
 <ul>
@@ -126,7 +124,7 @@ $ nix-env -e hello
 </ul></li>
 <li>Caching/Memoisation.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="nix-commands" class="slide level2">
 <h1>Nix Commands</h1>
 <ul>
 <li>Installing haskell tools like ghc (different versions) and nix2cabal.</li>
@@ -134,7 +132,7 @@ $ nix-env -e hello
 <li>Usage of nix2cabal</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>Accelerating Haskell Development with Nix</h1></section><section class="slide level2">
+<section><section id="accelerating-haskell-development-with-nix-1" class="titleslide slide level1"><h1>Accelerating Haskell Development with Nix</h1></section><section id="where-are-we-now" class="slide level2">
 <h1>Where are we now?</h1>
 <ul>
 <li>Using cabal sandboxes.</li>
@@ -144,7 +142,7 @@ $ nix-env -e hello
 <li>Let’s not accept the status quo.</li>
 <li>One option is to use Halcyon – a build cache for Cabal.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="whats-not-good" class="slide level2">
 <h1>What’s not good?</h1>
 <ul>
 <li>Long build times.</li>
@@ -154,28 +152,28 @@ $ nix-env -e hello
 <li>There is wastage of time but also of disk space.</li>
 <li>With SSDs, disk space isn’t as cheap as it used to be.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="demo" class="slide level2">
 <h1>Demo</h1>
 <ul>
 <li>Instant `lens` environment.</li>
 <li>Instant `reflex` environment with tryreflex. <a href="https://github.com/ryantrinkle/try-reflex" class="uri">https://github.com/ryantrinkle/try-reflex</a></li>
 <li>Work through hutton-razor.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="downsides-of-nix." class="slide level2">
 <h1>Downsides of Nix.</h1>
 <ul>
 <li>Still early (but you’d be getting in at a great time)</li>
 <li>Written in C++ and Perl (HT <a href="https://plus.google.com/+RaahulKumar2014/posts">Raahul Kumar</a> for pointing out that it’s C++ not C).</li>
 <li>Perhaps there’s hope for a Haskell implementation — <a href="https://github.com/jwiegley/hnix" class="uri">https://github.com/jwiegley/hnix</a>.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="nix-workshop-at-hack-night" class="slide level2">
 <h1>Nix Workshop at Hack Night</h1>
 <ul>
 <li>Get set up with NixOS (and perhaps Nix on Mac/Linux/*BSD if you’re more adventurous).</li>
 <li>Learn how to set up a modern Haskell development environment.</li>
 <li>Hopefully, learn how to work on sources to multiple dependencies in your tree.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="references" class="slide level2">
 <h1>References</h1>
 <ul>
 <li><a href="http://ocharles.org.uk">Ollie Charles</a>
@@ -194,32 +192,22 @@ $ nix-env -e hello
     </div>
   </div>
 
-
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.js"></script>
 
   <script>
 
-      // Full list of configuration options available here:
+      // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,         // Display controls in the bottom right corner
-        progress: true,         // Display a presentation progress bar
-        history: true,          // Push each slide change to the browser history
-        center: true,                       // Vertical centering of slides
-        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
-        slideNumber: false,                // Display the page number of the current slide
-        theme: 'black', // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-        // Optional libraries used to extend on reveal.js
+        // Optional reveal.js plugins
         dependencies: [
           { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
-//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-]});
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
     </script>
     </body>
 </html>

@@ -4,22 +4,20 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <title></title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <!-- Printing and PDF exports -->
   <script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'reveal.js/css/print/pdf.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
   <script src="reveal.js/lib/js/html5shiv.js"></script>
@@ -30,20 +28,20 @@
     <div class="slides">
 
 
-<section><section class="titleslide slide level1"><h1>In the morning</h1></section><section class="slide level2">
+<section><section id="in-the-morning" class="titleslide slide level1"><h1>In the morning</h1></section><section id="getting-up" class="slide level2">
 <h1>Getting up</h1>
 <ul>
 <li>Turn off alarm</li>
 <li>Get out of bed</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="breakfast" class="slide level2">
 <h1>Breakfast</h1>
 <ul>
 <li>Eat eggs</li>
 <li>Drink coffee</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>In the evening</h1></section><section class="slide level2">
+<section><section id="in-the-evening" class="titleslide slide level1"><h1>In the evening</h1></section><section id="dinner" class="slide level2">
 <h1>Dinner</h1>
 <ul>
 <li>Eat spaghetti</li>
@@ -51,8 +49,8 @@
 </ul>
 </section><section class="slide level2">
 
-<p><img src="images/spaghetti.jpg" alt="" /></p>
-</section><section class="slide level2">
+<p><img src="images/spaghetti.jpg" /></p>
+</section><section id="going-to-sleep" class="slide level2">
 <h1>Going to sleep</h1>
 <ul>
 <li>Get in bed</li>
@@ -62,32 +60,22 @@
     </div>
   </div>
 
-
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.js"></script>
 
   <script>
 
-      // Full list of configuration options available here:
+      // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,         // Display controls in the bottom right corner
-        progress: true,         // Display a presentation progress bar
-        history: true,          // Push each slide change to the browser history
-        center: true,                       // Vertical centering of slides
-        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
-        slideNumber: false,                // Display the page number of the current slide
-        theme: 'black', // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-        // Optional libraries used to extend on reveal.js
+        // Optional reveal.js plugins
         dependencies: [
           { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
-//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-]});
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
     </script>
     </body>
 </html>
