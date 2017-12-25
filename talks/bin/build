@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-
-set -eu
+set -euo pipefail
 ${DEBUG:-}
 
 if [[ $# -ne 1 ]]; then
@@ -40,9 +39,17 @@ function BeamerPdf {
 }
 
 function DeckTapePdf {
-  pdf="${pdfBase}.pdf"
-  url="file://$(pwd)/${name}.html"
-  decktape reveal ${url} ${pdf}
+#  pdf="${pdfBase}.pdf"
+  pdf="$(basename $(pwd)).pdf"
+  file="$(pwd)/${name}.html"
+#  docker run --rm -v `pwd`:/slides astefanutti/decktape http://lab.hakim.se/reveal-js slides.pdf
+
+  docker run --rm \
+    -v $(basename $(pwd)):/slides \
+    -v ~:/home/steshaw \
+    astefanutti/decktape "$file" "$pdf"
+
+#  docker run astefanutti/decktape reveal ${url} ${pdf}
 }
 
 DeckTapePdf

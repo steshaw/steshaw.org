@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+${DEBUG:-}
+
+set -euo pipefail
+
+#
+# Make talks.
+#
+for f in talks/*/index.org; do
+  dir=$(dirname $f)
+  if [[ -d ${dir} ]]; then
+    (
+      echo Building ${dir}
+      cd ${dir}
+      make
+    )
+  fi
+done

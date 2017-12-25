@@ -2,23 +2,12 @@
 
 ${DEBUG:-}
 
-set -eu
-
-#
-# Make talks.
-#
-for f in talks/*/index.org; do
-  dir=$(dirname $f)
-  if [[ -d ${dir} ]]; then
-    (
-      echo Building ${dir}
-      cd ${dir}
-      make
-    )
-  fi
-done
+set -euo pipefail
 
 #
 # Build and deploy to GHP.
 #
-bin/build && bin/site-rebuild && bin/deploy-to-github-pages
+bin/build-talks
+bin/build
+bin/site-rebuild
+bin/deploy-to-github-pages
