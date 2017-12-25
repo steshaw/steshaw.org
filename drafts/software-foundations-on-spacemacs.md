@@ -1,3 +1,8 @@
+---
+title: Software Foundations on Spacemacs
+date: 2017-08-20 12:55:18+1000
+tags: Coq
+---
 
 ## Install Coq
 
