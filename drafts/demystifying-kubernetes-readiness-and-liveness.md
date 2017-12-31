@@ -1,9 +1,12 @@
 ---
 title: Demystifying Kubernetes "readiness" and "liveness"
-date: 2017-03-15 08:25:25+10:00
+date: {}
 tags: Kubernetes
+published: true
 ---
 # Demystifying Kubernetes "readiness" and "liveness"
+
+_Probably don't know what I'm doing here_
 
 You may have heard phrases like:
 
