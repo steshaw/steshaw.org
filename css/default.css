@@ -213,3 +213,7 @@ ul.posts {
 .gist article.markdown-body {
   padding: 1em !important;
 }
+
+.text-align-right {
+  text-align: right;
+}
