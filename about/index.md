@@ -56,7 +56,7 @@ other languages:
 [Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php),
 [Ur](http://www.impredicative.com/ur/),
 [ATS](http://www.ats-lang.org/),
-[F\*](http://www.ats-lang.org/),
+[F*](http://www.ats-lang.org/),
 [Haxe](https://haxe.org/),
 [Elm](https://elm-lang.org/),
 [TypeScript](http://typescript.org/),
