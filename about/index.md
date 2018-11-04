@@ -183,5 +183,5 @@ eventually Korn shells.
 
 ### Hobbies
 
-  - Human languages---such as Spanish and French.
+  - Human languages: French, Spanish, and—once-up-a-time—Japanese.
   - Chess
