@@ -111,7 +111,7 @@ Wizard](http://ultimateconsoledatabase.com/others/dick_smith_wizzard.htm) in
 [Commodore 64](http://en.wikipedia.org/wiki/Commodore_64), I was writing
 text-based adventures (aka "go north; get chalice") in Basic, 2D sprite games
 in 6502 assembly, and experimenting with electronic music composition. I
-regret never upgrading to an [Commodore
+regret never upgrading to a [Commodore
 Amiga](https://en.wikipedia.org/wiki/Amiga) as it seemed like an awesome
 platform for writing [video
 games](https://www.youtube.com/watch?v=rsuWgLEQBxM),
