@@ -177,7 +177,7 @@ eventually Korn shells.
       [Fossil](https://fossil-scm.org/) (with integrated bug tracking, wiki
       and technical notes).
       After much preferring Mercurial, I've become proficient with Git.
-      However, I now have hopes that [Prujil](https://pijul.org/)—which
+      However, I now have hopes that [Pijul](https://pijul.org/)—which
       sprung from Darcs but rewritten in Rust with better performance—will
       eventually offer a nicer DX with a sound model.
 
