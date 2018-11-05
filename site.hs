@@ -146,10 +146,11 @@ main = hakyll $ do
       >>= loadAndApplyTemplate "templates/default.html" postCtx
       >>= relativizeUrls
 
-  create ["posts.html"] $ do
+  create ["all-posts/index.html"] $ do
     route idRoute
     compile $ do
-      posts <- loadAll allPosts
+--      posts <- loadAll $ allPosts .&&. complement (fromGlob "posts/index.html")
+      posts <- recentFirst =<< loadAll allPosts
       let postsCtx =  listField "posts" pageCtx (return posts)
                    <> constField "title" "Posts"
                    <> constField "description" "An archive of all my posts:"
@@ -165,7 +166,8 @@ main = hakyll $ do
     route idRoute
     compile $ do
       posts <- recentFirst =<< loadAll allPosts
-      let indexCtx =  listField "posts" pageCtx (return posts)
+      let topPosts = take 5 posts
+      let indexCtx =  listField "posts" pageCtx (return topPosts)
                    <> constField "title" "Home"
                    <> constField "homeactive" "active"
                    <> constField "homeurl" nullLink
