@@ -25,7 +25,7 @@ Some mandatory imports
 > import           Hakyll
 > import           Data.Map        (Map)
 > import qualified Data.Map     as  M
-> import           Data.Monoid     (mconcat,(<>))
+> import           Data.Monoid     ((<>))
 > import           Config          (langs,fstlang)
 > import           Data.List       (isPrefixOf)
 
