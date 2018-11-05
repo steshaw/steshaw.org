@@ -4,16 +4,13 @@ date: 20150608-102112
 tags: maths
 ---
 
-#+begin_comment
 #+begin_html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ymTZEeTjI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/184722729?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 #+end_html
-#+end_comment
 
-[[https://topdocumentaryfilms.com/fermats-last-theorem/][Femat's Last
-Theorem]] is a wonderful documentary! It's the story of a simple mathematical
-problem that went unsolved for centuries. It starts with /Pythagoras'
-theorem/,
+Fermat's Last Theorem is a wonderful, inspiring documentary. It's the story
+of a simple mathematical problem that went unsolved for centuries. It starts
+with /Pythagoras' theorem/,
 
 #+begin_eqtion
   x^2 + y^2 = z^2
