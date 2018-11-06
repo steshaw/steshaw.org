@@ -39,6 +39,7 @@ of other languages:
 [ALGOL](https://en.wikipedia.org/wiki/ALGOL),
 [Eiffel](https://en.wikipedia.org/wiki/Eiffel_(programming_language)),
 [Sather](https://www1.icsi.berkeley.edu/~sather/),
+[Icon](https://www.cs.arizona.edu/icon),
 [CLU](https://en.wikipedia.org/wiki/CLU_(programming_language)),
 [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk),
 [Scheme](https://schemers.org/),
