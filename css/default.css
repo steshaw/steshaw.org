@@ -1,17 +1,20 @@
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   background-color: rgb(248, 248, 248);
-  font-family: 'Roboto', sans-serif;
+  font-size: inherit; /* Override bootstrap */
+  font-family: inherit; /* Override bootstrap */
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
 .footer {
   position: absolute;
   bottom: 0;
@@ -21,27 +24,30 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+/*
+  font-family: 'Bitter', sans-serif;
+*/
+}
 
 h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size: 4.6rem;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.5rem;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 2.8rem;
 }
 
 h4 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.2rem;
 }
 
 .navbar-brand {
@@ -70,13 +76,19 @@ h4 {
 }
 
 .content {
-  font-size: 20px;
+  font-size: inherit; /* Override bootstrap */
 }
 
+.post-header-content * {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/*
 .post-title, .post-subtitle, .post-date {
   margin-top: 0;
   margin-bottom: 5px;
 }
+*/
 
 .post-title {
   font-size: 60px;
@@ -216,4 +228,12 @@ ul.posts {
 
 .text-align-right {
   text-align: right;
+}
+
+.sidebar-module ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar-module li {
+  margin-right: 15px;
 }
