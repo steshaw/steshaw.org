@@ -10,6 +10,8 @@ categories: Programming
 tags: Compilers, Computer Architecture, Computer Hardware, Operating Systems, Programming Languages
 ---
 
-This looks like a great course+book: [The elements of computing systems](http://www.idc.ac.il/tecs/).
+This looks like a great course and book: [The Elements of Computing Systems](http://www.idc.ac.il/tecs/).
 
-![The Elements of Computing Systems](http://www.nand2tetris.org/imgs/cover.jpg "The book")
+![The Elements of Computing Systems][book]
+
+[book]: /images/nand2tetris-cover.jpeg "The book"
