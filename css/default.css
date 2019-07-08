@@ -18,8 +18,8 @@ body {
   font-size: 0.8rem;
 }
 
-.footer * {
-  margin-top: 2px;
+.footer > * {
+  margin-top: 1px;
 }
 
 .flex {
@@ -241,10 +241,6 @@ ul.posts {
 
 .gist article.markdown-body {
   padding: 1em !important;
-}
-
-.text-align-right {
-  text-align: right;
 }
 
 .sidebar-module ul {
