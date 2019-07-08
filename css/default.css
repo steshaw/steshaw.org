@@ -67,12 +67,6 @@ h4 {
   font-size: 2.2rem;
 }
 
-.navbar-brand {
-  padding: 8px 0px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
 .featured-languages {
   margin-left: 1em;
   float: right;
@@ -82,9 +76,6 @@ h4 {
   max-height: 50px;
   max-width: 50px;
   margin: 0.5em;
-}
-
-.welcome {
 }
 
 .quote {
@@ -100,12 +91,6 @@ h4 {
   margin-top: 0;
   margin-bottom: 5px;
 }
-/*
-.post-title, .post-subtitle, .post-date {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-*/
 
 .post-title {
   font-size: 60px;
@@ -223,7 +208,6 @@ ul.posts {
 }
 
 .page-header {
-  margin-top: 5px;
   padding: 0;
 }
 
@@ -249,4 +233,31 @@ ul.posts {
 }
 .sidebar-module li {
   margin-right: 15px;
+}
+
+.sm80 {
+  font-size: 80%;
+}
+
+#navbar {
+  height: auto !important; /* Override bootstrap */
+}
+
+.center-x {
+  display: flex;
+  align-items: center;
+}
+
+.center-y {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav > li > a {
+  padding: 15px 15px;
+}
+
+img.logo {
+  width: 30px;
+  height: 30px;
 }
