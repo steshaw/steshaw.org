@@ -4,5 +4,5 @@
 /dist
 /_cache
 /_site
-
-cabal.sandbox.config
+/shell.nix
+/cabal.sandbox.config

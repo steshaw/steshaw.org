@@ -1,29 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 ${DEBUG:-}
 
-set -eu
-
-keep_alive() {
-  while true; do
-    sleep 600
-    echo -e "\n\n\t\tI am alive\n\n"
-  done
-}
-
-trap 'kill $(jobs -p)' EXIT
-
-keep_alive&
-
-#nixEnv=${HOME}/.nix-profile/etc/profile.d/nix.sh
-#if [[ -f $nixEnv ]]; then
-#  source ~/.nix-profile/etc/profile.d/nix.sh
-#  stackArgs="--nix"
-#fi
-
-if which stack; then
-  stack ${stackArgs:-} build
-else
-#  cabal2nix --shell . >shell.nix
-  nix-shell --run 'cabal configure && cabal build'
-fi
+STACK='stack-1.9.3'
+$STACK build
