@@ -3,9 +3,7 @@ layout: page
 title: About
 ---
 
-<header class="page-header">
 # Steve's Backstory
-</header>
 
 Born English. Grew up Australian — got the accent to prove it. Dual citizen.
 Enjoys living in beautiful Brisbane but does still feel the tug of Ol'
@@ -99,10 +97,13 @@ quite challenging. Wish I had more time to try out
 [Rust](https://www.rust-lang.org/) for systems programming or gamedev.
 
 
-### Formative Years
+## Formative Years
 
 <div class="c64 pull-right">
-![](../images/C64_startup_animiert.gif)
+  <img
+    class="img-responsive"
+    src="../images/C64_startup_animiert.gif"
+  >
 </div>
 
 I enjoyed programming for almost a decade prior to joining industry. I had
@@ -124,65 +125,73 @@ and it's [DCL](http://en.wikipedia.org/wiki/DIGITAL_Command_Language) shell
 scripting language until I was introduced to UNIX with it's Bourne and
 eventually Korn shells.
 
-### Interests
+## Interests
 
-  - Programming languages: Programming Language Theory (PLT), TLC --- Type
-    Theory, Logic (i.e. Proof Theory), and Category Theory; Compilers and
-    Runtime Systems; Program Verification and Mechanised Metatheory.
-  - Application Development: trade-offs, tricks, patterns, the big-picture, dogma-slaying, and
-    philosophy with coffee.
-  - Systems:
-    - Operating Systems and Runtime systems---very similar beasts!
-    - Distributed systems: cloud, web, messaging, middleware, and highly-scalable servers.
-    - Database systems---SQL, NoSQL, NewSQL, and DB APIs/DSLs (e.g. LINQ).
-    - Build systems:
-      [GNU Make](https://www.gnu.org/software/make/),
-      [Cook](http://miller.emu.id.au/pmiller/software/cook/),
-      [SCons](http://www.scons.org/),
-      [Waf](https://waf.io/),
-      [Vesta](http://www.vestasys.org/),
-      [Rake](https://github.com/ruby/rake),
-      [Ant](https://ant.apache.org/),
-      [Maven](https://maven.apache.org/),
-      [Ivy](https://ant.apache.org/ivy/),
-      [SBT](https://www.scala-sbt.org/),
-      [Cabal](https://www.haskell.org/cabal/),
-      [CMake](https://cmake.org/),
-      [Nix](https://nixos.org/nix/),
-      [Shake](https://shakebuild.com/),
-      [Tup](http://gittup.org/tup/),
-      [Ninja](https://ninja-build.org/),
-      [Redo](https://cr.yp.to/redo.html),
-      [Pants](https://www.pantsbuild.org/),
-      [Buck](https://buckbuild.com/),
-      [Bazel](https://bazel.build/),
-      [Please](https://please.build/).
-      My interest was originally
-      piqued by Peter Miller's [Recursive Make Considered
-      Harmful](http://aegis.sourceforge.net/auug97.pdf). My interest has
-      rekindled recently with the publication of
-      [Build systems à la carte](https://github.com/snowleopard/build).
-    - Version Control Systems:
-      [SCSS](https://en.wikipedia.org/wiki/Source_Code_Control_System),
-      [RCS](https://www.gnu.org/software/rcs/),
-      [CVS](https://www.nongnu.org/cvs/),
-      [Subversion](https://subversion.apache.org/),
-      [Aegis](http://aegis.sourceforge.net/),
-      [arch](https://www.gnu.org/software/gnu-arch/),
-      [Vesta](http://www.vestasys.org/),
-      [Darcs](http://darcs.net/),
-      [Mercurial](https://mercurial.selenic.com/),
-      [Bazaar](https://bazaar.canonical.com/),
-      [Git](https://git-scm.com/),
-      [Veracity](http://veracity-scm.com/) (with integrated bug tracking and wiki),
-      [Fossil](https://fossil-scm.org/) (with integrated bug tracking, wiki
-      and technical notes).
-      After much preferring Mercurial, I've become proficient with Git.
-      However, I now have hopes that [Pijul](https://pijul.org/)—which
-      sprung from Darcs but rewritten in Rust with better performance—will
-      eventually offer a nicer DX with a sound model.
+### Programming Languages
 
-### Hobbies
+- PLT --- Programming Language Theory.
+- TLC --- Types, Logic, and Categories.
+- Compilers and runtime systems.
+- Program Verification.
+- Mechanised Metatheory.
 
-  - Human languages: French, Spanish, and—once-up-a-time—Japanese.
-  - Chess
+### Application Development
+
+Trade-offs, tricks, patterns, big-picture, dogma-slaying, and philosophy with coffee.
+
+### Systems
+
+- Operating Systems and runtime systems---very similar beasts!
+- Distributed systems: cloud, web, messaging, middleware, and highly-scalable servers.
+- Database systems---SQL, NoSQL, NewSQL, and DB APIs/DSLs.
+- Build systems:
+  [GNU Make](https://www.gnu.org/software/make/),
+  [Cook](http://miller.emu.id.au/pmiller/software/cook/),
+  [SCons](http://www.scons.org/),
+  [Waf](https://waf.io/),
+  [Vesta](http://www.vestasys.org/),
+  [Rake](https://github.com/ruby/rake),
+  [Ant](https://ant.apache.org/),
+  [Maven](https://maven.apache.org/),
+  [Ivy](https://ant.apache.org/ivy/),
+  [SBT](https://www.scala-sbt.org/),
+  [Cabal](https://www.haskell.org/cabal/),
+  [CMake](https://cmake.org/),
+  [Nix](https://nixos.org/nix/),
+  [Shake](https://shakebuild.com/),
+  [Tup](http://gittup.org/tup/),
+  [Ninja](https://ninja-build.org/),
+  [Redo](https://cr.yp.to/redo.html),
+  [Pants](https://www.pantsbuild.org/),
+  [Buck](https://buckbuild.com/),
+  [Bazel](https://bazel.build/),
+  [Please](https://please.build/).
+  My interest was originally
+  piqued by Peter Miller's [Recursive Make Considered
+  Harmful](http://aegis.sourceforge.net/auug97.pdf). My interest has
+  rekindled recently with the publication of
+  [Build systems à la carte](https://github.com/snowleopard/build).
+- Version Control Systems:
+  [SCSS](https://en.wikipedia.org/wiki/Source_Code_Control_System),
+  [RCS](https://www.gnu.org/software/rcs/),
+  [CVS](https://www.nongnu.org/cvs/),
+  [Subversion](https://subversion.apache.org/),
+  [Aegis](http://aegis.sourceforge.net/),
+  [arch](https://www.gnu.org/software/gnu-arch/),
+  [Vesta](http://www.vestasys.org/),
+  [Darcs](http://darcs.net/),
+  [Mercurial](https://mercurial.selenic.com/),
+  [Bazaar](https://bazaar.canonical.com/),
+  [Git](https://git-scm.com/),
+  [Veracity](http://veracity-scm.com/) (with integrated bug tracking and wiki),
+  [Fossil](https://fossil-scm.org/) (with integrated bug tracking, wiki
+  and technical notes).
+  After much preferring Mercurial, I've become proficient with Git.
+  However, I now have hopes that [Pijul](https://pijul.org/)—which
+  sprung from Darcs but rewritten in Rust with better performance—will
+  eventually offer a nicer DX.
+
+## Hobbies
+
+- Human languages: French, Spanish, and—once-up-a-time—Japanese.
+- Chess

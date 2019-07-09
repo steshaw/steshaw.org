@@ -49,16 +49,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 900;
-  font-size: 4.6rem;
+  font-size: 4.0rem;
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 800;
+  font-size: 3.0rem;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.0rem;
 }
 
@@ -67,9 +67,14 @@ h4 {
   font-size: 1.8rem;
 }
 
-.featured-languages {
-  margin-left: 1em;
-  float: right;
+h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .featured-languages img {
@@ -148,6 +153,7 @@ ul.posts {
 
 .sidebar {
   opacity: 0.60;
+  margin-top: 8em;
 }
 
 .container {
@@ -239,8 +245,12 @@ ul.posts {
   font-size: 80%;
 }
 
-#navbar {
-  height: auto !important; /* Override bootstrap */
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-nav > li > a {
+  padding: 15px 15px;
 }
 
 .center-x {
@@ -253,10 +263,6 @@ ul.posts {
   justify-content: center;
 }
 
-.navbar-nav > li > a {
-  padding: 15px 15px;
-}
-
 img.logo {
   width: 30px;
   height: 30px;
@@ -264,4 +270,25 @@ img.logo {
 
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.c64 {
+  max-width: 60%;
+}
+
+.talks ul {
+  list-style: none;
+  padding-inline-start: 0px; /* reset user agent stylesheet */
+}
+
+.wip-talks ul {
+  list-style: none;
+  padding-inline-start: 0px; /* reset user agent stylesheet */
+}
+.wip-talks li:before {
+  content: "🚧\00a0";
 }
