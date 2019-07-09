@@ -78,9 +78,9 @@ h6 {
 }
 
 .featured-languages img {
-  max-height: 50px;
-  max-width: 50px;
-  margin: 0.5em;
+  max-height: 2rem;
+  max-width: 2rem;
+  margin: 0.5rem;
 }
 
 .quote {
