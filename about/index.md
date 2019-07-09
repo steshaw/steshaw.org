@@ -80,7 +80,7 @@ Of course, my depth of study varied greatly. In fact, most of these languages
 I have learnt only superficially, often from research papers or books alone.
 
 Thankfully, I'm working primarily in [Haskell](https://www.haskell.org/) at
-the moment. I also like [Idris](http://idris-lang.org),
+the moment. I also like [Idris](https://idris-lang.org/),
 [PureScript](http://www.purescript.org/), and
 [Scala](https://scala-lang.org/). I'd definitely take on
 [OCaml](https://ocaml.org/) too, given the opportunity. I've more-or-less
@@ -89,10 +89,10 @@ with developments from time to time. I haven't really gotten into
 [PureScript](http://www.purescript.org/) as yet, though it looks enticing.
 Unfortunately, [Idris](http://idris-lang.org) isn't ready for prime time, but
 I'm hopeful that this could change with the advent of [Idris
-2.0](https://github.com/edwinb/Blodwen/), and if a production-ready
+2](https://github.com/edwinb/Idris2), and if a production-ready
 runtime-system materialises. I've done a bit of introductory work with
 [Coq](https://coq.inria.fr/) and
-[Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php) and have found it
+[Agda](https://wiki.portal.chalmers.se/agda/pmwiki.php) and have found it
 quite challenging. Wish I had more time to try out
 [Rust](https://www.rust-lang.org/) for systems programming or gamedev.
 
