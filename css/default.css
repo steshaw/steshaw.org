@@ -153,7 +153,7 @@ ul.posts {
 
 .sidebar {
   opacity: 0.60;
-  margin-top: 8em;
+  margin-block-end: 2rem;
 }
 
 .container {
