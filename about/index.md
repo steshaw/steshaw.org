@@ -132,8 +132,8 @@ eventually Korn shells.
 - PLT --- Programming Language Theory.
 - TLC --- Types, Logic, and Categories.
 - Compilers and runtime systems.
-- Program Verification.
 - Mechanised Metatheory.
+- Program Verification.
 
 ### Application Development
 
@@ -143,11 +143,11 @@ Trade-offs, tricks, patterns, big-picture, dogma-slaying, and philosophy with co
 
 - Operating Systems and runtime systems---very similar beasts!
 - Distributed systems: cloud, web, messaging, middleware, and highly-scalable servers.
-- Database systems---SQL, NoSQL, NewSQL, and DB APIs/DSLs.
+- Database systems: SQL, NoSQL, NewSQL, OODBMS, and APIs/DSLs.
 - Build systems:
-  [GNU Make](https://www.gnu.org/software/make/),
-  [Cook](http://miller.emu.id.au/pmiller/software/cook/),
-  [SCons](http://www.scons.org/),
+  [GNU Make][gnu-make],
+  [Cook][cook],
+  [SCons][scons],
   [Waf](https://waf.io/),
   [Vesta](http://www.vestasys.org/),
   [Rake](https://github.com/ruby/rake),
@@ -166,11 +166,11 @@ Trade-offs, tricks, patterns, big-picture, dogma-slaying, and philosophy with co
   [Buck](https://buckbuild.com/),
   [Bazel](https://bazel.build/),
   [Please](https://please.build/).
-  My interest was originally
-  piqued by Peter Miller's [Recursive Make Considered
-  Harmful](http://aegis.sourceforge.net/auug97.pdf). My interest has
-  rekindled recently with the publication of
-  [Build systems à la carte](https://github.com/snowleopard/build).
+  My interest was originally piqued by Peter Miller's [Recursive Make
+  Considered Harmful][recursive-make]. My interest has rekindled recently
+  with the publication of [Non-recursive Make Considered
+  Harmful][non-recursive-make] (though with no mention of Peter Miller's
+  [Cook][cook]) and [Build systems à la carte][build-systems-a-la-carte].
 - Version Control Systems:
   [SCSS](https://en.wikipedia.org/wiki/Source_Code_Control_System),
   [RCS](https://www.gnu.org/software/rcs/),
@@ -195,3 +195,11 @@ Trade-offs, tricks, patterns, big-picture, dogma-slaying, and philosophy with co
 
 - Human languages: French, Spanish, and—once-up-a-time—Japanese.
 - Chess
+
+
+[recursive-make]: http://aegis.sourceforge.net/auug97.pdf
+[gnu-make]: https://www.gnu.org/software/make/
+[scons]: https://scons.org/
+[cook]: https://web.archive.org/web/20140622050724/http://miller.emu.id.au/pmiller/software/cook/
+[non-recursive-make]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/03/hadrian.pdf
+[build-systems-a-la-carte]: https://github.com/snowleopard/build
