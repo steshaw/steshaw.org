@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 ${DEBUG:-}
-
-set -eu
 
 by="${1:-Built by ${USER}}"
 

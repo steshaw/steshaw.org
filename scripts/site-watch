@@ -1,16 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 ${DEBUG:-}
 
-set -eu
-
-nixEnv=${HOME}/.nix-profile/etc/profile.d/nix.sh
-if [[ -f $nixEnv ]]; then
-  source ~/.nix-profile/etc/profile.d/nix.sh
-fi
-
-if which stack; then
-  stack exec site watch
-else
-  cabal run watch
-fi
+STACK='stack-1.9.3'
+$STACK exec -- site watch
