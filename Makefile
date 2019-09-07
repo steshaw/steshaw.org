@@ -1,3 +1,3 @@
 .PHONY:
 all:
-	bin/publish
+	scripts/publish
