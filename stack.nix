@@ -18,7 +18,10 @@ in haskell.lib.buildStackProject {
 
     haskellPackages.alex
     haskellPackages.happy
-  ];
+  ] ++ lib.optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [
+    Cocoa
+    CoreServices
+  ]);
   shellHook = ''
   '';
   inherit ghc;
