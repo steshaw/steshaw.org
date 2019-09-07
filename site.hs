@@ -4,62 +4,39 @@
 module Main where
 
 import Hakyll
-import Data.Monoid
-import Data.Maybe
+
+import Abbreviations (abbreviationFilter)
+--import Config (feedConfiguration, langs)
+import Multilang (multiContext)
+import Text.Jasmine
+import YFilters (blogFigure, blogImage, frenchPunctuation, highlight)
+
 import Control.Applicative ((<$>), empty)
-import qualified Data.ByteString.Lazy.Char8 as LB
-import qualified Data.Text as T
-import qualified Data.Text.Encoding as E
-import qualified Data.Map as M
+import Control.Monad (forM)
+import Data.Binary
 import Data.Char (toLower, isAlphaNum)
 import Data.List (sortBy, isInfixOf, intercalate)
-import qualified Data.ByteString.Lazy.Char8 as LB
-import qualified Data.Text as T
-import qualified Data.Text.Encoding as E
-import qualified Data.Map as M
-import Text.Jasmine
-
+import Data.Maybe
+import Data.Monoid ((<>), mconcat)
+import Data.Ord (comparing)
+import Data.Time.Clock (UTCTime)
 import Data.Time.Format (parseTimeM)
 import Data.Time.Locale.Compat (defaultTimeLocale)
-import Data.Time.Clock (UTCTime)
-
+import Data.Typeable
 import System.FilePath (takeFileName)
-
-import Text.ParserCombinators.Parsec.Char
 import Text.ParserCombinators.Parsec
+--import Text.ParserCombinators.Parsec.Char
 
-import Debug.Trace (trace)
+import Data.Aeson
 
-import Control.Monad          (forM, forM_)
-import Data.List              (sortBy, isInfixOf)
-import Data.Monoid            ((<>), mconcat)
-import Data.Ord               (comparing)
-import Hakyll
--- import System.Locale          (defaultTimeLocale)
-import System.FilePath.Posix  (
-  takeBaseName,
-  takeDirectory,
-  (</>),
-  splitFileName
-  )
-import YFilters (blogImage, blogFigure, frenchPunctuation, highlight)
+import System.FilePath.Posix ((</>), splitFileName, takeBaseName, takeDirectory)
 
-import           Data.Monoid            ((<>),mconcat)
-import           Hakyll
+import qualified Data.ByteString.Lazy.Char8 as LB
+import qualified Data.HashMap.Strict as M
+import qualified Data.Text as T
+import qualified Data.Text.Encoding as E
 
-import           Data.List              (sortBy,isInfixOf)
-import           Data.Ord               (comparing)
---import           System.Locale          (defaultTimeLocale)
-
-import           Abbreviations          (abbreviationFilter)
-import           YFilters               (blogImage,blogFigure
-                                        ,frenchPunctuation,highlight)
-import           Multilang              (multiContext)
-import           System.FilePath.Posix  (takeBaseName,takeDirectory,(</>),splitFileName)
-
-import           Config                 (langs,feedConfiguration)
 --------------------------------------------------------------------------------
-
 
 main :: IO ()
 main = hakyll $ do
@@ -179,7 +156,7 @@ main = hakyll $ do
 
   match "templates/*" $ compile templateCompiler
 
-  let feedCtx = pageCtx <> bodyField "description"
+  let _feedCtx = pageCtx <> bodyField "description"
 
   mkFeed "atom.xml" renderAtom
   mkFeed "rss.xml"  renderRss
@@ -232,7 +209,7 @@ main = hakyll $ do
     htmlToOwnDir :: String -> String
     htmlToOwnDir url = either (const url) id pr
       where
-        pr = runParser p 0 "<blog>" url
+        pr = runParser p (0 :: Integer) "<blog>" url
         p = do
           stuff <- many $ noneOf "."
           return $ stuff ++ "/index.html"
@@ -261,10 +238,16 @@ compressJsCompiler = fmap jasmin <$> getResourceString
 jasmin :: String -> String
 jasmin src = LB.unpack $ minify $ LB.fromChunks [E.encodeUtf8 $ T.pack src]
 
+allPosts :: Pattern
 allPosts  = "posts/*"
+
+allDrafts :: Pattern
 allDrafts = "drafts/*.org" .||. "drafts/*.md"
+
+allNotes :: Pattern
 allNotes = "notes/*.org" .||. "notes/*.md"
 
+mkFeed :: (Binary a, Typeable a, Writable a) => Identifier -> (FeedConfiguration -> Context String -> [Item String] -> Compiler (Item a)) -> Rules ()
 mkFeed file renderer =
   create [file] $ do
     route idRoute
@@ -273,9 +256,11 @@ mkFeed file renderer =
       posts <- feed
       renderer feedConfig feedCtx posts
 
+feed :: Compiler [Item String]
 feed = recentFirst =<<
   loadAllSnapshots allPosts "content"
 
+feedConfig :: FeedConfiguration
 feedConfig = FeedConfiguration
   { feedTitle       = "Steven Shaw"
   , feedDescription = "Loves Programming Languages"
@@ -289,10 +274,21 @@ feedConfig = FeedConfiguration
 nullLink :: String
 nullLink = "javascript:void(0)"
 
-subtitle :: Context a
+{-
+objectToMbText :: Object -> T.Text -> Maybe T.Text
+objectToMbText o = do
+  fred <- o .:? "subtitle"
+  fred
+-}
+
+v2t :: Value -> T.Text
+v2t (String s) = s
+v2t _          = ""
+
+subtitle :: Context String
 subtitle = field "subtitle" $ \item -> do
-    metadata <- getMetadata (itemIdentifier item)
-    return $ fromMaybe "" $ M.lookup "subtitle" metadata
+  metadata <- getMetadata (itemIdentifier item)
+  pure $ T.unpack $ fromMaybe "" $ v2t <$> M.lookup "subtitle" metadata
 
 -- | Default setup is for individual post pages
 pageCtx :: Context String
@@ -355,10 +351,6 @@ sortIdentifiersByDate = sortBy (flip byDate)
             fn2 = takeFileName $ toFilePath id2
             parseTime' fn = (parseTimeM True) defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
         in compare (parseTime' fn1 :: Maybe UTCTime) (parseTime' fn2 :: Maybe UTCTime)
-
-
-
-
 
 --------------------------------------------------------------------------------
 --

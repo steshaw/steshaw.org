@@ -6,24 +6,31 @@ author: Steven Shaw
 maintainer: steven@steshaw.org
 license: MIT
 license-file: LICENCE-MIT
-homepage: http://steshaw.org
+homepage: https://steshaw.org
+
 ghc-options:
 - -O
 - -Wall
 - -threaded
+
 dependencies:
-- base >=4.8 && <4.9
-- aeson-pretty ^>=0.7.2
+- base >=4.9 && <5.0
+
+- aeson
+- aeson-pretty
+- binary
 - bytestring
 - containers
 - filepath
-- hakyll >=4.7.0.0 && <= 4.8.0.0
+- hakyll
 - hjsmin
 - parsec
 - semigroups
 - text
 - time
 - time-locale-compat
+- unordered-containers
+
 executables:
   site:
     main: site.hs
