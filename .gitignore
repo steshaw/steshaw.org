@@ -1,8 +1,10 @@
-/steshaw-org.cabal
-/.stack-work
-/.cabal-sandbox
-/dist
-/_cache
-/_site
-/shell.nix
+/.cabal-sandbox/
+/.stack-work/
+/_cache/
+/_site/
 /cabal.sandbox.config
+/dist/
+/dist-newstyle/
+/shell.nix
+/steshaw-org.cabal
+/.local/

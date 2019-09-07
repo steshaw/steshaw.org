@@ -3,5 +3,4 @@
 set -euo pipefail
 ${DEBUG:-}
 
-STACK='stack-1.9.3'
-$STACK exec -- site rebuild
+stack exec -- site rebuild

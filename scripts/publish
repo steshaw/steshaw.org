@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-${DEBUG:-}
-
 set -euo pipefail
+${DEBUG:-}
 
 #
 # Build and deploy to GHP.
