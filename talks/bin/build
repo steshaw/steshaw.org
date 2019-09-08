@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
+# FIXME: Fix the strange we way dump the pdfs into the parent directory
+# (i.e. ..).
+
 set -euo pipefail
 ${DEBUG:-}
 
 if [[ $# -ne 1 ]]; then
-  echo "usage: $0 talk-name" >&2
+  script=$(basename "$0")
+  echo "usage: $script talk-name" >&2
   exit 2
 fi
 
-name=$1
+name=${1%.org}
 src=${name}.org
 
 #  -V revealjs-url:http://lab.hakim.se/reveal-js \
@@ -19,37 +23,50 @@ pandoc \
   -t revealjs \
   --slide-level 2 \
   -V theme:black \
-  --output ${name}.html \
-  ${src}
+  --output "${name}".html \
+  "${src}"
+
+cp "${name}.html" "${name}.1.html"
 
 # Sadly, the setting the theme via the `theme` variable doesn't seem to work. Invoke Perl!
-perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i ${name}.html
+# FIXME: This currently doesn't change anything. It seems that the theme is set
+#        appropriately. Probably because we bumped the version of pandoc.
+perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i "${name}.html"
 
-# FIX: hack for index.org
+cp "${name}.html" "${name}.2.html"
+
+# When the talk name is "index" use the name of the directory instead.
 if [[ $name == 'index' ]]; then
-  pdfBase="../$(basename $(pwd))"
+  talkName=$(basename "${PWD}")
+  pdfBase="../${talkName}"
 else
   pdfBase="${name}"
 fi
+pdfBase=$(realpath "${pdfBase}") # XXX: Clobbered!
+
+# See https://github.com/astefanutti/decktape#docker
+function DeckTapePdf {
+  pdf="${pdfBase}.pdf"
+  file="${PWD}/${name}.html"
+
+  user="$(id --user):$(id --group)"
+#    -v "${pdfBase}:/slides" \
+  docker run --rm \
+    --user "${user}" \
+    -v "${HOME}:${HOME}" \
+    astefanutti/decktape:1.0.0 reveal "$file" "$pdf"
+  echo decktape exit status = $?
+}
 
 function BeamerPdf {
   pdf="${pdfBase}.beamer.pdf"
 
-  which pdflatex && pandoc -t beamer -V theme:Madrid ${src} -o ${pdf} || echo 'Install pdflatex!'
-}
-
-function DeckTapePdf {
-#  pdf="${pdfBase}.pdf"
-  pdf="$(basename $(pwd)).pdf"
-  file="$(pwd)/${name}.html"
-#  docker run --rm -v `pwd`:/slides astefanutti/decktape http://lab.hakim.se/reveal-js slides.pdf
-
-  docker run --rm \
-    -v $(basename $(pwd)):/slides \
-    -v ~:/home/steshaw \
-    astefanutti/decktape "$file" "$pdf"
-
-#  docker run astefanutti/decktape reveal ${url} ${pdf}
+  if type -p pdflatex >/dev/null; then
+    pandoc -t beamer -V theme:Madrid "${src}" -o "${pdf}"
+  else
+    echo 'Install pdflatex!'
+    exit 1
+  fi
 }
 
 DeckTapePdf
