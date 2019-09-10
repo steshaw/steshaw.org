@@ -1,1 +1,77 @@
-../talks/bin/build
+#!/usr/bin/env bash
+
+# TODO: Make the output directory for PDFs configurable.
+
+set -euo pipefail
+${DEBUG:-}
+
+if [[ $# -ne 1 ]]; then
+  script=$(basename "$0")
+  echo "usage: $script talk-name" >&2
+  exit 2
+fi
+
+name=${1%.org}
+src=${name}.org
+
+pandoc \
+  --smart \
+  --standalone \
+  --css=https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css \
+  -t revealjs \
+  --slide-level 2 \
+  -V theme:black \
+  --output "${name}".html \
+  "${src}"
+
+#
+# Sadly, setting the `theme` variable doesn't work. Invoke Perl!
+#
+# XXX: Apparently, setting the `theme` variable works now?
+# XXX: Probably because we bumped the version of pandoc.
+#
+cp "${name}.html" "/tmp/${name}.before.html"
+perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i "${name}.html"
+cp "${name}.html" "/tmp/${name}.after.html"
+# XXX: Ensure that the Perl inplace search/replace still does nothing. Just a
+# XXX: heads-up if things change.
+diff "/tmp/${name}.before.html" "/tmp/${name}.after.html"
+
+#
+# When the talk name is "index", use the name of the parent directory
+# instead and output in the parent directory.
+#
+if [[ $name == 'index' ]]; then
+  talkName=$(basename "${PWD}")
+  pdfBase="../${talkName}"
+else
+  pdfBase="${name}"
+fi
+pdfBase=$(realpath "${pdfBase}") # XXX: Clobbered!
+
+# See https://github.com/astefanutti/decktape#docker
+function DeckTapePdf {
+  pdf="${pdfBase}.pdf"
+  file="${PWD}/${name}.html"
+
+  user="$(id --user):$(id --group)"
+  docker run --rm \
+    --user "${user}" \
+    -v "${HOME}:${HOME}" \
+    astefanutti/decktape:1.0.0 reveal "$file" "$pdf"
+  echo decktape exit status = $?
+}
+
+function BeamerPdf {
+  pdf="${pdfBase}.beamer.pdf"
+
+  if type -p pdflatex >/dev/null; then
+    pandoc -t beamer -V theme:Madrid "${src}" -o "${pdf}"
+  else
+    echo 'Install pdflatex!'
+    exit 1
+  fi
+}
+
+DeckTapePdf
+BeamerPdf
