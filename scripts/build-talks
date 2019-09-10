@@ -8,8 +8,7 @@ for f in talks/*/index.org; do
   if [[ -d ${dir} ]]; then
     (
       echo "Building ${dir}"
-      cd "${dir}"
-      make
+      make -C "${dir}" "$@"
     )
   fi
 done
