@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# FIXME: Fix the strange we way dump the pdfs into the parent directory
-# (i.e. ..).
+# TODO: Make the output directory for PDFs configurable.
 
 set -euo pipefail
 ${DEBUG:-}
@@ -15,7 +14,6 @@ fi
 name=${1%.org}
 src=${name}.org
 
-#  -V revealjs-url:http://lab.hakim.se/reveal-js \
 pandoc \
   --smart \
   --standalone \
@@ -26,16 +24,23 @@ pandoc \
   --output "${name}".html \
   "${src}"
 
-cp "${name}.html" "${name}.1.html"
-
-# Sadly, the setting the theme via the `theme` variable doesn't seem to work. Invoke Perl!
-# FIXME: This currently doesn't change anything. It seems that the theme is set
-#        appropriately. Probably because we bumped the version of pandoc.
+#
+# Sadly, setting the `theme` variable doesn't work. Invoke Perl!
+#
+# XXX: Apparently, setting the `theme` variable works now?
+# XXX: Probably because we bumped the version of pandoc.
+#
+cp "${name}.html" "/tmp/${name}.before.html"
 perl -p -e 's/simple\.css/black.css/; s/reveal\.min\./reveal./' -i "${name}.html"
+cp "${name}.html" "/tmp/${name}.after.html"
+# XXX: Ensure that the Perl inplace search/replace still does nothing. Just a
+# XXX: heads-up if things change.
+diff "/tmp/${name}.before.html" "/tmp/${name}.after.html"
 
-cp "${name}.html" "${name}.2.html"
-
-# When the talk name is "index" use the name of the directory instead.
+#
+# When the talk name is "index", use the name of the parent directory
+# instead and output in the parent directory.
+#
 if [[ $name == 'index' ]]; then
   talkName=$(basename "${PWD}")
   pdfBase="../${talkName}"
@@ -50,7 +55,6 @@ function DeckTapePdf {
   file="${PWD}/${name}.html"
 
   user="$(id --user):$(id --group)"
-#    -v "${pdfBase}:/slides" \
   docker run --rm \
     --user "${user}" \
     -v "${HOME}:${HOME}" \
