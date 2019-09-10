@@ -2,6 +2,10 @@
 
 ** Getting up
 
+This is great --- or not. Emdash.
+
+This is an endash -- so there.
+
 -  Turn off alarm
 -  Get out of bed
 
