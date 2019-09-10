@@ -4,22 +4,20 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <title></title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <!-- Printing and PDF exports -->
   <script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'reveal.js/css/print/pdf.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
   <script src="reveal.js/lib/js/html5shiv.js"></script>
@@ -30,7 +28,7 @@
     <div class="slides">
 
 
-<section class="slide level2">
+<section id="how-we-got-here" class="slide level2">
 <h1>How we got here</h1>
 <p><strong>The genesis of enlightened programming languages</strong></p>
 <div style="float: right; margin-top: 45%;">
@@ -39,7 +37,7 @@
 </div>
 
 </section>
-<section><section class="titleslide slide level1"><h1>Where is “here”?</h1></section><section class="slide level2">
+<section><section id="where-is-here" class="titleslide slide level1"><h1>Where is “here”?</h1></section><section id="what-were-talking-about" class="slide level2">
 <h1>What we’re talking about</h1>
 <ul>
 <li>ML - OCaml / SML</li>
@@ -48,7 +46,7 @@
 <li>Idris</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>The genesis</h1></section><section class="slide level2">
+<section><section id="the-genesis" class="titleslide slide level1"><h1>The genesis</h1></section><section id="lambda-calculus" class="slide level2">
 <h1>Lambda Calculus</h1>
 <ul>
 <li>lambda calculus (LC). Church.</li>
@@ -62,46 +60,46 @@
 </ul>
 </aside>
 
-</section><section class="slide level2">
+</section><section id="automated-theorem-proving" class="slide level2">
 <h1>Automated Theorem Proving</h1>
 <ul>
 <li>Theorem provers and Martin-Löf.</li>
 <li>Genesis of ML as a tactics language for the LCF theorem prover.</li>
 <li>Mention some of the people and places such as Robin Milner and University of Edinburgh.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="lisp" class="slide level2">
 <h1>Lisp</h1>
 <ul>
 <li>Perhaps mention of lisp as a simple external syntax for the LC. This is were lisp remains in the past. Essentially it’s light goes out.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="caml" class="slide level2">
 <h1>CAML</h1>
 <ul>
 <li>The first implementation of CAML in Lisp. Mention some early INRIA researchers such a Gérard Huet.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="ml-and-sml" class="slide level2">
 <h1>ML and SML</h1>
 <ul>
 <li>The work on ML/SML. One of the researchers went from the US -&gt; Scotland or the other way around. Find that guy and mention him :).</li>
 <li>Modules in SML and OCaml. Perhaps mention applicative v generative module systems and the similarity with Haskell’s type classes. Mention modular type classes by Dreyer, Harper and Chakravarty.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="lazy-mls" class="slide level2">
 <h1>Lazy MLs</h1>
 <ul>
 <li>the rise of the lazy functional PLs such as Hope, Miranda and LazyML. Some folks, faces and places.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="haskell" class="slide level2">
 <h1>Haskell</h1>
 <ul>
 <li>Haskell, one of the few times a design by committee worked (someone should study that and learn how they did it).</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="type-classes" class="slide level2">
 <h1>Type Classes</h1>
 <ul>
 <li>Type classes. Wadler.</li>
 <li>A generalisation of eqtype variables from Standard ML.</li>
 </ul>
-</section><section class="slide level2">
+</section><section id="proof-assistants" class="slide level2">
 <h1>Proof Assistants</h1>
 <ul>
 <li>Verified software and dependent types.</li>
@@ -110,7 +108,7 @@
 <li>Here, we’re full-circle back to theorem provers :D</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>Further Resources</h1></section><section class="slide level2">
+<section><section id="further-resources" class="titleslide slide level1"><h1>Further Resources</h1></section><section id="key-references" class="slide level2">
 <h1>Key references</h1>
 <ul>
 <li>How to make ad-hoc polymorphism less ad hoc. Philip Wadler and Stephen Blott. 16’th Symposium on Principles of Programming Languages, ACM Press, Austin, Texas, January 1989.</li>
@@ -122,7 +120,7 @@
 </ul>
 </aside>
 
-</section><section class="slide level2">
+</section><section id="further-reading" class="slide level2">
 <h1>Further reading</h1>
 <ul>
 <li>See <a href="http://steshaw.org/how-we-got-here/resources.html" class="uri">http://steshaw.org/how-we-got-here/resources.html</a></li>
@@ -132,36 +130,26 @@
 <li>less well-known research PLs such as ATS, Ur/Web, F*.</li>
 </ul>
 </section></section>
-<section><section class="titleslide slide level1"><h1>Questions?</h1></section></section>
+<section><section id="questions" class="titleslide slide level1"><h1>Questions?</h1></section></section>
     </div>
   </div>
-
 
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.js"></script>
 
   <script>
 
-      // Full list of configuration options available here:
+      // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,         // Display controls in the bottom right corner
-        progress: true,         // Display a presentation progress bar
-        history: true,          // Push each slide change to the browser history
-        center: true,                       // Vertical centering of slides
-        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
-        slideNumber: false,                // Display the page number of the current slide
-        theme: 'black', // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-        // Optional libraries used to extend on reveal.js
+        // Optional reveal.js plugins
         dependencies: [
           { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
-//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-]});
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
     </script>
     </body>
 </html>
