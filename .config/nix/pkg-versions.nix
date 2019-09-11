@@ -37,11 +37,15 @@
 
 { channels ? [
     "19.03"
-    "18.09" "18.03"
-    "17.09" "17.03"
-    "16.09" "16.03"
+    "18.09"
+    "18.03"
+    "17.09"
+    "17.03"
+    "16.09"
+    "16.03"
     "15.09"
-    "14.12" "14.04"
+    "14.12"
+    "14.04"
     "13.10"
   ]
 , attrs ? builtins.attrNames (import <nixpkgs> {})
@@ -51,25 +55,32 @@
 
 let
   getSet = channel:
-    (import (builtins.fetchTarball "channel:nixos-${channel}") args).pkgs;
+    let
+      tarball = builtins.fetchTarball "channel:nixos-19.03";
+    in
+      (import tarball args).pkgs;
 
   pkg2version = name: channel: let
     pkgs = getSet channel;
     pkg = pkgs.${name};
     version = (builtins.parseDrvName pkg.name).version;
-  in if builtins.hasAttr name pkgs && pkg ? name then {
-    name = version;
-    value = {
-      channel = channel;
-      pkg = pkg;
-    };
-  } else null;
+  in
+    if builtins.hasAttr name pkgs && pkg ? name then {
+      name = version;
+      value = {
+        channel = channel;
+        pkg = pkg;
+      };
+    } else null;
 
   attr2version = name: let
     pkgs = map (pkg2version name) channels;
-  in {
-    name = name;
-    value = builtins.listToAttrs (builtins.filter (x: x != null) pkgs);
-  };
+    nonNullPkgs = builtins.filter (x: x != null) pkgs;
+  in
+    {
+      name = name;
+      value = builtins.listToAttrs nonNullPkgs;
+    };
 
-in builtins.listToAttrs (map attr2version attrs)
+in
+builtins.listToAttrs (map attr2version attrs)
