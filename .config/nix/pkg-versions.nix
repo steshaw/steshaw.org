@@ -34,6 +34,7 @@
 #   http://matthewbauer.us/blog/all-the-versions.html
 #   https://gist.github.com/matthewbauer/7c57f8fb69705bb8da9741bf4b9a7e64
 #
+
 { channels ? [
     "19.03"
     "18.09" "18.03"
@@ -46,11 +47,13 @@
 , attrs ? builtins.attrNames (import <nixpkgs> {})
 , system ? builtins.currentSystem
 , args ? { inherit system; }
-}: let
+}:
 
-  getSet = channel: (import (builtins.fetchTarball "channel:nixos-${channel}") args).pkgs;
+let
+  getSet = channel:
+    (import (builtins.fetchTarball "channel:nixos-${channel}") args).pkgs;
 
-  getPkg = name: channel: let
+  pkg2version = name: channel: let
     pkgs = getSet channel;
     pkg = pkgs.${name};
     version = (builtins.parseDrvName pkg.name).version;
@@ -62,10 +65,11 @@
     };
   } else null;
 
-in builtins.listToAttrs (map (name:
-  let pkgs = map (getPkg name) channels;
+  attr2version = name: let
+    pkgs = map (pkg2version name) channels;
   in {
     name = name;
     value = builtins.listToAttrs (builtins.filter (x: x != null) pkgs);
-  }
-) attrs)
+  };
+
+in builtins.listToAttrs (map attr2version attrs)
