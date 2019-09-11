@@ -56,7 +56,7 @@
 let
   getSet = channel:
     let
-      tarball = builtins.fetchTarball "channel:nixos-19.03";
+      tarball = builtins.fetchTarball "channel:nixos-${channel}";
     in
       (import tarball args).pkgs;
 
