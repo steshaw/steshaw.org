@@ -1,10 +1,11 @@
 /.cabal-sandbox/
+/.direnv/
+/.local/
 /.stack-work/
 /_cache/
 /_site/
 /cabal.sandbox.config
-/dist/
 /dist-newstyle/
+/dist/
 /shell.nix
 /steshaw-org.cabal
-/.local/

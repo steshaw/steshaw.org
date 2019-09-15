@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+PATH=$PWD/scripts:$PATH
+
+export CONFIG_HOME=${PWD}/.config
+export NIX_CONFIG_HOME=${CONFIG_HOME}/nix
+
+#export STACK_YAML=$ETC_DIR/stack/stack.yaml
+#export STACK_ROOT=$PWD/.local/run/stack
