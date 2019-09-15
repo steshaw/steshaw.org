@@ -58,7 +58,7 @@ function DeckTapePdf {
   docker run --rm \
     --user "${user}" \
     -v "${HOME}:${HOME}" \
-    astefanutti/decktape:1.0.0 reveal "$file" "$pdf"
+    astefanutti/decktape:2.7 reveal "$file" "$pdf"
   echo decktape exit status = $?
 }
 
