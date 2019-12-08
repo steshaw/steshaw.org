@@ -7,4 +7,4 @@ Source for my homepage at <http://steshaw.org>.
 
 ## Deploying locally (i.e. without CircleCI)
 
-Use `bin/publish` to build and publish the site to GitHub Pages.
+Use [scripts/publish](scripts/publish) to build and publish the site to GitHub Pages.
