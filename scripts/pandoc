@@ -3,7 +3,7 @@
 set -euo pipefail
 ${DEBUG:-}
 
-version='"1.16.0.2"'
+# This channel has version 1.16.02 of pandoc.
+channel="channel:nixos-16.03"
 
-expr="(import ${CONFIG_HOME}/nix/pkg-versions.nix {}).pandoc.${version}.pkg"
-exec nix run "${expr}"  -u LANG --command pandoc "$@"
+exec nix run -f "${channel}" pandoc -u LANG --command pandoc "$@"
