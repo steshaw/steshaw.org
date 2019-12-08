@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+${DEBUG:-}
 
 package_name=$(perl -ne '/^name:\s*([a-z-]+)\s*/ && print "$1"' ./*.cabal)
 

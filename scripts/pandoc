@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+${DEBUG:-}
 
 version='"1.16.0.2"'
 

@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+${DEBUG:-}
+
+#
+# Install Nix if not present.
+#
+if [[ ! -d /nix ]]; then
+  sh <(curl https://nixos.org/nix/install) --daemon
+fi
+
+# bail
+exit
+
+
+
+#
+# Load Nix configuration. On NixOS, this is already "loaded" (and `nix.sh` is not present).
+#
+nixrc=~/.nix-profile/etc/profile.d/nix.sh
+[[ -f ${nixrc} ]] && source ${nixrc}
+
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+
+#
+# Configure binary caches.
+#
+if [[ "$(uname)" == 'Darwin' ]]; then
+  caches='http://zalora-public-nix-cache.s3-website-ap-southeast-1.amazonaws.com http://cache.nixos.org'
+else
+  caches='https://cache.nixos.org http://hydra.nixos.org http://hydra.cryp.to'
+fi
+
+#
+# Avoid clobbering /etc/nix/nix.conf on NixOS.
+#
+if which nixos-rebuild >/dev/null 2>&1; then
+  echo 'Please configure binary caches in /etc/nixos/configuration.nix'
+  echo 'Something like:'
+  cat <<!
+  nix.trustedBinaryCaches = [
+    http://hydra.nixos.org
+    http://cache.nixos.org
+    http://hydra.cryp.to
+  ];
+  nix.binaryCaches = [
+    http://hydra.nixos.org
+    http://cache.nixos.org
+    http://hydra.cryp.to
+  ];
+!
+else
+  cat >/tmp/nix.conf <<!
+trusted-binary-caches = ${caches}
+binary-caches         = ${caches}
+!
+  sudo mkdir -p /etc/nix
+  sudo cp /tmp/nix.conf /etc/nix
+fi
+
+nix-env -i cabal2nix
