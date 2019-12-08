@@ -13,6 +13,7 @@ let
 in { pkgs ? pinnedPkgs }:
 with pkgs; mkShell {
   buildInputs = [
+    cacert
     emacs
     shellcheck
     stack
