@@ -4,4 +4,4 @@ set -euo pipefail
 ${DEBUG:-}
 
 # shellcheck disable=SC2086
-stack ${STACK_ARGS:-} build --fast
+stack ${STACK_ARGS:-} exec -- site "$@"

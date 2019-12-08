@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+${DEBUG:-}
+
+git config --global user.name 'Steven Shaw'
+git config --global user.email 'steven@steshaw.org'
+
+if [[ ${CIRCLECI} == 'true' ]]; then
+  by="Circle CI (${CIRCLE_BUILD_NUM})"
+else
+  by="CI"
+fi
+
+nix-shell .config/nix/shell.nix --command "publish \"${by}\""

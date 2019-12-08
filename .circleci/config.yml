@@ -1,0 +1,51 @@
+version: 2
+jobs:
+  build:
+    docker:
+#      - image: fpco/stack-build:lts
+      - image: nixorg/nix:circleci
+    # Cannot assign higher resource class on free plan.
+    resource_class: medium
+    environment:
+      DEBUG: "set -x"
+      NIX_PATH: "nixpkgs=channel:nixos-19.09"
+      STACK_ARGS: "--jobs=2"
+    steps:
+      - setup_docker_engine
+      - add_ssh_keys:
+          fingerprints:
+            - "52:ef:76:5d:82:fa:a9:be:3f:b4:da:2f:b5:f6:c4:be"
+      - checkout
+      - run:
+          name: Setup environment
+          command: |
+            cat .config/environment >>$BASH_ENV
+      - run:
+          name: Git configuration
+          command: |
+            set-git-config
+      - run:
+          name: Install Nix
+          command: install-nix
+      - restore_cache:
+          name: Restore Cached Dependencies
+          keys:
+            - stack-v0-{{ checksum "package.yaml" }}
+      - run:
+          name: Build
+          command: |
+            ci build
+      - save_cache:
+          name: Cache Dependencies
+          key: stack-v0-{{ checksum "package.yaml" }}
+          paths:
+            - .stack-work
+            - /root/.stack
+      - run:
+          name: Build site
+          command: |
+            ci site build
+      - run:
+          name: Deploy
+          command: |
+            ci deploy "CircleCI (${CIRCLE_BUILD_NUM})"

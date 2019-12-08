@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+${DEBUG:-}
+
+shell=.config/nix/shell.nix
+
+deploy_wrapper() {
+  if [[ ${CIRCLECI:-} == 'true' ]]; then
+    by="Circle CI (${CIRCLE_BUILD_NUM})"
+  else
+    by="CI"
+  fi
+
+  nix-shell ${shell} --command "deploy \"${by}\""
+}
+
+if false && [[ $1 == 'deploy' ]]; then
+  deploy_wrapper
+else
+  command=$1; shift
+  args=("${@}")
+  for i in "${!args[@]}"; do
+    false && echo "$i: ${args[$i]}"
+    args[$i]="'""${args[$i]}""'"
+    false && echo "$i: ${args[$i]}" "(new)"
+  done
+  if false; then
+    echo ==============
+    echo command="${command}"
+    echo args="${args[*]}"
+    echo ==============
+    set -x
+  fi
+  cmd="${command} ${args[*]}"
+  false &&echo "cmd = [[$cmd]]"
+  nix-shell "${shell}" --command "${cmd}"
+fi

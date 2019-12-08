@@ -3,10 +3,14 @@
 set -euo pipefail
 ${DEBUG:-}
 
+# Let's build talks on an adhoc basis for now.
+if false; then
+  build-talks
+fi
+
 #
-# Build and deploy to GHP.
+# Build site and deploy to GHP.
 #
-build-talks
 build
 site-rebuild
-deploy-to-github-pages
+deploy "$@"

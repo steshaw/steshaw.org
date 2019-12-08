@@ -2,7 +2,8 @@
 
 PATH=$PWD/scripts:$PATH
 
-export CONFIG_HOME=${PWD}/.config
+export PROJECT_HOME=${PWD}
+export CONFIG_HOME=${PROJECT_HOME}/.config
 export NIX_CONFIG_HOME=${CONFIG_HOME}/nix
 
 #export STACK_YAML=$ETC_DIR/stack/stack.yaml

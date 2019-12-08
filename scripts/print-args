@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-${DEBUG:-}
 
-site rebuild
+for a in "$@"; do
+  echo "${a}"
+done

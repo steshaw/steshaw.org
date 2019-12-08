@@ -7,4 +7,5 @@ extra-deps:
 - hakyll-4.13.0.0@sha256:bb5cea5e4f88fd3e6818b86437cddf49755afb176d7675ff50c78c31a2f9c687,8751
 
 nix:
-  shell-file: stack.nix
+  enable: true
+  shell-file: .config/nix/stack.nix

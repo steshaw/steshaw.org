@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build:
+    name: Build
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+#        with:
+#          submodules: recursive
+
+      - name: Checkout submodules
+        uses: textbook/git-checkout-submodule-action@2.0.0
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v6
+
+      - name: Build
+        run: |
+          nix-shell .config/nix/shell.nix --command publish

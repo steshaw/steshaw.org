@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+git config --global user.name >/dev/null ||
+  git config --global user.name 'Steven Shaw'
+
+git config --global user.email >/dev/null ||
+  git config --global user.email 'steven@steshaw.org'

@@ -1,27 +1,39 @@
 let
-  #
-  # See
-  #  https://nixos.wiki/wiki/FAQ/Pinning_Nixpkgs.
-  #  https://vaibhavsagar.com/blog/2018/05/27/quick-easy-nixpkgs-pinning/
-  #
-  pinnedVersion = builtins.fromJSON (builtins.readFile ./.nixpkgs-version.json);
-  pinnedPkgs = import (builtins.fetchGit {
-    inherit (pinnedVersion) url rev;
+  pinnedPkgs = import ./pkgs.nix {};
+in
+{
+  pkgs ? pinnedPkgs,
+  enableDev ? false,
+  enableTalks ? enableDev,
+}:
+  with pkgs;
+  let
+    optPkgs = enable: pkgs: if enable then pkgs else [];
+    beamer = texlive.combine {
+      inherit (texlive)
+        scheme-medium
 
-    ref = "nixos-unstable";
-  }) {};
-in { pkgs ? pinnedPkgs }:
-with pkgs; mkShell {
-  buildInputs = [
-    cacert
-    emacs
-    shellcheck
-    stack
-#    texlive.beamer # FIXME: broken.
-    vim
-  ];
+        beamer
+        ;
+    };
+    devPkgs = optPkgs enableDev [
+      emacs
+      neovim
+      shellcheck
+    ];
+    talksPkgs = optPkgs enableTalks [
+        beamer
+        docker
+    ];
+  in
+    mkShell {
+      buildInputs = [
+        cacert
+        perl
+        stack
+      ] ++ devPkgs ++ talksPkgs;
 
-  shellHook = ''
-    source .config/environment
-  '';
-}
+      shellHook = ''
+        source .config/environment
+      '';
+    }
