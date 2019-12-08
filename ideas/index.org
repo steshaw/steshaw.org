@@ -1,5 +1,0 @@
-Ideas are free---here's mine! Patches welcome ʘ‿ʘ.
-
-#+begin_html
-<script src="https://gist.github.com/steshaw/8eb69cc1ee4f4db3420e.js"></script>
-#+end_html
