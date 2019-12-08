@@ -5,7 +5,10 @@
 /_cache/
 /_site/
 /cabal.sandbox.config
+/default.nix
 /dist-newstyle/
 /dist/
+/result
 /shell.nix
 /steshaw-org.cabal
+/steshaw-org.nix

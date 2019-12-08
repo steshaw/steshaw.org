@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+package_name=$(perl -ne '/^name:\s*([a-z-]+)\s*/ && print "$1"' ./*.cabal)
+
+cabal2nix \
+    --hpack \
+    --no-haddock \
+    . >"${package_name}.nix"
+
+ghc='ghc865'
+
+cat <<! >default.nix
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "${ghc}" }:
+nixpkgs.pkgs.haskell.packages.\${compiler}.callPackage ./${package_name}.nix { }
+!
+
+cat <<! >shell.nix
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "${ghc}" }:
+(import ./default.nix { inherit nixpkgs compiler; }).env
+!
