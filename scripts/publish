@@ -6,7 +6,7 @@ ${DEBUG:-}
 #
 # Build and deploy to GHP.
 #
-bin/build-talks
-bin/build
-bin/site-rebuild
-bin/deploy-to-github-pages
+build-talks
+build
+site-rebuild
+deploy-to-github-pages
