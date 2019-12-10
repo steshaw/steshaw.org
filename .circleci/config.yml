@@ -23,20 +23,39 @@ jobs:
           name: Git configuration
           command: |
             set-git-config
+
+      - run:
+          name: Create nix-config-files for cache checksum
+          command: |
+            mkdir -p .local/tmp
+            cat .config/nix/* >.local/tmp/all-nix-config-files.txt
+
       - restore_cache:
-          name: Restore Cached Dependencies
+          name: Restore Nix Cache
+          keys:
+            - nix-v0-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
+            - nix-v0-
+      - restore_cache:
+          name: Restore Stack Cache
           keys:
             - stack-v0-{{ checksum "package.yaml" }}
+            - stack-v0-
       - run:
           name: Build
           command: |
             nyx build
       - save_cache:
-          name: Cache Dependencies
+          name: Save Stack Cache
           key: stack-v0-{{ checksum "package.yaml" }}
           paths:
             - .stack-work
             - /root/.stack
+      - save_cache:
+          name: Save Nix Cache
+          key: nix-v0-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
+          paths:
+            - /nix/store
+
       - run:
           name: Build site
           command: |
