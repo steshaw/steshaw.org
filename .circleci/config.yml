@@ -33,26 +33,26 @@ jobs:
       - restore_cache:
           name: Restore Nix Cache
           keys:
-            - nix-v0-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
-            - nix-v0-
+            - nix-v1-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
+            - nix-v1-
       - restore_cache:
           name: Restore Stack Cache
           keys:
-            - stack-v0-{{ checksum "package.yaml" }}
-            - stack-v0-
+            - stack-v1-{{ checksum "package.yaml" }}
+            - stack-v1-
       - run:
           name: Build
           command: |
             nyx build
       - save_cache:
           name: Save Stack Cache
-          key: stack-v0-{{ checksum "package.yaml" }}
+          key: stack-v1-{{ checksum "package.yaml" }}
           paths:
             - .stack-work
             - /root/.stack
       - save_cache:
           name: Save Nix Cache
-          key: nix-v0-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
+          key: nix-v1-{{ checksum ".local/tmp/all-nix-config-files.txt" }}
           paths:
             - /nix/store
 
