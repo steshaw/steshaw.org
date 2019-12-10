@@ -16,14 +16,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: 'Cache /nix/store'
-        uses: actions/cache@v1
-        with:
-          path: /nix/store
-          key: nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
-          restore-keys: |
-            nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
-            nix-store-${{ runner.OS }}-
+#
+# Disabling this cache. Over GH's limit of 400MB (over 1GB).
+#
+#      - name: 'Cache /nix/store'
+#        uses: actions/cache@v1
+#        with:
+#          path: /nix/store
+#          key: nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
+#          restore-keys: |
+#            nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
+#            nix-store-${{ runner.OS }}-
 
       - name: Install Nix
         uses: cachix/install-nix-action@v6
