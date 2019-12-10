@@ -52,3 +52,5 @@ jobs:
           EXTERNAL_REPOSITORY: steshaw/steshaw.github.io
           PUBLISH_BRANCH: master
           PUBLISH_DIR: _site
+        with:
+          emptyCommits: false
