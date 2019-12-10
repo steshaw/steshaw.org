@@ -2,8 +2,9 @@ name: Build with Stack
 
 on:
   push:
-    branches:
-      - master
+#    branches:
+#      - master
+     branches-ignore: [ '*' ]
 
 jobs:
 
