@@ -41,4 +41,14 @@ jobs:
 
       - name: Build
         run: |
-          nix-shell .config/nix/shell.nix --command 'publish "GitHub Actions"'
+          PATH=scripts:$PATH
+          nyx build
+          site build
+
+      - name: 'Deploy to GitHub Pages'
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          EXTERNAL_REPOSITORY: steshaw/steshaw.github.io
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: _site
