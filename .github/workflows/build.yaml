@@ -15,15 +15,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-#        with:
-#          submodules: recursive
 
-      - name: Checkout submodules
-        uses: textbook/git-checkout-submodule-action@2.0.0
+      - name: 'Cache ~/.stack'
+        uses: actions/cache@v1
+        with:
+          path: ~/.stack
+          key: stack-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-${{ hashFiles('package.yaml') }}
+          restore-keys: |
+            stack-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-${{ hashFiles('package.yaml') }}
+            stack-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-
+            stack-${{ runner.OS }}-
+
+      - name: 'Cache .stack-work'
+        uses: actions/cache@v1
+        with:
+          path: .stack-work
+          key: stack-work-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-${{ hashFiles('package.yaml') }}
+          restore-keys: |
+            stack-work-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-${{ hashFiles('package.yaml') }}
+            stack-work-${{ runner.OS }}-${{ hashFiles('stack.yaml') }}-
+            stack-work-${{ runner.OS }}-
 
       - name: Install Nix
         uses: cachix/install-nix-action@v6
 
       - name: Build
         run: |
-          nix-shell .config/nix/shell.nix --command publish
+          nix-shell .config/nix/shell.nix --command 'publish "GitHub Actions"'
