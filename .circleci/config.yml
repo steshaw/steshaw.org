@@ -40,7 +40,7 @@ jobs:
       - run:
           name: Build site
           command: |
-            nyx site build
+            site build
       - run:
           name: Deploy
           command: |
