@@ -1,0 +1,46 @@
+name: Build with Nix
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build:
+    name: Build
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: 'Cache /nix/store'
+        uses: actions/cache@v1
+        with:
+          path: /nix/store
+          key: nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
+          restore-keys: |
+            nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
+            nix-store-${{ runner.OS }}-
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v6
+
+      - name: Build
+        run: |
+          PATH=scripts:$PATH
+          nyx gen-nix-files
+          nix-build
+          ./result/bin/site build
+
+      - name: 'Deploy to GitHub Pages'
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          EXTERNAL_REPOSITORY: steshaw/steshaw.github.io
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: _site
+        with:
+          emptyCommits: false

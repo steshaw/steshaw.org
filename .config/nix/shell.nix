@@ -28,6 +28,7 @@ in
   in
     mkShell {
       buildInputs = [
+        cabal2nix
         cacert
         perl
         stack
