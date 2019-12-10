@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Build
           command: |
-            ci build
+            nyx build
       - save_cache:
           name: Cache Dependencies
           key: stack-v0-{{ checksum "package.yaml" }}
@@ -44,8 +44,8 @@ jobs:
       - run:
           name: Build site
           command: |
-            ci site build
+            nyx site build
       - run:
           name: Deploy
           command: |
-            ci deploy "CircleCI (${CIRCLE_BUILD_NUM})"
+            nyx deploy "CircleCI (${CIRCLE_BUILD_NUM})"

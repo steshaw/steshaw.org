@@ -5,18 +5,8 @@ ${DEBUG:-}
 
 shell=.config/nix/shell.nix
 
-deploy_wrapper() {
-  if [[ ${CIRCLECI:-} == 'true' ]]; then
-    by="Circle CI (${CIRCLE_BUILD_NUM})"
-  else
-    by="CI"
-  fi
-
-  nix-shell ${shell} --command "deploy \"${by}\""
-}
-
-if false && [[ $1 == 'deploy' ]]; then
-  deploy_wrapper
+if [[ $# -eq 0 ]]; then
+  nix-shell "${shell}"
 else
   command=$1; shift
   args=("${@}")

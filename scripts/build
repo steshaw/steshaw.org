@@ -4,4 +4,7 @@ set -euo pipefail
 ${DEBUG:-}
 
 # shellcheck disable=SC2086
-stack ${STACK_ARGS:-} build --fast
+exec stack ${STACK_ARGS:-} build \
+  --fast \
+  --local-bin-path .local/bin \
+  --copy-bins "$@"

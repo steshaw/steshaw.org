@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
-PATH=$PWD/scripts:$PATH
-
 export PROJECT_HOME=${PWD}
+
+PATH=${PROJECT_HOME}/scripts:$PATH
+PATH=${PROJECT_HOME}/.local/bin:$PATH
+
 export CONFIG_HOME=${PROJECT_HOME}/.config
 export NIX_CONFIG_HOME=${CONFIG_HOME}/nix
 
 #export STACK_YAML=$ETC_DIR/stack/stack.yaml
 #export STACK_ROOT=$PWD/.local/run/stack
+
+export LANG=C.UTF-8
