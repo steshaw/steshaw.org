@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-#      - image: fpco/stack-build:lts
       - image: nixorg/nix:circleci
     # Cannot assign higher resource class on free plan.
     resource_class: medium
@@ -24,9 +23,6 @@ jobs:
           name: Git configuration
           command: |
             set-git-config
-      - run:
-          name: Install Nix
-          command: install-nix
       - restore_cache:
           name: Restore Cached Dependencies
           keys:
