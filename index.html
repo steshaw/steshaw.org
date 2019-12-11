@@ -8,50 +8,66 @@ title: Steven Shaw
 
 <div class="content">
 
-  <div class="featured-languages pull-right">
-    <div>
-      <a class="pull-right" href="https://www.haskell.org/" title="Haskell">
-        <img src="/images/haskell.png"/>
-      </a>
-    </div>
-    <div>
-      <a class="pull-right" href="https://github.com/edwinb/Idris2" title="Idris 2">
-        <img src="/images/idris.png"/>
-      </a>
-    </div>
-    <div>
-      <a class="pull-right" href="http://www.purescript.org/" title="PureScript">
-        <img src="/images/purescript.png"/>
-      </a>
-    </div>
-    <div>
-      <a class="pull-right" href="https://scala-lang.org/" title="Scala">
-        <img src="/images/scala.png"/>
-      </a>
-    </div>
-  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <p>I'm Steven Shaw, a software developer living in Brisbane, Australia. I
+      love programming languages.</p>
 
-  <div>
-    <p>I'm Steven Shaw, a software developer living in Brisbane, Australia. I
-    love programming languages.</p>
+      <blockquote class="quote">
+        The future of programming is dependently typed
+        <small><cite>Anon.</cite></small>
+      </blockquote>
+    </div>
 
-    <blockquote class="quote">
-      The future of programming is dependently typed
-      <small><cite>Anon.</cite></small>
-    </blockquote>
-
-    <div class="sidebar small">
-      <div class="sidebar-module">
-        <ul class="list-unstyled">
-          <li><a href="https://twitter.com/steshaw"><i class="fa fa-twitter"> Twitter</i></a></li>
-          <li><a href="https://github.com/steshaw"><i class="fa fa-github"> GitHub</i></a></li>
-          <li><a href="https://linkedin.com/in/steshaw"><i class="fa fa-linkedin-square"> LinkedIn</i></a></li>
-        </ul>
-      </div>
+    <div class="col-md-3 small featured-languages text-right
+      block visible-lg-block visible-md-block">
+      <ul class="list-unstyled">
+        <li>
+          <a href="https://www.haskell.org/" title="Haskell">
+            <img src="/images/haskell.png"/><span>Haskell</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/edwinb/Idris2" title="Idris 2">
+            <img src="/images/idris.png"/><span>Idris</span></a>
+        </li>
+        <li>
+          <a href="http://www.purescript.org/" title="PureScript">
+            <img src="/images/purescript.png"/><span>PureScript</span></a>
+        </li>
+        <li>
+          <a href="https://scala-lang.org/" title="Scala">
+            <img src="/images/scala.png"/><span>Scala</span></a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  $partial("templates/post-list.html")$
+  <div class="social-strip small text-muted text-center center-block">
+    <ul class="list-inline">
+    <li>
+    <a href="https://linkedin.com/in/steshaw"><i class="fa
+        fa-linkedin-square"></i> linkedin</a>
+    </li>
+    <li>
+    <a href="https://twitter.com/steshaw"><i class="fa fa-twitter-square"></i> twitter</a>
+    </li>
+    <li>
+    <a href="https://github.com/steshaw"><i class="fa fa-github-square"></i> github</a>
+    </li>
+    <li>
+    <a href="https://stackoverflow.com/users/482382/steven-shaw"><i
+        class="fa fa-stack-overflow"></i> stackoverflow</a>
+    </li>
+    <li>
+    <a href="mailto:steven@steshaw.org"><i class="fa fa-envelope-square"></i> email</a>
+    </li>
+    </ul>
+  </div>
 
-  <small class="text-muted"><a href="all-posts">All posts</a></small>
+  <div class="posts">
+    $partial("templates/post-list.html")$
+
+    <small class="text-muted"><a href="all-posts">All posts</a></small>
+  </div>
 </div>
