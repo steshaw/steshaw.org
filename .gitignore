@@ -4,6 +4,8 @@
 /.stack-work/
 /_cache/
 /_site/
+/cabal.project
+/cabal.project.freeze
 /cabal.sandbox.config
 /default.nix
 /dist-newstyle/
@@ -12,3 +14,4 @@
 /shell.nix
 /steshaw-org.cabal
 /steshaw-org.nix
+/steshaw.org.nix
