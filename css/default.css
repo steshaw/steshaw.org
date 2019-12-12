@@ -135,7 +135,11 @@ ul.posts {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 750px;
+}
+
+.container header {
+  margin-top: 0.5em;
 }
 
 .post-footer {
@@ -172,7 +176,8 @@ ul.posts {
 }
 
 .post-content {
-  padding-left: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .post-header-with-image {
