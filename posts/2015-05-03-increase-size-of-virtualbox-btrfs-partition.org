@@ -1,5 +1,5 @@
 ---
-title: Increase size of VirtualBox btrfs partition
+title: Increase size of VirtualBox Btrfs partition
 date: 20150503-165748
 tags: NixOS, Linux
 ---

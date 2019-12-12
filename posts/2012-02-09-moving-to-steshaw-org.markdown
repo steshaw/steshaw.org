@@ -9,4 +9,4 @@ wordpress_id: 625
 tags: WordPress
 ---
 
-Goodbye [wordpress.com](http://wordpress.com/), it's been good. Now blogging at [steshaw.org](http://steshaw.org)
+Goodbye [wordpress.com](http://wordpress.com/), it's been good. Now blogging at [steshaw.org](https://steshaw.org)

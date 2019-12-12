@@ -13,39 +13,21 @@ tags: Software Engineering, Teams
 <div class="medium-url" data-medium-url="https://medium.com/@steshaw/adopting-a-cambridge-culture-2e16ec53137f" />
 #+END_HTML
 
-#+BEGIN_HTML
-<!--
-  <div class="section-background" contenteditable="false"
-  data-image-id="1*sBKC5NEYgKVjDFPbQWX3-A.jpeg" data-width="1025"
-  data-height="768">
--->
-#+END_HTML
+Work can be a drag if you find yourself in a den of assholes.  Unfortunately,
+this seems to be becoming more common as narcissism is on the rise. I'd like to
+start a conversation about how we might tackle this problem. Here's an outline
+of how we might begin to approach the problem.
 
-#+BEGIN_HTML
-<!--
-  <div class="section-backgroundImage"
-  style="background-image: url(https://d262ilb51hltx0.cloudfront.net/fit/t/1200/960/gradv/29/81/55/1*sBKC5NEYgKVjDFPbQWX3-A.jpeg);">
--->
-#+END_HTML
-
-Work can be a drag if you find yourself in a den of assholes.
-Unfortunately, this is becoming more and more common in our
-narcissist-generating society. I'd like to start a conversation about
-how we might tackle this problem. Here's an outline of how we might
-begin to approach the problem.
-
-TL/DR: start with Robert Sutton's /No Asshole Rule/ and follow that 
-up with modelling your behaviour on a gentleman (that's where the
-/Cambridge Culture/ comes in).
+TLDR: start with Robert Sutton's /No Asshole Rule/ and follow that
+up with modelling your behaviour on a gentleman — that's where the
+/Cambridge Culture/ comes in.
 
 ** The No Asshole Rule
 
-There are a lot of assholes out there. I've run into a few more than my
-fair share — it seems to be par for the course when you're a contract
-programmer (I gave up that gig a few years ago but I still have the war
-stories). Assholes make people feel oppressed, humiliated, de-energised
-and belittled. In short, they destroy rather than create. The targets of
-their behaviour tend to be those less powerful — so assholes in
+There are a lot of assholes out there.  It seems that I may have run into more
+than my fair share.  Assholes make people feel oppressed, humiliated,
+de-energised and belittled. In short, they destroy rather than create. The
+targets of their behaviour tend to be those less powerful — so assholes in
 management have a larger area of destruction.
 
 These assholes can poison your whole organisation, leading to a culture
@@ -57,77 +39,57 @@ helps to “get the job done”. However, Sutton points out this is a kind
 of confirmation bias and usually “stuff gets done” despite the behaviour
 of the asshole --- not /because/ of it.
 
-The best method of dealing with assholes is avoidance. Don't take on a
-job, contract or customer if you're going to have to live with assholes.
-If you find yourself in a den of assholes besides your best efforts then
-leave as soon as you can manage it. Sutton recommends /indifference/ for
-putting up with assholes but that's not for me --- I find it very
-difficult to be indifferent. He also recommends /reframing/ and /small
-wins/ which seem better coping mechanisms to me. You may find you need
-to take a break after suffering at the wrong end of an asshole.
+The best method of dealing with assholes is avoidance. Don't take on a job,
+contract or customer if you're going to have to live with assholes.  If you
+find yourself in a den of assholes besides your best efforts, then leave as
+soon as you can manage it. Sutton recommends /indifference/ for putting up with
+assholes --- this may be useful in the short term.  He also suggests
+/reframing/ and /small wins/ which seem better coping mechanisms. You may find
+you need to take a break after suffering at the hands of an asshole.
 
 Don't confuse the /occasional/ asshole with the /institutional/ one
 (Sutton calls this the /temporary asshole/ and the /certified asshole/).
 Everyone blows up occasionally and let's their “inner asshole”
-out --- particularly when under the thumb of an institutional asshole!
-Don't be too quick to label the strange or unusual as
-assholes --- Sutton has a book on this topic:
+out --- particularly when under th thumb of an institutional asshole!
+Don’t be too quick to label strange or unusual colleagues as assholes
+--- Sutton has a book on this topic:
 [[http://www.goodreads.com/book/show/7923731.Wierd_Ideas_that_Work][Weird
 Ideas that Work]]. A good tip for preventing the inner-asshole from
 escaping is: /argue like you're right, listen like you're wrong./
 
-I don't believe that assholes are virtuous despite Sutton's reluctant
-chapter on it. One thing that makes sense is that being an asshole may
-be a short-cut to power and status --- that is if the weaklings around
-them let them get away with it ☺. Who doesn't know one or two loud
-mouth, arrogant, self-professed experts that go on a power-grab and
-succeed because few resisted? Don't let it happen in your
-organisation --- unless you're leaving to join or /be/ the
-competition ;). If you have to put up with the odd asshole from time to
-time, whatever you do, do /not/ promote them. Keep them in a box, try to
-reform them (possible if they are only an /occasional/ asshole, unlikely
-if they are a /certified/ asshole). If that doesn't work out, fire them.
+I don't believe that assholes are virtuous despite Sutton's reluctant chapter
+on it. One thing that makes sense is that being an asshole may be a short-cut
+to power and status. Who doesn't know one or two loud-mouthed, arrogant,
+self-professed experts that seek promotion only to succeed? Try not to let that
+happen to your organisation. If you have to put up with the odd asshole from
+time to time, whatever you do, do /not/ promote them. Keep them in a box, try
+to reform them (possible if they are only an /occasional/ asshole, unlikely if
+they are an /institutional/ asshole). If that doesn't work out, you really must
+fire them.
 
-Remember: /a few bad apples can spoil the whole bunch./
+#+begin_html
+<blockquote class="quote">
+  One bad apple can spoil the whole barrel
+  <small><cite>Ancient proverb</cite></small>
+</blockquote>
+#+end_html
 
 ** A Cambridge Culture
 
-A partial remedy to this situation is to adopt what I like to call a
-/Cambridge Culture/. This is as simple as modelling yourself on the
-behaviour of Simon Peyton Jones. Simon is the lead engineer of the
-Glorious Glasgow Haskell Compiler (aka GHC). He works at Microsoft
-Research in Cambridge (hence the name).
+A partial remedy to this situation is to adopt what I like to call a /Cambridge
+Culture/. This is as simple as modelling yourself on the behaviour of Simon
+Peyton Jones. Simon is a lead programmer of the Glasgow Haskell Compiler — aka
+GHC. He works at Microsoft Research in Cambridge and hence the name.
 
-If you don't know Simon, he can be described as a scholar and a gent.
-While being someone who is very bright, accomplished and energetic;
-Simon doesn't feel entitled to indulge in behaviour that could be
-perceived as arrogant, haughty, overbearing, dictatorial etc. Simon also
-accepts that there are other intelligent folks who might have views that
-run somewhat counter to his own. In this situation, he is not only
-tolerant but patiently teaches if those folks are open to it. He also
-listens carefully to work out where he may be off-track himself (if not
-completely wrong). As lead of GHC, Simon encourages participation and
-rarely feels the need to choose an option (from say a bunch of competing
-but equally decent candidates), instead allowing the community to reach
-a consensus where possible but breaking deadlocks where necessary. He
-shys away from the title /Benevolent Dictator for Life/ (BDFL). Simon is
-definitely not a hater.
-
-Don't be a hater. If you have to hate anyone, hate the haters :P. You
-know... don't even hate the haters:
-
-#+BEGIN_QUOTE
-  Love the haters, for they know not what they do ☺
-#+END_QUOTE
-
-#+BEGIN_HTML
-<!--
-  </div>
--->
-#+END_HTML
-
-#+BEGIN_HTML
-<!--
-  </div>
--->
-#+END_HTML
+If you don't know Simon, he can be described as a scholar and a gentleman.
+While being someone who is very bright, accomplished and energetic; Simon
+doesn't feel entitled to indulge in behaviour that could be perceived as
+arrogant, haughty, overbearing, dictatorial etc.  Simon also accepts that other
+intelligent folks might have views that run somewhat counter to his own.  In
+this situation, he is not only tolerant but patiently teaches if those folks
+are open to it. He also listens carefully to work out where he may be off-track
+himself (if not completely wrong). As a lead developer of GHC, Simon encourages
+participation and rarely feels the need to make unilateral decisions. Instead,
+allowing the community to reach a consensus where possible and breaking
+deadlocks where necessary. He shies away from the title /Benevolent Dictator
+for Life/.

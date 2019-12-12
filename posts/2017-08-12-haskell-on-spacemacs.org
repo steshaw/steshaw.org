@@ -4,7 +4,7 @@ date: 2017-08-12 13:40
 tags: Haskell, Emacs, Spacemacs
 ---
 
-I've been wanting to give Spacemacs another try for Haskell development.
+I've wanted to give Spacemacs another try for Haskell development.
 In particular, I wanted it to work with =intero= and =hindent=.
 
 
@@ -21,7 +21,7 @@ $ brew cask install emacs-mac
 
 ** Install Dependencies
 
-The haskell layer in Spacemacs requires a few dependencies. I installed them
+The =haskell= layer in Spacemacs requires a few dependencies. I installed them
 with Stack.
 
 #+begin_src shell
@@ -69,8 +69,8 @@ looked like this:
 
 ** Project sidebar
 
-I missed having a project sidebar (such as seems to be the default in 
-editors like Atom). Eventually I found that Spacemacs includes NeoTree
+I missed having a project sidebar (such as seems to be the default in
+editors like Atom). Eventually, I found that Spacemacs includes NeoTree,
 which makes a viable project sidebar. Toggle on/off with =SPC p t= or
 =SPC f t= for a file rather than project browser.
 
@@ -80,11 +80,11 @@ which makes a viable project sidebar. Toggle on/off with =SPC p t= or
 
 I also missed having a tab bar (for open files) such as that in Atom.
 There doesn't seem to be anything built into Spacemacs for this. I
-tried the [[https://github.com/evacchi/tabbar-layer][tabbar-layer]] but it was pretty ugly.
+tried the [[https://github.com/evacchi/tabbar-layer][tabbar-layer]], but it was pretty ugly.
 
 After some searching, I figured I could rely on "helm-mini". It lets you open
-search/select files from the open buffers (=SPC b b=). Also searching/selecting
-for files in the same project is possible from projectile (=SPC p f=).
+search/select files from the open buffers with =SPC b b=. Also searching/selecting
+for files in the same project is possible from projectile with =SPC p f=.
 
 
 ** Fill column indicator

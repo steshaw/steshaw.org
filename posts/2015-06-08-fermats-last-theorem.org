@@ -4,13 +4,12 @@ date: 20150608-102112
 tags: maths
 ---
 
-#+begin_html
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/184722729?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-#+end_html
+Fermat's Last Theorem is a wonderful, inspiring documentary that you may be
+able to find online. It's the story of a simple mathematical problem that
+went unsolved for centuries and an intrigued young boy that finally cracked
+it.
 
-Fermat's Last Theorem is a wonderful, inspiring documentary. It's the story
-of a simple mathematical problem that went unsolved for centuries. It starts
-with /Pythagoras' theorem/,
+It starts with /Pythagoras' theorem/,
 
 #+begin_eqtion
   x^2 + y^2 = z^2
@@ -45,15 +44,15 @@ reading at the time—stating his conjecture and mentioning that he had a proof
 that would not "fit in the margin". It's this conjecture that became known as
 /Fermat's Last Theorem/. The proof lay undiscovered for centuries!
 
-In 1963, a 10 year old boy came across a book in the local library about
+In 1963, a 10-year-old boy came across a book in the local library about
 Fermat's Last Theorem. He instantly became obsessed with this wonderfully
-simple problem—a problem simple enough for a 10 year old to understand! This
+simple problem—a problem simple enough for a 10-year-old to understand! This
 boy was Andrew Wiles. Andrew was so taken with the problem that he eventually
 became a professor of mathematics. After giving up on the problem for some
 time, he eventually saw his opportunity as some of the pieces moved into
-place. He then worked on the problem full-time for /7 years/. For the first 2
+place. Andrew then worked on the problem full-time for /7 years/. For the first 2
 years, he merely explored the problem, not knowing where to begin. Finally,
-he cracked it! However, there's a gut wrenching twist to the story that means
+he cracked it! However, there's a gut-wrenching twist to the story that means
 that the proof takes another year to nail down. I won't spoil that here.
 
 #+begin_quote
