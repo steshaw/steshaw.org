@@ -1,7 +1,7 @@
 ---
 title: Increase size of VirtualBox Btrfs partition
 date: 20150503-165748
-tags: NixOS, Linux
+tags: linux, nixos
 ---
 
 I'd originally allocated the default 8G to my primary partition when installing NixOS. I ran out of disk space when I tried upgrading to KDE 5. This is how I increased the size of the partition.

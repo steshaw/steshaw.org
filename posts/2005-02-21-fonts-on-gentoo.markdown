@@ -7,7 +7,8 @@ slug: fonts-on-gentoo
 title: Fonts on Gentoo
 wordpress_id: 23
 categories: Programming
-tags: Linux
+tags: linux
 ---
 
-Finally got my fonts sorted out on Gentoo. All the info is in the [Gentoo Xorg fonts HOWTO](http://gentoo-wiki.com/HOWTO_Xorg_and_Fonts).
+Finally got my fonts sorted out on Gentoo. All the info is in the [Gentoo
+Xorg fonts HOWTO](http://gentoo-wiki.com/HOWTO_Xorg_and_Fonts).

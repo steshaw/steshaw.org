@@ -2,7 +2,7 @@
 title: Adopting a Cambridge Culture
 subtitle: Fighting narcissism in the 21st Century
 date: 20140717-2130
-tags: Software Engineering, Teams
+tags: software-engineering
 ---
 
 #+BEGIN_HTML

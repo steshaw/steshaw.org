@@ -1,7 +1,7 @@
 ---
 title: Haskell on Spacemacs
 date: 2017-08-12 13:40
-tags: Haskell, Emacs, Spacemacs
+tags: haskell, emacs, spacemacs
 ---
 
 I've wanted to give Spacemacs another try for Haskell development.

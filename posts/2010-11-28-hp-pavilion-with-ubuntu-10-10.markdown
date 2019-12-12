@@ -7,7 +7,7 @@ slug: hp-pavilion-with-ubuntu-10-10
 title: HP Pavilion with Ubuntu 10.10
 wordpress_id: 528
 categories: Programming
-tags: Apple, Computer Hardware, HP, Mac, Ubuntu
+tags: hardware, macbook, linux
 ---
 
 I've been asked for an update of my [experiences with my HP Pavilion dv6

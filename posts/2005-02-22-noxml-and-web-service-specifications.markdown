@@ -7,11 +7,15 @@ slug: noxml-and-web-service-specifications
 title: NoXML and web service specifications!
 wordpress_id: 25
 categories: Programming
-tags: Distributed Computing, Network Programming, NoXML, Web Services, XML
+tags: humour, distributed-computing
 ---
 
-Think you know something about XML and Web services? Check out [all these web service standards](http://wiki.apache.org/ws/WebServiceSpecifications). Oh my! Just say no. No!
+Think you know something about XML and Web services? Check out [all these
+web service standards](http://wiki.apache.org/ws/WebServiceSpecifications).
+Oh my! Just say no. No!
 
-The only XML technology that I'd like to share with you right now is the upcoming NoXML. It will usher in an exciting new world to software development. The best XML technology ever.
+The only XML technology that I'd like to share with you right now is the
+upcoming NoXML. It will usher in an exciting new world to software
+development. The best XML technology ever.
 
 NoXML - wonderful new XML technology!

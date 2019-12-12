@@ -4,10 +4,11 @@ comments: true
 date: 2009-01-29 22:43:01+00:00
 layout: post
 slug: webbeans-java-contexts-and-dependency-injection
-title: WebBeans => Java Contexts and Dependency Injection
+title: WebBeans Renamed
+subtitle: Java Contexts and Dependency Injection
 wordpress_id: 101
 categories: Programming
-tags: Dependency Injection, Guice, Java, JCDI, JEE, Seam, Web, WebBeans
+tags: java
 ---
 
 I've been watching the WebBeans/JSR-299 specification for quite some time.

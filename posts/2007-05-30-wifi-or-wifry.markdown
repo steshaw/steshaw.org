@@ -7,7 +7,7 @@ slug: wifi-or-wifry
 title: WiFi or WiFry?
 wordpress_id: 65
 categories: Programming
-tags: WiFi
+tags: humour
 ---
 
 Starting to hear [worrying reports](http://www.contractoruk.com/news/003268.html) about the heath dangers of WiFi radiation. I certainly hope it's unfounded as I am not sure what I'd do without always on, wireless broadband!

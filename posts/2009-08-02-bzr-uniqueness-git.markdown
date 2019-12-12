@@ -7,7 +7,7 @@ slug: bzr-uniqueness-git
 title: Bzr uniqueness + Git
 wordpress_id: 73
 categories: Programming
-tags: Bazaar, DVCS, Git, Mercurial
+tags: dvcs
 ---
 
 The unique thing about Bazaar, compared with say Mercurial, seems to be that

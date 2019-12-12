@@ -7,9 +7,15 @@ slug: getting-lost-in-the-wikipedia
 title: Getting lost in the Wikipedia
 wordpress_id: 32
 categories: Programming
-tags: UNCOL, Wikipedia, x86
+tags: compilers
 ---
 
-More and more lately, I've noticed myself reading the Wikipedia. It appears prominently in many of my Google searches. I've heard it critized because the content is not reviewed (some guy was bent out of shape about a comment about him being involved with the assasination of JFK - rightly so). Anyhow, I've only found the information excellent.
+More and more lately, I've noticed myself reading the Wikipedia. It appears
+prominently in many of my Google searches. I've heard it critized because
+the content is not reviewed (some guy was bent out of shape about a comment
+about him being involved with the assasination of JFK - rightly so). Anyhow,
+I've only found the information excellent.
 
-Get lost in the Wikipedia - some starting points: [x86](http://en.wikipedia.org/wiki/X86), [UNCOL](http://en.wikipedia.org/wiki/UNCOL).
+Get lost in the Wikipedia - some starting points:
+[x86](http://en.wikipedia.org/wiki/X86),
+[UNCOL](http://en.wikipedia.org/wiki/UNCOL).

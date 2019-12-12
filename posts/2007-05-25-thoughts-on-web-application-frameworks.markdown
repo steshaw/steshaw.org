@@ -7,7 +7,7 @@ slug: thoughts-on-web-application-frameworks
 title: Thoughts on web application frameworks
 wordpress_id: 61
 categories: Programming
-tags: Apache Click, GWT, Java, JavaScript, JSF, Tibco GI, Web, YUI
+tags: java, javascript, web
 ---
 
 Here's a brain dump of my current thoughts on Web Frameworks:

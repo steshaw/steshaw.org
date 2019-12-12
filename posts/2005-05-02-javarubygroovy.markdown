@@ -7,9 +7,10 @@ slug: javarubygroovy
 title: Java…Ruby…Groovy
 wordpress_id: 29
 categories: Programming
-tags: Closures, Groovy, Java, Programming Languages, Ruby
+tags: functional-programming, groovy, java
 ---
 
 [http://onestepback.org/articles/groovy/groovyspeed.html](http://onestepback.org/articles/groovy/groovyspeed.html)
 
-If you read the entire article above please note that closures have *indefinite* extent , not *dynamic* extent.
+If you read the entire article above please note that closures have
+*indefinite* extent , not *dynamic* extent.

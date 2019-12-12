@@ -7,7 +7,7 @@ slug: agile-is-the-status-quo
 title: Agile is the status quo
 wordpress_id: 519
 categories: Programming
-tags: Agile, Software Engineering
+tags: software-engineering
 ---
 
 Robert C. Martin (aka Uncle Bob) has written a provocative article, [What

@@ -7,7 +7,7 @@ slug: ibm-to-buyout-sun-microsystems
 title: IBM to buyout Sun Microsystems?
 wordpress_id: 108
 categories: Programming
-tags: C#, Closures, IBM, Java, Microsoft, Neal Gafter, Sun
+tags: csharp, functional-programming, java
 ---
 
 [This story paints a gloomy outlook for Sun

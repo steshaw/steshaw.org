@@ -7,7 +7,9 @@ slug: the-koan-of-side-effects
 title: The Koan of Side Effects
 wordpress_id: 11
 categories: Programming
-tags: Functional Programming, OCaml
+tags: functional-programming, ocaml, humour
 ---
 
-I had a laugh at [this](http://web.archive.org/web/20031105005932/www.bagley.org/~doug/ocaml/Notes/okoans.shtml) (via [comp.lang.functional](news://comp.lang.functional)).
+I had a laugh at
+[this](http://web.archive.org/web/20031105005932/www.bagley.org/~doug/ocaml/Notes/okoans.shtml)
+(via [comp.lang.functional](news://comp.lang.functional)).

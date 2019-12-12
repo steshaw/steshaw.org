@@ -7,7 +7,7 @@ slug: stonking-new-laptop
 title: Stonking new laptop
 wordpress_id: 237
 categories: Programming
-tags: Apple, Computer Hardware, HP, Mac, Mac pricing
+tags: hardware, macbook, linux
 ---
 
 I'm writing this post from my new laptop! **Stop the presses:** it's _not_ a

@@ -2,7 +2,7 @@
 title: Continuous Wins
 subtitle: Winning trumps self-flagellation!
 date: 20150517-142014
-tags: Software Engineering, Teams, Lean, Agile, Kanban
+tags: software-engineering
 ---
 
 #+BEGIN_HTML

@@ -1,7 +1,7 @@
 ---
 title: Hello MathJax
 date: 2012-02-09 12:46
-tags: Octopress, MathJax
+tags: web
 ---
 
 MathJax isn't currently supported out-of-the-box with Octopress. The main reason seems to be that the Markdown processor — rdiscount — doesn't deal with the MathJax escaping very well. However, since [Maruku supports it](http://maruku.rubyforge.org/math.xhtml), I thought I'd try switching over.

@@ -7,7 +7,7 @@ slug: the-python-paradox
 title: The Python Paradox
 wordpress_id: 7
 categories: Programming
-tags: Lisp, Python Scheme
+tags: lisp, python, scheme
 ---
 
 [http://www.paulgraham.com/pypar.html](http://www.paulgraham.com/pypar.html)

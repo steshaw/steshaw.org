@@ -7,7 +7,7 @@ slug: from-nand-to-tetris
 title: From nand to tetris
 wordpress_id: 82
 categories: Programming
-tags: Compilers, Computer Architecture, Computer Hardware, Operating Systems, Programming Languages
+tags: compilers, operating-systems, programming-languages
 ---
 
 This looks like a great course and book: [The Elements of Computing Systems](http://www.idc.ac.il/tecs/).

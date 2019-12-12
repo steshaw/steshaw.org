@@ -7,7 +7,7 @@ slug: erlang-the-movie
 title: Erlang the Movie
 wordpress_id: 10
 categories: Programming
-tags: Erlang
+tags: erlang, humour
 ---
 
 Just watched [Erlang the Movie](http://lambda-the-ultimate.org/node/view/197) from 1990 (200M, via lambda-the-ultimate). Such a laugh I had to watch again :-). However, there was a serious demonstration of a "hot software upgrade" technology which allowed the system software to be patched while continuing uninterrupted in "24x7" style.

@@ -7,7 +7,7 @@ slug: intj-again
 title: INTJ again
 wordpress_id: 52
 categories: Programming
-tags: Personality Typing
+tags: personality
 ---
 
 Just took this free [Online Myer-Brigg personality type test](http://www.humanmetrics.com/cgi-win/JTypes2.asp) and I came out as INTJ again. I fiddled with some of the questions that could go either way but ...still INTJ. Here are the results:

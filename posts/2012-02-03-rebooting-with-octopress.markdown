@@ -1,7 +1,7 @@
 ---
 title: Rebooting with Octopress
 date: 2012-02-03 16:22
-tags: Octopress
+tags: web
 ---
 
 I'm starting with a clean slate and moving to [Octopress](http://octopress.org/).

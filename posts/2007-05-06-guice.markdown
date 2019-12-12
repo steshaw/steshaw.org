@@ -7,7 +7,7 @@ slug: guice
 title: Guice
 wordpress_id: 60
 categories: Programming
-tags: Dependency Injection, Google Tech Talks, Guice, Java
+tags: java
 ---
 
 Just watched an [intro to Guice video](http://video.google.com/videoplay?docid=6068447410873108038&q=user%3A%22Google+engEDU) from Google. Looks pretty interesting. Be nice to have less Spring beans configuration files :).

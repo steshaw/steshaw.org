@@ -7,7 +7,7 @@ slug: neverwinter-nights-on-linux
 title: Neverwinter Nights on Linux
 wordpress_id: 6
 categories: Programming
-tags: Computer Games, Linux
+tags: games, linux
 ---
 
 For anyone wanting to get nwn going on Linux will find [this](http://www.linuxjournal.com/article.php?sid=7377) a useful resource. In case you miss the important links:
