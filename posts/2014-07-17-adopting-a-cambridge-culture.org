@@ -9,10 +9,6 @@ tags: software-engineering
 <div class="header-image" data-header-image-url="/images/cambridge.jpeg" data-header-image-height="640" />
 #+END_HTML
 
-#+BEGIN_HTML
-<div class="medium-url" data-medium-url="https://medium.com/@steshaw/adopting-a-cambridge-culture-2e16ec53137f" />
-#+END_HTML
-
 Work can be a drag if you find yourself in a den of assholes.  Unfortunately,
 this seems to be becoming more common as narcissism is on the rise. I'd like to
 start a conversation about how we might tackle this problem. Here's an outline

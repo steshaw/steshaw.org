@@ -15,17 +15,11 @@ $(function() {
 
     $('.post-header').addClass('post-header-with-image');
     $('.post-header-content').addClass('post-header-with-image-content');
-
-    var mediumUrl = $('.medium-url').data().mediumUrl;
-    if (mediumUrl) {
-      var e = $('.cross-posted-to-medium');
-      e.find('a').attr('href', mediumUrl);
-      e.show();
-    }
   }
 
   //
   // Remove the trailing "index.html" from generated relative urls.
+  // XXX: This is a hack.
   //
   $('a').each(function () {
     var e = $(this);

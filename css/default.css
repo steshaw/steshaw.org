@@ -104,17 +104,6 @@ body {
   font-size: 70%;
 }
 
-.cross-posted-to-medium {
-  float: right;
-  display: none;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-.cross-posted-to-medium p {
-  margin: 0;
-}
-
 ul.posts {
   padding-left: 0;
 }
