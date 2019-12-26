@@ -158,9 +158,9 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
   [Bazel](https://bazel.build/), and
   [Please](https://please.build/).
   My interest was piqued initially by Peter Miller's [Recursive Make
-  Considered Harmful][recursive-make]. Then rekindled recently with
-  the publication of [Non-recursive Make Considered Harmful][non-recursive-make]
-  (though it fails to mention Miller's [Cook][cook]) and [Build systems à
+  Considered Harmful][recursive-make]. Then rekindled recently with the
+  publication of [Non-recursive Make Considered Harmful][non-recursive-make]
+  — though it fails to mention Miller's [Cook][cook] — and [Build systems à
   la carte][build-systems-a-la-carte].
 
 - Version Control Systems:
@@ -179,10 +179,11 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
   [Fossil](https://fossil-scm.org/),
   [Veracity](http://veracity-scm.com/), and
   [Pijul](https://pijul.org/).
-  Of the distributed version control systems, I preferred to use Mercurial. Of
-  course, Git became prominent, and eventually, there was no resisting it. I have
-  hopes that a better system becomes prominent — perhaps one based on a _theory
-  of patches_ like Darcs and Pijul.
+  Of the distributed version control systems, I preferred to use Mercurial.
+  Of course, Git became prominent, and eventually, there was no resisting
+  it. I have hopes that a better system becomes prominent — perhaps one
+  based on a _theory of patches_ like Darcs and Pijul (but over a tokenised
+  or abstract syntax representation).
 
 ## Hobbies
 
