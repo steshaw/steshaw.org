@@ -3,23 +3,29 @@ title: Steven Shaw
 ---
 
 <header>
-  <h1>Welcome</h1>
+  <h1>Steven Shaw</h1>
 </header>
 
 <div class="content">
 
   <div class="row">
-    <div class="col-md-9">
-      <p>I'm Steven Shaw, a software engineer living in Brisbane, Australia.
-      I love programming languages.</p>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p class="text-center">
+        I'm a software engineer living in Brisbane, Australia.<br>
+        I love programming languages.
+      </p>
 
+<!--
       <blockquote class="quote">
         The future of programming is dependently typed
         <small><cite>Anon.</cite></small>
       </blockquote>
+-->
     </div>
 
-    <div class="col-md-3 small featured-languages text-right
+<!--
+    <div class="col-md-2 small featured-languages text-right
       block visible-lg-block visible-md-block">
       <ul class="list-unstyled">
         <li>
@@ -41,33 +47,38 @@ title: Steven Shaw
         </li>
       </ul>
     </div>
+-->
+    <div class="col-md-2"></div>
   </div>
 
-  <div class="social-strip small text-muted text-center center-block">
-    <ul class="list-inline">
-    <li>
-    <a href="https://linkedin.com/in/steshaw"><i class="fa
-        fa-linkedin-square"></i> linkedin</a>
-    </li>
-    <li>
-    <a href="https://twitter.com/steshaw"><i class="fa fa-twitter-square"></i> twitter</a>
-    </li>
-    <li>
-    <a href="https://github.com/steshaw"><i class="fa fa-github-square"></i> github</a>
-    </li>
-    <li>
-    <a href="https://stackoverflow.com/users/482382/steven-shaw"><i
-        class="fa fa-stack-overflow"></i> stackoverflow</a>
-    </li>
-    <li>
-    <a href="mailto:steven@steshaw.org"><i class="fa fa-envelope-square"></i> email</a>
-    </li>
-    </ul>
+  <div class="row social-strip small text-muted text-center center-block">
+    <div class="col-md-12">
+      <ul class="list-inline">
+        <li>
+        <a href="https://linkedin.com/in/steshaw"><i class="fa
+            fa-linkedin-square"></i> linkedin</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/steshaw"><i class="fa fa-twitter-square"></i> twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/steshaw"><i class="fa fa-github-square"></i> github</a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/482382/steven-shaw"><i
+             class="fa fa-stack-overflow"></i> stackoverflow</a>
+        </li>
+        <li>
+          <a href="mailto:steven@steshaw.org"><i class="fa fa-envelope-square"></i> email</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="posts">
-    $partial("templates/post-list.html")$
-
-    <small class="text-muted"><a href="all-posts">All posts</a></small>
+  <div class="index-page row posts text-center center-block">
+    <div class="col-md-12">
+      $partial("templates/post-list.html")$
+      <div class="archive-link text-muted small"><a href="archives">Archives</a></div>
+    </div>
   </div>
 </div>

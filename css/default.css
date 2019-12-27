@@ -80,10 +80,17 @@ body {
 }
 
 .post-list-title {
-  font-size: 16pt;
+/*
   margin-top: 10px;
   margin-bottom: 0;
+*/
 }
+.archives-page {
+/*
+  font-size: 120%;
+*/
+}
+
 
 .post-subtitle {
   font-size: 32px;
@@ -104,10 +111,6 @@ body {
   font-size: 70%;
 }
 
-ul.posts {
-  padding-left: 0;
-}
-
 .tags {
   font-size: 80%;
   opacity: 0.60;
@@ -123,11 +126,12 @@ ul.posts {
 }
 
 .container {
-  max-width: 750px;
+  max-width: 700px;
 }
 
 .container header {
   margin-top: 0.5em;
+  text-align: center;
 }
 
 .post-footer {
@@ -251,9 +255,24 @@ img.logo {
   max-width: 60%;
 }
 
+.row {
+  margin-bottom: 1em;
+}
+
+.posts li {
+  margin-bottom: 0.3em;
+}
+
+.index-page .posts {
+  padding-inline-start: 0em;
+}
+.archives-page .posts {
+  padding-inline-start: 1em;
+}
+
 .talks ul {
   list-style: none;
-  padding-inline-start: 0px; /* reset user agent stylesheet */
+  padding-inline-start: 1em;
 }
 .talks li {
   padding-bottom: 0.5em;
@@ -262,15 +281,10 @@ img.logo {
 .wip-talks ul {
   display: none;
   list-style: none;
-  padding-inline-start: 0px; /* reset user agent stylesheet */
+  padding-inline-start: 0px;
 }
 .wip-talks li:before {
   content: "🚧\00a0";
-}
-
-.posts {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .social-strip a + a {

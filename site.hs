@@ -113,7 +113,7 @@ main = hakyll $ do
       >>= loadAndApplyTemplate "templates/default.html" postCtx
       >>= relativizeUrls
 
-  create ["all-posts/index.html"] $ do
+  create ["archives/index.html"] $ do
     route idRoute
     compile $ do
 --      posts <- loadAll $ allPosts .&&. complement (fromGlob "posts/index.html")

@@ -78,7 +78,7 @@ degrees:
 [Swift](https://swift.org/), and
 [Rust][rust].
 
-I'm currently working with [Haskell][haskell]. I also like other
+I'm currently working with [Haskell][haskell]. I like other
 contemporary languages such as [Rust][rust], [PureScript][purescript],
 [Elm][elm], and [OCaml][ocaml]. Additionally other research languages such
 as [Idris][idris] (with [version 2][Idris2] currently in development) and [ATS][ats]
@@ -94,6 +94,7 @@ with [Coq][Coq] and [Agda][Agda] and have found it quite challenging.
   <img
     class="img-responsive"
     src="../images/C64_startup_animiert.gif"
+    alt="Commodore 64 startup animation"
   >
 </div>
 
