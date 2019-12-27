@@ -7,7 +7,7 @@ title: About
 
 Born English. Grew up Australian — got the accent to prove it. Dual citizen.
 I enjoy living in beautiful Brisbane but do still feel the tug of Ol'
-Blighty — particularly my home town near Nottingham and Scotland.
+Blighty — particularly my home town in Derbyshire.
 
 I'm an avid computer programmer who loves programming languages. As an
 industry veteran, I've used a multitude of languages professionally:
@@ -28,7 +28,8 @@ Ingres 4GL (don't ask),
 [Scala](https://scala-lang.org/), and
 [Haskell][haskell].
 
-Privately, I was learning about all sorts of other languages:
+Privately, I was learning about all sorts of other languages to varying
+degrees:
 [Component Pascal](https://en.wikipedia.org/wiki/Component_Pascal),
 [Oberon](https://en.wikipedia.org/wiki/Oberon_(programming_language)),
 [Oberon-2](https://en.wikipedia.org/wiki/Oberon-2),
@@ -56,7 +57,7 @@ Privately, I was learning about all sorts of other languages:
 [Q](https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)),
 [Prolog](https://en.wikipedia.org/wiki/Prolog),
 [Caml](https://caml.inria.fr/),
-[OCaml](https://ocaml.org/),
+[OCaml][OCaml],
 [F#](https://fsharp.org/),
 [Standard ML](http://sml-family.org/),
 [Mythryl](https://mythryl.org/),
@@ -65,10 +66,10 @@ Privately, I was learning about all sorts of other languages:
 [Erlang](https://www.erlang.org/),
 [Haskell][haskell],
 [Idris][idris],
-[Coq](https://coq.inria.fr/),
+[Coq][Coq],
 [Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php),
 [Ur](http://www.impredicative.com/ur/),
-[ATS](http://www.ats-lang.org/),
+[ATS][ats],
 [F\*](https://www.fstar-lang.org/),
 [Haxe](https://haxe.org/),
 [Elm][elm],
@@ -77,18 +78,14 @@ Privately, I was learning about all sorts of other languages:
 [Swift](https://swift.org/), and
 [Rust][rust].
 
-Thankfully, I'm currently working with [Haskell][haskell]. I also like
-[Idris][idris], [PureScript](http://www.purescript.org/), [Elm][elm], and
-[OCaml](https://ocaml.org/).
-Unfortunately, [Idris](http://idris-lang.org) is a research project for now,
-but I'm hopeful that this could change with the advent of [Idris
-2](https://github.com/edwinb/Idris2).
-I'm less connected with [Scala](https://scala-lang.org/)
-these days — though I still follow along with developments from time to time.
-I've done a bit of introductory work with [Coq](https://coq.inria.fr/) and
-[Agda](https://wiki.portal.chalmers.se/agda/pmwiki.php) and have found it
-quite challenging. I'm currently taking a look at
-[Rust][rust], and I'm always learning something new about [Haskell][haskell].
+I'm currently working with [Haskell][haskell]. I also like other
+contemporary languages such as [Rust][rust], [PureScript][purescript],
+[Elm][elm], and [OCaml][ocaml]. Additionally other research languages such
+as [Idris][idris] (with [version 2][Idris2] currently in development) and [ATS][ats]
+(with version 3 currently in development). I'm less connected with
+[Scala](https://scala-lang.org/) these days — though I still follow along
+with developments from time to time. I've done a bit of introductory work
+with [Coq][Coq] and [Agda][Agda] and have found it quite challenging.
 
 
 ## Formative Years
@@ -117,13 +114,12 @@ for writing [video](https://youtu.be/rsuWgLEQBxM)
 
 ### Programming Languages
 
-I love programming languages and what makes them tick. Firstly, I studied
+I love programming languages and what makes them tick. Earlier, I studied
 compilers and runtime system techniques. Lately, I've been studying
-[Programming Language Theory](https://steshaw.org/plt/) which I think of as
-"TLC" --- Types, Logic, and Categories. I'm also fascinated by proof
-assistants, mechanised metatheory, and program verification.
+[Programming Language Theory](https://steshaw.org/plt/) in my spare time. I
+dub it the study of TLC --- Types, Logic, and Categories.
 
-### Application Development
+### Software Engineering
 
 Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
 
@@ -180,7 +176,7 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
   [Veracity](http://veracity-scm.com/), and
   [Pijul](https://pijul.org/).
   Of the distributed version control systems, I preferred to use Mercurial.
-  Of course, Git became prominent, and eventually, there was no resisting
+  Of course, Git became prominent, and there was no resisting
   it. I have hopes that a better system becomes prominent — perhaps one
   based on a _theory of patches_ like Darcs and Pijul (but over a tokenised
   or abstract syntax representation).
@@ -189,13 +185,20 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
 
 Reading, human languages, and chess.
 
-[recursive-make]: http://aegis.sourceforge.net/auug97.pdf
-[gnu-make]: https://www.gnu.org/software/make/
-[scons]: https://scons.org/
-[cook]: https://web.archive.org/web/20140622050724/http://miller.emu.id.au/pmiller/software/cook/
-[non-recursive-make]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/03/hadrian.pdf
 [build-systems-a-la-carte]: https://github.com/snowleopard/build
-[idris]: https://idris-lang.org
-[haskell]: https://www.haskell.org/
-[elm]: https://elm-lang.org/
-[rust]: https://www.rust-lang.org/
+[cook]: https://web.archive.org/web/20140622050724/http://miller.emu.id.au/pmiller/software/cook/
+[gnu-make]: https://www.gnu.org/software/make/
+[non-recursive-make]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/03/hadrian.pdf
+[recursive-make]: http://aegis.sourceforge.net/auug97.pdf
+[scons]: https://scons.org/
+
+[ATS]: http://www.ats-lang.org/
+[Agda]: http://wiki.portal.chalmers.se/agda/pmwiki.php
+[Coq]: https://coq.inria.fr/
+[Elm]: https://elm-lang.org/
+[Haskell]: https://www.haskell.org/
+[Idris]: https://idris-lang.org
+[PureScript]: http://www.purescript.org/
+[Rust]: https://www.rust-lang.org/
+[OCaml]: https://ocaml.org/
+[Idris2]: https://github.com/edwinb/Idris2
