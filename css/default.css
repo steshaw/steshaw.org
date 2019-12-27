@@ -255,8 +255,12 @@ img.logo {
   list-style: none;
   padding-inline-start: 0px; /* reset user agent stylesheet */
 }
+.talks li {
+  padding-bottom: 0.5em;
+}
 
 .wip-talks ul {
+  display: none;
   list-style: none;
   padding-inline-start: 0px; /* reset user agent stylesheet */
 }
