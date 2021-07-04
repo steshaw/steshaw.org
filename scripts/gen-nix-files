@@ -19,11 +19,11 @@ cabal2nix --no-haddock . >"${package_name}.nix"
 ghc='ghc865'
 
 cat <<! >default.nix
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "${ghc}" }:
+{ nixpkgs ? import .config/nix/pkgs.nix {}, compiler ? "${ghc}" }:
 nixpkgs.pkgs.haskell.packages.\${compiler}.callPackage ./${package_name}.nix { }
 !
 
 cat <<! >shell.nix
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "${ghc}" }:
+{ nixpkgs ? import .config/nix/pkgs.nix {}, compiler ? "${ghc}" }:
 (import ./default.nix { inherit nixpkgs compiler; }).env
 !
