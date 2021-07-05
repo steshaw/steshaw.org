@@ -29,7 +29,7 @@ jobs:
 #            nix-store-${{ runner.OS }}-
 
       - name: Install Nix
-        uses: cachix/install-nix-action@v6
+        uses: cachix/install-nix-action@v13
 
       - name: Build
         run: |
