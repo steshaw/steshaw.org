@@ -39,11 +39,9 @@ jobs:
           ./result/bin/site build
 
       - name: 'Deploy to GitHub Pages'
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          EXTERNAL_REPOSITORY: steshaw/steshaw.github.io
-          PUBLISH_BRANCH: master
-          PUBLISH_DIR: _site
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          emptyCommits: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: 'steshaw/steshaw.github.io'
+          publish_branch: 'master'
+          publish_dir: '_site'
