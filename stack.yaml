@@ -8,4 +8,5 @@ extra-deps:
 
 nix:
   enable: true
+  path: ["nixpkgs=https://github.com/NixOS/nixpkgs/tarball/362be9608c3e0dc5216e9d1d5f5c1a5643b7f7b1"]
   shell-file: .config/nix/stack.nix
