@@ -17,8 +17,6 @@ in
         ;
     };
     devPkgs = optPkgs enableDev [
-      emacs
-      neovim
       shellcheck
     ];
     talksPkgs = optPkgs enableTalks [
