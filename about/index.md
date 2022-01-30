@@ -184,7 +184,7 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
 
 ## Hobbies
 
-Reading, human languages, and chess.
+Reading and human languages.
 
 [build-systems-a-la-carte]: https://github.com/snowleopard/build
 [cook]: https://web.archive.org/web/20140622050724/http://miller.emu.id.au/pmiller/software/cook/
