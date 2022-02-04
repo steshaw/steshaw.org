@@ -11,7 +11,7 @@ tags: scala, functional-programming, category-theory, haskell
 ---
 
 I recently attended the "Introduction to Scala" course at [Working
-Mouse](http://workingmouse.com/). The course was run by [Tony
+Mouse](https://web.archive.org/web/20081103120543/http://workingmouse.com/). The course was run by [Tony
 Morris](http://tmorris.net/) with the help of Tom Adams.  I had feared that
 the course would be an introduction to Scala with Haskell-coloured glasses
 ... and it was just that. However, it was just this that made it
