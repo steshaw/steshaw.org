@@ -10,7 +10,7 @@ categories: Programming
 tags: compilers, operating-systems, programming-languages
 ---
 
-This looks like a great course and book: [The Elements of Computing Systems](http://www.idc.ac.il/tecs/).
+This looks like a great course and book: [The Elements of Computing Systems](https://web.archive.org/web/20080225144053/https://www.idc.ac.il/tecs/).
 
 ![The Elements of Computing Systems][book]
 
