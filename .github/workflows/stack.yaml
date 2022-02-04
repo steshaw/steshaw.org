@@ -3,7 +3,7 @@ name: Build with Stack
 on:
   push:
 #    branches:
-#      - master
+#      - main
      branches-ignore: [ '*' ]
 
 jobs:

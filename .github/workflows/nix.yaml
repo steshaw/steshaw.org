@@ -3,7 +3,7 @@ name: Build with Nix
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
