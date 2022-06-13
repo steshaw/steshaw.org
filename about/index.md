@@ -137,7 +137,7 @@ Trade-offs, tricks, patterns, the big picture, dogma-slaying, and coffee.
   [Cook][cook],
   [SCons][scons],
   [Waf](https://waf.io/),
-  [Vesta](http://www.vestasys.org/),
+  [Vesta](http://vesta.sourceforge.net/),
   [Rake](https://github.com/ruby/rake),
   [Ant](https://ant.apache.org/),
   [Maven](https://maven.apache.org/),
