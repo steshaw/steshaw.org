@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: 'Cache /nix/store'
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: /nix/store
           key: nix-store-${{ runner.OS }}-${{ hashFiles('.config/nix/*') }}
